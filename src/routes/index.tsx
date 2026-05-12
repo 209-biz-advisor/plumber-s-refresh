@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import heroCover from "@/assets/hero-cover.png";
 import miguelOwner from "@/assets/miguel-owner.png";
-import miguelAction from "@/assets/miguel-action.png";
+import miguelAction from "@/assets/miguel-emergency.png";
 import shield from "@/assets/logo-shield.png";
 
 export const Route = createFileRoute("/")({
