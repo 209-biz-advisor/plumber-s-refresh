@@ -14,6 +14,18 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 bg-navy-deep/95 backdrop-blur border-b border-white/10">
+      {/* Top utility bar */}
+      <div className="bg-black/40 border-b border-white/5 text-white text-xs">
+        <div className="container-x flex items-center justify-between h-9">
+          <a href="tel:2095606652" className="flex items-center gap-2 font-bold tracking-wider hover:text-accent">
+            <Phone className="size-3.5" /> (209) 560-6652
+          </a>
+          <div className="flex items-center gap-2">
+            <Link to="/contact" className="bg-brand-red px-3 py-1 font-bold uppercase tracking-wider hover:bg-brand-red/80">Contact Us</Link>
+            <a href="/contact" className="bg-accent text-navy-deep px-3 py-1 font-bold uppercase tracking-wider hover:opacity-90">Now Hiring</a>
+          </div>
+        </div>
+      </div>
       <div className="container-x flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="Mainline Plumbing Inc." className="h-12 w-auto" />
