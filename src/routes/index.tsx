@@ -3,6 +3,7 @@ import { useState } from "react";
 import {
   Phone, Wrench, Droplets, Flame, ShieldCheck, Clock, Star, ArrowRight,
   CheckCircle2, MessageSquare, Mail, MapPin, DollarSign, Users, Award, BookOpen, Send,
+  BadgePercent, CalendarClock, AlertTriangle, ThumbsUp,
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -53,6 +54,28 @@ const reviews = [
   { quote: "My water heater stopped working and Miguel came immediately to fix it. So transparent with his work.", name: "Alondra A." },
   { quote: "Best service! Joey is very professional and did a neat, clean job installing our dishwasher same-day.", name: "Liz R." },
   { quote: "Their honesty and integrity speaks for itself and their workmanship is on point. Highly recommend.", name: "Pam N." },
+];
+
+const specials = [
+  { big: "$0", label: "Service Call w/ Repair", fine: "When you book any repair. New customers.", icon: Wrench },
+  { big: "$50", label: "Off Drain Clearing", fine: "Main line clearing. One coupon per household.", icon: Droplets },
+  { big: "$250", label: "Off Tankless Water Heater", fine: "Installed by Mainline. Cannot combine offers.", icon: Flame },
+  { big: "10%", label: "Senior & Military Discount", fine: "Valid ID required at time of service.", icon: BadgePercent },
+];
+
+const badges = [
+  "BBB A+ Accredited",
+  "Google 5-Star Rated",
+  "Angi Certified Pro",
+  "Yelp Verified",
+  "Nextdoor Neighborhood Fave",
+  "Family-Owned Since 1996",
+];
+
+const stats = [
+  { num: "28+", label: "Years of Experience" },
+  { num: "5.0", label: "Average Google Rating" },
+  { num: "24/7", label: "Emergency Response" },
 ];
 
 function HomePage() {
@@ -136,6 +159,67 @@ function HomePage() {
           <Link to="/contact" className="ml-2 px-4 py-2 border-2 border-navy-deep rounded hover:bg-navy-deep hover:text-white transition">Learn More →</Link>
         </div>
       </section>
+
+      {/* CURRENT SPECIALS */}
+      <section className="py-20 md:py-24 bg-secondary">
+        <div className="container-x">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="eyebrow">Save On Your Next Service</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2">Check Out Our Current Specials</h2>
+            <p className="mt-4 text-muted-foreground">
+              Real savings for real neighbors. Mention the offer when you book — restrictions apply.
+            </p>
+          </div>
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {specials.map((s) => (
+              <div key={s.label} className="relative bg-white rounded-2xl p-6 border border-border flex flex-col hover:border-accent transition" style={{ boxShadow: "var(--shadow-elegant)" }}>
+                <div className="absolute -top-3 -right-3 size-12 rounded-full bg-brand-red text-white flex items-center justify-center">
+                  <s.icon className="size-6" />
+                </div>
+                <div className="font-display text-5xl md:text-6xl text-brand-red leading-none">{s.big}</div>
+                <div className="mt-2 font-bold uppercase tracking-wider text-navy text-sm">{s.label}</div>
+                <p className="mt-3 text-xs text-muted-foreground flex-1">{s.fine}</p>
+                <Link to="/contact" className="mt-5 inline-flex items-center justify-center gap-2 bg-navy-deep text-white px-4 py-2.5 rounded-lg font-bold uppercase tracking-wider text-xs hover:bg-navy transition">
+                  Schedule Service <ArrowRight className="size-3.5" />
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link to="/contact" className="text-navy font-bold uppercase tracking-wider text-sm hover:text-brand-red">
+              View All Offers →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* AWARDS / TRUST BADGES */}
+      <section className="bg-white border-y border-border py-10">
+        <div className="container-x">
+          <p className="text-center eyebrow mb-6">Trusted By Your Neighbors</p>
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+            {badges.map((b) => (
+              <div key={b} className="flex items-center gap-2 px-4 py-3 border-2 border-navy/10 rounded-lg bg-secondary">
+                <ShieldCheck className="size-5 text-brand-red shrink-0" />
+                <span className="font-display uppercase tracking-wider text-navy text-xs md:text-sm">{b}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* STATS STRIP */}
+      <section className="bg-gradient-to-r from-navy-deep to-navy text-white py-12">
+        <div className="container-x grid sm:grid-cols-3 gap-8 text-center">
+          {stats.map((s) => (
+            <div key={s.label}>
+              <div className="font-display text-5xl md:text-6xl text-accent leading-none">{s.num}</div>
+              <div className="mt-3 uppercase tracking-widest text-sm text-white/80">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       {/* WHY CHOOSE US */}
       <section className="bg-brand-red text-white py-20 md:py-24">
@@ -267,6 +351,34 @@ function HomePage() {
                 <p className="mt-4 font-bold text-navy">— {r.name}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* DUAL CTA BAND */}
+      <section className="bg-navy-deep text-white py-16 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,var(--brand-orange),transparent_50%),radial-gradient(circle_at_80%_80%,var(--brand-red),transparent_50%)]" aria-hidden />
+        <div className="container-x grid md:grid-cols-2 gap-6 relative">
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur">
+            <CalendarClock className="size-10 text-accent" />
+            <h3 className="mt-4 text-2xl md:text-3xl font-bold">Schedule Your Service Today</h3>
+            <p className="mt-3 text-white/80">
+              Book online or by phone. Same-day and next-day appointments available across the 209.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link to="/contact" className="btn-primary"><Mail className="size-4" /> Schedule</Link>
+              <a href="tel:2095606652" className="btn-outline"><Phone className="size-4" /> Call</a>
+            </div>
+          </div>
+          <div className="bg-brand-red rounded-2xl p-8 border border-white/10">
+            <AlertTriangle className="size-10 text-white" />
+            <h3 className="mt-4 text-2xl md:text-3xl font-bold">Need Emergency Service?</h3>
+            <p className="mt-3 text-white/90">
+              Burst pipe? No hot water? We answer the phone 24/7 — day, night, weekends, holidays.
+            </p>
+            <a href="tel:2095606652" className="mt-6 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
+              <Phone className="size-6" /> (209) 560-6652
+            </a>
           </div>
         </div>
       </section>
