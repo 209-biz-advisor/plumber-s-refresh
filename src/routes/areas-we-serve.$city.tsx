@@ -3,6 +3,7 @@ import { Phone, MapPin, CheckCircle2, ArrowRight, Wrench, Droplets, Flame, Shiel
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { findCity, serviceCities } from "@/lib/service-cities";
+import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 
 export const Route = createFileRoute("/areas-we-serve/$city")({
   loader: ({ params }) => {
