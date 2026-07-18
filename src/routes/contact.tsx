@@ -66,7 +66,7 @@ function ContactPage() {
               18332 Campbell Ave.<br />Escalon, CA 95320
             </ContactCard>
             <ContactCard icon={Clock} label="Hours">
-              Mon–Fri: 8am – 6pm<br />Sat: 8am – 5pm<br />Sun: Closed<br />
+              Mon–Fri: 7am – 7pm<br />Sat: 7am – 7pm<br />Sun: Closed<br />
               <span className="text-accent font-semibold">Emergency Repairs Available</span>
             </ContactCard>
             <ContactCard icon={Mail} label="Service Area">
