@@ -429,7 +429,7 @@ function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative mx-auto w-4/5">
               <div className="rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
                 <img src={serviceMap.url} alt="Map of Mainline Plumbing service area around Escalon, Modesto and the 209" className="w-full h-auto object-cover" />
               </div>
