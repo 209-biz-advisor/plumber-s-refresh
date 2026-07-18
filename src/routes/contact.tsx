@@ -77,6 +77,20 @@ function ContactPage() {
         </div>
       </section>
 
+      <section className="pb-20">
+        <div className="container-x text-center">
+          <span className="eyebrow">Service Area</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">Where We Serve</h2>
+          <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
+            From Stockton to Turlock and everywhere in between, our plumbers cover the full 209
+            coverage zone shown below.
+          </p>
+          <div className="mt-10 mx-auto w-4/5 max-w-3xl rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
+            <img src={serviceMap.url} alt="Mainline Plumbing service area map" className="w-full h-auto" />
+          </div>
+        </div>
+      </section>
+
       <SiteFooter />
     </div>
   );
