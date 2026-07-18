@@ -112,7 +112,7 @@ function CityPage() {
                   <h3 className="font-display uppercase tracking-wider text-sm">{city.name} Landmarks We Work Around</h3>
                 </div>
                 <ul className="mt-4 space-y-2">
-                  {city.local.landmarks.map((l) => (
+                  {city.local!.landmarks.map((l: string) => (
                     <li key={l} className="flex gap-2 text-sm text-muted-foreground">
                       <MapPin className="size-4 text-accent shrink-0 mt-0.5" /> {l}
                     </li>
@@ -127,7 +127,7 @@ function CityPage() {
                     <h3 className="font-display uppercase tracking-wider text-sm">Local Traditions We Support</h3>
                   </div>
                   <ul className="mt-4 space-y-2">
-                    {city.local.events.map((e) => (
+                    {city.local!.events!.map((e: string) => (
                       <li key={e} className="flex gap-2 text-sm text-muted-foreground">
                         <CheckCircle2 className="size-4 text-accent shrink-0 mt-0.5" /> {e}
                       </li>
@@ -142,7 +142,7 @@ function CityPage() {
                   <h3 className="font-display uppercase tracking-wider text-sm">Neighboring Communities We Cover</h3>
                 </div>
                 <ul className="mt-4 flex flex-wrap gap-2">
-                  {city.local.neighbors.map((n) => (
+                  {city.local!.neighbors.map((n: string) => (
                     <li key={n} className="text-xs font-semibold uppercase tracking-wider bg-white border border-border text-navy px-3 py-1.5 rounded-full">
                       {n}
                     </li>
