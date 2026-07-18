@@ -11,6 +11,7 @@ import heroCover from "@/assets/hero-cover.png";
 import miguelOwner from "@/assets/miguel-owner.png";
 import miguelAction from "@/assets/miguel-emergency.png";
 import shield from "@/assets/logo-shield.png";
+import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
