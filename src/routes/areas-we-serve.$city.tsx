@@ -237,6 +237,27 @@ function CityPage() {
         </div>
       </section>
 
+      {/* SERVICE AREA MAP */}
+      <section className="py-20">
+        <div className="container-x grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <span className="eyebrow">Service Area</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">
+              {city.name} Sits Right Inside Our Coverage Zone
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Our plumbers cover the full 209 from Stockton down to Turlock, with {city.name} squarely
+              in the middle of our daily service route. That means faster arrival times, same-day
+              scheduling and easier follow-up on warranty work.
+            </p>
+            <a href="tel:2095606652" className="btn-primary mt-6"><Phone className="size-4" /> (209) 560-6652</a>
+          </div>
+          <div className="mx-auto w-4/5 rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
+            <img src={serviceMap.url} alt={`Mainline Plumbing service area map covering ${city.name}, CA`} className="w-full h-auto" />
+          </div>
+        </div>
+      </section>
+
       {/* OTHER CITIES */}
       <section className="py-16 bg-navy-deep text-white">
         <div className="container-x">
