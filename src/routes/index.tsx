@@ -400,25 +400,41 @@ function HomePage() {
         </div>
       </section>
 
-      {/* SERVICE AREA */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=37.7975,-120.998&zoom=9&size=1600x600&style=feature:all|element:labels|visibility:simplified&style=feature:water|color:0xc9d6e2')] bg-cover bg-center opacity-30" aria-hidden />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" aria-hidden />
-        <div className="container-x relative py-20 md:py-28">
-          <div className="bg-white rounded-2xl p-8 md:p-10 max-w-lg border border-border" style={{ boxShadow: "var(--shadow-elegant)" }}>
-            <span className="eyebrow">Our Service Area</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2 leading-tight">
-              We're Here, We're There,<br />
-              We're Everywhere <span className="text-brand-red">(Around the 209 That Is).</span>
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Since 1996, we've been protecting Escalon, Modesto and surrounding areas, providing
-              plumbing maintenance, emergency repairs, pipe replacements and more.
-            </p>
-            <div className="mt-6 grid grid-cols-2 gap-y-2 text-sm font-bold text-brand-red uppercase">
-              {cities.map((c) => (
-                <Link key={c} to="/contact" className="hover:underline">, {c}</Link>
-              ))}
+      {/* SERVICE AREA MAP, MIDDLE OF PAGE */}
+      <section className="py-20 md:py-24 bg-secondary">
+        <div className="container-x">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <span className="eyebrow">Our Service Area</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2 leading-tight">
+                We Go Where You Need Us,<br />
+                <span className="text-brand-red">All Around the 209.</span>
+              </h2>
+              <p className="mt-4 text-muted-foreground">
+                Since 1996, we've been protecting Escalon, Modesto and surrounding communities, providing
+                plumbing maintenance, emergency repairs, pipe replacements and more.
+              </p>
+              <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-sm font-bold text-brand-red uppercase">
+                {cities.map((c) => (
+                  <Link key={c} to="/contact" className="hover:underline flex items-center gap-1">
+                    <MapPin className="size-3" /> {c}
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href="tel:2095606652" className="btn-primary"><Phone className="size-4" /> Call (209) 560-6652</a>
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border-2 border-navy text-navy font-bold uppercase tracking-wider text-sm hover:bg-navy hover:text-white transition">
+                  Request Service
+                </Link>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
+                <img src={serviceMap.url} alt="Map of Mainline Plumbing service area around Escalon, Modesto and the 209" className="w-full h-auto object-cover" />
+              </div>
+              <div className="absolute -bottom-4 -right-4 bg-brand-red text-white px-5 py-3 rounded-xl font-bold uppercase tracking-wider text-sm shadow-lg">
+                Serving the 209
+              </div>
             </div>
           </div>
         </div>
