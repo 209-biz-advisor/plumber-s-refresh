@@ -595,6 +595,45 @@ function HomePage() {
         </div>
       </section>
 
+      {/* SERVICE AREA MAP, NEAR FOOTER */}
+      <section className="relative overflow-hidden bg-navy-deep text-white">
+        <div className="absolute inset-0 opacity-25">
+          <img src={serviceMap.url} alt="" className="w-full h-full object-cover" aria-hidden />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/90 to-navy-deep/70" aria-hidden />
+        <div className="container-x relative py-16 md:py-20">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <span className="eyebrow !text-accent">Your Local Plumbers</span>
+              <h2 className="text-3xl md:text-5xl font-bold mt-2 leading-tight">
+                See Where We Serve.<br />
+                <span className="text-brand-red">Then Call Us Out.</span>
+              </h2>
+              <p className="mt-4 text-white/80 max-w-md">
+                From Escalon to Stockton, Modesto to Turlock, we cover the neighborhoods that keep the 209 running.
+                If you live inside the circle, you're in our service area.
+              </p>
+              <a href="tel:2095606652" className="mt-8 inline-flex items-center gap-3 bg-accent text-navy-deep px-6 py-3.5 rounded-lg font-display text-xl tracking-wider hover:bg-white transition">
+                <Phone className="size-5" /> (209) 560-6652
+              </a>
+            </div>
+            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 md:p-8">
+              <h3 className="font-bold uppercase tracking-wider text-sm mb-4">Cities & Towns We Serve</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+                {cities.map((c) => (
+                  <Link key={c} to="/contact" className="flex items-center gap-2 text-white/90 hover:text-accent transition">
+                    <MapPin className="size-3 text-accent" /> {c}
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-5 pt-5 border-t border-white/10 text-xs text-white/60">
+                Don't see your city? Call us anyway. We frequently travel to neighboring communities for water heaters, emergency repairs and larger projects.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <SiteFooter />
     </div>
   );
