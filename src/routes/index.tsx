@@ -16,9 +16,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA" },
-      { name: "description", content: "Family-owned plumbers in Escalon, CA. 28+ years of expert plumbing repairs, water heaters, drain cleaning & 24/7 emergency service across the Central Valley." },
+      { name: "description", content: "Family-owned plumbers in Escalon, CA. 28+ years of expert plumbing repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
       { property: "og:title", content: "Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA" },
-      { property: "og:description", content: "Family-owned plumbers in Escalon, CA. 28+ years of expert plumbing repairs, water heaters, drain cleaning & 24/7 emergency service across the Central Valley." },
+      { property: "og:description", content: "Family-owned plumbers in Escalon, CA. 28+ years of expert plumbing repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
     ],
   }),
   component: HomePage,
@@ -75,7 +75,7 @@ const badges = [
 const stats = [
   { num: "28+", label: "Years of Experience" },
   { num: "5.0", label: "Average Google Rating" },
-  { num: "24/7", label: "Emergency Response" },
+  { num: "Fast", label: "Emergency Response" },
 ];
 
 function HomePage() {
@@ -96,7 +96,7 @@ function HomePage() {
               We Protect Plumbing <span className="text-accent">and Peace of Mind.</span>
             </h1>
             <p className="mt-6 text-lg text-white/85 max-w-xl">
-              Our friendly team has been serving Escalon, Modesto and the 209 for over 28 years —
+              Our friendly team has been serving Escalon, Modesto and the 209 for over 28 years ,
               providing plumbing maintenance, repairs, and more. Put us to work for you.
             </p>
             <p className="mt-3 font-display tracking-widest text-accent uppercase text-sm">
@@ -109,14 +109,14 @@ function HomePage() {
             </div>
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-white/80">
               <div className="flex items-center gap-2"><Star className="size-4 text-accent fill-accent" /> 5-Star Rated</div>
-              <div className="flex items-center gap-2"><Clock className="size-4 text-accent" /> 24/7 Emergency</div>
+              <div className="flex items-center gap-2"><Clock className="size-4 text-accent" /> Emergency Service</div>
               <div className="flex items-center gap-2"><ShieldCheck className="size-4 text-accent" /> Licensed & Insured</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SERVICES — Live Life Unclogged */}
+      {/* SERVICES, Live Life Unclogged */}
       <section className="py-20 md:py-24">
         <div className="container-x grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
@@ -125,7 +125,7 @@ function HomePage() {
               Live Life <span className="text-brand-red">Unclogged.</span>
             </h2>
             <p className="mt-5 text-muted-foreground">
-              When your plumbing goes awry, so does life — disrupting everyday tasks, your comfort and your patience.
+              When your plumbing goes awry, so does life, disrupting everyday tasks, your comfort and your patience.
             </p>
             <p className="mt-3 text-muted-foreground">
               Call us day, night, weekends too. You can trust that our plumbing experts will deliver top-quality
@@ -155,7 +155,7 @@ function HomePage() {
       <section className="bg-accent">
         <div className="container-x py-5 flex flex-wrap items-center justify-center gap-4 text-navy-deep font-bold uppercase tracking-wider text-sm md:text-base">
           <span className="text-2xl md:text-3xl font-display">$50 OFF</span>
-          <span>New Customer Special — Limited Time</span>
+          <span>New Customer Special, Limited Time</span>
           <Link to="/contact" className="ml-2 px-4 py-2 border-2 border-navy-deep rounded hover:bg-navy-deep hover:text-white transition">Learn More →</Link>
         </div>
       </section>
@@ -167,7 +167,7 @@ function HomePage() {
             <span className="eyebrow">Save On Your Next Service</span>
             <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2">Check Out Our Current Specials</h2>
             <p className="mt-4 text-muted-foreground">
-              Real savings for real neighbors. Mention the offer when you book — restrictions apply.
+              Real savings for real neighbors. Mention the offer when you book, restrictions apply.
             </p>
           </div>
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -226,10 +226,10 @@ function HomePage() {
           <div>
             <span className="eyebrow">Water Heater Specialists</span>
             <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2 leading-tight">
-              No Hot Water? <span className="text-brand-red">We'll Fix That — Today.</span>
+              No Hot Water? <span className="text-brand-red">We'll Fix That, Today.</span>
             </h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              Water heaters are the #1 call we get in the 209 — and the #1 thing we install. From a
+              Water heaters are the #1 call we get in the 209, and the #1 thing we install. From a
               leaking 15-year-old tank to a full tankless conversion, we stock the units, we pull the
               permits, and we get the hot water back on the same day whenever we can.
             </p>
@@ -299,7 +299,7 @@ function HomePage() {
                 {[
                   "Free in-home sizing & gas-line assessment",
                   "Permits & inspections handled for you",
-                  "Old tank removed & recycled — no mess left behind",
+                  "Old tank removed & recycled, no mess left behind",
                   "12-year manufacturer warranty on qualifying units",
                   "Financing available with approved credit",
                 ].map((t) => (
@@ -325,7 +325,7 @@ function HomePage() {
               <AlertTriangle className="size-8 shrink-0" />
               <div>
                 <div className="font-bold uppercase tracking-wider text-sm">Leaking Water Heater?</div>
-                <div className="text-sm text-white/90">Shut off the water supply and call us — we're on 24/7.</div>
+                <div className="text-sm text-white/90">Shut off the water supply and call us, we're on call for plumbing emergencies.</div>
               </div>
             </div>
           </div>
@@ -342,12 +342,12 @@ function HomePage() {
             <span className="text-white/90">It's The Mainline Way.</span>
           </h2>
           <p className="mt-6 text-white/90 leading-relaxed">
-            At Mainline Plumbing, our goal isn't to book as many jobs as possible — it's to ensure every
+            At Mainline Plumbing, our goal isn't to book as many jobs as possible, it's to ensure every
             job we do book is a job done right. We hire the best, champion their efforts, and continuously
             train to ensure we're delivering the most advanced plumbing solutions on time and on budget.
           </p>
           <p className="mt-4 text-white/90 leading-relaxed">
-            Because relationships are everything in our line of work — our goal is to retain you as a
+            Because relationships are everything in our line of work, our goal is to retain you as a
             customer for all your plumbing needs, and to be the first name you pass along to your neighbors.
           </p>
           <Link to="/about" className="inline-flex items-center gap-2 mt-8 bg-navy-deep text-white px-8 py-3 rounded font-bold uppercase tracking-wider text-sm hover:bg-navy transition">
@@ -387,10 +387,10 @@ function HomePage() {
             <p className="mt-5 text-muted-foreground leading-relaxed">
               With over 28 years of experience, Mainline Plumbing has proudly served the residential
               and commercial plumbing needs of our community. We deliver swift, effective solutions
-              tailored to your situation — minimizing inconvenience and giving you peace of mind.
+              tailored to your situation, minimizing inconvenience and giving you peace of mind.
             </p>
             <ul className="mt-6 space-y-3">
-              {["Fast & efficient service","Transparent, upfront pricing","Friendly, knowledgeable staff","24/7 emergency plumbing"].map((t) => (
+              {["Fast & efficient service","Transparent, upfront pricing","Friendly, knowledgeable staff","emergency plumbing repairs"].map((t) => (
                 <li key={t} className="flex gap-2"><CheckCircle2 className="size-5 text-accent shrink-0" /> {t}</li>
               ))}
             </ul>
@@ -411,19 +411,19 @@ function HomePage() {
               We're Everywhere <span className="text-brand-red">(Around the 209 That Is).</span>
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Since 1996, we've been protecting Escalon, Modesto and surrounding areas — providing
+              Since 1996, we've been protecting Escalon, Modesto and surrounding areas, providing
               plumbing maintenance, emergency repairs, pipe replacements and more.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-y-2 text-sm font-bold text-brand-red uppercase">
               {cities.map((c) => (
-                <Link key={c} to="/contact" className="hover:underline">— {c}</Link>
+                <Link key={c} to="/contact" className="hover:underline">, {c}</Link>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* AREAS WE SERVE — dark grid */}
+      {/* AREAS WE SERVE, dark grid */}
       <section className="bg-navy-deep text-white py-20">
         <div className="container-x">
           <div className="text-center max-w-2xl mx-auto">
@@ -460,7 +460,7 @@ function HomePage() {
                   {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-4 fill-accent" />)}
                 </div>
                 <p className="mt-4 text-muted-foreground italic">"{r.quote}"</p>
-                <p className="mt-4 font-bold text-navy">— {r.name}</p>
+                <p className="mt-4 font-bold text-navy">, {r.name}</p>
               </div>
             ))}
           </div>
@@ -486,7 +486,7 @@ function HomePage() {
             <AlertTriangle className="size-10 text-white" />
             <h3 className="mt-4 text-2xl md:text-3xl font-bold">Need Emergency Service?</h3>
             <p className="mt-3 text-white/90">
-              Burst pipe? No hot water? We answer the phone 24/7 — day, night, weekends, holidays.
+              Burst pipe? No hot water? We answer the phone for plumbing emergencies, day, night, weekends, holidays.
             </p>
             <a href="tel:2095606652" className="mt-6 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
               <Phone className="size-6" /> (209) 560-6652
@@ -512,7 +512,7 @@ function HomePage() {
             <div className="mt-8 space-y-3 text-white/95">
               <div className="flex gap-3 items-center"><Phone className="size-5" /> <a href="tel:2095606652" className="font-bold">(209) 560-6652</a></div>
               <div className="flex gap-3 items-center"><MapPin className="size-5" /> 18332 Campbell Ave, Escalon, CA</div>
-              <div className="flex gap-3 items-center"><Clock className="size-5" /> 24/7 Emergency Service</div>
+              <div className="flex gap-3 items-center"><Clock className="size-5" /> Emergency Service Available</div>
             </div>
           </div>
           <form
@@ -523,7 +523,7 @@ function HomePage() {
             {sent ? (
               <div className="text-center py-10">
                 <div className="size-16 mx-auto rounded-full bg-accent/20 flex items-center justify-center"><Send className="size-7 text-accent" /></div>
-                <h3 className="mt-5 text-2xl font-bold">Thanks — we'll be in touch!</h3>
+                <h3 className="mt-5 text-2xl font-bold">Thanks, we'll be in touch!</h3>
                 <p className="mt-2 text-muted-foreground">For emergencies, call (209) 560-6652.</p>
               </div>
             ) : (
@@ -536,8 +536,8 @@ function HomePage() {
                 </div>
                 <select className="w-full mt-3 border border-border rounded-lg px-4 py-3 text-sm bg-white">
                   <option>Are you a new customer?</option>
-                  <option>Yes — first time</option>
-                  <option>No — returning customer</option>
+                  <option>Yes, first time</option>
+                  <option>No, returning customer</option>
                 </select>
                 <select className="w-full mt-3 border border-border rounded-lg px-4 py-3 text-sm bg-white">
                   <option>How did you hear about us?</option>
@@ -562,7 +562,7 @@ function HomePage() {
         <div className="container-x grid md:grid-cols-2 gap-8 items-center py-16">
           <div>
             <span className="eyebrow">Emergency Service</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-2">24/7 Emergency Repairs</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mt-2">Emergency Plumbing Repairs</h2>
             <p className="mt-4 text-white/80 max-w-lg">
               When disaster strikes, we move fast. Our team is on-call around the clock to stop the
               flood, fix the failure, and restore your peace of mind.

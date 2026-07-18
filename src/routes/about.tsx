@@ -30,14 +30,14 @@ function AboutPage() {
 
       <section className="py-20">
         <div className="container-x grid md:grid-cols-2 gap-12 items-center">
-          <img src={miguel} alt="Miguel — Owner of Mainline Plumbing Inc." className="max-w-sm mx-auto" />
+          <img src={miguel} alt="Miguel, Owner of Mainline Plumbing Inc." className="max-w-sm mx-auto" />
           <div>
             <span className="eyebrow">Meet Miguel</span>
             <h2 className="text-4xl font-bold text-navy mt-2">Owner & Lead Plumber</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
               With over 40 years of hands-on experience in the trade, Miguel founded Mainline Plumbing
               to bring honest, reliable plumbing service to families throughout the Central Valley.
-              Every job — large or small — is handled with the same transparency and craftsmanship
+              Every job, large or small, is handled with the same transparency and craftsmanship
               we'd want in our own homes.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
@@ -55,7 +55,7 @@ function AboutPage() {
             {[
               { icon: Award, title: "28+ Years Experience", desc: "Decades of plumbing expertise serving Escalon and surrounding cities." },
               { icon: HeartHandshake, title: "Family-Owned & Operated", desc: "Local roots, real relationships, and accountability you can count on." },
-              { icon: Users, title: "Customer-First Service", desc: "Quality plumbing service at an affordable cost — done right the first time." },
+              { icon: Users, title: "Customer-First Service", desc: "Quality plumbing service at an affordable cost, done right the first time." },
             ].map((v) => (
               <div key={v.title} className="bg-white p-8 rounded-2xl border border-border" style={{ boxShadow: "var(--shadow-elegant)" }}>
                 <div className="size-14 rounded-xl bg-gradient-to-br from-navy to-navy-deep flex items-center justify-center">

@@ -26,7 +26,7 @@ function ContactPage() {
         <div className="container-x">
           <span className="eyebrow">Contact</span>
           <h1 className="text-5xl md:text-6xl font-bold mt-2">Schedule Service Today</h1>
-          <p className="mt-4 text-white/80 max-w-xl">Call us or send a message — we're ready to help with any plumbing need, big or small.</p>
+          <p className="mt-4 text-white/80 max-w-xl">Call us or send a message, we're ready to help with any plumbing need, big or small.</p>
         </div>
       </section>
 
@@ -36,7 +36,7 @@ function ContactPage() {
             {sent ? (
               <div className="text-center py-12">
                 <div className="size-16 mx-auto rounded-full bg-accent/20 flex items-center justify-center"><Send className="size-7 text-accent" /></div>
-                <h3 className="mt-5 text-2xl font-bold text-navy">Thanks — we'll be in touch!</h3>
+                <h3 className="mt-5 text-2xl font-bold text-navy">Thanks, we'll be in touch!</h3>
                 <p className="mt-2 text-muted-foreground">We'll reply shortly. For emergencies, call (209) 560-6652.</p>
               </div>
             ) : (
@@ -67,7 +67,7 @@ function ContactPage() {
             </ContactCard>
             <ContactCard icon={Clock} label="Hours">
               Mon–Fri: 8am – 6pm<br />Sat: 8am – 5pm<br />Sun: Closed<br />
-              <span className="text-accent font-semibold">24/7 Emergency Available</span>
+              <span className="text-accent font-semibold">Emergency Repairs Available</span>
             </ContactCard>
             <ContactCard icon={Mail} label="Service Area">
               Escalon · Modesto · Manteca · Stanislaus & San Joaquin County
