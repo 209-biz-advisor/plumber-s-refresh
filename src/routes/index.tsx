@@ -417,8 +417,8 @@ function HomePage() {
               </p>
               <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-sm font-bold text-brand-red uppercase">
                 {cities.map((c) => (
-                  <Link key={c} to="/contact" className="hover:underline flex items-center gap-1">
-                    <MapPin className="size-3" /> {c}
+                  <Link key={c.slug} to="/areas-we-serve/$city" params={{ city: c.slug }} className="hover:underline flex items-center gap-1">
+                    <MapPin className="size-3" /> {c.name}
                   </Link>
                 ))}
               </div>
@@ -455,8 +455,8 @@ function HomePage() {
           </div>
           <div className="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
             {cities.map((c) => (
-              <Link key={c} to="/contact" className="border border-white/20 rounded-lg px-5 py-4 flex items-center justify-between hover:border-accent hover:bg-white/5 transition">
-                <span className="font-bold uppercase tracking-wider text-sm">{c}</span>
+              <Link key={c.slug} to="/areas-we-serve/$city" params={{ city: c.slug }} className="border border-white/20 rounded-lg px-5 py-4 flex items-center justify-between hover:border-accent hover:bg-white/5 transition">
+                <span className="font-bold uppercase tracking-wider text-sm">{c.name}</span>
                 <span className="text-accent text-xl">+</span>
               </Link>
             ))}
@@ -622,8 +622,8 @@ function HomePage() {
               <h3 className="font-bold uppercase tracking-wider text-sm mb-4">Cities & Towns We Serve</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
                 {cities.map((c) => (
-                  <Link key={c} to="/contact" className="flex items-center gap-2 text-white/90 hover:text-accent transition">
-                    <MapPin className="size-3 text-accent" /> {c}
+                  <Link key={c.slug} to="/areas-we-serve/$city" params={{ city: c.slug }} className="flex items-center gap-2 text-white/90 hover:text-accent transition">
+                    <MapPin className="size-3 text-accent" /> {c.name}
                   </Link>
                 ))}
               </div>
