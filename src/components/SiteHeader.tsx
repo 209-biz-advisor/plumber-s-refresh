@@ -31,9 +31,9 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
-      <div className="container-x flex items-center justify-between h-20">
+      <div className="container-x flex items-center justify-between h-28">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Mainline Plumbing Inc." className="h-12 w-auto" />
+          <img src={logo} alt="Mainline Plumbing Inc." className="h-[84px] w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {nav.map((n) => (

@@ -581,8 +581,8 @@ function HomePage() {
             <span className="eyebrow">Emergency Service</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-2">Emergency Plumbing Repairs</h2>
             <p className="mt-4 text-white/80 max-w-lg">
-              When disaster strikes, we move fast. Our team is on-call around the clock to stop the
-              flood, fix the failure, and restore your peace of mind.
+              When disaster strikes, we move fast. Our team is on call for plumbing emergencies to stop
+              the flood, fix the failure, and restore your peace of mind.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="tel:2095606652" className="btn-primary"><Phone className="size-4" /> Call Now</a>
