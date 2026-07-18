@@ -7,7 +7,7 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Plumbing Services in Escalon & Modesto | Mainline Plumbing Inc." },
-      { name: "description", content: "Full-service residential & commercial plumbing — repairs, water heaters, drain cleaning, leak detection, repiping, and 24/7 emergency service." },
+      { name: "description", content: "Full-service residential & commercial plumbing, repairs, water heaters, drain cleaning, leak detection, repiping, and emergency plumbing repairs." },
       { property: "og:title", content: "Plumbing Services | Mainline Plumbing Inc." },
       { property: "og:description", content: "Repairs, water heaters, drain cleaning, leak detection, repiping and emergency service in the Central Valley." },
     ],
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/services")({
 });
 
 const services = [
-  { icon: Wrench, title: "Plumbing Repairs", desc: "Toilets, sinks, faucets, garbage disposals — we fix it right the first time." },
+  { icon: Wrench, title: "Plumbing Repairs", desc: "Toilets, sinks, faucets, garbage disposals, we fix it right the first time." },
   { icon: Flame, title: "Water Heater Services", desc: "Tank & tankless water heater repair, installation and replacement." },
   { icon: Droplets, title: "Drain Cleaning", desc: "Clog removal, hydro jetting, and recurring drain maintenance." },
   { icon: ShieldCheck, title: "Leak Detection", desc: "Non-invasive detection of slab, wall, and underground leaks." },
@@ -59,7 +59,7 @@ function ServicesPage() {
               Water Heater Replacement, <span className="text-accent">Done Right the First Time.</span>
             </h2>
             <p className="mt-5 text-white/85 leading-relaxed">
-              Water heaters don't warn you before they go — they just quit, or worse, flood your garage
+              Water heaters don't warn you before they go, they just quit, or worse, flood your garage
               at 6 AM. Mainline stocks the most common tank and tankless units in Escalon, pulls the
               permits, handles the gas and venting, and gets the hot water back on. Most standard tank
               swaps are done same day.
@@ -76,7 +76,7 @@ function ServicesPage() {
               },
               {
                 title: "Tankless Conversion",
-                price: "$250 off — this month",
+                price: "$250 off, this month",
                 desc: "Endless hot water, wall-mounted, up to 30% more efficient. We size the unit, upsize the gas line if needed, and register the warranty for you.",
                 bullets: ["Navien, Rinnai & Rheem certified", "20+ year expected lifespan", "Financing available"],
               },
@@ -127,7 +127,7 @@ function ServicesPage() {
                 A traditional tank is the fastest and lowest-cost swap. A tankless unit costs more up
                 front but pays back in energy savings, saves floor space, and gives you endless hot
                 water for busy households. In most Escalon and Modesto homes, tankless is the better
-                long-term investment — but we'll only recommend it if it truly fits your home.
+                long-term investment, but we'll only recommend it if it truly fits your home.
               </p>
               <p className="mt-4 text-white/90">
                 We'll walk your home, measure your gas line, check your venting, and give you an
@@ -149,7 +149,7 @@ function ServicesPage() {
             <div className="mt-6 grid md:grid-cols-4 gap-6">
               {[
                 { n: "01", t: "Free Assessment", d: "We inspect your existing unit, gas line, venting, and space." },
-                { n: "02", t: "Honest Quote", d: "Flat-rate pricing with tank and tankless options — no surprises." },
+                { n: "02", t: "Honest Quote", d: "Flat-rate pricing with tank and tankless options, no surprises." },
                 { n: "03", t: "Same-Day Install", d: "In-stock units. Permits pulled. Old unit hauled away." },
                 { n: "04", t: "Warranty & Care", d: "Manufacturer warranty registered. Follow-up flush reminders." },
               ].map((s) => (
@@ -171,14 +171,14 @@ function ServicesPage() {
             <span className="eyebrow">When You Choose Mainline</span>
             <h2 className="text-4xl font-bold text-navy mt-2">What you can expect</h2>
             <ul className="mt-6 space-y-3 text-muted-foreground">
-              {["Fast and efficient service","Transparent pricing and upfront estimates","Quality workmanship and attention to detail","Friendly and knowledgeable staff","24/7 emergency plumbing services","Code-compliant installations"].map((t) => (
+              {["Fast and efficient service","Transparent pricing and upfront estimates","Quality workmanship and attention to detail","Friendly and knowledgeable staff","emergency plumbing repairs","Code-compliant installations"].map((t) => (
                 <li key={t} className="flex gap-2"><CheckCircle2 className="size-5 text-accent shrink-0 mt-0.5" />{t}</li>
               ))}
             </ul>
           </div>
           <div className="bg-navy-deep text-white rounded-2xl p-10 flex flex-col justify-center">
             <h3 className="text-3xl font-bold">Ready to schedule?</h3>
-            <p className="mt-3 text-white/80">Call us or request service online — we'll be there fast.</p>
+            <p className="mt-3 text-white/80">Call us or request service online, we'll be there fast.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="tel:2095606652" className="btn-primary"><Phone className="size-4" /> (209) 560-6652</a>
               <Link to="/contact" className="btn-outline">Contact Us</Link>

@@ -22,7 +22,7 @@ export function SiteHeader() {
               <Phone className="size-3.5" /> (209) 560-6652
             </a>
             <span className="hidden md:inline text-accent/90 uppercase tracking-wider font-semibold">
-              Summer's Here — Beat the heat with a same-day water heater replacement.
+              Summer's Here, Beat the heat with a same-day water heater replacement.
             </span>
           </div>
           <div className="flex items-center gap-2">
