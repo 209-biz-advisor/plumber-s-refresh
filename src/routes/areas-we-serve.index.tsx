@@ -35,7 +35,7 @@ function AreasIndex() {
             </p>
             <a href="tel:2095606652" className="btn-primary mt-8"><Phone className="size-4" /> (209) 560-6652</a>
           </div>
-          <div className="rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
+          <div className="mx-auto w-4/5 rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
             <img src={serviceMap.url} alt="Mainline Plumbing service area map" className="w-full h-auto" />
           </div>
         </div>
