@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="bg-navy-deep text-white/80 mt-24">
       <div className="container-x py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
-          <img src={logo} alt="Mainline Plumbing Inc." className="h-14 mb-4" />
+          <img src={logo} alt="Mainline Plumbing Inc." className="h-[100px] w-auto mb-4" />
           <p className="text-sm">Family-owned plumbers serving Escalon, Modesto and the Central Valley for over 28 years.</p>
         </div>
         <div>
