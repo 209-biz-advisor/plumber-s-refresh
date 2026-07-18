@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { Phone, MapPin, CheckCircle2, ArrowRight, Wrench, Droplets, Flame, ShieldCheck, Star } from "lucide-react";
+import { Phone, MapPin, CheckCircle2, ArrowRight, Wrench, Droplets, Flame, ShieldCheck, Star, Landmark, Users, Calendar } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { findCity, serviceCities } from "@/lib/service-cities";
@@ -93,6 +93,76 @@ function CityPage() {
           today to keep your {city.name} home safe and comfortable.
         </div>
       </section>
+
+      {/* LOCAL FLAVOR (only when we've written city-specific knowledge) */}
+      {city.local && (
+        <section className="py-20 bg-white">
+          <div className="container-x">
+            <div className="max-w-3xl">
+              <span className="eyebrow">Part of the {city.name} Community</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">{city.local.identity}</h2>
+              <p className="mt-4 text-lg text-navy/80 font-semibold italic">{city.local.tagline}</p>
+              <p className="mt-4 text-muted-foreground">{city.local.intro}</p>
+            </div>
+
+            <div className="mt-10 grid lg:grid-cols-3 gap-6">
+              <div className="bg-secondary rounded-2xl p-6 border border-border">
+                <div className="flex items-center gap-2 text-navy">
+                  <Landmark className="size-5 text-brand-red" />
+                  <h3 className="font-display uppercase tracking-wider text-sm">{city.name} Landmarks We Work Around</h3>
+                </div>
+                <ul className="mt-4 space-y-2">
+                  {city.local!.landmarks.map((l: string) => (
+                    <li key={l} className="flex gap-2 text-sm text-muted-foreground">
+                      <MapPin className="size-4 text-accent shrink-0 mt-0.5" /> {l}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {city.local.events && city.local.events.length > 0 && (
+                <div className="bg-secondary rounded-2xl p-6 border border-border">
+                  <div className="flex items-center gap-2 text-navy">
+                    <Calendar className="size-5 text-brand-red" />
+                    <h3 className="font-display uppercase tracking-wider text-sm">Local Traditions We Support</h3>
+                  </div>
+                  <ul className="mt-4 space-y-2">
+                    {city.local!.events!.map((e: string) => (
+                      <li key={e} className="flex gap-2 text-sm text-muted-foreground">
+                        <CheckCircle2 className="size-4 text-accent shrink-0 mt-0.5" /> {e}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              <div className="bg-secondary rounded-2xl p-6 border border-border">
+                <div className="flex items-center gap-2 text-navy">
+                  <Users className="size-5 text-brand-red" />
+                  <h3 className="font-display uppercase tracking-wider text-sm">Neighboring Communities We Cover</h3>
+                </div>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {city.local!.neighbors.map((n: string) => (
+                    <li key={n} className="text-xs font-semibold uppercase tracking-wider bg-white border border-border text-navy px-3 py-1.5 rounded-full">
+                      {n}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-10 bg-navy-deep text-white rounded-2xl p-8 md:p-10" style={{ boxShadow: "var(--shadow-elegant)" }}>
+              <span className="eyebrow text-accent">Why It Matters for Your {city.name} Home</span>
+              <h3 className="text-2xl md:text-3xl font-bold mt-2">The Mainline Approach in {city.name}</h3>
+              <p className="mt-4 text-white/85">{city.local.plumbingTieIn}</p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a href="tel:2095606652" className="btn-primary"><Phone className="size-4" /> (209) 560-6652</a>
+                <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* IMPORTANCE */}
       <section className="py-20">
