@@ -1,14 +1,16 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo-horizontal.png";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/services", label: "Services" },
-  { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
-];
+  { to: "/about", label: "About Us" },
+  { to: "/services", label: "Plumbing Services" },
+  { to: "/services", label: "Drain Cleaning" },
+  { to: "/services", label: "Water Heaters" },
+  { to: "/areas-we-serve", label: "Areas We Serve" },
+] as const;
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -31,28 +33,32 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
-      <div className="container-x flex items-center justify-between h-28">
-        <Link to="/" className="flex items-center gap-2">
+      <div className="container-x flex items-center justify-between h-28 gap-4">
+        <Link to="/" className="flex items-center gap-2 shrink-0">
           <img src={logo} alt="Mainline Plumbing Inc." className="h-[84px] w-auto" />
         </Link>
-        <nav className="hidden md:flex items-center gap-8">
-          {nav.map((n) => (
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-7">
+          {nav.map((n, i) => (
             <Link
-              key={n.to}
+              key={`${n.to}-${i}`}
               to={n.to}
-              className="text-white/85 hover:text-accent text-sm font-semibold uppercase tracking-wider"
+              className="text-white/85 hover:text-accent text-sm font-semibold uppercase tracking-wider whitespace-nowrap"
               activeProps={{ className: "text-accent" }}
               activeOptions={{ exact: n.to === "/" }}
             >
               {n.label}
             </Link>
           ))}
-          <a href="tel:2095606652" className="btn-primary !py-2.5 !px-4 text-xs">
-            <Phone className="size-4" /> (209) 560-6652
-          </a>
+          <Link
+            to="/contact"
+            className="relative bg-brand-orange text-white pl-5 pr-6 py-3 font-display uppercase tracking-widest text-xs whitespace-nowrap hover:bg-brand-orange/90 flex items-center gap-2"
+            style={{ clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%)" }}
+          >
+            Request an Appointment <ArrowRight className="size-3.5" />
+          </Link>
         </nav>
         <button
-          className="md:hidden text-white p-2"
+          className="lg:hidden text-white p-2"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -60,11 +66,11 @@ export function SiteHeader() {
         </button>
       </div>
       {open && (
-        <div className="md:hidden bg-navy-deep border-t border-white/10">
+        <div className="lg:hidden bg-navy-deep border-t border-white/10">
           <div className="container-x py-4 flex flex-col gap-3">
-            {nav.map((n) => (
+            {nav.map((n, i) => (
               <Link
-                key={n.to}
+                key={`${n.to}-${i}`}
                 to={n.to}
                 onClick={() => setOpen(false)}
                 className="text-white/90 py-2 font-semibold uppercase tracking-wider text-sm"
@@ -72,7 +78,10 @@ export function SiteHeader() {
                 {n.label}
               </Link>
             ))}
-            <a href="tel:2095606652" className="btn-primary justify-center">
+            <Link to="/contact" onClick={() => setOpen(false)} className="btn-primary justify-center">
+              Request an Appointment
+            </Link>
+            <a href="tel:2095606652" className="btn-outline justify-center">
               <Phone className="size-4" /> Call Now
             </a>
           </div>
