@@ -76,7 +76,7 @@ function ServicesPage() {
               },
               {
                 title: "Tankless Conversion",
-                price: "$250 off, this month",
+                price: "$250 off this month",
                 desc: "Endless hot water, wall-mounted, up to 30% more efficient. We size the unit, upsize the gas line if needed, and register the warranty for you.",
                 bullets: ["Navien, Rinnai & Rheem certified", "20+ year expected lifespan", "Financing available"],
               },
