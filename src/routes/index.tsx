@@ -160,6 +160,67 @@ function HomePage() {
         </div>
       </section>
 
+      {/* CURRENT SPECIALS */}
+      <section className="py-20 md:py-24 bg-secondary">
+        <div className="container-x">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="eyebrow">Save On Your Next Service</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2">Check Out Our Current Specials</h2>
+            <p className="mt-4 text-muted-foreground">
+              Real savings for real neighbors. Mention the offer when you book — restrictions apply.
+            </p>
+          </div>
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {specials.map((s) => (
+              <div key={s.label} className="relative bg-white rounded-2xl p-6 border border-border flex flex-col hover:border-accent transition" style={{ boxShadow: "var(--shadow-elegant)" }}>
+                <div className="absolute -top-3 -right-3 size-12 rounded-full bg-brand-red text-white flex items-center justify-center">
+                  <s.icon className="size-6" />
+                </div>
+                <div className="font-display text-5xl md:text-6xl text-brand-red leading-none">{s.big}</div>
+                <div className="mt-2 font-bold uppercase tracking-wider text-navy text-sm">{s.label}</div>
+                <p className="mt-3 text-xs text-muted-foreground flex-1">{s.fine}</p>
+                <Link to="/contact" className="mt-5 inline-flex items-center justify-center gap-2 bg-navy-deep text-white px-4 py-2.5 rounded-lg font-bold uppercase tracking-wider text-xs hover:bg-navy transition">
+                  Schedule Service <ArrowRight className="size-3.5" />
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link to="/contact" className="text-navy font-bold uppercase tracking-wider text-sm hover:text-brand-red">
+              View All Offers →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* AWARDS / TRUST BADGES */}
+      <section className="bg-white border-y border-border py-10">
+        <div className="container-x">
+          <p className="text-center eyebrow mb-6">Trusted By Your Neighbors</p>
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+            {badges.map((b) => (
+              <div key={b} className="flex items-center gap-2 px-4 py-3 border-2 border-navy/10 rounded-lg bg-secondary">
+                <ShieldCheck className="size-5 text-brand-red shrink-0" />
+                <span className="font-display uppercase tracking-wider text-navy text-xs md:text-sm">{b}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* STATS STRIP */}
+      <section className="bg-gradient-to-r from-navy-deep to-navy text-white py-12">
+        <div className="container-x grid sm:grid-cols-3 gap-8 text-center">
+          {stats.map((s) => (
+            <div key={s.label}>
+              <div className="font-display text-5xl md:text-6xl text-accent leading-none">{s.num}</div>
+              <div className="mt-3 uppercase tracking-widest text-sm text-white/80">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+
       {/* WHY CHOOSE US */}
       <section className="bg-brand-red text-white py-20 md:py-24">
         <div className="container-x text-center max-w-3xl mx-auto">
