@@ -45,7 +45,7 @@ const serviceColumns = [
 ];
 
 const pillars = [
-  { icon: DollarSign, title: "Upfront Pricing & Expectations", sub: "Serving the 209 Since 1996" },
+  { icon: DollarSign, title: "Upfront Pricing & Expectations", sub: "Serving the 209 & 350 Since 1996" },
   { icon: Award, title: "No Two Solutions Are Alike", sub: "5-Star Service Rating From Real Neighbors" },
   { icon: Users, title: "Family-Owned & Customer-Focused", sub: "Plumbing Knowledge Is Power" },
 ];
@@ -434,7 +434,7 @@ function HomePage() {
                 <img src={serviceMap.url} alt="Map of Mainline Plumbing service area around Escalon, Modesto and the 209" className="w-full h-auto object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-brand-red text-white px-5 py-3 rounded-xl font-bold uppercase tracking-wider text-sm shadow-lg">
-                Serving the 209
+                Serving the 209 & 350
               </div>
             </div>
           </div>
