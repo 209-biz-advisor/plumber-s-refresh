@@ -12,6 +12,7 @@ import miguelOwner from "@/assets/miguel-owner.png";
 import miguelAction from "@/assets/miguel-emergency.png";
 import shield from "@/assets/logo-shield.png";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
+import { serviceCities } from "@/lib/service-cities";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -49,7 +50,7 @@ const pillars = [
   { icon: Users, title: "Family-Owned & Customer-Focused", sub: "Plumbing Knowledge Is Power" },
 ];
 
-const cities = ["Escalon", "Modesto", "Manteca", "Ripon", "Salida", "Oakdale", "Stockton", "Turlock", "Riverbank"];
+const cities = serviceCities;
 
 const reviews = [
   { quote: "My water heater stopped working and Miguel came immediately to fix it. So transparent with his work.", name: "Alondra A." },
