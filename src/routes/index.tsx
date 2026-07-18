@@ -75,7 +75,7 @@ const badges = [
 const stats = [
   { num: "28+", label: "Years of Experience" },
   { num: "5.0", label: "Average Google Rating" },
-  { num: "24/7", label: "Emergency Response" },
+  { num: "Fast", label: "Emergency Response" },
 ];
 
 function HomePage() {
@@ -325,7 +325,7 @@ function HomePage() {
               <AlertTriangle className="size-8 shrink-0" />
               <div>
                 <div className="font-bold uppercase tracking-wider text-sm">Leaking Water Heater?</div>
-                <div className="text-sm text-white/90">Shut off the water supply and call us, we're on 24/7.</div>
+                <div className="text-sm text-white/90">Shut off the water supply and call us, we're on call for plumbing emergencies.</div>
               </div>
             </div>
           </div>
