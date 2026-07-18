@@ -355,6 +355,34 @@ function HomePage() {
         </div>
       </section>
 
+      {/* DUAL CTA BAND */}
+      <section className="bg-navy-deep text-white py-16 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,var(--brand-orange),transparent_50%),radial-gradient(circle_at_80%_80%,var(--brand-red),transparent_50%)]" aria-hidden />
+        <div className="container-x grid md:grid-cols-2 gap-6 relative">
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur">
+            <CalendarClock className="size-10 text-accent" />
+            <h3 className="mt-4 text-2xl md:text-3xl font-bold">Schedule Your Service Today</h3>
+            <p className="mt-3 text-white/80">
+              Book online or by phone. Same-day and next-day appointments available across the 209.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link to="/contact" className="btn-primary"><Mail className="size-4" /> Schedule</Link>
+              <a href="tel:2095606652" className="btn-outline"><Phone className="size-4" /> Call</a>
+            </div>
+          </div>
+          <div className="bg-brand-red rounded-2xl p-8 border border-white/10">
+            <AlertTriangle className="size-10 text-white" />
+            <h3 className="mt-4 text-2xl md:text-3xl font-bold">Need Emergency Service?</h3>
+            <p className="mt-3 text-white/90">
+              Burst pipe? No hot water? We answer the phone 24/7 — day, night, weekends, holidays.
+            </p>
+            <a href="tel:2095606652" className="mt-6 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
+              <Phone className="size-6" /> (209) 560-6652
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* INLINE CONTACT FORM */}
       <section className="bg-brand-red text-white py-20">
         <div className="container-x grid lg:grid-cols-2 gap-12 items-start">
