@@ -220,6 +220,118 @@ function HomePage() {
         </div>
       </section>
 
+      {/* WATER HEATER FEATURE */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="container-x grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span className="eyebrow">Water Heater Specialists</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2 leading-tight">
+              No Hot Water? <span className="text-brand-red">We'll Fix That — Today.</span>
+            </h2>
+            <p className="mt-5 text-muted-foreground leading-relaxed">
+              Water heaters are the #1 call we get in the 209 — and the #1 thing we install. From a
+              leaking 15-year-old tank to a full tankless conversion, we stock the units, we pull the
+              permits, and we get the hot water back on the same day whenever we can.
+            </p>
+
+            <div className="mt-8 grid sm:grid-cols-2 gap-4">
+              {[
+                { t: "Tank Replacement", d: "40, 50 & 75-gal gas and electric. Haul-away included." },
+                { t: "Tankless Conversion", d: "Endless hot water. Navien, Rinnai & Rheem certified." },
+                { t: "Same-Day Install", d: "In-stock units for most Escalon & Modesto homes." },
+                { t: "Repair & Rescue", d: "Pilot lights, thermocouples, elements, T&P valves." },
+              ].map((f) => (
+                <div key={f.t} className="border-l-4 border-brand-red pl-4">
+                  <div className="font-bold text-navy uppercase tracking-wider text-sm">{f.t}</div>
+                  <div className="text-sm text-muted-foreground mt-1">{f.d}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 bg-secondary rounded-xl p-5 border border-border">
+              <p className="text-sm text-navy font-semibold uppercase tracking-wider">Is it time to replace?</p>
+              <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Tank is 10+ years old</li>
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Rusty or discolored hot water</li>
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Popping or rumbling sounds</li>
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Puddles or moisture at the base</li>
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Hot water runs out faster than it used to</li>
+              </ul>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="tel:2095606652" className="btn-primary"><Phone className="size-4" /> Get a Free Quote</a>
+              <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border-2 border-navy text-navy font-bold uppercase tracking-wider text-sm hover:bg-navy hover:text-white transition">
+                Book an Assessment
+              </Link>
+            </div>
+            <p className="mt-4 text-xs text-muted-foreground">
+              Ask about our <span className="font-bold text-brand-red">$250 off tankless</span> and financing options.
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="bg-gradient-to-br from-navy-deep to-navy rounded-2xl p-8 text-white" style={{ boxShadow: "var(--shadow-elegant)" }}>
+              <div className="flex items-center gap-3">
+                <div className="size-14 rounded-xl bg-brand-red flex items-center justify-center">
+                  <Flame className="size-7 text-white" />
+                </div>
+                <div>
+                  <div className="eyebrow !text-accent">Featured Install</div>
+                  <div className="font-display text-2xl uppercase">Tankless Conversion</div>
+                </div>
+              </div>
+
+              <div className="mt-6 grid grid-cols-3 gap-3 text-center">
+                {[
+                  { n: "∞", l: "Hot Water" },
+                  { n: "20+", l: "Year Lifespan" },
+                  { n: "30%", l: "Energy Savings" },
+                ].map((s) => (
+                  <div key={s.l} className="bg-white/5 border border-white/10 rounded-lg py-4">
+                    <div className="font-display text-3xl text-accent">{s.n}</div>
+                    <div className="text-xs uppercase tracking-wider text-white/70 mt-1">{s.l}</div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 space-y-3 text-sm">
+                {[
+                  "Free in-home sizing & gas-line assessment",
+                  "Permits & inspections handled for you",
+                  "Old tank removed & recycled — no mess left behind",
+                  "12-year manufacturer warranty on qualifying units",
+                  "Financing available with approved credit",
+                ].map((t) => (
+                  <div key={t} className="flex gap-2">
+                    <CheckCircle2 className="size-5 text-accent shrink-0 mt-0.5" />
+                    <span className="text-white/90">{t}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
+                <div>
+                  <div className="text-xs uppercase tracking-widest text-white/60">Call the specialist</div>
+                  <div className="font-display text-xl text-accent">(209) 560-6652</div>
+                </div>
+                <a href="tel:2095606652" className="bg-accent text-navy-deep p-3 rounded-full hover:opacity-90">
+                  <Phone className="size-5" />
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-5 bg-brand-red text-white rounded-xl p-5 flex items-center gap-4">
+              <AlertTriangle className="size-8 shrink-0" />
+              <div>
+                <div className="font-bold uppercase tracking-wider text-sm">Leaking Water Heater?</div>
+                <div className="text-sm text-white/90">Shut off the water supply and call us — we're on 24/7.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* WHY CHOOSE US */}
       <section className="bg-brand-red text-white py-20 md:py-24">
