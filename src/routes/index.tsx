@@ -56,6 +56,28 @@ const reviews = [
   { quote: "Their honesty and integrity speaks for itself and their workmanship is on point. Highly recommend.", name: "Pam N." },
 ];
 
+const specials = [
+  { big: "$0", label: "Service Call w/ Repair", fine: "When you book any repair. New customers.", icon: Wrench },
+  { big: "$50", label: "Off Drain Clearing", fine: "Main line clearing. One coupon per household.", icon: Droplets },
+  { big: "$250", label: "Off Tankless Water Heater", fine: "Installed by Mainline. Cannot combine offers.", icon: Flame },
+  { big: "10%", label: "Senior & Military Discount", fine: "Valid ID required at time of service.", icon: BadgePercent },
+];
+
+const badges = [
+  "BBB A+ Accredited",
+  "Google 5-Star Rated",
+  "Angi Certified Pro",
+  "Yelp Verified",
+  "Nextdoor Neighborhood Fave",
+  "Family-Owned Since 1996",
+];
+
+const stats = [
+  { num: "28+", label: "Years of Experience" },
+  { num: "5.0", label: "Average Google Rating" },
+  { num: "24/7", label: "Emergency Response" },
+];
+
 function HomePage() {
   const [sent, setSent] = useState(false);
 
