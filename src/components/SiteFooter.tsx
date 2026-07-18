@@ -20,7 +20,7 @@ export function SiteFooter() {
         <div>
           <h4 className="text-white font-display text-lg mb-4 uppercase tracking-wider">Hours</h4>
           <ul className="space-y-2 text-sm">
-            <li className="flex gap-2"><Clock className="size-4 text-accent shrink-0 mt-0.5" /><span>Mon–Fri: 8am – 6pm<br />Sat: 8am – 5pm<br />Sun: Closed</span></li>
+            <li className="flex gap-2"><Clock className="size-4 text-accent shrink-0 mt-0.5" /><span>Mon–Fri: 7am – 7pm<br />Sat: 7am – 7pm<br />Sun: Closed</span></li>
             <li className="text-accent font-semibold pt-2">Emergency Repairs Available</li>
           </ul>
         </div>
