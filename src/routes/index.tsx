@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   Phone, Wrench, Droplets, Flame, ShieldCheck, Clock, Star, ArrowRight,
   CheckCircle2, MessageSquare, Mail, MapPin, DollarSign, Users, Award, BookOpen, Send,
-  BadgePercent, CalendarClock, AlertTriangle, ThumbsUp,
+  CalendarClock, AlertTriangle, ThumbsUp,
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
