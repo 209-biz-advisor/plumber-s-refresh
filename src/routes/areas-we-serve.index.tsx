@@ -33,7 +33,7 @@ function AreasIndex() {
               Our plumbers proudly service the cities and neighborhoods below. Family-owned and
               operating in the Central Valley since 1996.
             </p>
-            <a href="tel:2095606652" className="btn-primary mt-8"><Phone className="size-4" /> (209) 560-6652</a>
+            <a href="tel:2098381000" className="btn-primary mt-8"><Phone className="size-4" /> (209) 838-1000</a>
           </div>
           <div className="mx-auto w-4/5 rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
             <img src={serviceMap.url} alt="Mainline Plumbing service area map" className="w-full h-auto" />

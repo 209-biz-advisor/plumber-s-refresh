@@ -7,7 +7,7 @@ This file contains the complete entity data, service specifications, page-by-pag
 ## 1. Core Entity Identity (NAP Data)
 - Legal Name: Mainline Plumbing Inc.
 - Verified Address: 18332 Campbell Ave., Escalon, CA 95320
-- Operational Phone: (209) 560-6652
+- Operational Phone: (209) 838-1000
 - Canonical Domain: https://mainlineplumber.net
 - Inception Year: 1996 (28+ years in business)
 - Owner: Miguel (owner-operator)

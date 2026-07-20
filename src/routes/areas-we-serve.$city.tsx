@@ -47,7 +47,7 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
                 "@type": ["Plumber", "LocalBusiness"],
                 name: `Mainline Plumbing Inc. — ${city.name}, CA`,
                 url,
-                telephone: "+1-209-560-6652",
+                telephone: "+1-209-838-1000",
                 image: "https://mainlineplumber.net/favicon.png",
                 priceRange: "$$",
                 parentOrganization: { "@id": "https://mainlineplumber.net/#business" },
@@ -128,7 +128,7 @@ function CityPage() {
             plumbing needs.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="tel:2095606652" className="btn-primary"><Phone className="size-4" /> (209) 560-6652</a>
+            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
             <Link to="/contact" className="btn-outline">Request Service</Link>
           </div>
         </div>
@@ -138,7 +138,7 @@ function CityPage() {
       <section className="bg-brand-red text-white py-6">
         <div className="container-x text-center text-sm md:text-base font-semibold">
           Contact us at{" "}
-          <a href="tel:2095606652" className="underline font-bold">(209) 560-6652</a>{" "}
+          <a href="tel:2098381000" className="underline font-bold">(209) 838-1000</a>{" "}
           or{" "}
           <Link to="/contact" className="underline font-bold">online</Link>{" "}
           today to keep your {city.name} home safe and comfortable.
@@ -207,7 +207,7 @@ function CityPage() {
               <h3 className="text-2xl md:text-3xl font-bold mt-2">The Mainline Approach in {city.name}</h3>
               <p className="mt-4 text-white/85">{city.local.plumbingTieIn}</p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <a href="tel:2095606652" className="btn-primary"><Phone className="size-4" /> (209) 560-6652</a>
+                <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
                 <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
               </div>
             </div>
@@ -321,12 +321,12 @@ function CityPage() {
         <div className="container-x text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold">Ready for Reliable Plumbing in {city.name}?</h2>
           <p className="mt-4 text-white/90">
-            Contact us at (209) 560-6652 or online today to ensure the optimal functionality of your plumbing
+            Contact us at (209) 838-1000 or online today to ensure the optimal functionality of your plumbing
             systems. Your {city.name} plumbing needs are our priority.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a href="tel:2095606652" className="bg-white text-brand-red px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
-              <Phone className="size-4" /> (209) 560-6652
+            <a href="tel:2098381000" className="bg-white text-brand-red px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
+              <Phone className="size-4" /> (209) 838-1000
             </a>
             <Link to="/contact" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-red">
               Request Service Online
@@ -371,7 +371,7 @@ function CityPage() {
               in the middle of our daily service route. That means faster arrival times, same-day
               scheduling and easier follow-up on warranty work.
             </p>
-            <a href="tel:2095606652" className="btn-primary mt-6"><Phone className="size-4" /> (209) 560-6652</a>
+            <a href="tel:2098381000" className="btn-primary mt-6"><Phone className="size-4" /> (209) 838-1000</a>
           </div>
           <div className="mx-auto w-4/5 rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
             <img src={serviceMap.url} alt={`Mainline Plumbing service area map covering ${city.name}, CA`} className="w-full h-auto" />

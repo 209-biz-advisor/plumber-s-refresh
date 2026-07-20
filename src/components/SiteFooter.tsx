@@ -13,7 +13,7 @@ export function SiteFooter() {
         <div>
           <h4 className="text-white font-display text-lg mb-4 uppercase tracking-wider">Contact</h4>
           <ul className="space-y-3 text-sm">
-            <li className="flex gap-2"><Phone className="size-4 text-accent shrink-0 mt-0.5" /> <a href="tel:2095606652">(209) 560-6652</a></li>
+            <li className="flex gap-2"><Phone className="size-4 text-accent shrink-0 mt-0.5" /> <a href="tel:2098381000">(209) 838-1000</a></li>
             <li className="flex gap-2"><MapPin className="size-4 text-accent shrink-0 mt-0.5" /> 18332 Campbell Ave.<br />Escalon, CA 95320</li>
           </ul>
         </div>
