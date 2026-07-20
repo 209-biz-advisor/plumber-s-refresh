@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   Phone, Wrench, Droplets, Flame, ShieldCheck, Clock, Star, ArrowRight,
   CheckCircle2, MessageSquare, Mail, MapPin, DollarSign, Users, Award, BookOpen, Send,
-  CalendarClock, AlertTriangle, ThumbsUp,
+  BadgePercent, CalendarClock, AlertTriangle, ThumbsUp,
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -58,6 +58,11 @@ const reviews = [
   { quote: "Their honesty and integrity speaks for itself and their workmanship is on point. Highly recommend.", name: "Pam N." },
 ];
 
+const specials = [
+  { big: "$50", label: "Off For New Customers", fine: "First-time service only. Cannot combine with other offers.", icon: DollarSign },
+  { big: "$250", label: "Off Water Heater Replacement", fine: "Tank or tankless. Installed by Mainline. Restrictions apply.", icon: Flame },
+  { big: "10%", label: "Veteran & Law Enforcement Discount", fine: "Valid ID required at time of service. Thank you for your service.", icon: BadgePercent },
+];
 
 const badges = [
   "BBB A+ Accredited",
@@ -153,6 +158,39 @@ function HomePage() {
           <span className="text-2xl md:text-3xl font-display">$50 OFF</span>
           <span>New Customer Special, Limited Time</span>
           <Link to="/contact" className="ml-2 px-4 py-2 border-2 border-navy-deep rounded hover:bg-navy-deep hover:text-white transition">Learn More →</Link>
+        </div>
+      </section>
+
+      {/* CURRENT SPECIALS */}
+      <section className="py-20 md:py-24 bg-secondary">
+        <div className="container-x">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="eyebrow">Save On Your Next Service</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2">Check Out Our Current Specials</h2>
+            <p className="mt-4 text-muted-foreground">
+              Real savings for real neighbors. Mention the offer when you book, restrictions apply.
+            </p>
+          </div>
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {specials.map((s) => (
+              <div key={s.label} className="relative bg-white rounded-2xl p-6 border border-border flex flex-col hover:border-accent transition" style={{ boxShadow: "var(--shadow-elegant)" }}>
+                <div className="absolute -top-3 -right-3 size-12 rounded-full bg-brand-red text-white flex items-center justify-center">
+                  <s.icon className="size-6" />
+                </div>
+                <div className="font-display text-5xl md:text-6xl text-brand-red leading-none">{s.big}</div>
+                <div className="mt-2 font-bold uppercase tracking-wider text-navy text-sm">{s.label}</div>
+                <p className="mt-3 text-xs text-muted-foreground flex-1">{s.fine}</p>
+                <Link to="/contact" className="mt-5 inline-flex items-center justify-center gap-2 bg-navy-deep text-white px-4 py-2.5 rounded-lg font-bold uppercase tracking-wider text-xs hover:bg-navy transition">
+                  Schedule Service <ArrowRight className="size-3.5" />
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link to="/contact" className="text-navy font-bold uppercase tracking-wider text-sm hover:text-brand-red">
+              View All Offers →
+            </Link>
+          </div>
         </div>
       </section>
 
