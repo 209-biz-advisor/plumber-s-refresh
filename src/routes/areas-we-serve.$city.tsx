@@ -18,12 +18,63 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
     const { city } = loaderData;
     const title = `Plumber in ${city.name}, CA | Mainline Plumbing Inc.`;
     const description = `Local plumbing services in ${city.name}, CA. Water heaters, drain cleaning, leak detection & emergency plumbing repairs from Mainline Plumbing Inc.`;
+    const url = `https://mainlineplumber.net/areas-we-serve/${city.slug}`;
     return {
       meta: [
         { title },
         { name: "description", content: description },
         { property: "og:title", content: title },
         { property: "og:description", content: description },
+        { property: "og:url", content: url },
+        { property: "og:type", content: "article" },
+      ],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://mainlineplumber.net/" },
+                  { "@type": "ListItem", position: 2, name: "Areas We Serve", item: "https://mainlineplumber.net/areas-we-serve" },
+                  { "@type": "ListItem", position: 3, name: city.name, item: url },
+                ],
+              },
+              {
+                "@type": ["Plumber", "LocalBusiness"],
+                name: `Mainline Plumbing Inc. — ${city.name}, CA`,
+                url,
+                telephone: "+1-209-560-6652",
+                image: "https://mainlineplumber.net/favicon.png",
+                priceRange: "$$",
+                parentOrganization: { "@id": "https://mainlineplumber.net/#business" },
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "18332 Campbell Ave.",
+                  addressLocality: "Escalon",
+                  addressRegion: "CA",
+                  postalCode: "95320",
+                  addressCountry: "US",
+                },
+                areaServed: { "@type": "City", name: `${city.name}, CA` },
+                openingHoursSpecification: [{
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                  opens: "07:00", closes: "19:00",
+                }],
+                makesOffer: [
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: `Emergency Plumbing Repairs in ${city.name}, CA` } },
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: `Water Heater Replacement in ${city.name}, CA` } },
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: `Drain Cleaning in ${city.name}, CA` } },
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: `Leak Detection & Repair in ${city.name}, CA` } },
+                ],
+              },
+            ],
+          }),
+        },
       ],
     };
   },
