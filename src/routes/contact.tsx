@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact Mainline Plumbing Inc. | Escalon, CA Plumbers" },
-      { name: "description", content: "Call (209) 560-6652 or request plumbing service online. Family-owned plumbing serving Escalon, Modesto and the Central Valley." },
+      { name: "description", content: "Call (209) 838-1000 or request plumbing service online. Family-owned plumbing serving Escalon, Modesto and the Central Valley." },
       { property: "og:title", content: "Contact Mainline Plumbing Inc." },
       { property: "og:description", content: "Schedule fast, dependable plumbing service in the Central Valley." },
     ],
@@ -38,7 +38,7 @@ function ContactPage() {
               <div className="text-center py-12">
                 <div className="size-16 mx-auto rounded-full bg-accent/20 flex items-center justify-center"><Send className="size-7 text-accent" /></div>
                 <h3 className="mt-5 text-2xl font-bold text-navy">Thanks, we'll be in touch!</h3>
-                <p className="mt-2 text-muted-foreground">We'll reply shortly. For emergencies, call (209) 560-6652.</p>
+                <p className="mt-2 text-muted-foreground">We'll reply shortly. For emergencies, call (209) 838-1000.</p>
               </div>
             ) : (
               <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="grid sm:grid-cols-2 gap-4">
@@ -61,7 +61,7 @@ function ContactPage() {
 
           <aside className="space-y-5">
             <ContactCard icon={Phone} label="Call Us">
-              <a href="tel:2095606652" className="text-2xl font-bold text-navy">(209) 560-6652</a>
+              <a href="tel:2098381000" className="text-2xl font-bold text-navy">(209) 838-1000</a>
             </ContactCard>
             <ContactCard icon={MapPin} label="Visit Us">
               18332 Campbell Ave.<br />Escalon, CA 95320

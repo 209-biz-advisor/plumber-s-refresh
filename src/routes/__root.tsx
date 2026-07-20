@@ -103,7 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               "@id": "https://mainlineplumber.net/#business",
               name: "Mainline Plumbing Inc.",
               url: "https://mainlineplumber.net",
-              telephone: "+1-209-560-6652",
+              telephone: "+1-209-838-1000",
               image: "https://mainlineplumber.net/favicon.png",
               logo: "https://mainlineplumber.net/favicon.png",
               priceRange: "$$",

@@ -20,8 +20,8 @@ export function SiteHeader() {
       <div className="bg-black/40 border-b border-white/5 text-white text-xs">
         <div className="container-x flex items-center justify-between h-9 gap-4">
           <div className="flex items-center gap-4">
-            <a href="tel:2095606652" className="flex items-center gap-2 font-bold tracking-wider hover:text-accent">
-              <Phone className="size-3.5" /> (209) 560-6652
+            <a href="tel:2098381000" className="flex items-center gap-2 font-bold tracking-wider hover:text-accent">
+              <Phone className="size-3.5" /> (209) 838-1000
             </a>
             <span className="hidden md:inline text-accent/90 uppercase tracking-wider font-semibold">
               Summer's Here, Beat the heat with a same-day water heater replacement.
@@ -81,7 +81,7 @@ export function SiteHeader() {
             <Link to="/contact" onClick={() => setOpen(false)} className="btn-primary justify-center">
               Request an Appointment
             </Link>
-            <a href="tel:2095606652" className="btn-outline justify-center">
+            <a href="tel:2098381000" className="btn-outline justify-center">
               <Phone className="size-4" /> Call Now
             </a>
           </div>
