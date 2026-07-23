@@ -390,7 +390,7 @@ function HomePage() {
             <span className="eyebrow">Trusted Local Plumbers</span>
             <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2">Reliable Plumbing from a Family You Can Trust</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              With over 28 years of experience, Mainline Plumbing has proudly served the residential
+              With owner-operator Miguel bringing 37+ years of plumbing experience, Mainline Plumbing has proudly served the residential
               and commercial plumbing needs of our community. We deliver swift, effective solutions
               tailored to your situation, minimizing inconvenience and giving you peace of mind.
             </p>
