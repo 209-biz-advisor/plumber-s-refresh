@@ -60,8 +60,8 @@ const reviews = [
 
 const specials = [
   { big: "$50", label: "Off For New Customers", fine: "First-time service only. Cannot combine with other offers.", icon: DollarSign },
-  { big: "$200", label: "Off Electric Water Heater Install", fine: "Standard electric or heat pump hybrid. Installed by Mainline. Restrictions apply.", icon: Flame },
-  { big: "$250", label: "Off Water Heater Replacement", fine: "Tank or tankless gas. Installed by Mainline. Restrictions apply.", icon: Flame },
+  { big: "$150", label: "Off Water Heater Replacement", fine: "Tank or tankless gas or electric. Installed by Mainline. Restrictions apply.", icon: Flame },
+  { big: "$250", label: "Off Electric Water Heater Installation", fine: "Standard electric or heat pump hybrid. Installed by Mainline. Restrictions apply.", icon: Flame },
   { big: "10%", label: "Veteran & Law Enforcement Discount", fine: "Valid ID required at time of service. Thank you for your service.", icon: BadgePercent },
 ];
 
