@@ -8,9 +8,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Mainline Plumbing Inc. | Family-Owned Plumbers in Escalon, CA" },
-      { name: "description", content: "Family-owned and operated plumbing company serving Escalon, Modesto and the Central Valley with over 28 years of trusted, code-compliant service." },
+      { name: "description", content: "Family-owned and operated plumbing company serving Escalon, Modesto and the Central Valley since 2010, backed by 37+ years of hands-on plumbing experience. We treat your family, like our family." },
       { property: "og:title", content: "About Mainline Plumbing Inc." },
-      { property: "og:description", content: "Meet the family behind 28+ years of trusted plumbing service in the Central Valley." },
+      { property: "og:description", content: "We treat your family, like our family. Meet Miguel, 37+ years of plumbing experience, serving the 209 & 350 since 2010." },
     ],
   }),
   component: AboutPage,
@@ -25,6 +25,9 @@ function AboutPage() {
         <div className="container-x">
           <span className="eyebrow">About Us</span>
           <h1 className="text-5xl md:text-6xl font-bold mt-2">A family business, doing right by yours.</h1>
+          <p className="mt-5 font-display text-2xl md:text-3xl text-accent italic">
+            "We Treat Your Family, Like Our Family."
+          </p>
         </div>
       </section>
 
@@ -35,7 +38,7 @@ function AboutPage() {
             <span className="eyebrow">Meet Miguel</span>
             <h2 className="text-4xl font-bold text-navy mt-2">Owner & Lead Plumber</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              With over 40 years of hands-on experience in the trade, Miguel founded Mainline Plumbing
+              With 37 years of hands-on experience in the trade, Miguel founded Mainline Plumbing in 2010
               to bring honest, reliable plumbing service to families throughout the Central Valley.
               Every job, large or small, is handled with the same transparency and craftsmanship
               we'd want in our own homes.
@@ -53,7 +56,7 @@ function AboutPage() {
           <h2 className="text-4xl font-bold text-navy text-center">Our Promise</h2>
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             {[
-              { icon: Award, title: "28+ Years Experience", desc: "Decades of plumbing expertise serving Escalon and surrounding cities." },
+              { icon: Award, title: "37+ Years Experience", desc: "Decades of hands-on plumbing expertise serving Escalon and surrounding cities." },
               { icon: HeartHandshake, title: "Family-Owned & Operated", desc: "Local roots, real relationships, and accountability you can count on." },
               { icon: Users, title: "Customer-First Service", desc: "Quality plumbing service at an affordable cost, done right the first time." },
             ].map((v) => (

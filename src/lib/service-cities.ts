@@ -23,7 +23,7 @@ export const serviceCities: ServiceCity[] = [
   {
     slug: "escalon",
     name: "Escalon",
-    blurb: "Our hometown. Family-owned plumbing service in Escalon since 1996.",
+    blurb: "Our hometown. Family-owned plumbing service in Escalon since 2010.",
     local: {
       identity: "The Heritage & Stewardship Community of the Northern San Joaquin Valley",
       tagline: "Escalon is home. Reputation travels faster than advertising here, and we've spent decades earning ours one house at a time.",

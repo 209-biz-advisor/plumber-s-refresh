@@ -18,9 +18,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA" },
-      { name: "description", content: "Family-owned plumbers in Escalon, CA. 28+ years of expert plumbing repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
+      { name: "description", content: "Family-owned plumbers in Escalon, CA. 37+ years of plumbing experience covering repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
       { property: "og:title", content: "Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA" },
-      { property: "og:description", content: "Family-owned plumbers in Escalon, CA. 28+ years of expert plumbing repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
+      { property: "og:description", content: "Family-owned plumbers in Escalon, CA. 37+ years of plumbing experience covering repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
     ],
   }),
   component: HomePage,
@@ -40,14 +40,14 @@ const serviceColumns = [
   {
     icon: Flame,
     title: "Water Heaters",
-    items: ["Tank Water Heaters", "Tankless Water Heaters", "Repair & Replacement", "Same-Day Installation"],
+    items: ["Electric Water Heaters", "Tank Water Heaters", "Tankless Water Heaters", "Heat Pump Hybrids", "Repair & Replacement", "Same-Day Installation"],
   },
 ];
 
 const pillars = [
-  { icon: DollarSign, title: "Upfront Pricing & Expectations", sub: "Serving the 209 & 350 Since 1996" },
+  { icon: DollarSign, title: "Upfront Pricing & Expectations", sub: "Serving the 209 & 350 Since 2010" },
   { icon: Award, title: "No Two Solutions Are Alike", sub: "5-Star Service Rating From Real Neighbors" },
-  { icon: Users, title: "Family-Owned & Customer-Focused", sub: "Plumbing Knowledge Is Power" },
+  { icon: Users, title: "Family-Owned & Customer-Focused", sub: "We Treat Your Family, Like Our Family" },
 ];
 
 const cities = serviceCities;
@@ -60,7 +60,8 @@ const reviews = [
 
 const specials = [
   { big: "$50", label: "Off For New Customers", fine: "First-time service only. Cannot combine with other offers.", icon: DollarSign },
-  { big: "$250", label: "Off Water Heater Replacement", fine: "Tank or tankless. Installed by Mainline. Restrictions apply.", icon: Flame },
+  { big: "$200", label: "Off Electric Water Heater Install", fine: "Standard electric or heat pump hybrid. Installed by Mainline. Restrictions apply.", icon: Flame },
+  { big: "$250", label: "Off Water Heater Replacement", fine: "Tank or tankless gas. Installed by Mainline. Restrictions apply.", icon: Flame },
   { big: "10%", label: "Veteran & Law Enforcement Discount", fine: "Valid ID required at time of service. Thank you for your service.", icon: BadgePercent },
 ];
 
@@ -70,11 +71,11 @@ const badges = [
   "Angi Certified Pro",
   "Yelp Verified",
   "Nextdoor Neighborhood Fave",
-  "Family-Owned Since 1996",
+  "Family-Owned Since 2010",
 ];
 
 const stats = [
-  { num: "28+", label: "Years of Experience" },
+  { num: "37+", label: "Years of Plumbing Experience" },
   { num: "5.0", label: "Average Google Rating" },
   { num: "Fast", label: "Emergency Response" },
 ];
@@ -92,12 +93,15 @@ function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/90 via-navy-deep/70 to-navy-deep/40" />
         <div className="container-x relative py-24 md:py-36 text-white">
           <div className="max-w-3xl">
-            <span className="eyebrow">Escalon, CA · Family-Owned Since 1996</span>
+            <span className="eyebrow">Escalon, CA · Family-Owned Since 2010</span>
             <h1 className="text-5xl md:text-7xl font-bold mt-3 leading-[1.05]">
               We Protect Plumbing <span className="text-accent">and Peace of Mind.</span>
             </h1>
-            <p className="mt-6 text-lg text-white/85 max-w-xl">
-              Our friendly team has been serving Escalon, Modesto and the 209 for over 28 years ,
+            <p className="mt-5 font-display text-2xl md:text-3xl text-accent italic">
+              "We Treat Your Family, Like Our Family."
+            </p>
+            <p className="mt-5 text-lg text-white/85 max-w-xl">
+              Our friendly team brings 37+ years of plumbing experience to Escalon, Modesto and the 209,
               providing plumbing maintenance, repairs, and more. Put us to work for you.
             </p>
             <p className="mt-3 font-display tracking-widest text-accent uppercase text-sm">
@@ -171,7 +175,7 @@ function HomePage() {
               Real savings for real neighbors. Mention the offer when you book, restrictions apply.
             </p>
           </div>
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {specials.map((s) => (
               <div key={s.label} className="relative bg-white rounded-2xl p-6 border border-border flex flex-col hover:border-accent transition" style={{ boxShadow: "var(--shadow-elegant)" }}>
                 <div className="absolute -top-3 -right-3 size-12 rounded-full bg-brand-red text-white flex items-center justify-center">
@@ -237,16 +241,37 @@ function HomePage() {
 
             <div className="mt-8 grid sm:grid-cols-2 gap-4">
               {[
+                { t: "Electric Water Heaters", d: "Standard electric, heat pump hybrids, and full electric-to-electric swaps." },
                 { t: "Tank Replacement", d: "40, 50 & 75-gal gas and electric. Haul-away included." },
                 { t: "Tankless Conversion", d: "Endless hot water. Navien, Rinnai & Rheem certified." },
                 { t: "Same-Day Install", d: "In-stock units for most Escalon & Modesto homes." },
-                { t: "Repair & Rescue", d: "Pilot lights, thermocouples, elements, T&P valves." },
               ].map((f) => (
                 <div key={f.t} className="border-l-4 border-brand-red pl-4">
                   <div className="font-bold text-navy uppercase tracking-wider text-sm">{f.t}</div>
                   <div className="text-sm text-muted-foreground mt-1">{f.d}</div>
                 </div>
               ))}
+            </div>
+
+            {/* ELECTRIC WATER HEATER HIGHLIGHT */}
+            <div className="mt-6 rounded-2xl p-6 bg-gradient-to-br from-brand-red to-navy-deep text-white border border-white/10">
+              <div className="flex items-center gap-3">
+                <div className="size-12 rounded-xl bg-accent flex items-center justify-center">
+                  <Flame className="size-6 text-navy-deep" />
+                </div>
+                <div>
+                  <div className="eyebrow !text-accent">Now Featuring</div>
+                  <div className="font-display text-2xl uppercase leading-tight">Electric Water Heater Specialists</div>
+                </div>
+              </div>
+              <p className="mt-4 text-white/90 text-sm leading-relaxed">
+                No gas line? Going all-electric? We install standard electric tanks and high-efficiency
+                heat pump hybrids that can cut your water heating bill by up to 70%. Ask about the
+                federal tax credit and utility rebates in the 209 & 350.
+              </p>
+              <div className="mt-4 inline-flex items-center gap-2 bg-accent text-navy-deep px-4 py-2 rounded-lg font-bold uppercase tracking-wider text-xs">
+                <BadgePercent className="size-4" /> $200 Off Electric Install, Limited Time
+              </div>
             </div>
 
             <div className="mt-8 bg-secondary rounded-xl p-5 border border-border">
@@ -386,7 +411,7 @@ function HomePage() {
             <span className="eyebrow">Trusted Local Plumbers</span>
             <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2">Reliable Plumbing from a Family You Can Trust</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              With over 28 years of experience, Mainline Plumbing has proudly served the residential
+              With owner-operator Miguel bringing 37+ years of plumbing experience, Mainline Plumbing has proudly served the residential
               and commercial plumbing needs of our community. We deliver swift, effective solutions
               tailored to your situation, minimizing inconvenience and giving you peace of mind.
             </p>
@@ -411,7 +436,7 @@ function HomePage() {
                 <span className="text-brand-red">All Around the 209.</span>
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Since 1996, we've been protecting Escalon, Modesto and surrounding communities, providing
+                Since 2010, we've been protecting Escalon, Modesto and surrounding communities, providing
                 plumbing maintenance, emergency repairs, pipe replacements and more.
               </p>
               <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-sm font-bold text-brand-red uppercase">

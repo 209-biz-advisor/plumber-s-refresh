@@ -9,7 +9,7 @@ This file contains the complete entity data, service specifications, page-by-pag
 - Verified Address: 18332 Campbell Ave., Escalon, CA 95320
 - Operational Phone: (209) 838-1000
 - Canonical Domain: https://mainlineplumber.net
-- Inception Year: 1996 (28+ years in business)
+- Inception Year: 2010 (16+ years in business)
 - Owner: Miguel (owner-operator)
 - Core Geography: Escalon, Modesto, Manteca and the Central Valley (209 & 350 area codes)
 - Hours: Monday–Saturday 7:00am–7:00pm; Sunday closed. Emergency plumbing repairs available during operating hours.
@@ -97,13 +97,13 @@ We tell customers honestly when a truck can be on-site rather than promising rou
 ### Homepage (/)
 - H1: Trusted Plumbers in Escalon, Modesto & the Central Valley
 - Title: Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA
-- Meta: Family-owned plumbers in Escalon, CA. 28+ years of expert plumbing repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley.
+- Meta: Family-owned plumbers in Escalon, CA. 16+ years of expert plumbing repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley.
 - Primary keyword: plumber Escalon CA
 - Focus: Hub for water heaters, emergency plumbing repairs, drain cleaning, and city routing.
 
 ### About (/about)
 - Primary keyword: family plumber Central Valley
-- Focus: Owner Miguel, 1996 origin story, service philosophy.
+- Focus: Owner Miguel, 2010 origin story, service philosophy.
 
 ### Services (/services)
 - Primary keyword: plumbing services Escalon
