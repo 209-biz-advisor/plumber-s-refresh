@@ -8,9 +8,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Mainline Plumbing Inc. | Family-Owned Plumbers in Escalon, CA" },
-      { name: "description", content: "Family-owned and operated plumbing company serving Escalon, Modesto and the Central Valley with over 28 years of trusted, code-compliant service." },
+      { name: "description", content: "Family-owned and operated plumbing company serving Escalon, Modesto and the Central Valley since 2010, backed by 37+ years of hands-on plumbing experience. We treat your family, like our family." },
       { property: "og:title", content: "About Mainline Plumbing Inc." },
-      { property: "og:description", content: "Meet the family behind 28+ years of trusted plumbing service in the Central Valley." },
+      { property: "og:description", content: "We treat your family, like our family. Meet Miguel, 37+ years of plumbing experience, serving the 209 & 350 since 2010." },
     ],
   }),
   component: AboutPage,
