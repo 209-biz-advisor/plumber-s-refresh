@@ -32,7 +32,7 @@ function ServicesPage() {
         <div className="container-x">
           <span className="eyebrow">Our Services</span>
           <h1 className="text-5xl md:text-6xl font-bold mt-2">Complete Plumbing Solutions</h1>
-          <p className="mt-4 text-white/80 max-w-2xl">Backed by 28+ years of experience, our skilled plumbers handle residential and commercial work across Stanislaus & San Joaquin County.</p>
+          <p className="mt-4 text-white/80 max-w-2xl">Backed by 37+ years of hands-on plumbing experience, our skilled plumbers handle residential and commercial work across Stanislaus & San Joaquin County.</p>
         </div>
       </section>
 
