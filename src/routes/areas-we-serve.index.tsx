@@ -31,7 +31,7 @@ function AreasIndex() {
             </h1>
             <p className="mt-5 text-white/80 max-w-lg">
               Our plumbers proudly service the cities and neighborhoods below. Family-owned and
-              operating in the Central Valley since 1996.
+              operating in the Central Valley since 2010.
             </p>
             <a href="tel:2098381000" className="btn-primary mt-8"><Phone className="size-4" /> (209) 838-1000</a>
           </div>
