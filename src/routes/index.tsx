@@ -9,7 +9,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import heroCover from "@/assets/hero-cover.png";
 import miguelOwner from "@/assets/miguel-owner.png";
-import miguelAction from "@/assets/miguel-emergency.png";
+import miguelWithLogo from "@/assets/miguel-with-logo.png.asset.json";
 import shield from "@/assets/logo-shield.png";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { serviceCities } from "@/lib/service-cities";
