@@ -615,7 +615,7 @@ function HomePage() {
             </div>
           </div>
           <div className="flex justify-center">
-            <img src={miguelAction} alt="Mainline plumber fixing burst pipe" className="max-h-[420px] drop-shadow-2xl" />
+            <img src={miguelWithLogo.url} alt="Miguel, owner of Mainline Plumbing, with the company shield logo" className="max-h-[460px] drop-shadow-2xl" />
           </div>
         </div>
       </section>
