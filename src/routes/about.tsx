@@ -56,7 +56,7 @@ function AboutPage() {
           <h2 className="text-4xl font-bold text-navy text-center">Our Promise</h2>
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             {[
-              { icon: Award, title: "28+ Years Experience", desc: "Decades of plumbing expertise serving Escalon and surrounding cities." },
+              { icon: Award, title: "37+ Years Experience", desc: "Decades of hands-on plumbing expertise serving Escalon and surrounding cities." },
               { icon: HeartHandshake, title: "Family-Owned & Operated", desc: "Local roots, real relationships, and accountability you can count on." },
               { icon: Users, title: "Customer-First Service", desc: "Quality plumbing service at an affordable cost, done right the first time." },
             ].map((v) => (
