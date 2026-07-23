@@ -241,16 +241,37 @@ function HomePage() {
 
             <div className="mt-8 grid sm:grid-cols-2 gap-4">
               {[
+                { t: "Electric Water Heaters", d: "Standard electric, heat pump hybrids, and full electric-to-electric swaps." },
                 { t: "Tank Replacement", d: "40, 50 & 75-gal gas and electric. Haul-away included." },
                 { t: "Tankless Conversion", d: "Endless hot water. Navien, Rinnai & Rheem certified." },
                 { t: "Same-Day Install", d: "In-stock units for most Escalon & Modesto homes." },
-                { t: "Repair & Rescue", d: "Pilot lights, thermocouples, elements, T&P valves." },
               ].map((f) => (
                 <div key={f.t} className="border-l-4 border-brand-red pl-4">
                   <div className="font-bold text-navy uppercase tracking-wider text-sm">{f.t}</div>
                   <div className="text-sm text-muted-foreground mt-1">{f.d}</div>
                 </div>
               ))}
+            </div>
+
+            {/* ELECTRIC WATER HEATER HIGHLIGHT */}
+            <div className="mt-6 rounded-2xl p-6 bg-gradient-to-br from-brand-red to-navy-deep text-white border border-white/10">
+              <div className="flex items-center gap-3">
+                <div className="size-12 rounded-xl bg-accent flex items-center justify-center">
+                  <Flame className="size-6 text-navy-deep" />
+                </div>
+                <div>
+                  <div className="eyebrow !text-accent">Now Featuring</div>
+                  <div className="font-display text-2xl uppercase leading-tight">Electric Water Heater Specialists</div>
+                </div>
+              </div>
+              <p className="mt-4 text-white/90 text-sm leading-relaxed">
+                No gas line? Going all-electric? We install standard electric tanks and high-efficiency
+                heat pump hybrids that can cut your water heating bill by up to 70%. Ask about the
+                federal tax credit and utility rebates in the 209 & 350.
+              </p>
+              <div className="mt-4 inline-flex items-center gap-2 bg-accent text-navy-deep px-4 py-2 rounded-lg font-bold uppercase tracking-wider text-xs">
+                <BadgePercent className="size-4" /> $200 Off Electric Install, Limited Time
+              </div>
             </div>
 
             <div className="mt-8 bg-secondary rounded-xl p-5 border border-border">
