@@ -415,7 +415,7 @@ function HomePage() {
                 <span className="text-brand-red">All Around the 209.</span>
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Since 1996, we've been protecting Escalon, Modesto and surrounding communities, providing
+                Since 2010, we've been protecting Escalon, Modesto and surrounding communities, providing
                 plumbing maintenance, emergency repairs, pipe replacements and more.
               </p>
               <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-sm font-bold text-brand-red uppercase">
