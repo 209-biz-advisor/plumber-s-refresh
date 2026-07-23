@@ -7,7 +7,7 @@
 - Address: 18332 Campbell Ave., Escalon, CA 95320
 - Phone: (209) 838-1000
 - Domain: https://mainlineplumber.net
-- Founded: 1996 (16+ years in business)
+- Founded: 2010 (16+ years in business)
 - Primary Market: Escalon, Modesto, Manteca and the greater Central Valley (209 & 350 area codes)
 - Hours: Monday–Saturday 7:00am–7:00pm; Sunday closed. Emergency plumbing repairs available.
 - Owner: Miguel — hands-on, in-the-field owner-operator
@@ -40,7 +40,7 @@ Mainline competes on trust, tenure, and craftsmanship, not price. Miguel persona
 
 ## Pages
 - [Home](/): Mainline Plumbing homepage, hub for services, water heaters, and emergency plumbing repairs.
-- [About](/about): 28+ year family plumbing business history, owner Miguel, and Central Valley service philosophy.
+- [About](/about): 16+ year family plumbing business history, owner Miguel, and Central Valley service philosophy.
 - [Services](/services): Full service catalog including the water heater deep-dive guide.
 - [Areas We Serve](/areas-we-serve): Central Valley coverage hub routing to individual city pages.
 - [Contact](/contact): Phone, address, hours, service area map, and online request form.
