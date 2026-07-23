@@ -40,7 +40,7 @@ const serviceColumns = [
   {
     icon: Flame,
     title: "Water Heaters",
-    items: ["Tank Water Heaters", "Tankless Water Heaters", "Repair & Replacement", "Same-Day Installation"],
+    items: ["Electric Water Heaters", "Tank Water Heaters", "Tankless Water Heaters", "Heat Pump Hybrids", "Repair & Replacement", "Same-Day Installation"],
   },
 ];
 
