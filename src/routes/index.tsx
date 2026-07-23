@@ -93,12 +93,15 @@ function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/90 via-navy-deep/70 to-navy-deep/40" />
         <div className="container-x relative py-24 md:py-36 text-white">
           <div className="max-w-3xl">
-            <span className="eyebrow">Escalon, CA · Family-Owned Since 1996</span>
+            <span className="eyebrow">Escalon, CA · Family-Owned Since 2010</span>
             <h1 className="text-5xl md:text-7xl font-bold mt-3 leading-[1.05]">
               We Protect Plumbing <span className="text-accent">and Peace of Mind.</span>
             </h1>
-            <p className="mt-6 text-lg text-white/85 max-w-xl">
-              Our friendly team has been serving Escalon, Modesto and the 209 for over 28 years ,
+            <p className="mt-5 font-display text-2xl md:text-3xl text-accent italic">
+              "We Treat Your Family, Like Our Family."
+            </p>
+            <p className="mt-5 text-lg text-white/85 max-w-xl">
+              Our friendly team brings 37+ years of plumbing experience to Escalon, Modesto and the 209,
               providing plumbing maintenance, repairs, and more. Put us to work for you.
             </p>
             <p className="mt-3 font-display tracking-widest text-accent uppercase text-sm">
