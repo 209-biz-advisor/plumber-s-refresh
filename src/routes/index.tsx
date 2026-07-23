@@ -45,9 +45,9 @@ const serviceColumns = [
 ];
 
 const pillars = [
-  { icon: DollarSign, title: "Upfront Pricing & Expectations", sub: "Serving the 209 & 350 Since 1996" },
+  { icon: DollarSign, title: "Upfront Pricing & Expectations", sub: "Serving the 209 & 350 Since 2010" },
   { icon: Award, title: "No Two Solutions Are Alike", sub: "5-Star Service Rating From Real Neighbors" },
-  { icon: Users, title: "Family-Owned & Customer-Focused", sub: "Plumbing Knowledge Is Power" },
+  { icon: Users, title: "Family-Owned & Customer-Focused", sub: "We Treat Your Family, Like Our Family" },
 ];
 
 const cities = serviceCities;
@@ -60,7 +60,8 @@ const reviews = [
 
 const specials = [
   { big: "$50", label: "Off For New Customers", fine: "First-time service only. Cannot combine with other offers.", icon: DollarSign },
-  { big: "$250", label: "Off Water Heater Replacement", fine: "Tank or tankless. Installed by Mainline. Restrictions apply.", icon: Flame },
+  { big: "$200", label: "Off Electric Water Heater Install", fine: "Standard electric or heat pump hybrid. Installed by Mainline. Restrictions apply.", icon: Flame },
+  { big: "$250", label: "Off Water Heater Replacement", fine: "Tank or tankless gas. Installed by Mainline. Restrictions apply.", icon: Flame },
   { big: "10%", label: "Veteran & Law Enforcement Discount", fine: "Valid ID required at time of service. Thank you for your service.", icon: BadgePercent },
 ];
 
@@ -70,11 +71,11 @@ const badges = [
   "Angi Certified Pro",
   "Yelp Verified",
   "Nextdoor Neighborhood Fave",
-  "Family-Owned Since 1996",
+  "Family-Owned Since 2010",
 ];
 
 const stats = [
-  { num: "28+", label: "Years of Experience" },
+  { num: "37+", label: "Years of Plumbing Experience" },
   { num: "5.0", label: "Average Google Rating" },
   { num: "Fast", label: "Emergency Response" },
 ];
