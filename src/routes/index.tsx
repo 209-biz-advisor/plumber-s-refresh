@@ -18,9 +18,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA" },
-      { name: "description", content: "Family-owned plumbers in Escalon, CA. 28+ years of expert plumbing repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
+      { name: "description", content: "Family-owned plumbers in Escalon, CA. 37+ years of plumbing experience covering repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
       { property: "og:title", content: "Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA" },
-      { property: "og:description", content: "Family-owned plumbers in Escalon, CA. 28+ years of expert plumbing repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
+      { property: "og:description", content: "Family-owned plumbers in Escalon, CA. 37+ years of plumbing experience covering repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
     ],
   }),
   component: HomePage,
