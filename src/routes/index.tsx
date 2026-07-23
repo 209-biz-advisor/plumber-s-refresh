@@ -9,7 +9,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import heroCover from "@/assets/hero-cover.png";
 import miguelOwner from "@/assets/miguel-owner.png";
-import miguelAction from "@/assets/miguel-emergency.png";
+import miguelWithLogo from "@/assets/miguel-with-logo.png.asset.json";
 import shield from "@/assets/logo-shield.png";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { serviceCities } from "@/lib/service-cities";
@@ -615,7 +615,7 @@ function HomePage() {
             </div>
           </div>
           <div className="flex justify-center">
-            <img src={miguelAction} alt="Mainline plumber fixing burst pipe" className="max-h-[420px] drop-shadow-2xl" />
+            <img src={miguelWithLogo.url} alt="Miguel, owner of Mainline Plumbing, with the company shield logo" className="max-h-[460px] drop-shadow-2xl" />
           </div>
         </div>
       </section>
