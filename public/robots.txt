@@ -1,5 +1,5 @@
-# Mainline Plumbing Inc. — canonical host: https://mainlineplumber.net
-# All indexable content lives at mainlineplumber.net. Non-canonical
+# Mainline Plumbing Inc. — canonical host: https://www.mainlineplumber.com
+# All indexable content lives at www.mainlineplumber.com. Non-canonical
 # hosts (Lovable preview/published mirrors) self-canonicalize via
 # <link rel="canonical"> in every route head.
 
@@ -52,4 +52,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://mainlineplumber.net/sitemap.xml
+Sitemap: https://www.mainlineplumber.com/sitemap.xml
