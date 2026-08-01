@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { findCity, serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
+import { SITE_URL, OG_IMAGE } from "@/lib/site";
 
 export const Route = createFileRoute("/areas-we-serve/$city")({
   loader: ({ params }) => {
@@ -18,7 +19,7 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
     const { city } = loaderData;
     const title = `Plumber in ${city.name}, CA | Mainline Plumbing Inc.`;
     const description = `Local plumbing services in ${city.name}, CA. Water heaters, drain cleaning, leak detection & emergency plumbing repairs from Mainline Plumbing Inc.`;
-    const url = `https://mainlineplumber.net/areas-we-serve/${city.slug}`;
+    const url = `${SITE_URL}/areas-we-serve/${city.slug}/`;
     return {
       meta: [
         { title },
@@ -27,6 +28,8 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
         { property: "og:description", content: description },
         { property: "og:url", content: url },
         { property: "og:type", content: "article" },
+        { property: "og:image", content: OG_IMAGE },
+        { name: "twitter:image", content: OG_IMAGE },
       ],
       links: [{ rel: "canonical", href: url }],
       scripts: [
@@ -38,19 +41,19 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
               {
                 "@type": "BreadcrumbList",
                 itemListElement: [
-                  { "@type": "ListItem", position: 1, name: "Home", item: "https://mainlineplumber.net/" },
-                  { "@type": "ListItem", position: 2, name: "Areas We Serve", item: "https://mainlineplumber.net/areas-we-serve" },
+                  { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+                  { "@type": "ListItem", position: 2, name: "Areas We Serve", item: `${SITE_URL}/areas-we-serve/` },
                   { "@type": "ListItem", position: 3, name: city.name, item: url },
                 ],
               },
               {
                 "@type": ["Plumber", "LocalBusiness"],
-                name: `Mainline Plumbing Inc. — ${city.name}, CA`,
+                name: `Mainline Plumbing Inc. of ${city.name}, CA`,
                 url,
                 telephone: "+1-209-838-1000",
-                image: "https://mainlineplumber.net/favicon.png",
+                image: "https://www.mainlineplumber.com/favicon.png",
                 priceRange: "$$",
-                parentOrganization: { "@id": "https://mainlineplumber.net/#business" },
+                parentOrganization: { "@id": "https://www.mainlineplumber.com/#business" },
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "18332 Campbell Ave.",
@@ -129,7 +132,7 @@ function CityPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-            <Link to="/contact" className="btn-outline">Request Service</Link>
+            <Link to="/contact-us" className="btn-outline">Request Service</Link>
           </div>
         </div>
       </section>
@@ -140,7 +143,7 @@ function CityPage() {
           Contact us at{" "}
           <a href="tel:2098381000" className="underline font-bold">(209) 838-1000</a>{" "}
           or{" "}
-          <Link to="/contact" className="underline font-bold">online</Link>{" "}
+          <Link to="/contact-us" className="underline font-bold">online</Link>{" "}
           today to keep your {city.name} home safe and comfortable.
         </div>
       </section>
@@ -208,7 +211,7 @@ function CityPage() {
               <p className="mt-4 text-white/85">{city.local.plumbingTieIn}</p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-                <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
+                <Link to="/contact-us" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
               </div>
             </div>
           </div>
@@ -328,7 +331,7 @@ function CityPage() {
             <a href="tel:2098381000" className="bg-white text-brand-red px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
               <Phone className="size-4" /> (209) 838-1000
             </a>
-            <Link to="/contact" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-red">
+            <Link to="/contact-us" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-red">
               Request Service Online
             </Link>
           </div>

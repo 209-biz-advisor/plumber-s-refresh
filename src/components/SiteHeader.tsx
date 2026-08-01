@@ -5,10 +5,10 @@ import logo from "@/assets/logo-horizontal.png";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About Us" },
-  { to: "/services", label: "Plumbing Services" },
-  { to: "/services", label: "Drain Cleaning" },
-  { to: "/services", label: "Water Heaters" },
+  { to: "/about-us", label: "About Us" },
+  { to: "/plumbing-services", label: "Plumbing Services" },
+  { to: "/plumbing-services", label: "Drain Cleaning" },
+  { to: "/plumbing-services", label: "Water Heaters" },
   { to: "/areas-we-serve", label: "Areas We Serve" },
 ] as const;
 
@@ -28,8 +28,8 @@ export function SiteHeader() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <Link to="/contact" className="bg-brand-red px-3 py-1 font-bold uppercase tracking-wider hover:bg-brand-red/80">Contact Us</Link>
-            <a href="/contact" className="bg-accent text-navy-deep px-3 py-1 font-bold uppercase tracking-wider hover:opacity-90">Now Hiring</a>
+            <Link to="/contact-us" className="bg-brand-red px-3 py-1 font-bold uppercase tracking-wider hover:bg-brand-red/80">Contact Us</Link>
+            <a href="/contact-us/" className="bg-accent text-navy-deep px-3 py-1 font-bold uppercase tracking-wider hover:opacity-90">Now Hiring</a>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
-            to="/contact"
+            to="/contact-us"
             className="relative bg-brand-orange text-white pl-5 pr-6 py-3 font-display uppercase tracking-widest text-xs whitespace-nowrap hover:bg-brand-orange/90 flex items-center gap-2"
             style={{ clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%)" }}
           >
@@ -78,7 +78,7 @@ export function SiteHeader() {
                 {n.label}
               </Link>
             ))}
-            <Link to="/contact" onClick={() => setOpen(false)} className="btn-primary justify-center">
+            <Link to="/contact-us" onClick={() => setOpen(false)} className="btn-primary justify-center">
               Request an Appointment
             </Link>
             <a href="tel:2098381000" className="btn-outline justify-center">

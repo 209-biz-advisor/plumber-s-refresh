@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { serviceCities } from "@/lib/service-cities";
-
-const BASE_URL = "https://mainlineplumber.net";
+import { SITE_URL } from "@/lib/site";
 
 interface SitemapEntry {
   path: string;
+  /** Only set when a real content date exists for the page. */
+  lastmod?: string;
   changefreq?: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
   priority?: string;
 }
@@ -14,15 +15,14 @@ export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
-        const today = new Date().toISOString().slice(0, 10);
         const entries: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
-          { path: "/about", changefreq: "monthly", priority: "0.7" },
-          { path: "/services", changefreq: "monthly", priority: "0.9" },
-          { path: "/contact", changefreq: "monthly", priority: "0.8" },
-          { path: "/areas-we-serve", changefreq: "monthly", priority: "0.9" },
+          { path: "/about-us/", changefreq: "monthly", priority: "0.7" },
+          { path: "/plumbing-services/", changefreq: "monthly", priority: "0.9" },
+          { path: "/contact-us/", changefreq: "monthly", priority: "0.8" },
+          { path: "/areas-we-serve/", changefreq: "monthly", priority: "0.9" },
           ...serviceCities.map((c) => ({
-            path: `/areas-we-serve/${c.slug}`,
+            path: `/areas-we-serve/${c.slug}/`,
             changefreq: "monthly" as const,
             priority: "0.8",
           })),
@@ -31,8 +31,8 @@ export const Route = createFileRoute("/sitemap.xml")({
         const urls = entries.map((e) =>
           [
             `  <url>`,
-            `    <loc>${BASE_URL}${e.path}</loc>`,
-            `    <lastmod>${today}</lastmod>`,
+            `    <loc>${SITE_URL}${e.path}</loc>`,
+            e.lastmod ? `    <lastmod>${e.lastmod}</lastmod>` : null,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             `  </url>`,

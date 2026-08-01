@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SITE_URL, OG_IMAGE } from "@/lib/site";
 
 function NotFoundComponent() {
   return (
@@ -78,12 +79,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA" },
       { property: "og:description", content: "Family-owned plumbers in Escalon, CA. 16+ years of expert plumbing service and 37+ years of hands-on plumbing experience, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://mainlineplumber.net/" },
+      { property: "og:url", content: `${SITE_URL}/` },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA" },
       { name: "twitter:description", content: "Family-owned plumbers in Escalon, CA. 16+ years of expert plumbing service and 37+ years of hands-on plumbing experience, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/51465f4c-447c-4e80-b7e2-c821bfe4dbfa/id-preview-4060d70e--0ec1dde4-129d-4adb-beea-be79caf14920.lovable.app-1784394111940.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/51465f4c-447c-4e80-b7e2-c821bfe4dbfa/id-preview-4060d70e--0ec1dde4-129d-4adb-beea-be79caf14920.lovable.app-1784394111940.png" },
+      { property: "og:image", content: OG_IMAGE },
+      { name: "twitter:image", content: OG_IMAGE },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -100,12 +101,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@graph": [
             {
               "@type": ["Organization", "Plumber", "LocalBusiness"],
-              "@id": "https://mainlineplumber.net/#business",
+              "@id": "https://www.mainlineplumber.com/#business",
               name: "Mainline Plumbing Inc.",
-              url: "https://mainlineplumber.net",
+              url: "https://www.mainlineplumber.com",
               telephone: "+1-209-838-1000",
-              image: "https://mainlineplumber.net/favicon.png",
-              logo: "https://mainlineplumber.net/favicon.png",
+              image: "https://www.mainlineplumber.com/favicon.png",
+              logo: "https://www.mainlineplumber.com/favicon.png",
               priceRange: "$$",
               foundingDate: "2010",
               slogan: "Emergency Plumbing Repairs Available. Serving the 209 & 350.",
@@ -152,10 +153,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             },
             {
               "@type": "WebSite",
-              "@id": "https://mainlineplumber.net/#website",
-              url: "https://mainlineplumber.net",
+              "@id": "https://www.mainlineplumber.com/#website",
+              url: "https://www.mainlineplumber.com",
               name: "Mainline Plumbing Inc.",
-              publisher: { "@id": "https://mainlineplumber.net/#business" },
+              publisher: { "@id": "https://www.mainlineplumber.com/#business" },
             },
           ],
         }),
