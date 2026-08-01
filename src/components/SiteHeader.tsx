@@ -29,7 +29,7 @@ export function SiteHeader() {
           </div>
           <div className="flex items-center gap-2">
             <Link to="/contact-us" className="bg-brand-red px-3 py-1 font-bold uppercase tracking-wider hover:bg-brand-red/80">Contact Us</Link>
-            <a href="/contact-us" className="bg-accent text-navy-deep px-3 py-1 font-bold uppercase tracking-wider hover:opacity-90">Now Hiring</a>
+            <a href="/contact-us/" className="bg-accent text-navy-deep px-3 py-1 font-bold uppercase tracking-wider hover:opacity-90">Now Hiring</a>
           </div>
         </div>
       </div>
