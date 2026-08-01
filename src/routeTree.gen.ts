@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ContactUsRouteImport } from './routes/contact-us'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as PlumbingServicesIndexRouteImport } from './routes/plumbing-services.index'
 import { Route as AreasWeServeIndexRouteImport } from './routes/areas-we-serve.index'
@@ -25,6 +26,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ContactUsRoute = ContactUsRouteImport.update({
   id: '/contact-us',
   path: '/contact-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -55,6 +61,7 @@ const AreasWeServeCityRoute = AreasWeServeCityRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/contact-us': typeof ContactUsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
@@ -64,6 +71,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/contact-us': typeof ContactUsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
@@ -74,6 +82,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/contact-us': typeof ContactUsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
@@ -85,6 +94,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/about'
     | '/contact-us'
     | '/sitemap.xml'
     | '/areas-we-serve/$city'
@@ -94,6 +104,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/about'
     | '/contact-us'
     | '/sitemap.xml'
     | '/areas-we-serve/$city'
@@ -103,6 +114,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/about'
     | '/contact-us'
     | '/sitemap.xml'
     | '/areas-we-serve/$city'
@@ -113,6 +125,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   ContactUsRoute: typeof ContactUsRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   AreasWeServeCityRoute: typeof AreasWeServeCityRoute
@@ -135,6 +148,13 @@ declare module '@tanstack/react-router' {
       path: '/contact-us'
       fullPath: '/contact-us'
       preLoaderRoute: typeof ContactUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -177,6 +197,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   ContactUsRoute: ContactUsRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   AreasWeServeCityRoute: AreasWeServeCityRoute,
