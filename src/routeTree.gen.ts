@@ -18,6 +18,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as PlumbingServicesIndexRouteImport } from './routes/plumbing-services.index'
 import { Route as AreasWeServeIndexRouteImport } from './routes/areas-we-serve.index'
 import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
+import { Route as AreasWeServeEscalonRouteImport } from './routes/areas-we-serve.escalon'
 import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$city'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -65,6 +66,11 @@ const AboutUsIndexRoute = AboutUsIndexRouteImport.update({
   path: '/about-us/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AreasWeServeEscalonRoute = AreasWeServeEscalonRouteImport.update({
+  id: '/areas-we-serve/escalon',
+  path: '/areas-we-serve/escalon',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AreasWeServeCityRoute = AreasWeServeCityRouteImport.update({
   id: '/areas-we-serve/$city',
   path: '/areas-we-serve/$city',
@@ -79,6 +85,7 @@ export interface FileRoutesByFullPath {
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
+  '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
@@ -91,6 +98,7 @@ export interface FileRoutesByTo {
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
+  '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
   '/about-us': typeof AboutUsIndexRoute
   '/areas-we-serve': typeof AreasWeServeIndexRoute
   '/plumbing-services': typeof PlumbingServicesIndexRoute
@@ -104,6 +112,7 @@ export interface FileRoutesById {
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
+  '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
@@ -118,6 +127,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/sitemap.xml'
     | '/areas-we-serve/$city'
+    | '/areas-we-serve/escalon'
     | '/about-us/'
     | '/areas-we-serve/'
     | '/plumbing-services/'
@@ -130,6 +140,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/sitemap.xml'
     | '/areas-we-serve/$city'
+    | '/areas-we-serve/escalon'
     | '/about-us'
     | '/areas-we-serve'
     | '/plumbing-services'
@@ -142,6 +153,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/sitemap.xml'
     | '/areas-we-serve/$city'
+    | '/areas-we-serve/escalon'
     | '/about-us/'
     | '/areas-we-serve/'
     | '/plumbing-services/'
@@ -155,6 +167,7 @@ export interface RootRouteChildren {
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   AreasWeServeCityRoute: typeof AreasWeServeCityRoute
+  AreasWeServeEscalonRoute: typeof AreasWeServeEscalonRoute
   AboutUsIndexRoute: typeof AboutUsIndexRoute
   AreasWeServeIndexRoute: typeof AreasWeServeIndexRoute
   PlumbingServicesIndexRoute: typeof PlumbingServicesIndexRoute
@@ -225,6 +238,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutUsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/areas-we-serve/escalon': {
+      id: '/areas-we-serve/escalon'
+      path: '/areas-we-serve/escalon'
+      fullPath: '/areas-we-serve/escalon'
+      preLoaderRoute: typeof AreasWeServeEscalonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/areas-we-serve/$city': {
       id: '/areas-we-serve/$city'
       path: '/areas-we-serve/$city'
@@ -243,6 +263,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   AreasWeServeCityRoute: AreasWeServeCityRoute,
+  AreasWeServeEscalonRoute: AreasWeServeEscalonRoute,
   AboutUsIndexRoute: AboutUsIndexRoute,
   AreasWeServeIndexRoute: AreasWeServeIndexRoute,
   PlumbingServicesIndexRoute: PlumbingServicesIndexRoute,

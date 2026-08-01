@@ -21,7 +21,7 @@ export const serviceCities: ServiceCity[] = [
   { slug: "central-valley", name: "Central Valley", region: "209 & 350", blurb: "Full-service plumbing for neighborhoods throughout California's Central Valley, from Stockton down to Turlock." },
   { slug: "del-rio", name: "Del Rio", blurb: "Reliable local plumbers keeping the water flowing in Del Rio, CA and surrounding Stanislaus County." },
   {
-    slug: "escalon",
+    slug: "escalon-plumber-emergency-plumbing-water-heater-",
     name: "Escalon",
     blurb: "Our hometown. Family-owned plumbing service in Escalon since 2010.",
     local: {
