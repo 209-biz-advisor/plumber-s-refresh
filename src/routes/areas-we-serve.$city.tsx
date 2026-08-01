@@ -129,7 +129,7 @@ function CityPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-            <Link to="/contact" className="btn-outline">Request Service</Link>
+            <Link to="/contact-us" className="btn-outline">Request Service</Link>
           </div>
         </div>
       </section>
@@ -140,7 +140,7 @@ function CityPage() {
           Contact us at{" "}
           <a href="tel:2098381000" className="underline font-bold">(209) 838-1000</a>{" "}
           or{" "}
-          <Link to="/contact" className="underline font-bold">online</Link>{" "}
+          <Link to="/contact-us" className="underline font-bold">online</Link>{" "}
           today to keep your {city.name} home safe and comfortable.
         </div>
       </section>
@@ -208,7 +208,7 @@ function CityPage() {
               <p className="mt-4 text-white/85">{city.local.plumbingTieIn}</p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-                <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
+                <Link to="/contact-us" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
               </div>
             </div>
           </div>
@@ -328,7 +328,7 @@ function CityPage() {
             <a href="tel:2098381000" className="bg-white text-brand-red px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
               <Phone className="size-4" /> (209) 838-1000
             </a>
-            <Link to="/contact" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-red">
+            <Link to="/contact-us" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-red">
               Request Service Online
             </Link>
           </div>

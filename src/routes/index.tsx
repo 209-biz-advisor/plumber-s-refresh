@@ -108,7 +108,7 @@ function HomePage() {
               The Mainline's got your back.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/contact" className="btn-outline"><Mail className="size-4" /> Contact</Link>
+              <Link to="/contact-us" className="btn-outline"><Mail className="size-4" /> Contact</Link>
               <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Call</a>
               <a href="sms:2098381000" className="btn-outline"><MessageSquare className="size-4" /> Text</a>
             </div>
@@ -147,7 +147,7 @@ function HomePage() {
               <ul className="mt-4 space-y-2 text-sm">
                 {col.items.map((item) => (
                   <li key={item}>
-                    <Link to="/services" className="text-navy hover:text-accent underline-offset-4 hover:underline">{item}</Link>
+                    <Link to="/plumbing-services" className="text-navy hover:text-accent underline-offset-4 hover:underline">{item}</Link>
                   </li>
                 ))}
               </ul>
@@ -161,7 +161,7 @@ function HomePage() {
         <div className="container-x py-5 flex flex-wrap items-center justify-center gap-4 text-navy-deep font-bold uppercase tracking-wider text-sm md:text-base">
           <span className="text-2xl md:text-3xl font-display">$50 OFF</span>
           <span>New Customer Special, Limited Time</span>
-          <Link to="/contact" className="ml-2 px-4 py-2 border-2 border-navy-deep rounded hover:bg-navy-deep hover:text-white transition">Learn More →</Link>
+          <Link to="/contact-us" className="ml-2 px-4 py-2 border-2 border-navy-deep rounded hover:bg-navy-deep hover:text-white transition">Learn More →</Link>
         </div>
       </section>
 
@@ -184,14 +184,14 @@ function HomePage() {
                 <div className="font-display text-5xl md:text-6xl text-brand-red leading-none">{s.big}</div>
                 <div className="mt-2 font-bold uppercase tracking-wider text-navy text-sm">{s.label}</div>
                 <p className="mt-3 text-xs text-muted-foreground flex-1">{s.fine}</p>
-                <Link to="/contact" className="mt-5 inline-flex items-center justify-center gap-2 bg-navy-deep text-white px-4 py-2.5 rounded-lg font-bold uppercase tracking-wider text-xs hover:bg-navy transition">
+                <Link to="/contact-us" className="mt-5 inline-flex items-center justify-center gap-2 bg-navy-deep text-white px-4 py-2.5 rounded-lg font-bold uppercase tracking-wider text-xs hover:bg-navy transition">
                   Schedule Service <ArrowRight className="size-3.5" />
                 </Link>
               </div>
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link to="/contact" className="text-navy font-bold uppercase tracking-wider text-sm hover:text-brand-red">
+            <Link to="/contact-us" className="text-navy font-bold uppercase tracking-wider text-sm hover:text-brand-red">
               View All Offers →
             </Link>
           </div>
@@ -287,7 +287,7 @@ function HomePage() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Get a Free Quote</a>
-              <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border-2 border-navy text-navy font-bold uppercase tracking-wider text-sm hover:bg-navy hover:text-white transition">
+              <Link to="/contact-us" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border-2 border-navy text-navy font-bold uppercase tracking-wider text-sm hover:bg-navy hover:text-white transition">
                 Book an Assessment
               </Link>
             </div>
@@ -376,7 +376,7 @@ function HomePage() {
             Because relationships are everything in our line of work, our goal is to retain you as a
             customer for all your plumbing needs, and to be the first name you pass along to your neighbors.
           </p>
-          <Link to="/about" className="inline-flex items-center gap-2 mt-8 bg-navy-deep text-white px-8 py-3 rounded font-bold uppercase tracking-wider text-sm hover:bg-navy transition">
+          <Link to="/about-us" className="inline-flex items-center gap-2 mt-8 bg-navy-deep text-white px-8 py-3 rounded font-bold uppercase tracking-wider text-sm hover:bg-navy transition">
             About Us <ArrowRight className="size-4" />
           </Link>
         </div>
@@ -420,7 +420,7 @@ function HomePage() {
                 <li key={t} className="flex gap-2"><CheckCircle2 className="size-5 text-accent shrink-0" /> {t}</li>
               ))}
             </ul>
-            <Link to="/about" className="btn-primary mt-8">Learn More About Us</Link>
+            <Link to="/about-us" className="btn-primary mt-8">Learn More About Us</Link>
           </div>
         </div>
       </section>
@@ -448,7 +448,7 @@ function HomePage() {
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Call (209) 838-1000</a>
-                <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border-2 border-navy text-navy font-bold uppercase tracking-wider text-sm hover:bg-navy hover:text-white transition">
+                <Link to="/contact-us" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border-2 border-navy text-navy font-bold uppercase tracking-wider text-sm hover:bg-navy hover:text-white transition">
                   Request Service
                 </Link>
               </div>
@@ -520,7 +520,7 @@ function HomePage() {
               Book online or by phone. Same-day and next-day appointments available across the 209.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Link to="/contact" className="btn-primary"><Mail className="size-4" /> Schedule</Link>
+              <Link to="/contact-us" className="btn-primary"><Mail className="size-4" /> Schedule</Link>
               <a href="tel:2098381000" className="btn-outline"><Phone className="size-4" /> Call</a>
             </div>
           </div>
@@ -611,7 +611,7 @@ function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Call Now</a>
-              <Link to="/contact" className="btn-outline">Request Service</Link>
+              <Link to="/contact-us" className="btn-outline">Request Service</Link>
             </div>
           </div>
           <div className="flex justify-center">

@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 
-export const Route = createFileRoute("/contact")({
+export const Route = createFileRoute("/contact-us")({
   head: () => ({
     meta: [
       { title: "Contact Mainline Plumbing Inc. | Escalon, CA Plumbers" },

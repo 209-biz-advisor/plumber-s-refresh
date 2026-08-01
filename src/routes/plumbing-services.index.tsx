@@ -3,7 +3,7 @@ import { Wrench, Droplets, Flame, ShieldCheck, Pipette, Bath, Phone, CheckCircle
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
-export const Route = createFileRoute("/services")({
+export const Route = createFileRoute("/plumbing-services/")({
   head: () => ({
     meta: [
       { title: "Plumbing Services in Escalon & Modesto | Mainline Plumbing Inc." },
@@ -137,7 +137,7 @@ function ServicesPage() {
                 <a href="tel:2098381000" className="inline-flex items-center gap-2 bg-white text-brand-red px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
                   <Phone className="size-4" /> (209) 838-1000
                 </a>
-                <Link to="/contact" className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-red transition">
+                <Link to="/contact-us" className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-red transition">
                   Request a Free Quote
                 </Link>
               </div>
@@ -181,7 +181,7 @@ function ServicesPage() {
             <p className="mt-3 text-white/80">Call us or request service online, we'll be there fast.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-              <Link to="/contact" className="btn-outline">Contact Us</Link>
+              <Link to="/contact-us" className="btn-outline">Contact Us</Link>
             </div>
           </div>
         </div>

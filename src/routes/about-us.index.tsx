@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import miguel from "@/assets/miguel-owner.png";
 
-export const Route = createFileRoute("/about")({
+export const Route = createFileRoute("/about-us/")({
   head: () => ({
     meta: [
       { title: "About Mainline Plumbing Inc. | Family-Owned Plumbers in Escalon, CA" },
@@ -70,7 +70,7 @@ function AboutPage() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to="/contact" className="btn-primary"><Phone className="size-4" /> Get In Touch</Link>
+            <Link to="/contact-us" className="btn-primary"><Phone className="size-4" /> Get In Touch</Link>
           </div>
         </div>
       </section>
