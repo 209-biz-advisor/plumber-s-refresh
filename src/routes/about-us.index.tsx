@@ -3,6 +3,7 @@ import { Award, Users, HeartHandshake, Phone } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import miguel from "@/assets/miguel-owner.png";
+import { SITE_URL } from "@/lib/site";
 
 export const Route = createFileRoute("/about-us/")({
   head: () => ({
@@ -11,7 +12,9 @@ export const Route = createFileRoute("/about-us/")({
       { name: "description", content: "Family-owned and operated plumbing company serving Escalon, Modesto and the Central Valley since 2010, backed by 37+ years of hands-on plumbing experience. We treat your family, like our family." },
       { property: "og:title", content: "About Mainline Plumbing Inc." },
       { property: "og:description", content: "We treat your family, like our family. Meet Miguel, 37+ years of plumbing experience, serving the 209 & 350 since 2010." },
+      { property: "og:url", content: `${SITE_URL}/about-us/` },
     ],
+    links: [{ rel: "canonical", href: `${SITE_URL}/about-us/` }],
   }),
   component: AboutPage,
 });

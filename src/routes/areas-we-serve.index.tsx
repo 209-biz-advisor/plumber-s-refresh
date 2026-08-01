@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
+import { SITE_URL } from "@/lib/site";
 
 export const Route = createFileRoute("/areas-we-serve/")({
   head: () => ({
@@ -12,7 +13,9 @@ export const Route = createFileRoute("/areas-we-serve/")({
       { name: "description", content: "Mainline Plumbing proudly serves Ceres, Escalon, Hughson, Lathrop, Manteca, Oakdale, Riverbank, Salida, Turlock and the greater Central Valley." },
       { property: "og:title", content: "Areas We Serve | Mainline Plumbing Inc." },
       { property: "og:description", content: "Local plumbers serving cities across Stanislaus & San Joaquin County." },
+      { property: "og:url", content: `${SITE_URL}/areas-we-serve/` },
     ],
+    links: [{ rel: "canonical", href: `${SITE_URL}/areas-we-serve/` }],
   }),
   component: AreasIndex,
 });

@@ -13,6 +13,7 @@ import miguelWithLogo from "@/assets/miguel-with-logo.png.asset.json";
 import shield from "@/assets/logo-shield.png";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { serviceCities } from "@/lib/service-cities";
+import { SITE_URL } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,7 +22,9 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Family-owned plumbers in Escalon, CA. 37+ years of plumbing experience covering repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
       { property: "og:title", content: "Mainline Plumbing Inc. | Trusted Plumbers in Escalon & Modesto, CA" },
       { property: "og:description", content: "Family-owned plumbers in Escalon, CA. 37+ years of plumbing experience covering repairs, water heaters, drain cleaning & emergency plumbing repairs across the Central Valley." },
+      { property: "og:url", content: `${SITE_URL}/` },
     ],
+    links: [{ rel: "canonical", href: `${SITE_URL}/` }],
   }),
   component: HomePage,
 });

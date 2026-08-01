@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Wrench, Droplets, Flame, ShieldCheck, Pipette, Bath, Phone, CheckCircle2 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { SITE_URL } from "@/lib/site";
 
 export const Route = createFileRoute("/plumbing-services/")({
   head: () => ({
@@ -10,7 +11,9 @@ export const Route = createFileRoute("/plumbing-services/")({
       { name: "description", content: "Full-service residential & commercial plumbing, repairs, water heaters, drain cleaning, leak detection, repiping, and emergency plumbing repairs." },
       { property: "og:title", content: "Plumbing Services | Mainline Plumbing Inc." },
       { property: "og:description", content: "Repairs, water heaters, drain cleaning, leak detection, repiping and emergency service in the Central Valley." },
+      { property: "og:url", content: `${SITE_URL}/plumbing-services/` },
     ],
+    links: [{ rel: "canonical", href: `${SITE_URL}/plumbing-services/` }],
   }),
   component: ServicesPage,
 });

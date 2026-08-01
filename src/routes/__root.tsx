@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SITE_URL, OG_IMAGE } from "@/lib/site";
 
 function NotFoundComponent() {
   return (

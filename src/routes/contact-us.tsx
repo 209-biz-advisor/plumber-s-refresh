@@ -4,6 +4,7 @@ import { Phone, MapPin, Clock, Mail, Send } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
+import { SITE_URL } from "@/lib/site";
 
 export const Route = createFileRoute("/contact-us")({
   head: () => ({
@@ -12,7 +13,9 @@ export const Route = createFileRoute("/contact-us")({
       { name: "description", content: "Call (209) 838-1000 or request plumbing service online. Family-owned plumbing serving Escalon, Modesto and the Central Valley." },
       { property: "og:title", content: "Contact Mainline Plumbing Inc." },
       { property: "og:description", content: "Schedule fast, dependable plumbing service in the Central Valley." },
+      { property: "og:url", content: `${SITE_URL}/contact-us/` },
     ],
+    links: [{ rel: "canonical", href: `${SITE_URL}/contact-us/` }],
   }),
   component: ContactPage,
 });
