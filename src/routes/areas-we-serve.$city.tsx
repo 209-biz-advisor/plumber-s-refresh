@@ -18,7 +18,7 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
     const { city } = loaderData;
     const title = `Plumber in ${city.name}, CA | Mainline Plumbing Inc.`;
     const description = `Local plumbing services in ${city.name}, CA. Water heaters, drain cleaning, leak detection & emergency plumbing repairs from Mainline Plumbing Inc.`;
-    const url = `https://www.mainlineplumber.com/areas-we-serve/${city.slug}`;
+    const url = `${SITE_URL}/areas-we-serve/${city.slug}/`;
     return {
       meta: [
         { title },
@@ -27,6 +27,8 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
         { property: "og:description", content: description },
         { property: "og:url", content: url },
         { property: "og:type", content: "article" },
+        { property: "og:image", content: OG_IMAGE },
+        { name: "twitter:image", content: OG_IMAGE },
       ],
       links: [{ rel: "canonical", href: url }],
       scripts: [
@@ -38,14 +40,14 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
               {
                 "@type": "BreadcrumbList",
                 itemListElement: [
-                  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.mainlineplumber.com/" },
-                  { "@type": "ListItem", position: 2, name: "Areas We Serve", item: "https://www.mainlineplumber.com/areas-we-serve" },
+                  { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+                  { "@type": "ListItem", position: 2, name: "Areas We Serve", item: `${SITE_URL}/areas-we-serve/` },
                   { "@type": "ListItem", position: 3, name: city.name, item: url },
                 ],
               },
               {
                 "@type": ["Plumber", "LocalBusiness"],
-                name: `Mainline Plumbing Inc. — ${city.name}, CA`,
+                name: `Mainline Plumbing Inc. of ${city.name}, CA`,
                 url,
                 telephone: "+1-209-838-1000",
                 image: "https://www.mainlineplumber.com/favicon.png",
