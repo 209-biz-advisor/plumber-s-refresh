@@ -109,7 +109,7 @@ We tell customers honestly when a truck can be on-site rather than promising rou
 - Primary keyword: plumbing services Escalon
 - Focus: Full catalog plus water heater deep-dive.
 
-### Areas We Serve (/areas-we-serve)
+### Areas We Serve (/areas-we-serve/)
 - Primary keyword: plumbers 209 area code
 - Focus: Hub routing to 11 city pages plus service area map.
 
@@ -117,8 +117,9 @@ We tell customers honestly when a truck can be on-site rather than promising rou
 - Primary keyword: schedule plumbing service Escalon
 - Focus: Phone, form, hours, service area map.
 
-### City Pages (/areas-we-serve/{slug})
-Each city page carries: local identity, landmarks, community events, neighboring towns served, and a city-specific plumbing tie-in written from real knowledge of that town. City pages target "plumber in {City}, CA" and include the same core services plus locally relevant context (well systems in Oakdale, River Islands new construction in Lathrop, tract-home slab leaks in Riverbank, etc.).
+### City Pages (/areas-we-serve/{slug}/)
+Each city page carries: local identity, landmarks, community events, neighboring towns served, and a city-specific plumbing tie-in written from real knowledge of that town. City pages target "plumber in {City}, CA" and include the same core services plus locally relevant context (well systems in Oakdale, River Islands new construction in Lathrop, tract-home slab leaks in Riverbank, etc.). The Escalon hometown page lives at the long-form canonical path /areas-we-serve/escalon-plumber-emergency-plumbing-water-heater-/.
+
 
 ---
 
