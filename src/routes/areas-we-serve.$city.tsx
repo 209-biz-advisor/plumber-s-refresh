@@ -94,6 +94,29 @@ const services = [
   { icon: Flame, title: "Water Heater Services", desc: "Tank and tankless repair, replacement and same-day installation." },
 ];
 
+const serviceMenu = [
+  {
+    icon: Wrench,
+    title: "Repairs & Upgrades",
+    items: ["Plumbing fixtures", "Water lines", "Gas lines", "Leak detection", "Whole home repiping", "Remodel plumbing"],
+  },
+  {
+    icon: Droplets,
+    title: "Drain & Sewer",
+    items: ["Drain cleaning", "Hydro jetting", "Sewer line repair", "Camera inspection", "Main line backups", "Sewer replacement"],
+  },
+  {
+    icon: Flame,
+    title: "Water Heaters",
+    items: ["Tank repair & replacement", "Electric water heaters", "Tankless installs", "Anode & valve service", "Annual flush service", "Same day swaps"],
+  },
+  {
+    icon: ShieldCheck,
+    title: "Emergency & Commercial",
+    items: ["Burst pipe repair", "No hot water calls", "Sewage backups", "Restaurant grease lines", "Backflow repairs", "Multi unit properties"],
+  },
+];
+
 const drainSigns = [
   "Slow-draining sinks, tubs or showers",
   "Foul odors coming from drains",
