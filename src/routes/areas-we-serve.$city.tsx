@@ -116,7 +116,7 @@ function CityPage() {
       <section className="bg-navy-deep text-white py-20 md:py-28">
         <div className="container-x">
           <div className="flex items-center gap-2 text-sm text-white/70">
-            <Link to="/areas-we-serve" className="hover:text-accent">Areas We Serve</Link>
+            <Link to="/areas-we-serve/" className="hover:text-accent">Areas We Serve</Link>
             <span>/</span>
             <span className="text-accent">{city.name}</span>
           </div>
@@ -132,7 +132,7 @@ function CityPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-            <Link to="/contact-us" className="btn-outline">Request Service</Link>
+            <Link to="/contact-us/" className="btn-outline">Request Service</Link>
           </div>
         </div>
       </section>
@@ -143,7 +143,7 @@ function CityPage() {
           Contact us at{" "}
           <a href="tel:2098381000" className="underline font-bold">(209) 838-1000</a>{" "}
           or{" "}
-          <Link to="/contact-us" className="underline font-bold">online</Link>{" "}
+          <Link to="/contact-us/" className="underline font-bold">online</Link>{" "}
           today to keep your {city.name} home safe and comfortable.
         </div>
       </section>
@@ -211,7 +211,7 @@ function CityPage() {
               <p className="mt-4 text-white/85">{city.local.plumbingTieIn}</p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-                <Link to="/contact-us" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
+                <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
               </div>
             </div>
           </div>
@@ -331,7 +331,7 @@ function CityPage() {
             <a href="tel:2098381000" className="bg-white text-brand-orange-deep px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
               <Phone className="size-4" /> (209) 838-1000
             </a>
-            <Link to="/contact-us" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange-deep">
+            <Link to="/contact-us/" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange-deep">
               Request Service Online
             </Link>
           </div>
@@ -390,7 +390,7 @@ function CityPage() {
             {serviceCities.filter((c) => c.slug !== city.slug).map((c) => (
               <Link
                 key={c.slug}
-                to="/areas-we-serve/$city"
+                to="/areas-we-serve/$city/"
                 params={{ city: c.slug }}
                 className="border border-white/20 rounded-lg px-4 py-3 flex items-center justify-between hover:border-accent hover:bg-white/5 transition"
               >
@@ -416,7 +416,7 @@ function CityNotFound() {
       <section className="flex-1 container-x py-24 text-center">
         <h1 className="text-4xl font-bold text-navy">Service Area Not Found</h1>
         <p className="mt-4 text-muted-foreground">We couldn't find that city page. Browse all the areas we serve below.</p>
-        <Link to="/areas-we-serve" className="btn-primary mt-8 inline-flex">See All Areas</Link>
+        <Link to="/areas-we-serve/" className="btn-primary mt-8 inline-flex">See All Areas</Link>
       </section>
       <SiteFooter />
     </div>

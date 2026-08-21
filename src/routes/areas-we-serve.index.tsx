@@ -51,7 +51,7 @@ function AreasIndex() {
             {serviceCities.map((c) => (
               <Link
                 key={c.slug}
-                to="/areas-we-serve/$city"
+                to="/areas-we-serve/$city/"
                 params={{ city: c.slug }}
                 className="group bg-white border border-border rounded-xl p-6 flex items-start justify-between gap-3 hover:border-brand-orange hover:shadow-lg transition"
                 style={{ boxShadow: "var(--shadow-elegant)" }}

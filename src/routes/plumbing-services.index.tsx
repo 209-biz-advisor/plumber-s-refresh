@@ -140,7 +140,7 @@ function ServicesPage() {
                 <a href="tel:2098381000" className="inline-flex items-center gap-2 bg-white text-brand-orange-deep px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
                   <Phone className="size-4" /> (209) 838-1000
                 </a>
-                <Link to="/contact-us" className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange transition">
+                <Link to="/contact-us/" className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange transition">
                   Request a Free Quote
                 </Link>
               </div>
@@ -184,7 +184,7 @@ function ServicesPage() {
             <p className="mt-3 text-white/80">Call us or request service online, we'll be there fast.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-              <Link to="/contact-us" className="btn-outline">Contact Us</Link>
+              <Link to="/contact-us/" className="btn-outline">Contact Us</Link>
             </div>
           </div>
         </div>

@@ -29,9 +29,9 @@ export function SiteFooter() {
         <div>
           <h4 className="text-white font-display text-lg mb-4 uppercase tracking-wider">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/plumbing-services" className="hover:text-accent">Services</Link></li>
-            <li><Link to="/about-us" className="hover:text-accent">About Us</Link></li>
-            <li><Link to="/contact-us" className="hover:text-accent">Contact</Link></li>
+            <li><Link to="/plumbing-services/" className="hover:text-accent">Services</Link></li>
+            <li><Link to="/about-us/" className="hover:text-accent">About Us</Link></li>
+            <li><Link to="/contact-us/" className="hover:text-accent">Contact</Link></li>
           </ul>
           <div className="flex gap-3 mt-5">
             <a href="https://www.facebook.com/mainlineplumbinginc/" aria-label="Facebook" className="bg-white/10 hover:bg-accent p-2 rounded-full"><Facebook className="size-4" /></a>
