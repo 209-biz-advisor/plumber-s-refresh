@@ -5,11 +5,11 @@ import logo from "@/assets/logo-horizontal.png";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/about-us", label: "About Us" },
-  { to: "/plumbing-services", label: "Plumbing Services" },
-  { to: "/plumbing-services", label: "Drain Cleaning" },
-  { to: "/plumbing-services", label: "Water Heaters" },
-  { to: "/areas-we-serve", label: "Areas We Serve" },
+  { to: "/about-us/", label: "About Us" },
+  { to: "/plumbing-services/", label: "Plumbing Services" },
+  { to: "/plumbing-services/", label: "Drain Cleaning" },
+  { to: "/plumbing-services/", label: "Water Heaters" },
+  { to: "/areas-we-serve/", label: "Areas We Serve" },
 ] as const;
 
 export function SiteHeader() {
