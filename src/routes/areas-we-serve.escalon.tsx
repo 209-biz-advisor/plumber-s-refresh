@@ -7,7 +7,7 @@ import { createFileRoute, redirect } from "@tanstack/react-router";
 export const Route = createFileRoute("/areas-we-serve/escalon")({
   beforeLoad: () => {
     throw redirect({
-      to: "/areas-we-serve/$city",
+      to: "/areas-we-serve/$city/",
       params: { city: "escalon-plumber-emergency-plumbing-water-heater-" },
       statusCode: 301,
     });
