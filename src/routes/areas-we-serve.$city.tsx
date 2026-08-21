@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Phone, MapPin, CheckCircle2, ArrowRight, Wrench, Droplets, Flame, ShieldCheck, Star, Landmark, Users, Calendar } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import { findCity, serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { SITE_URL, OG_IMAGE } from "@/lib/site";
@@ -113,29 +114,37 @@ function CityPage() {
       <SiteHeader />
 
       {/* HERO */}
-      <section className="bg-navy-deep text-white py-20 md:py-28">
-        <div className="container-x">
-          <div className="flex items-center gap-2 text-sm text-white/70">
-            <Link to="/areas-we-serve" className="hover:text-accent">Areas We Serve</Link>
-            <span>/</span>
-            <span className="text-accent">{city.name}</span>
+      <section className="bg-navy-deep text-white py-16 md:py-24">
+        <div className="container-x grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+          <div>
+            <div className="flex items-center gap-2 text-sm text-white/70">
+              <Link to="/areas-we-serve/" className="hover:text-accent">Areas We Serve</Link>
+              <span>/</span>
+              <span className="text-accent">{city.name}</span>
+            </div>
+            <span className="eyebrow mt-4 block">{city.name}, CA</span>
+            <h1 className="text-4xl md:text-6xl font-bold mt-2 leading-tight">
+              Professional Plumbing Services in <span className="text-brand-orange">{city.name}, CA</span>
+            </h1>
+            <p className="mt-4 font-display uppercase tracking-widest text-accent">Local Plumbers, Emergency Repairs Available</p>
+            <p className="mt-5 text-white/85 max-w-2xl">
+              Welcome to Mainline Plumbing Inc., your trusted partner for top-notch plumbing services in {city.name}, CA.
+              With our commitment to excellence and experienced plumbers, we provide reliable solutions to meet all your
+              plumbing needs.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+              <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
+            </div>
           </div>
-          <span className="eyebrow mt-4 block">{city.name}, CA</span>
-          <h1 className="text-4xl md:text-6xl font-bold mt-2 leading-tight max-w-3xl">
-            Professional Plumbing Services in <span className="text-brand-orange">{city.name}, CA</span>
-          </h1>
-          <p className="mt-4 font-display uppercase tracking-widest text-accent">Local Plumbers, Emergency Repairs Available</p>
-          <p className="mt-5 text-white/85 max-w-2xl">
-            Welcome to Mainline Plumbing Inc., your trusted partner for top-notch plumbing services in {city.name}, CA.
-            With our commitment to excellence and experienced plumbers, we provide reliable solutions to meet all your
-            plumbing needs.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-            <Link to="/contact-us" className="btn-outline">Request Service</Link>
-          </div>
+          <QuickQuoteForm
+            title="Need Help?"
+            subtitle={`Fast response for ${city.name} homes and businesses.`}
+            compact
+          />
         </div>
       </section>
+
 
       {/* INTRO CTA STRIP */}
       <section className="bg-brand-orange-deep text-white py-6">
@@ -143,7 +152,7 @@ function CityPage() {
           Contact us at{" "}
           <a href="tel:2098381000" className="underline font-bold">(209) 838-1000</a>{" "}
           or{" "}
-          <Link to="/contact-us" className="underline font-bold">online</Link>{" "}
+          <Link to="/contact-us/" className="underline font-bold">online</Link>{" "}
           today to keep your {city.name} home safe and comfortable.
         </div>
       </section>
@@ -211,7 +220,7 @@ function CityPage() {
               <p className="mt-4 text-white/85">{city.local.plumbingTieIn}</p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-                <Link to="/contact-us" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
+                <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
               </div>
             </div>
           </div>
@@ -331,7 +340,7 @@ function CityPage() {
             <a href="tel:2098381000" className="bg-white text-brand-orange-deep px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
               <Phone className="size-4" /> (209) 838-1000
             </a>
-            <Link to="/contact-us" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange-deep">
+            <Link to="/contact-us/" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange-deep">
               Request Service Online
             </Link>
           </div>
@@ -390,7 +399,7 @@ function CityPage() {
             {serviceCities.filter((c) => c.slug !== city.slug).map((c) => (
               <Link
                 key={c.slug}
-                to="/areas-we-serve/$city"
+                to="/areas-we-serve/$city/"
                 params={{ city: c.slug }}
                 className="border border-white/20 rounded-lg px-4 py-3 flex items-center justify-between hover:border-accent hover:bg-white/5 transition"
               >
@@ -416,7 +425,7 @@ function CityNotFound() {
       <section className="flex-1 container-x py-24 text-center">
         <h1 className="text-4xl font-bold text-navy">Service Area Not Found</h1>
         <p className="mt-4 text-muted-foreground">We couldn't find that city page. Browse all the areas we serve below.</p>
-        <Link to="/areas-we-serve" className="btn-primary mt-8 inline-flex">See All Areas</Link>
+        <Link to="/areas-we-serve/" className="btn-primary mt-8 inline-flex">See All Areas</Link>
       </section>
       <SiteFooter />
     </div>

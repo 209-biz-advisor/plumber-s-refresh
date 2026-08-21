@@ -73,7 +73,7 @@ function AboutPage() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to="/contact-us" className="btn-primary"><Phone className="size-4" /> Get In Touch</Link>
+            <Link to="/contact-us/" className="btn-primary"><Phone className="size-4" /> Get In Touch</Link>
           </div>
         </div>
       </section>
