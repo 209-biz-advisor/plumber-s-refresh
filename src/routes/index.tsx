@@ -130,7 +130,7 @@ function HomePage() {
           <div className="lg:col-span-1">
             <span className="eyebrow">Plumbing Services</span>
             <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2 leading-tight">
-              Live Life <span className="text-brand-red">Unclogged.</span>
+              Live Life <span className="text-brand-orange">Unclogged.</span>
             </h2>
             <p className="mt-5 text-muted-foreground">
               When your plumbing goes awry, so does life, disrupting everyday tasks, your comfort and your patience.
@@ -146,7 +146,7 @@ function HomePage() {
               <div className="size-12 rounded-xl bg-gradient-to-br from-navy to-navy-deep flex items-center justify-center mb-4">
                 <col.icon className="size-6 text-accent" />
               </div>
-              <h3 className="text-xl font-bold text-brand-red uppercase leading-tight">{col.title}</h3>
+              <h3 className="text-xl font-bold text-brand-orange uppercase leading-tight">{col.title}</h3>
               <ul className="mt-4 space-y-2 text-sm">
                 {col.items.map((item) => (
                   <li key={item}>
@@ -181,10 +181,10 @@ function HomePage() {
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {specials.map((s) => (
               <div key={s.label} className="relative bg-white rounded-2xl p-6 border border-border flex flex-col hover:border-accent transition" style={{ boxShadow: "var(--shadow-elegant)" }}>
-                <div className="absolute -top-3 -right-3 size-12 rounded-full bg-brand-red text-white flex items-center justify-center">
+                <div className="absolute -top-3 -right-3 size-12 rounded-full bg-brand-orange-deep text-white flex items-center justify-center">
                   <s.icon className="size-6" />
                 </div>
-                <div className="font-display text-5xl md:text-6xl text-brand-red leading-none">{s.big}</div>
+                <div className="font-display text-5xl md:text-6xl text-brand-orange leading-none">{s.big}</div>
                 <div className="mt-2 font-bold uppercase tracking-wider text-navy text-sm">{s.label}</div>
                 <p className="mt-3 text-xs text-muted-foreground flex-1">{s.fine}</p>
                 <Link to="/contact-us" className="mt-5 inline-flex items-center justify-center gap-2 bg-navy-deep text-white px-4 py-2.5 rounded-lg font-bold uppercase tracking-wider text-xs hover:bg-navy transition">
@@ -194,7 +194,7 @@ function HomePage() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link to="/contact-us" className="text-navy font-bold uppercase tracking-wider text-sm hover:text-brand-red">
+            <Link to="/contact-us" className="text-navy font-bold uppercase tracking-wider text-sm hover:text-brand-orange-deep">
               View All Offers →
             </Link>
           </div>
@@ -208,7 +208,7 @@ function HomePage() {
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             {badges.map((b) => (
               <div key={b} className="flex items-center gap-2 px-4 py-3 border-2 border-navy/10 rounded-lg bg-secondary">
-                <ShieldCheck className="size-5 text-brand-red shrink-0" />
+                <ShieldCheck className="size-5 text-brand-orange shrink-0" />
                 <span className="font-display uppercase tracking-wider text-navy text-xs md:text-sm">{b}</span>
               </div>
             ))}
@@ -234,7 +234,7 @@ function HomePage() {
           <div>
             <span className="eyebrow">Water Heater Specialists</span>
             <h2 className="text-4xl md:text-5xl font-bold text-navy mt-2 leading-tight">
-              No Hot Water? <span className="text-brand-red">We'll Fix That, Today.</span>
+              No Hot Water? <span className="text-brand-orange">We'll Fix That, Today.</span>
             </h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
               Water heaters are the #1 call we get in the 209, and the #1 thing we install. From a
@@ -249,7 +249,7 @@ function HomePage() {
                 { t: "Tankless Conversion", d: "Endless hot water. Navien, Rinnai & Rheem certified." },
                 { t: "Same-Day Install", d: "In-stock units for most Escalon & Modesto homes." },
               ].map((f) => (
-                <div key={f.t} className="border-l-4 border-brand-red pl-4">
+                <div key={f.t} className="border-l-4 border-brand-orange pl-4">
                   <div className="font-bold text-navy uppercase tracking-wider text-sm">{f.t}</div>
                   <div className="text-sm text-muted-foreground mt-1">{f.d}</div>
                 </div>
@@ -257,7 +257,7 @@ function HomePage() {
             </div>
 
             {/* ELECTRIC WATER HEATER HIGHLIGHT */}
-            <div className="mt-6 rounded-2xl p-6 bg-gradient-to-br from-brand-red to-navy-deep text-white border border-white/10">
+            <div className="mt-6 rounded-2xl p-6 bg-gradient-to-br from-brand-orange-deep to-navy-deep text-white border border-white/10">
               <div className="flex items-center gap-3">
                 <div className="size-12 rounded-xl bg-accent flex items-center justify-center">
                   <Flame className="size-6 text-navy-deep" />
@@ -280,11 +280,11 @@ function HomePage() {
             <div className="mt-8 bg-secondary rounded-xl p-5 border border-border">
               <p className="text-sm text-navy font-semibold uppercase tracking-wider">Is it time to replace?</p>
               <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Tank is 10+ years old</li>
-                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Rusty or discolored hot water</li>
-                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Popping or rumbling sounds</li>
-                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Puddles or moisture at the base</li>
-                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-red shrink-0 mt-0.5" /> Hot water runs out faster than it used to</li>
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-orange shrink-0 mt-0.5" /> Tank is 10+ years old</li>
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-orange shrink-0 mt-0.5" /> Rusty or discolored hot water</li>
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-orange shrink-0 mt-0.5" /> Popping or rumbling sounds</li>
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-orange shrink-0 mt-0.5" /> Puddles or moisture at the base</li>
+                <li className="flex gap-2"><CheckCircle2 className="size-4 text-brand-orange shrink-0 mt-0.5" /> Hot water runs out faster than it used to</li>
               </ul>
             </div>
 
@@ -295,14 +295,14 @@ function HomePage() {
               </Link>
             </div>
             <p className="mt-4 text-xs text-muted-foreground">
-              Ask about our <span className="font-bold text-brand-red">$250 off tankless</span> and financing options.
+              Ask about our <span className="font-bold text-brand-orange">$250 off tankless</span> and financing options.
             </p>
           </div>
 
           <div className="relative">
             <div className="bg-gradient-to-br from-navy-deep to-navy rounded-2xl p-8 text-white" style={{ boxShadow: "var(--shadow-elegant)" }}>
               <div className="flex items-center gap-3">
-                <div className="size-14 rounded-xl bg-brand-red flex items-center justify-center">
+                <div className="size-14 rounded-xl bg-brand-orange flex items-center justify-center">
                   <Flame className="size-7 text-white" />
                 </div>
                 <div>
@@ -350,7 +350,7 @@ function HomePage() {
               </div>
             </div>
 
-            <div className="mt-5 bg-brand-red text-white rounded-xl p-5 flex items-center gap-4">
+            <div className="mt-5 bg-brand-orange-deep text-white rounded-xl p-5 flex items-center gap-4">
               <AlertTriangle className="size-8 shrink-0" />
               <div>
                 <div className="font-bold uppercase tracking-wider text-sm">Leaking Water Heater?</div>
@@ -363,7 +363,7 @@ function HomePage() {
 
 
       {/* WHY CHOOSE US */}
-      <section className="bg-brand-red text-white py-20 md:py-24">
+      <section className="bg-brand-orange-deep text-white py-20 md:py-24">
         <div className="container-x text-center max-w-3xl mx-auto">
           <span className="eyebrow !text-white/80">Why Choose Mainline?</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-2">
@@ -393,7 +393,7 @@ function HomePage() {
               <div className="size-20 rounded-full bg-gradient-to-br from-navy to-navy-deep flex items-center justify-center">
                 <p.icon className="size-9 text-accent" />
               </div>
-              <h3 className="mt-5 text-lg font-bold text-brand-red uppercase">{p.title}</h3>
+              <h3 className="mt-5 text-lg font-bold text-brand-orange uppercase">{p.title}</h3>
               <div className="mt-4 flex gap-1 text-accent">
                 {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-4 fill-accent" />)}
               </div>
@@ -436,13 +436,13 @@ function HomePage() {
               <span className="eyebrow">Our Service Area</span>
               <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2 leading-tight">
                 We Go Where You Need Us,<br />
-                <span className="text-brand-red">All Around the 209.</span>
+                <span className="text-brand-orange">All Around the 209.</span>
               </h2>
               <p className="mt-4 text-muted-foreground">
                 Since 2010, we've been protecting Escalon, Modesto and surrounding communities, providing
                 plumbing maintenance, emergency repairs, pipe replacements and more.
               </p>
-              <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-sm font-bold text-brand-red uppercase">
+              <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-sm font-bold text-brand-orange uppercase">
                 {cities.map((c) => (
                   <Link key={c.slug} to="/areas-we-serve/$city" params={{ city: c.slug }} className="hover:underline flex items-center gap-1">
                     <MapPin className="size-3" /> {c.name}
@@ -460,7 +460,7 @@ function HomePage() {
               <div className="rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
                 <img src={serviceMap.url} alt="Map of Mainline Plumbing service area around Escalon, Modesto and the 209" className="w-full h-auto object-cover" />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-brand-red text-white px-5 py-3 rounded-xl font-bold uppercase tracking-wider text-sm shadow-lg">
+              <div className="absolute -bottom-4 -right-4 bg-brand-orange-deep text-white px-5 py-3 rounded-xl font-bold uppercase tracking-wider text-sm shadow-lg">
                 Serving the 209 & 350
               </div>
             </div>
@@ -473,7 +473,7 @@ function HomePage() {
         <div className="container-x">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold">
-              <span className="text-brand-red">Areas</span> We Serve
+              <span className="text-brand-orange">Areas</span> We Serve
             </h2>
             <p className="mt-4 text-white/80">
               At Mainline Plumbing, we're proud to offer exceptional plumbing repairs, maintenance,
@@ -527,13 +527,13 @@ function HomePage() {
               <a href="tel:2098381000" className="btn-outline"><Phone className="size-4" /> Call</a>
             </div>
           </div>
-          <div className="bg-brand-red rounded-2xl p-8 border border-white/10">
+          <div className="bg-brand-orange rounded-2xl p-8 border border-white/10">
             <AlertTriangle className="size-10 text-white" />
             <h3 className="mt-4 text-2xl md:text-3xl font-bold">Need Emergency Service?</h3>
             <p className="mt-3 text-white/90">
               Burst pipe? No hot water? We answer the phone for plumbing emergencies, day, night, weekends, holidays.
             </p>
-            <a href="tel:2098381000" className="mt-6 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
+            <a href="tel:2098381000" className="mt-6 inline-flex items-center gap-3 bg-white text-brand-orange-deep px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
               <Phone className="size-6" /> (209) 838-1000
             </a>
           </div>
@@ -541,7 +541,7 @@ function HomePage() {
       </section>
 
       {/* INLINE CONTACT FORM */}
-      <section className="bg-brand-red text-white py-20">
+      <section className="bg-brand-orange-deep text-white py-20">
         <div className="container-x grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="eyebrow !text-white/80">Let's Get Started</span>
@@ -635,7 +635,7 @@ function HomePage() {
               <span className="eyebrow !text-accent">Your Local Plumbers</span>
               <h2 className="text-3xl md:text-5xl font-bold mt-2 leading-tight">
                 See Where We Serve.<br />
-                <span className="text-brand-red">Then Call Us Out.</span>
+                <span className="text-brand-orange">Then Call Us Out.</span>
               </h2>
               <p className="mt-4 text-white/80 max-w-md">
                 From Escalon to Stockton, Modesto to Turlock, we cover the neighborhoods that keep the 209 running.

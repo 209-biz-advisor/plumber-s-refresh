@@ -91,7 +91,7 @@ function ServicesPage() {
               },
             ].map((c) => (
               <div key={c.title} className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col">
-                <div className="size-12 rounded-xl bg-brand-red flex items-center justify-center mb-4">
+                <div className="size-12 rounded-xl bg-brand-orange flex items-center justify-center mb-4">
                   <Flame className="size-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold uppercase text-white">{c.title}</h3>
@@ -124,7 +124,7 @@ function ServicesPage() {
                 ))}
               </ul>
             </div>
-            <div className="bg-brand-red rounded-2xl p-8">
+            <div className="bg-brand-orange rounded-2xl p-8">
               <h3 className="text-2xl font-bold uppercase">Tank vs. Tankless: Which is Right for You?</h3>
               <p className="mt-3 text-white/90">
                 A traditional tank is the fastest and lowest-cost swap. A tankless unit costs more up
@@ -137,10 +137,10 @@ function ServicesPage() {
                 honest, no-pressure recommendation. Free.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <a href="tel:2098381000" className="inline-flex items-center gap-2 bg-white text-brand-red px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
+                <a href="tel:2098381000" className="inline-flex items-center gap-2 bg-white text-brand-orange-deep px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
                   <Phone className="size-4" /> (209) 838-1000
                 </a>
-                <Link to="/contact-us" className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-red transition">
+                <Link to="/contact-us" className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange transition">
                   Request a Free Quote
                 </Link>
               </div>
@@ -157,7 +157,7 @@ function ServicesPage() {
                 { n: "04", t: "Warranty & Care", d: "Manufacturer warranty registered. Follow-up flush reminders." },
               ].map((s) => (
                 <div key={s.n}>
-                  <div className="font-display text-4xl text-brand-red">{s.n}</div>
+                  <div className="font-display text-4xl text-brand-orange">{s.n}</div>
                   <div className="mt-2 font-bold uppercase tracking-wider text-white">{s.t}</div>
                   <p className="mt-2 text-sm text-white/80">{s.d}</p>
                 </div>

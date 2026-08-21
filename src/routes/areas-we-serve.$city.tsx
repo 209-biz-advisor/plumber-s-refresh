@@ -122,7 +122,7 @@ function CityPage() {
           </div>
           <span className="eyebrow mt-4 block">{city.name}, CA</span>
           <h1 className="text-4xl md:text-6xl font-bold mt-2 leading-tight max-w-3xl">
-            Professional Plumbing Services in <span className="text-brand-red">{city.name}, CA</span>
+            Professional Plumbing Services in <span className="text-brand-orange">{city.name}, CA</span>
           </h1>
           <p className="mt-4 font-display uppercase tracking-widest text-accent">Local Plumbers, Emergency Repairs Available</p>
           <p className="mt-5 text-white/85 max-w-2xl">
@@ -138,7 +138,7 @@ function CityPage() {
       </section>
 
       {/* INTRO CTA STRIP */}
-      <section className="bg-brand-red text-white py-6">
+      <section className="bg-brand-orange-deep text-white py-6">
         <div className="container-x text-center text-sm md:text-base font-semibold">
           Contact us at{" "}
           <a href="tel:2098381000" className="underline font-bold">(209) 838-1000</a>{" "}
@@ -162,7 +162,7 @@ function CityPage() {
             <div className="mt-10 grid lg:grid-cols-3 gap-6">
               <div className="bg-secondary rounded-2xl p-6 border border-border">
                 <div className="flex items-center gap-2 text-navy">
-                  <Landmark className="size-5 text-brand-red" />
+                  <Landmark className="size-5 text-brand-orange" />
                   <h3 className="font-display uppercase tracking-wider text-sm">{city.name} Landmarks We Work Around</h3>
                 </div>
                 <ul className="mt-4 space-y-2">
@@ -177,7 +177,7 @@ function CityPage() {
               {city.local.events && city.local.events.length > 0 && (
                 <div className="bg-secondary rounded-2xl p-6 border border-border">
                   <div className="flex items-center gap-2 text-navy">
-                    <Calendar className="size-5 text-brand-red" />
+                    <Calendar className="size-5 text-brand-orange" />
                     <h3 className="font-display uppercase tracking-wider text-sm">Local Traditions We Support</h3>
                   </div>
                   <ul className="mt-4 space-y-2">
@@ -192,7 +192,7 @@ function CityPage() {
 
               <div className="bg-secondary rounded-2xl p-6 border border-border">
                 <div className="flex items-center gap-2 text-navy">
-                  <Users className="size-5 text-brand-red" />
+                  <Users className="size-5 text-brand-orange" />
                   <h3 className="font-display uppercase tracking-wider text-sm">Neighboring Communities We Cover</h3>
                 </div>
                 <ul className="mt-4 flex flex-wrap gap-2">
@@ -238,7 +238,7 @@ function CityPage() {
                 ["Health & Safety:", "Timely repairs stop mold, mildew and other water-damage hazards."],
               ].map(([b, t]) => (
                 <li key={b} className="flex gap-3">
-                  <CheckCircle2 className="size-5 text-brand-red shrink-0 mt-0.5" />
+                  <CheckCircle2 className="size-5 text-brand-orange shrink-0 mt-0.5" />
                   <span className="text-muted-foreground"><span className="font-bold text-navy">{b}</span> {t}</span>
                 </li>
               ))}
@@ -307,7 +307,7 @@ function CityPage() {
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {drainSigns.map((sign) => (
               <div key={sign} className="bg-white border border-border rounded-lg p-5 flex gap-3">
-                <CheckCircle2 className="size-5 text-brand-red shrink-0 mt-0.5" />
+                <CheckCircle2 className="size-5 text-brand-orange shrink-0 mt-0.5" />
                 <span className="text-sm text-navy">{sign}</span>
               </div>
             ))}
@@ -320,7 +320,7 @@ function CityPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-brand-red text-white py-16">
+      <section className="bg-brand-orange-deep text-white py-16">
         <div className="container-x text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold">Ready for Reliable Plumbing in {city.name}?</h2>
           <p className="mt-4 text-white/90">
@@ -328,10 +328,10 @@ function CityPage() {
             systems. Your {city.name} plumbing needs are our priority.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a href="tel:2098381000" className="bg-white text-brand-red px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
+            <a href="tel:2098381000" className="bg-white text-brand-orange-deep px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
               <Phone className="size-4" /> (209) 838-1000
             </a>
-            <Link to="/contact-us" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-red">
+            <Link to="/contact-us" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange-deep">
               Request Service Online
             </Link>
           </div>
