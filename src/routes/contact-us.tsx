@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Phone, MapPin, Clock, Mail, Send } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { SITE_URL } from "@/lib/site";
 
