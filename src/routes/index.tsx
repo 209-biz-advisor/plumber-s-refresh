@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import heroCover from "@/assets/hero-cover.png";
 import miguelOwner from "@/assets/miguel-owner.png";
 import miguelWithLogo from "@/assets/miguel-with-logo.png.asset.json";
