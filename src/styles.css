@@ -34,6 +34,7 @@
   --color-steel: var(--steel);
   --color-brand-orange: var(--brand-orange);
   --color-brand-red: var(--brand-red);
+  --color-brand-orange-deep: var(--brand-orange-deep);
   --font-display: "Oswald", "Impact", sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
 }
@@ -52,7 +53,8 @@
   --navy-deep: oklch(0.20 0.08 258);     /* darker navy */
   --steel: oklch(0.82 0.01 240);         /* steel/silver */
   --brand-orange: oklch(0.72 0.18 55);   /* orange */
-  --brand-red: oklch(0.58 0.22 27);      /* red wrench */
+  --brand-orange-deep: oklch(0.60 0.19 48); /* deep orange for large fills */
+  --brand-red: oklch(0.58 0.22 27);      /* red wrench accent */
 
   --primary: var(--navy);
   --primary-foreground: oklch(0.98 0.01 240);
