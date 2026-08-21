@@ -30,7 +30,7 @@ function AreasIndex() {
           <div>
             <span className="eyebrow">Areas We Serve</span>
             <h1 className="text-4xl md:text-6xl font-bold mt-2 leading-tight">
-              Local Plumbers <span className="text-brand-red">Across the 209.</span>
+              Local Plumbers <span className="text-brand-orange">Across the 209.</span>
             </h1>
             <p className="mt-5 text-white/80 max-w-lg">
               Our plumbers proudly service the cities and neighborhoods below. Family-owned and
@@ -53,17 +53,17 @@ function AreasIndex() {
                 key={c.slug}
                 to="/areas-we-serve/$city"
                 params={{ city: c.slug }}
-                className="group bg-white border border-border rounded-xl p-6 flex items-start justify-between gap-3 hover:border-brand-red hover:shadow-lg transition"
+                className="group bg-white border border-border rounded-xl p-6 flex items-start justify-between gap-3 hover:border-brand-orange hover:shadow-lg transition"
                 style={{ boxShadow: "var(--shadow-elegant)" }}
               >
                 <div>
                   <div className="flex items-center gap-2">
-                    <MapPin className="size-4 text-brand-red" />
+                    <MapPin className="size-4 text-brand-orange" />
                     <span className="font-display text-xl uppercase text-navy">{c.name}</span>
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">{c.blurb}</p>
                 </div>
-                <ArrowRight className="size-5 text-brand-red shrink-0 mt-1 group-hover:translate-x-1 transition" />
+                <ArrowRight className="size-5 text-brand-orange shrink-0 mt-1 group-hover:translate-x-1 transition" />
               </Link>
             ))}
           </div>

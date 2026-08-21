@@ -28,7 +28,7 @@ export function SiteHeader() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <Link to="/contact-us" className="bg-brand-red px-3 py-1 font-bold uppercase tracking-wider hover:bg-brand-red/80">Contact Us</Link>
+            <Link to="/contact-us" className="bg-brand-orange px-3 py-1 font-bold uppercase tracking-wider hover:bg-brand-orange/80">Contact Us</Link>
             <a href="/contact-us/" className="bg-accent text-navy-deep px-3 py-1 font-bold uppercase tracking-wider hover:opacity-90">Now Hiring</a>
           </div>
         </div>
@@ -51,7 +51,7 @@ export function SiteHeader() {
           ))}
           <Link
             to="/contact-us"
-            className="relative bg-brand-orange text-white pl-5 pr-6 py-3 font-display uppercase tracking-widest text-xs whitespace-nowrap hover:bg-brand-orange/90 flex items-center gap-2"
+            className="relative bg-brand-orange-deep text-white pl-5 pr-6 py-3 font-display uppercase tracking-widest text-xs whitespace-nowrap hover:bg-brand-orange/90 flex items-center gap-2"
             style={{ clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%)" }}
           >
             Request an Appointment <ArrowRight className="size-3.5" />
