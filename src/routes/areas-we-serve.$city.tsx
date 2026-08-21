@@ -456,7 +456,7 @@ function CityPage() {
                 <span className="eyebrow text-accent">Commercial</span>
                 <h2 className="text-2xl md:text-3xl font-bold mt-2">Commercial Plumbing in {city.name}</h2>
                 <p className="mt-4 text-white/85">
-                  Restaurants, shops, offices, shops and ag facilities around {city.name} count on us for grease line
+                  Restaurants, shops, offices and ag facilities around {city.name} count on us for grease line
                   jetting, water heater banks, backflow repairs and fixture work scheduled around business hours so you
                   stay open.
                 </p>
