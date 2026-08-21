@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Phone, MapPin, Clock, Mail, Send } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { SITE_URL } from "@/lib/site";
 
@@ -26,13 +27,26 @@ function ContactPage() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
 
-      <section className="bg-navy-deep text-white py-20">
-        <div className="container-x">
-          <span className="eyebrow">Contact</span>
-          <h1 className="text-5xl md:text-6xl font-bold mt-2">Schedule Service Today</h1>
-          <p className="mt-4 text-white/80 max-w-xl">Call us or send a message, we're ready to help with any plumbing need, big or small.</p>
+      <section className="bg-navy-deep text-white py-16 md:py-20">
+        <div className="container-x grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
+          <div>
+            <span className="eyebrow">Contact</span>
+            <h1 className="text-4xl md:text-6xl font-bold mt-2">Schedule Service Today</h1>
+            <p className="mt-4 text-white/80 max-w-xl">Call us or send a message, we're ready to help with any plumbing need, big or small.</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+              <a href="sms:2098381000" className="btn-outline">Text Us</a>
+            </div>
+          </div>
+          <QuickQuoteForm
+            title="Need Help?"
+            subtitle="Quick request, fast callback."
+            compact
+            className="w-full max-w-md lg:ml-auto"
+          />
         </div>
       </section>
+
 
       <section className="py-20">
         <div className="container-x grid lg:grid-cols-3 gap-10">
