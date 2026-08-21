@@ -94,10 +94,11 @@ function HomePage() {
       <section className="relative overflow-hidden">
         <img src={heroCover} alt="Mainline Plumbing Escalon CA" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/90 via-navy-deep/70 to-navy-deep/40" />
-        <div className="container-x relative py-24 md:py-36 text-white">
+        <div className="container-x relative py-20 md:py-28 text-white">
+          <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
           <div className="max-w-3xl">
             <span className="eyebrow">Escalon, CA · Family-Owned Since 2010</span>
-            <h1 className="text-5xl md:text-7xl font-bold mt-3 leading-[1.05]">
+            <h1 className="text-4xl md:text-6xl font-bold mt-3 leading-[1.05]">
               We Protect Plumbing <span className="text-accent">and Peace of Mind.</span>
             </h1>
             <p className="mt-5 font-display text-2xl md:text-3xl text-accent italic">
@@ -120,6 +121,13 @@ function HomePage() {
               <div className="flex items-center gap-2"><Clock className="size-4 text-accent" /> Emergency Service</div>
               <div className="flex items-center gap-2"><ShieldCheck className="size-4 text-accent" /> Licensed & Insured</div>
             </div>
+          </div>
+          <QuickQuoteForm
+            title="Need Help?"
+            subtitle="Send a quick request and we'll call you right back."
+            compact
+            className="w-full max-w-md lg:ml-auto"
+          />
           </div>
         </div>
       </section>
