@@ -113,29 +113,37 @@ function CityPage() {
       <SiteHeader />
 
       {/* HERO */}
-      <section className="bg-navy-deep text-white py-20 md:py-28">
-        <div className="container-x">
-          <div className="flex items-center gap-2 text-sm text-white/70">
-            <Link to="/areas-we-serve/" className="hover:text-accent">Areas We Serve</Link>
-            <span>/</span>
-            <span className="text-accent">{city.name}</span>
+      <section className="bg-navy-deep text-white py-16 md:py-24">
+        <div className="container-x grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+          <div>
+            <div className="flex items-center gap-2 text-sm text-white/70">
+              <Link to="/areas-we-serve/" className="hover:text-accent">Areas We Serve</Link>
+              <span>/</span>
+              <span className="text-accent">{city.name}</span>
+            </div>
+            <span className="eyebrow mt-4 block">{city.name}, CA</span>
+            <h1 className="text-4xl md:text-6xl font-bold mt-2 leading-tight">
+              Professional Plumbing Services in <span className="text-brand-orange">{city.name}, CA</span>
+            </h1>
+            <p className="mt-4 font-display uppercase tracking-widest text-accent">Local Plumbers, Emergency Repairs Available</p>
+            <p className="mt-5 text-white/85 max-w-2xl">
+              Welcome to Mainline Plumbing Inc., your trusted partner for top-notch plumbing services in {city.name}, CA.
+              With our commitment to excellence and experienced plumbers, we provide reliable solutions to meet all your
+              plumbing needs.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+              <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
+            </div>
           </div>
-          <span className="eyebrow mt-4 block">{city.name}, CA</span>
-          <h1 className="text-4xl md:text-6xl font-bold mt-2 leading-tight max-w-3xl">
-            Professional Plumbing Services in <span className="text-brand-orange">{city.name}, CA</span>
-          </h1>
-          <p className="mt-4 font-display uppercase tracking-widest text-accent">Local Plumbers, Emergency Repairs Available</p>
-          <p className="mt-5 text-white/85 max-w-2xl">
-            Welcome to Mainline Plumbing Inc., your trusted partner for top-notch plumbing services in {city.name}, CA.
-            With our commitment to excellence and experienced plumbers, we provide reliable solutions to meet all your
-            plumbing needs.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
-            <Link to="/contact-us/" className="btn-outline">Request Service</Link>
-          </div>
+          <QuickQuoteForm
+            title="Need Help?"
+            subtitle={`Fast response for ${city.name} homes and businesses.`}
+            compact
+          />
         </div>
       </section>
+
 
       {/* INTRO CTA STRIP */}
       <section className="bg-brand-orange-deep text-white py-6">
