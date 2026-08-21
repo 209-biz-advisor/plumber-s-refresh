@@ -536,13 +536,13 @@ function HomePage() {
               <a href="tel:2098381000" className="btn-outline"><Phone className="size-4" /> Call</a>
             </div>
           </div>
-          <div className="bg-brand-orange rounded-2xl p-8 border border-white/10">
+          <div className="bg-brand-red rounded-2xl p-8 border border-white/10">
             <AlertTriangle className="size-10 text-white" />
             <h3 className="mt-4 text-2xl md:text-3xl font-bold">Need Emergency Service?</h3>
             <p className="mt-3 text-white/90">
               Burst pipe? No hot water? We answer the phone for plumbing emergencies, day, night, weekends, holidays.
             </p>
-            <a href="tel:2098381000" className="mt-6 inline-flex items-center gap-3 bg-white text-brand-orange-deep px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
+            <a href="tel:2098381000" className="mt-6 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
               <Phone className="size-6" /> (209) 838-1000
             </a>
           </div>
