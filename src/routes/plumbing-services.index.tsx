@@ -31,13 +31,26 @@ function ServicesPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
-      <section className="bg-navy-deep text-white py-20">
-        <div className="container-x">
-          <span className="eyebrow">Our Services</span>
-          <h1 className="text-5xl md:text-6xl font-bold mt-2">Complete Plumbing Solutions</h1>
-          <p className="mt-4 text-white/80 max-w-2xl">Backed by 37+ years of hands-on plumbing experience, our skilled plumbers handle residential and commercial work across Stanislaus & San Joaquin County.</p>
+      <section className="bg-navy-deep text-white py-16 md:py-20">
+        <div className="container-x grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
+          <div>
+            <span className="eyebrow">Our Services</span>
+            <h1 className="text-4xl md:text-6xl font-bold mt-2">Complete Plumbing Solutions</h1>
+            <p className="mt-4 text-white/80 max-w-2xl">Backed by 37+ years of hands-on plumbing experience, our skilled plumbers handle residential and commercial work across Stanislaus & San Joaquin County.</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+              <Link to="/areas-we-serve/" className="btn-outline">Areas We Serve</Link>
+            </div>
+          </div>
+          <QuickQuoteForm
+            title="Request Service"
+            subtitle="Tell us what's going on and we'll call you right back."
+            compact
+            className="w-full max-w-md lg:ml-auto"
+          />
         </div>
       </section>
+
 
       <section className="py-20">
         <div className="container-x grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
