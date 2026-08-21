@@ -279,6 +279,198 @@ function CityPage() {
         </div>
       </section>
 
+      {/* FULL SERVICE MENU BY CATEGORY */}
+      <section className="py-20 bg-secondary">
+        <div className="container-x">
+          <div className="max-w-3xl">
+            <span className="eyebrow">{city.name} Plumbing Services</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">Everything We Fix, Replace and Install in {city.name}</h2>
+            <p className="mt-4 text-muted-foreground">
+              Plumbing problems range from small annoyances to full emergencies. Mainline Plumbing Inc. covers the whole
+              range for {city.name} homes and businesses, with licensed plumbers, upfront pricing and clean work.
+            </p>
+          </div>
+          <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {serviceMenu.map((group) => (
+              <div key={group.title} className="bg-white rounded-2xl border border-border p-6" style={{ boxShadow: "var(--shadow-elegant)" }}>
+                <div className="size-10 rounded-lg bg-navy-deep flex items-center justify-center">
+                  <group.icon className="size-5 text-accent" />
+                </div>
+                <h3 className="mt-4 font-display uppercase tracking-wider text-navy text-sm">{group.title}</h3>
+                <ul className="mt-3 space-y-2">
+                  {group.items.map((i) => (
+                    <li key={i} className="flex gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="size-4 text-brand-orange shrink-0 mt-0.5" /> {i}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+            <Link to="/contact-us/" className="btn-outline">Contact Us</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SIGNS YOU NEED PLUMBING SERVICE */}
+      <section className="py-20">
+        <div className="container-x grid lg:grid-cols-2 gap-12">
+          <div>
+            <span className="eyebrow">Warning Signs</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">Signs You Need Plumbing Services in {city.name}</h2>
+            <p className="mt-4 text-muted-foreground">
+              Catching a problem early is the cheapest repair you will ever make. Watch for these signs in your
+              {" "}{city.name} home and call us before a small leak turns into water damage.
+            </p>
+            <ul className="mt-6 space-y-4">
+              {[
+                ["Leaks or water stains:", "Check under sinks, behind toilets and along baseboards for moisture."],
+                ["Slow drains:", "Water lingering in a sink, tub or shower usually means a building blockage."],
+                ["Foul odors:", "Sewage, rotten egg or musty smells point to a clog, dry trap or drain line break."],
+                ["Low water pressure:", "Test several fixtures. Whole-home pressure loss often means pipe corrosion."],
+                ["Unusual sounds:", "Gurgling, banging or whistling pipes signal venting, pressure or valve trouble."],
+                ["Rising water bills:", "A jump with no change in usage almost always means a hidden leak."],
+              ].map(([b, t]) => (
+                <li key={b} className="flex gap-3">
+                  <CheckCircle2 className="size-5 text-brand-orange shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground"><span className="font-bold text-navy">{b}</span> {t}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="bg-brand-red text-white rounded-2xl p-8 md:p-10" style={{ boxShadow: "var(--shadow-elegant)" }}>
+            <AlertTriangle className="size-10" />
+            <h2 className="text-3xl md:text-4xl font-bold mt-4">Emergency Plumber in {city.name}</h2>
+            <p className="mt-4 text-white/90">
+              A burst supply line or a sewage backup will not wait for business hours. When you call Mainline, you get a
+              real person, a straight answer and a plumber headed toward {city.name} instead of a voicemail box.
+            </p>
+            <ul className="mt-6 space-y-2">
+              {["Burst and leaking pipes", "No hot water", "Sewer and main line backups", "Overflowing toilets", "Water heater failures", "Gas line concerns"].map((i) => (
+                <li key={i} className="flex gap-2 text-sm text-white/90">
+                  <CheckCircle2 className="size-4 shrink-0 mt-0.5" /> {i}
+                </li>
+              ))}
+            </ul>
+            <a href="tel:2098381000" className="mt-8 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
+              <Phone className="size-6" /> (209) 838-1000
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* WATER HEATERS */}
+      <section className="py-20 bg-navy-deep text-white">
+        <div className="container-x">
+          <div className="max-w-3xl">
+            <span className="eyebrow text-accent">Our Specialty</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2">{city.name} Water Heater Repair & Replacement</h2>
+            <p className="mt-4 text-white/85">
+              Water heaters are what we do most, and we stock the common sizes so a cold shower does not turn into a
+              week of waiting. We install and service tank, tankless and electric systems throughout {city.name}.
+            </p>
+          </div>
+          <div className="mt-10 grid md:grid-cols-3 gap-6">
+            {[
+              { t: "Traditional Tank Heaters", d: "Gas or electric with a storage tank. Reliable, lower upfront cost, and the fastest same-day swap in most {city} homes." },
+              { t: "Tankless On Demand", d: "Heats water as you use it. Endless hot water, smaller footprint and lower monthly energy use." },
+              { t: "Electric Water Heaters", d: "Perfect for homes without gas service or garage installs. Simple venting, clean install, strong efficiency." },
+            ].map((c) => (
+              <div key={c.t} className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur">
+                <Flame className="size-8 text-brand-orange" />
+                <h3 className="mt-4 font-display uppercase tracking-wider text-sm">{c.t}</h3>
+                <p className="mt-3 text-sm text-white/80">{c.d.replace("{city}", city.name)}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Ask About Water Heater Specials</a>
+          </div>
+        </div>
+      </section>
+
+      {/* REPIPING + REMODEL + COMMERCIAL */}
+      <section className="py-20">
+        <div className="container-x space-y-12">
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <span className="eyebrow">Repiping</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">{city.name} Repiping Specialists</h2>
+              <p className="mt-4 text-muted-foreground">
+                Older galvanized and corroded copper lines cause pressure loss, rusty water and leaks inside walls. We
+                repipe {city.name} homes in copper or PEX with clean access, tidy patching and pressure tested results
+                that hold up for decades.
+              </p>
+            </div>
+            <div className="bg-secondary border border-border rounded-2xl p-8">
+              <span className="eyebrow">Remodels</span>
+              <h3 className="text-2xl md:text-3xl font-bold text-navy mt-2">Upgrade Your Plumbing in {city.name}</h3>
+              <ul className="mt-5 grid sm:grid-cols-2 gap-2">
+                {[
+                  "Showers and tub replacements",
+                  "Refrigerator and ice maker lines",
+                  "New sinks and faucets",
+                  "Toilet replacements",
+                  "Low flow efficient fixtures",
+                  "Rerouting pipes for additions",
+                  "Kitchen, bath and laundry plumbing",
+                  "Gas lines for ranges and BBQs",
+                ].map((i) => (
+                  <li key={i} className="flex gap-2 text-sm text-muted-foreground">
+                    <CheckCircle2 className="size-4 text-brand-orange shrink-0 mt-0.5" /> {i}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-navy-deep text-white rounded-2xl p-8 md:p-10" style={{ boxShadow: "var(--shadow-elegant)" }}>
+            <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-center">
+              <div>
+                <span className="eyebrow text-accent">Commercial</span>
+                <h2 className="text-2xl md:text-3xl font-bold mt-2">Commercial Plumbing in {city.name}</h2>
+                <p className="mt-4 text-white/85">
+                  Restaurants, shops, offices, shops and ag facilities around {city.name} count on us for grease line
+                  jetting, water heater banks, backflow repairs and fixture work scheduled around business hours so you
+                  stay open.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3 lg:justify-end">
+                <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+                <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="py-20 bg-secondary">
+        <div className="container-x">
+          <div className="max-w-3xl">
+            <span className="eyebrow">Why {city.name} Calls Mainline</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">We Treat Your Family, Like Our Family</h2>
+          </div>
+          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { t: "37 Years of Experience", d: "Miguel, our owner and lead plumber, has 37 years in the trade. The company has served the 209 & 350 since 2010." },
+              { t: "Upfront Pricing", d: "You approve the price before we start. No surprise add ons after the work is done." },
+              { t: "Emergency Repairs Available", d: "Burst pipes and no hot water get priority scheduling for {city} customers." },
+              { t: "Clean, Respectful Work", d: "Drop cloths, shoe covers and a jobsite left cleaner than we found it." },
+            ].map((c) => (
+              <div key={c.t} className="bg-white rounded-2xl border border-border p-6">
+                <ShieldCheck className="size-8 text-brand-orange" />
+                <h3 className="mt-4 font-display uppercase tracking-wider text-navy text-sm">{c.t}</h3>
+                <p className="mt-3 text-sm text-muted-foreground">{c.d.replace("{city}", city.name)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="bg-secondary py-20">
         <div className="container-x max-w-4xl">
