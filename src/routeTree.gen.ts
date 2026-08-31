@@ -19,6 +19,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WaterHeatersIndexRouteImport } from './routes/water-heaters.index'
 import { Route as PlumbingServicesIndexRouteImport } from './routes/plumbing-services.index'
+import { Route as PhotoGalleryIndexRouteImport } from './routes/photo-gallery.index'
 import { Route as AreasWeServeIndexRouteImport } from './routes/areas-we-serve.index'
 import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
 import { Route as WaterHeatersSplatRouteImport } from './routes/water-heaters.$'
@@ -77,6 +78,11 @@ const PlumbingServicesIndexRoute = PlumbingServicesIndexRouteImport.update({
   path: '/plumbing-services/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PhotoGalleryIndexRoute = PhotoGalleryIndexRouteImport.update({
+  id: '/photo-gallery/',
+  path: '/photo-gallery/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AreasWeServeIndexRoute = AreasWeServeIndexRouteImport.update({
   id: '/areas-we-serve/',
   path: '/areas-we-serve/',
@@ -129,6 +135,7 @@ export interface FileRoutesByFullPath {
   '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
+  '/photo-gallery/': typeof PhotoGalleryIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
 }
@@ -148,6 +155,7 @@ export interface FileRoutesByTo {
   '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us': typeof AboutUsIndexRoute
   '/areas-we-serve': typeof AreasWeServeIndexRoute
+  '/photo-gallery': typeof PhotoGalleryIndexRoute
   '/plumbing-services': typeof PlumbingServicesIndexRoute
   '/water-heaters': typeof WaterHeatersIndexRoute
 }
@@ -168,6 +176,7 @@ export interface FileRoutesById {
   '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
+  '/photo-gallery/': typeof PhotoGalleryIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
 }
@@ -189,6 +198,7 @@ export interface FileRouteTypes {
     | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
+    | '/photo-gallery/'
     | '/plumbing-services/'
     | '/water-heaters/'
   fileRoutesByTo: FileRoutesByTo
@@ -208,6 +218,7 @@ export interface FileRouteTypes {
     | '/water-heaters/$'
     | '/about-us'
     | '/areas-we-serve'
+    | '/photo-gallery'
     | '/plumbing-services'
     | '/water-heaters'
   id:
@@ -227,6 +238,7 @@ export interface FileRouteTypes {
     | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
+    | '/photo-gallery/'
     | '/plumbing-services/'
     | '/water-heaters/'
   fileRoutesById: FileRoutesById
@@ -247,6 +259,7 @@ export interface RootRouteChildren {
   WaterHeatersSplatRoute: typeof WaterHeatersSplatRoute
   AboutUsIndexRoute: typeof AboutUsIndexRoute
   AreasWeServeIndexRoute: typeof AreasWeServeIndexRoute
+  PhotoGalleryIndexRoute: typeof PhotoGalleryIndexRoute
   PlumbingServicesIndexRoute: typeof PlumbingServicesIndexRoute
   WaterHeatersIndexRoute: typeof WaterHeatersIndexRoute
 }
@@ -323,6 +336,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PlumbingServicesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/photo-gallery/': {
+      id: '/photo-gallery/'
+      path: '/photo-gallery'
+      fullPath: '/photo-gallery/'
+      preLoaderRoute: typeof PhotoGalleryIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/areas-we-serve/': {
       id: '/areas-we-serve/'
       path: '/areas-we-serve'
@@ -391,6 +411,7 @@ const rootRouteChildren: RootRouteChildren = {
   WaterHeatersSplatRoute: WaterHeatersSplatRoute,
   AboutUsIndexRoute: AboutUsIndexRoute,
   AreasWeServeIndexRoute: AreasWeServeIndexRoute,
+  PhotoGalleryIndexRoute: PhotoGalleryIndexRoute,
   PlumbingServicesIndexRoute: PlumbingServicesIndexRoute,
   WaterHeatersIndexRoute: WaterHeatersIndexRoute,
 }
