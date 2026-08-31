@@ -71,15 +71,15 @@ export function SiteHeader() {
       {open && (
         <div className="lg:hidden bg-navy-deep border-t border-white/10">
           <div className="container-x py-4 flex flex-col gap-3">
-            {nav.map((n, i) => (
-              <Link
-                key={`${n.to}-${i}`}
-                to={n.to}
+            {nav.map((n) => (
+              <a
+                key={n.href}
+                href={n.href}
                 onClick={() => setOpen(false)}
                 className="text-white/90 py-2 font-semibold uppercase tracking-wider text-sm"
               >
                 {n.label}
-              </Link>
+              </a>
             ))}
             <Link to="/contact-us/" onClick={() => setOpen(false)} className="btn-primary justify-center">
               Request an Appointment
