@@ -19,6 +19,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WaterHeatersIndexRouteImport } from './routes/water-heaters.index'
+import { Route as TemplatesIndexRouteImport } from './routes/templates.index'
 import { Route as PlumbingServicesIndexRouteImport } from './routes/plumbing-services.index'
 import { Route as PhotoGalleryIndexRouteImport } from './routes/photo-gallery.index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
@@ -84,6 +85,11 @@ const IndexRoute = IndexRouteImport.update({
 const WaterHeatersIndexRoute = WaterHeatersIndexRouteImport.update({
   id: '/water-heaters/',
   path: '/water-heaters/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TemplatesIndexRoute = TemplatesIndexRouteImport.update({
+  id: '/templates/',
+  path: '/templates/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PlumbingServicesIndexRoute = PlumbingServicesIndexRouteImport.update({
@@ -192,6 +198,7 @@ export interface FileRoutesByFullPath {
   '/blog/': typeof BlogIndexRoute
   '/photo-gallery/': typeof PhotoGalleryIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
+  '/templates/': typeof TemplatesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
   '/about-us/video-center/': typeof AboutUsVideoCenterIndexRoute
   '/about-us/video-center/videos/about-our-company': typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
@@ -220,6 +227,7 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogIndexRoute
   '/photo-gallery': typeof PhotoGalleryIndexRoute
   '/plumbing-services': typeof PlumbingServicesIndexRoute
+  '/templates': typeof TemplatesIndexRoute
   '/water-heaters': typeof WaterHeatersIndexRoute
   '/about-us/video-center': typeof AboutUsVideoCenterIndexRoute
   '/about-us/video-center/videos/about-our-company': typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
@@ -249,6 +257,7 @@ export interface FileRoutesById {
   '/blog/': typeof BlogIndexRoute
   '/photo-gallery/': typeof PhotoGalleryIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
+  '/templates/': typeof TemplatesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
   '/about-us/video-center/': typeof AboutUsVideoCenterIndexRoute
   '/about-us/video-center/videos/about-our-company': typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
@@ -279,6 +288,7 @@ export interface FileRouteTypes {
     | '/blog/'
     | '/photo-gallery/'
     | '/plumbing-services/'
+    | '/templates/'
     | '/water-heaters/'
     | '/about-us/video-center/'
     | '/about-us/video-center/videos/about-our-company'
@@ -307,6 +317,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/photo-gallery'
     | '/plumbing-services'
+    | '/templates'
     | '/water-heaters'
     | '/about-us/video-center'
     | '/about-us/video-center/videos/about-our-company'
@@ -335,6 +346,7 @@ export interface FileRouteTypes {
     | '/blog/'
     | '/photo-gallery/'
     | '/plumbing-services/'
+    | '/templates/'
     | '/water-heaters/'
     | '/about-us/video-center/'
     | '/about-us/video-center/videos/about-our-company'
@@ -364,6 +376,7 @@ export interface RootRouteChildren {
   BlogIndexRoute: typeof BlogIndexRoute
   PhotoGalleryIndexRoute: typeof PhotoGalleryIndexRoute
   PlumbingServicesIndexRoute: typeof PlumbingServicesIndexRoute
+  TemplatesIndexRoute: typeof TemplatesIndexRoute
   WaterHeatersIndexRoute: typeof WaterHeatersIndexRoute
   AboutUsVideoCenterIndexRoute: typeof AboutUsVideoCenterIndexRoute
   AboutUsVideoCenterVideosAboutOurCompanyRoute: typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
@@ -440,6 +453,13 @@ declare module '@tanstack/react-router' {
       path: '/water-heaters'
       fullPath: '/water-heaters/'
       preLoaderRoute: typeof WaterHeatersIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/templates/': {
+      id: '/templates/'
+      path: '/templates'
+      fullPath: '/templates/'
+      preLoaderRoute: typeof TemplatesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/plumbing-services/': {
@@ -580,6 +600,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogIndexRoute: BlogIndexRoute,
   PhotoGalleryIndexRoute: PhotoGalleryIndexRoute,
   PlumbingServicesIndexRoute: PlumbingServicesIndexRoute,
+  TemplatesIndexRoute: TemplatesIndexRoute,
   WaterHeatersIndexRoute: WaterHeatersIndexRoute,
   AboutUsVideoCenterIndexRoute: AboutUsVideoCenterIndexRoute,
   AboutUsVideoCenterVideosAboutOurCompanyRoute:
