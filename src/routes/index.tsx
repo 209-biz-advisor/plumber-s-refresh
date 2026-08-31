@@ -70,6 +70,7 @@ const specials = [
 ];
 
 const badges = [
+  `CA C-36 Licensed #953726`,
   "BBB A+ Accredited",
   "Google 5-Star Rated",
   "Angi Certified Pro",
