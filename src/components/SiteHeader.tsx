@@ -5,12 +5,13 @@ import logo from "@/assets/logo-horizontal.png";
 import { LICENSE_LABEL } from "@/lib/site";
 
 const nav = [
-  { to: "/", label: "Home" },
-  { to: "/about-us/", label: "About Us" },
-  { to: "/plumbing-services/", label: "Plumbing Services" },
-  { to: "/plumbing-services/", label: "Drain Cleaning" },
-  { to: "/plumbing-services/", label: "Water Heaters" },
-  { to: "/areas-we-serve/", label: "Areas We Serve" },
+  { href: "/", label: "Home" },
+  { href: "/about-us/", label: "About Us" },
+  { href: "/plumbing-services/", label: "Plumbing Services" },
+  { href: "/plumbing-services/drain-cleaning/", label: "Drain Cleaning" },
+  { href: "/water-heaters/", label: "Water Heaters" },
+  { href: "/coupons/", label: "Coupons" },
+  { href: "/areas-we-serve/", label: "Areas We Serve" },
 ] as const;
 
 export function SiteHeader() {
@@ -42,16 +43,14 @@ export function SiteHeader() {
           <img src={logo} alt="Mainline Plumbing Inc." className="h-[84px] w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-6 xl:gap-7">
-          {nav.map((n, i) => (
-            <Link
-              key={`${n.to}-${i}`}
-              to={n.to}
+          {nav.map((n) => (
+            <a
+              key={n.href}
+              href={n.href}
               className="text-white/85 hover:text-accent text-sm font-semibold uppercase tracking-wider whitespace-nowrap"
-              activeProps={{ className: "text-accent" }}
-              activeOptions={{ exact: n.to === "/" }}
             >
               {n.label}
-            </Link>
+            </a>
           ))}
           <Link
             to="/contact-us/"
@@ -72,15 +71,15 @@ export function SiteHeader() {
       {open && (
         <div className="lg:hidden bg-navy-deep border-t border-white/10">
           <div className="container-x py-4 flex flex-col gap-3">
-            {nav.map((n, i) => (
-              <Link
-                key={`${n.to}-${i}`}
-                to={n.to}
+            {nav.map((n) => (
+              <a
+                key={n.href}
+                href={n.href}
                 onClick={() => setOpen(false)}
                 className="text-white/90 py-2 font-semibold uppercase tracking-wider text-sm"
               >
                 {n.label}
-              </Link>
+              </a>
             ))}
             <Link to="/contact-us/" onClick={() => setOpen(false)} className="btn-primary justify-center">
               Request an Appointment

@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
+import { topLevel, childrenOf, servicePath, waterHeaterServices } from "@/lib/services";
 
 export const Route = createFileRoute("/plumbing-services/")({
   head: () => ({
@@ -69,6 +70,49 @@ function ServicesPage() {
           ))}
         </div>
       </section>
+
+      {/* FULL SERVICE DIRECTORY */}
+      <section className="pb-20">
+        <div className="container-x">
+          <span className="eyebrow">Every Service We Offer</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">Browse All Plumbing Services</h2>
+          <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2">
+            {topLevel("plumbing-services").map((s) => (
+              <div key={s.slug}>
+                <a href={servicePath(s)} className="font-semibold text-navy hover:text-accent">{s.name}</a>
+                {childrenOf("plumbing-services", s.slug).length > 0 && (
+                  <ul className="mt-1 mb-3 ml-3 space-y-1 border-l border-border pl-3">
+                    {childrenOf("plumbing-services", s.slug).map((c) => (
+                      <li key={c.slug}>
+                        <a href={servicePath(c)} className="text-sm text-muted-foreground hover:text-accent">{c.name}</a>
+                        {childrenOf("plumbing-services", c.slug).length > 0 && (
+                          <ul className="mt-1 ml-3 space-y-1 border-l border-border pl-3">
+                            {childrenOf("plumbing-services", c.slug).map((g) => (
+                              <li key={g.slug}>
+                                <a href={servicePath(g)} className="text-sm text-muted-foreground hover:text-accent">{g.name}</a>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 rounded-2xl border border-border bg-white p-7">
+            <h3 className="text-xl font-bold text-navy">Water Heaters</h3>
+            <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2">
+              <a href="/water-heaters/" className="font-semibold text-navy hover:text-accent">All Water Heater Services</a>
+              {waterHeaterServices.map((s) => (
+                <a key={s.slug} href={servicePath(s)} className="text-sm text-muted-foreground hover:text-accent">{s.name}</a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* WATER HEATER DEEP DIVE */}
       <section id="water-heaters" className="bg-navy-deep text-white py-20 md:py-24">

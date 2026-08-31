@@ -10,25 +10,57 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SiteMapRouteImport } from './routes/site-map'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as CouponsRouteImport } from './routes/coupons'
 import { Route as ContactUsRouteImport } from './routes/contact-us'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as WaterHeatersIndexRouteImport } from './routes/water-heaters.index'
+import { Route as TemplatesIndexRouteImport } from './routes/templates.index'
 import { Route as PlumbingServicesIndexRouteImport } from './routes/plumbing-services.index'
+import { Route as PhotoGalleryIndexRouteImport } from './routes/photo-gallery.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as AreasWeServeIndexRouteImport } from './routes/areas-we-serve.index'
 import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
+import { Route as WaterHeatersSplatRouteImport } from './routes/water-heaters.$'
+import { Route as TemplatesSplatRouteImport } from './routes/templates.$'
+import { Route as PlumbingServicesSplatRouteImport } from './routes/plumbing-services.$'
+import { Route as PhotoGalleryCategoryRouteImport } from './routes/photo-gallery.$category'
+import { Route as NpsSurveyThankYouRouteImport } from './routes/nps-survey.thank-you'
+import { Route as BlogSplatRouteImport } from './routes/blog.$'
 import { Route as AreasWeServeEscalonRouteImport } from './routes/areas-we-serve.escalon'
 import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$city'
+import { Route as AboutUsFaqRouteImport } from './routes/about-us.faq'
+import { Route as AboutUsVideoCenterIndexRouteImport } from './routes/about-us.video-center.index'
+import { Route as AboutUsVideoCenterVideosIndexRouteImport } from './routes/about-us.video-center.videos.index'
+import { Route as AboutUsVideoCenterVideosAboutOurCompanyRouteImport } from './routes/about-us.video-center.videos.about-our-company'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SiteMapRoute = SiteMapRouteImport.update({
+  id: '/site-map',
+  path: '/site-map',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CouponsRoute = CouponsRouteImport.update({
+  id: '/coupons',
+  path: '/coupons',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactUsRoute = ContactUsRouteImport.update({
@@ -51,9 +83,29 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WaterHeatersIndexRoute = WaterHeatersIndexRouteImport.update({
+  id: '/water-heaters/',
+  path: '/water-heaters/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TemplatesIndexRoute = TemplatesIndexRouteImport.update({
+  id: '/templates/',
+  path: '/templates/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PlumbingServicesIndexRoute = PlumbingServicesIndexRouteImport.update({
   id: '/plumbing-services/',
   path: '/plumbing-services/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhotoGalleryIndexRoute = PhotoGalleryIndexRouteImport.update({
+  id: '/photo-gallery/',
+  path: '/photo-gallery/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AreasWeServeIndexRoute = AreasWeServeIndexRouteImport.update({
@@ -66,6 +118,36 @@ const AboutUsIndexRoute = AboutUsIndexRouteImport.update({
   path: '/about-us/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WaterHeatersSplatRoute = WaterHeatersSplatRouteImport.update({
+  id: '/water-heaters/$',
+  path: '/water-heaters/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TemplatesSplatRoute = TemplatesSplatRouteImport.update({
+  id: '/templates/$',
+  path: '/templates/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumbingServicesSplatRoute = PlumbingServicesSplatRouteImport.update({
+  id: '/plumbing-services/$',
+  path: '/plumbing-services/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhotoGalleryCategoryRoute = PhotoGalleryCategoryRouteImport.update({
+  id: '/photo-gallery/$category',
+  path: '/photo-gallery/$category',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NpsSurveyThankYouRoute = NpsSurveyThankYouRouteImport.update({
+  id: '/nps-survey/thank-you',
+  path: '/nps-survey/thank-you',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSplatRoute = BlogSplatRouteImport.update({
+  id: '/blog/$',
+  path: '/blog/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AreasWeServeEscalonRoute = AreasWeServeEscalonRouteImport.update({
   id: '/areas-we-serve/escalon',
   path: '/areas-we-serve/escalon',
@@ -76,32 +158,88 @@ const AreasWeServeCityRoute = AreasWeServeCityRouteImport.update({
   path: '/areas-we-serve/$city',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutUsFaqRoute = AboutUsFaqRouteImport.update({
+  id: '/about-us/faq',
+  path: '/about-us/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsVideoCenterIndexRoute = AboutUsVideoCenterIndexRouteImport.update({
+  id: '/about-us/video-center/',
+  path: '/about-us/video-center/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsVideoCenterVideosIndexRoute =
+  AboutUsVideoCenterVideosIndexRouteImport.update({
+    id: '/about-us/video-center/videos/',
+    path: '/about-us/video-center/videos/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AboutUsVideoCenterVideosAboutOurCompanyRoute =
+  AboutUsVideoCenterVideosAboutOurCompanyRouteImport.update({
+    id: '/about-us/video-center/videos/about-our-company',
+    path: '/about-us/video-center/videos/about-our-company',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
+  '/coupons': typeof CouponsRoute
+  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/site-map': typeof SiteMapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
+  '/blog/$': typeof BlogSplatRoute
+  '/nps-survey/thank-you': typeof NpsSurveyThankYouRoute
+  '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
+  '/plumbing-services/$': typeof PlumbingServicesSplatRoute
+  '/templates/$': typeof TemplatesSplatRoute
+  '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
+  '/blog/': typeof BlogIndexRoute
+  '/photo-gallery/': typeof PhotoGalleryIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
+  '/templates/': typeof TemplatesIndexRoute
+  '/water-heaters/': typeof WaterHeatersIndexRoute
+  '/about-us/video-center/': typeof AboutUsVideoCenterIndexRoute
+  '/about-us/video-center/videos/about-our-company': typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
+  '/about-us/video-center/videos/': typeof AboutUsVideoCenterVideosIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
+  '/coupons': typeof CouponsRoute
+  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/site-map': typeof SiteMapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
+  '/blog/$': typeof BlogSplatRoute
+  '/nps-survey/thank-you': typeof NpsSurveyThankYouRoute
+  '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
+  '/plumbing-services/$': typeof PlumbingServicesSplatRoute
+  '/templates/$': typeof TemplatesSplatRoute
+  '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us': typeof AboutUsIndexRoute
   '/areas-we-serve': typeof AreasWeServeIndexRoute
+  '/blog': typeof BlogIndexRoute
+  '/photo-gallery': typeof PhotoGalleryIndexRoute
   '/plumbing-services': typeof PlumbingServicesIndexRoute
+  '/templates': typeof TemplatesIndexRoute
+  '/water-heaters': typeof WaterHeatersIndexRoute
+  '/about-us/video-center': typeof AboutUsVideoCenterIndexRoute
+  '/about-us/video-center/videos/about-our-company': typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
+  '/about-us/video-center/videos': typeof AboutUsVideoCenterVideosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -109,13 +247,30 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
+  '/coupons': typeof CouponsRoute
+  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/site-map': typeof SiteMapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
+  '/blog/$': typeof BlogSplatRoute
+  '/nps-survey/thank-you': typeof NpsSurveyThankYouRoute
+  '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
+  '/plumbing-services/$': typeof PlumbingServicesSplatRoute
+  '/templates/$': typeof TemplatesSplatRoute
+  '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
+  '/blog/': typeof BlogIndexRoute
+  '/photo-gallery/': typeof PhotoGalleryIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
+  '/templates/': typeof TemplatesIndexRoute
+  '/water-heaters/': typeof WaterHeatersIndexRoute
+  '/about-us/video-center/': typeof AboutUsVideoCenterIndexRoute
+  '/about-us/video-center/videos/about-our-company': typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
+  '/about-us/video-center/videos/': typeof AboutUsVideoCenterVideosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -124,39 +279,90 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/contact-us'
+    | '/coupons'
+    | '/reviews'
     | '/services'
+    | '/site-map'
     | '/sitemap.xml'
+    | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
+    | '/blog/$'
+    | '/nps-survey/thank-you'
+    | '/photo-gallery/$category'
+    | '/plumbing-services/$'
+    | '/templates/$'
+    | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
+    | '/blog/'
+    | '/photo-gallery/'
     | '/plumbing-services/'
+    | '/templates/'
+    | '/water-heaters/'
+    | '/about-us/video-center/'
+    | '/about-us/video-center/videos/about-our-company'
+    | '/about-us/video-center/videos/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/contact'
     | '/contact-us'
+    | '/coupons'
+    | '/reviews'
     | '/services'
+    | '/site-map'
     | '/sitemap.xml'
+    | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
+    | '/blog/$'
+    | '/nps-survey/thank-you'
+    | '/photo-gallery/$category'
+    | '/plumbing-services/$'
+    | '/templates/$'
+    | '/water-heaters/$'
     | '/about-us'
     | '/areas-we-serve'
+    | '/blog'
+    | '/photo-gallery'
     | '/plumbing-services'
+    | '/templates'
+    | '/water-heaters'
+    | '/about-us/video-center'
+    | '/about-us/video-center/videos/about-our-company'
+    | '/about-us/video-center/videos'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/contact'
     | '/contact-us'
+    | '/coupons'
+    | '/reviews'
     | '/services'
+    | '/site-map'
     | '/sitemap.xml'
+    | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
+    | '/blog/$'
+    | '/nps-survey/thank-you'
+    | '/photo-gallery/$category'
+    | '/plumbing-services/$'
+    | '/templates/$'
+    | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
+    | '/blog/'
+    | '/photo-gallery/'
     | '/plumbing-services/'
+    | '/templates/'
+    | '/water-heaters/'
+    | '/about-us/video-center/'
+    | '/about-us/video-center/videos/about-our-company'
+    | '/about-us/video-center/videos/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -164,13 +370,30 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   ContactUsRoute: typeof ContactUsRoute
+  CouponsRoute: typeof CouponsRoute
+  ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
+  SiteMapRoute: typeof SiteMapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  AboutUsFaqRoute: typeof AboutUsFaqRoute
   AreasWeServeCityRoute: typeof AreasWeServeCityRoute
   AreasWeServeEscalonRoute: typeof AreasWeServeEscalonRoute
+  BlogSplatRoute: typeof BlogSplatRoute
+  NpsSurveyThankYouRoute: typeof NpsSurveyThankYouRoute
+  PhotoGalleryCategoryRoute: typeof PhotoGalleryCategoryRoute
+  PlumbingServicesSplatRoute: typeof PlumbingServicesSplatRoute
+  TemplatesSplatRoute: typeof TemplatesSplatRoute
+  WaterHeatersSplatRoute: typeof WaterHeatersSplatRoute
   AboutUsIndexRoute: typeof AboutUsIndexRoute
   AreasWeServeIndexRoute: typeof AreasWeServeIndexRoute
+  BlogIndexRoute: typeof BlogIndexRoute
+  PhotoGalleryIndexRoute: typeof PhotoGalleryIndexRoute
   PlumbingServicesIndexRoute: typeof PlumbingServicesIndexRoute
+  TemplatesIndexRoute: typeof TemplatesIndexRoute
+  WaterHeatersIndexRoute: typeof WaterHeatersIndexRoute
+  AboutUsVideoCenterIndexRoute: typeof AboutUsVideoCenterIndexRoute
+  AboutUsVideoCenterVideosAboutOurCompanyRoute: typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
+  AboutUsVideoCenterVideosIndexRoute: typeof AboutUsVideoCenterVideosIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -182,11 +405,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/site-map': {
+      id: '/site-map'
+      path: '/site-map'
+      fullPath: '/site-map'
+      preLoaderRoute: typeof SiteMapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/coupons': {
+      id: '/coupons'
+      path: '/coupons'
+      fullPath: '/coupons'
+      preLoaderRoute: typeof CouponsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact-us': {
@@ -217,11 +461,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/water-heaters/': {
+      id: '/water-heaters/'
+      path: '/water-heaters'
+      fullPath: '/water-heaters/'
+      preLoaderRoute: typeof WaterHeatersIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/templates/': {
+      id: '/templates/'
+      path: '/templates'
+      fullPath: '/templates/'
+      preLoaderRoute: typeof TemplatesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/plumbing-services/': {
       id: '/plumbing-services/'
       path: '/plumbing-services'
       fullPath: '/plumbing-services/'
       preLoaderRoute: typeof PlumbingServicesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/photo-gallery/': {
+      id: '/photo-gallery/'
+      path: '/photo-gallery'
+      fullPath: '/photo-gallery/'
+      preLoaderRoute: typeof PhotoGalleryIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/areas-we-serve/': {
@@ -238,6 +510,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutUsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/water-heaters/$': {
+      id: '/water-heaters/$'
+      path: '/water-heaters/$'
+      fullPath: '/water-heaters/$'
+      preLoaderRoute: typeof WaterHeatersSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/templates/$': {
+      id: '/templates/$'
+      path: '/templates/$'
+      fullPath: '/templates/$'
+      preLoaderRoute: typeof TemplatesSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumbing-services/$': {
+      id: '/plumbing-services/$'
+      path: '/plumbing-services/$'
+      fullPath: '/plumbing-services/$'
+      preLoaderRoute: typeof PlumbingServicesSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/photo-gallery/$category': {
+      id: '/photo-gallery/$category'
+      path: '/photo-gallery/$category'
+      fullPath: '/photo-gallery/$category'
+      preLoaderRoute: typeof PhotoGalleryCategoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nps-survey/thank-you': {
+      id: '/nps-survey/thank-you'
+      path: '/nps-survey/thank-you'
+      fullPath: '/nps-survey/thank-you'
+      preLoaderRoute: typeof NpsSurveyThankYouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$': {
+      id: '/blog/$'
+      path: '/blog/$'
+      fullPath: '/blog/$'
+      preLoaderRoute: typeof BlogSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/areas-we-serve/escalon': {
       id: '/areas-we-serve/escalon'
       path: '/areas-we-serve/escalon'
@@ -252,6 +566,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AreasWeServeCityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about-us/faq': {
+      id: '/about-us/faq'
+      path: '/about-us/faq'
+      fullPath: '/about-us/faq'
+      preLoaderRoute: typeof AboutUsFaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/video-center/': {
+      id: '/about-us/video-center/'
+      path: '/about-us/video-center'
+      fullPath: '/about-us/video-center/'
+      preLoaderRoute: typeof AboutUsVideoCenterIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/video-center/videos/': {
+      id: '/about-us/video-center/videos/'
+      path: '/about-us/video-center/videos'
+      fullPath: '/about-us/video-center/videos/'
+      preLoaderRoute: typeof AboutUsVideoCenterVideosIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/video-center/videos/about-our-company': {
+      id: '/about-us/video-center/videos/about-our-company'
+      path: '/about-us/video-center/videos/about-our-company'
+      fullPath: '/about-us/video-center/videos/about-our-company'
+      preLoaderRoute: typeof AboutUsVideoCenterVideosAboutOurCompanyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -260,13 +602,31 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   ContactUsRoute: ContactUsRoute,
+  CouponsRoute: CouponsRoute,
+  ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
+  SiteMapRoute: SiteMapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  AboutUsFaqRoute: AboutUsFaqRoute,
   AreasWeServeCityRoute: AreasWeServeCityRoute,
   AreasWeServeEscalonRoute: AreasWeServeEscalonRoute,
+  BlogSplatRoute: BlogSplatRoute,
+  NpsSurveyThankYouRoute: NpsSurveyThankYouRoute,
+  PhotoGalleryCategoryRoute: PhotoGalleryCategoryRoute,
+  PlumbingServicesSplatRoute: PlumbingServicesSplatRoute,
+  TemplatesSplatRoute: TemplatesSplatRoute,
+  WaterHeatersSplatRoute: WaterHeatersSplatRoute,
   AboutUsIndexRoute: AboutUsIndexRoute,
   AreasWeServeIndexRoute: AreasWeServeIndexRoute,
+  BlogIndexRoute: BlogIndexRoute,
+  PhotoGalleryIndexRoute: PhotoGalleryIndexRoute,
   PlumbingServicesIndexRoute: PlumbingServicesIndexRoute,
+  TemplatesIndexRoute: TemplatesIndexRoute,
+  WaterHeatersIndexRoute: WaterHeatersIndexRoute,
+  AboutUsVideoCenterIndexRoute: AboutUsVideoCenterIndexRoute,
+  AboutUsVideoCenterVideosAboutOurCompanyRoute:
+    AboutUsVideoCenterVideosAboutOurCompanyRoute,
+  AboutUsVideoCenterVideosIndexRoute: AboutUsVideoCenterVideosIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
