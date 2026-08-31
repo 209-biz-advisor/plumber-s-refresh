@@ -26,6 +26,7 @@ import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
 import { Route as WaterHeatersSplatRouteImport } from './routes/water-heaters.$'
 import { Route as PlumbingServicesSplatRouteImport } from './routes/plumbing-services.$'
 import { Route as PhotoGalleryCategoryRouteImport } from './routes/photo-gallery.$category'
+import { Route as BlogSplatRouteImport } from './routes/blog.$'
 import { Route as AreasWeServeEscalonRouteImport } from './routes/areas-we-serve.escalon'
 import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$city'
 import { Route as AboutUsFaqRouteImport } from './routes/about-us.faq'
@@ -118,6 +119,11 @@ const PhotoGalleryCategoryRoute = PhotoGalleryCategoryRouteImport.update({
   path: '/photo-gallery/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogSplatRoute = BlogSplatRouteImport.update({
+  id: '/blog/$',
+  path: '/blog/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AreasWeServeEscalonRoute = AreasWeServeEscalonRouteImport.update({
   id: '/areas-we-serve/escalon',
   path: '/areas-we-serve/escalon',
@@ -163,6 +169,7 @@ export interface FileRoutesByFullPath {
   '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
+  '/blog/$': typeof BlogSplatRoute
   '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
   '/water-heaters/$': typeof WaterHeatersSplatRoute
@@ -188,6 +195,7 @@ export interface FileRoutesByTo {
   '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
+  '/blog/$': typeof BlogSplatRoute
   '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
   '/water-heaters/$': typeof WaterHeatersSplatRoute
@@ -214,6 +222,7 @@ export interface FileRoutesById {
   '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
+  '/blog/$': typeof BlogSplatRoute
   '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
   '/water-heaters/$': typeof WaterHeatersSplatRoute
@@ -241,6 +250,7 @@ export interface FileRouteTypes {
     | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
+    | '/blog/$'
     | '/photo-gallery/$category'
     | '/plumbing-services/$'
     | '/water-heaters/$'
@@ -266,6 +276,7 @@ export interface FileRouteTypes {
     | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
+    | '/blog/$'
     | '/photo-gallery/$category'
     | '/plumbing-services/$'
     | '/water-heaters/$'
@@ -291,6 +302,7 @@ export interface FileRouteTypes {
     | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
+    | '/blog/$'
     | '/photo-gallery/$category'
     | '/plumbing-services/$'
     | '/water-heaters/$'
@@ -317,6 +329,7 @@ export interface RootRouteChildren {
   AboutUsFaqRoute: typeof AboutUsFaqRoute
   AreasWeServeCityRoute: typeof AreasWeServeCityRoute
   AreasWeServeEscalonRoute: typeof AreasWeServeEscalonRoute
+  BlogSplatRoute: typeof BlogSplatRoute
   PhotoGalleryCategoryRoute: typeof PhotoGalleryCategoryRoute
   PlumbingServicesSplatRoute: typeof PlumbingServicesSplatRoute
   WaterHeatersSplatRoute: typeof WaterHeatersSplatRoute
@@ -452,6 +465,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PhotoGalleryCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/$': {
+      id: '/blog/$'
+      path: '/blog/$'
+      fullPath: '/blog/$'
+      preLoaderRoute: typeof BlogSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/areas-we-serve/escalon': {
       id: '/areas-we-serve/escalon'
       path: '/areas-we-serve/escalon'
@@ -509,6 +529,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutUsFaqRoute: AboutUsFaqRoute,
   AreasWeServeCityRoute: AreasWeServeCityRoute,
   AreasWeServeEscalonRoute: AreasWeServeEscalonRoute,
+  BlogSplatRoute: BlogSplatRoute,
   PhotoGalleryCategoryRoute: PhotoGalleryCategoryRoute,
   PlumbingServicesSplatRoute: PlumbingServicesSplatRoute,
   WaterHeatersSplatRoute: WaterHeatersSplatRoute,
