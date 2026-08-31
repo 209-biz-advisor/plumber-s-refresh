@@ -120,7 +120,7 @@ function HomePage() {
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-white/80">
               <div className="flex items-center gap-2"><Star className="size-4 text-accent fill-accent" /> 5-Star Rated</div>
               <div className="flex items-center gap-2"><Clock className="size-4 text-accent" /> Emergency Service</div>
-              <div className="flex items-center gap-2"><ShieldCheck className="size-4 text-accent" /> Licensed & Insured</div>
+              <div className="flex items-center gap-2"><ShieldCheck className="size-4 text-accent" /> {LICENSE_SHORT}</div>
             </div>
           </div>
           <QuickQuoteForm
