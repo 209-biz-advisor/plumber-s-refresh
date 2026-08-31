@@ -43,16 +43,14 @@ export function SiteHeader() {
           <img src={logo} alt="Mainline Plumbing Inc." className="h-[84px] w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-6 xl:gap-7">
-          {nav.map((n, i) => (
-            <Link
-              key={`${n.to}-${i}`}
-              to={n.to}
+          {nav.map((n) => (
+            <a
+              key={n.href}
+              href={n.href}
               className="text-white/85 hover:text-accent text-sm font-semibold uppercase tracking-wider whitespace-nowrap"
-              activeProps={{ className: "text-accent" }}
-              activeOptions={{ exact: n.to === "/" }}
             >
               {n.label}
-            </Link>
+            </a>
           ))}
           <Link
             to="/contact-us/"
