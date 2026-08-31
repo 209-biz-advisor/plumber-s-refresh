@@ -31,6 +31,9 @@ function AboutPage() {
           <p className="mt-5 font-display text-2xl md:text-3xl text-accent italic">
             "We Treat Your Family, Like Our Family."
           </p>
+          <p className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider border border-accent/60 rounded-md px-4 py-2">
+            {LICENSE_LABEL} · Bonded & Insured
+          </p>
         </div>
       </section>
 
@@ -50,6 +53,9 @@ function AboutPage() {
               Today our team continues that legacy, leveraging the latest tools and techniques to
               diagnose and resolve issues efficiently while keeping pricing fair and communication clear.
             </p>
+            <p className="mt-4 font-semibold text-navy">
+              Fully licensed California plumbing contractor, {LICENSE_LABEL}, bonded and insured.
+            </p>
           </div>
         </div>
       </section>
@@ -59,6 +65,7 @@ function AboutPage() {
           <h2 className="text-4xl font-bold text-navy text-center">Our Promise</h2>
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             {[
+              { icon: Award, title: "Licensed C-36 Contractor", desc: "California plumbing license #953726, bonded and insured on every job." },
               { icon: Award, title: "37+ Years Experience", desc: "Decades of hands-on plumbing expertise serving Escalon and surrounding cities." },
               { icon: HeartHandshake, title: "Family-Owned & Operated", desc: "Local roots, real relationships, and accountability you can count on." },
               { icon: Users, title: "Customer-First Service", desc: "Quality plumbing service at an affordable cost, done right the first time." },
