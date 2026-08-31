@@ -259,7 +259,7 @@ function PrivacyPolicyPage() {
             <span><strong className="text-white">Last Updated:</strong> {EFFECTIVE}</span>
           </div>
           <div className="mt-7">
-            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+            <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
           </div>
         </div>
       </section>
@@ -297,7 +297,7 @@ function PrivacyPolicyPage() {
                     <strong>Mainline Plumbing Inc.</strong>
                     <br />18332 Campbell Ave.
                     <br />Escalon, CA 95320
-                    <br />Phone: <a href="tel:2098381000" className="text-brand-orange font-semibold hover:underline">(209) 838-1000</a>
+                    <br />Phone: <a href="tel:+12098381000" className="text-brand-orange font-semibold hover:underline">209.838.1000</a>
                     <br />Email: <a href="mailto:Office@MainlinePlumber.com" className="text-brand-orange font-semibold hover:underline">Office@MainlinePlumber.com</a>
                     <br />Website: MainlinePlumber.com
                   </address>

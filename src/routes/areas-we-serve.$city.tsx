@@ -156,7 +156,7 @@ function CityPage() {
               plumbing needs.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+              <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
               <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
             </div>
           </div>
@@ -173,7 +173,7 @@ function CityPage() {
       <section className="bg-brand-orange-deep text-white py-6">
         <div className="container-x text-center text-sm md:text-base font-semibold">
           Contact us at{" "}
-          <a href="tel:2098381000" className="underline font-bold">(209) 838-1000</a>{" "}
+          <a href="tel:+12098381000" className="underline font-bold">209.838.1000</a>{" "}
           or{" "}
           <Link to="/contact-us/" className="underline font-bold">online</Link>{" "}
           today to keep your {city.name} home safe and comfortable.
@@ -242,7 +242,7 @@ function CityPage() {
               <h3 className="text-2xl md:text-3xl font-bold mt-2">The Mainline Approach in {city.name}</h3>
               <p className="mt-4 text-white/85">{city.local.plumbingTieIn}</p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+                <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
                 <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
               </div>
             </div>
@@ -332,7 +332,7 @@ function CityPage() {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+            <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
             <Link to="/contact-us/" className="btn-outline">Contact Us</Link>
           </div>
         </div>
@@ -379,8 +379,8 @@ function CityPage() {
                 </li>
               ))}
             </ul>
-            <a href="tel:2098381000" className="mt-8 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
-              <Phone className="size-6" /> (209) 838-1000
+            <a href="tel:+12098381000" className="mt-8 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
+              <Phone className="size-6" /> 209.838.1000
             </a>
           </div>
         </div>
@@ -411,7 +411,7 @@ function CityPage() {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Ask About Water Heater Specials</a>
+            <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> Ask About Water Heater Specials</a>
           </div>
         </div>
       </section>
@@ -463,7 +463,7 @@ function CityPage() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-3 lg:justify-end">
-                <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+                <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
                 <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
               </div>
             </div>
@@ -549,12 +549,12 @@ function CityPage() {
         <div className="container-x text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold">Ready for Reliable Plumbing in {city.name}?</h2>
           <p className="mt-4 text-white/90">
-            Contact us at (209) 838-1000 or online today to ensure the optimal functionality of your plumbing
+            Contact us at 209.838.1000 or online today to ensure the optimal functionality of your plumbing
             systems. Your {city.name} plumbing needs are our priority.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a href="tel:2098381000" className="bg-white text-brand-orange-deep px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
-              <Phone className="size-4" /> (209) 838-1000
+            <a href="tel:+12098381000" className="bg-white text-brand-orange-deep px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm inline-flex items-center gap-2 hover:bg-white/90">
+              <Phone className="size-4" /> 209.838.1000
             </a>
             <Link to="/contact-us/" className="border-2 border-white text-white px-6 py-3.5 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange-deep">
               Request Service Online
@@ -599,7 +599,7 @@ function CityPage() {
               in the middle of our daily service route. That means faster arrival times, same-day
               scheduling and easier follow-up on warranty work.
             </p>
-            <a href="tel:2098381000" className="btn-primary mt-6"><Phone className="size-4" /> (209) 838-1000</a>
+            <a href="tel:+12098381000" className="btn-primary mt-6"><Phone className="size-4" /> 209.838.1000</a>
           </div>
           <div className="mx-auto w-4/5 rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
             <img src={serviceMap.url} alt={`Mainline Plumbing service area map covering ${city.name}, CA`} className="w-full h-auto" />

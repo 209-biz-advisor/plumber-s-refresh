@@ -137,7 +137,7 @@ function Hero({ crumb, title, sub }: { crumb: string; title: string; sub: string
         <h1 className="text-3xl md:text-5xl font-bold mt-6 max-w-3xl">{title}</h1>
         <p className="mt-4 text-white/85 max-w-2xl">{sub}</p>
         <div className="mt-7">
-          <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+          <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
         </div>
       </div>
     </section>
@@ -190,8 +190,8 @@ function BlogSplat() {
                 Family owned in Escalon since 2010. {LICENSE_LABEL}. Flat-rate quotes before we start.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
-                <a href="tel:2098381000" className="inline-flex items-center gap-2 rounded-lg bg-white text-navy font-bold px-5 py-3">
-                  <Phone className="size-4" /> (209) 838-1000
+                <a href="tel:+12098381000" className="inline-flex items-center gap-2 rounded-lg bg-white text-navy font-bold px-5 py-3">
+                  <Phone className="size-4" /> 209.838.1000
                 </a>
                 <Link to="/contact-us/" className="inline-flex items-center rounded-lg border border-white/70 font-bold px-5 py-3">
                   Request Service

@@ -43,7 +43,7 @@ function ServicesPage() {
             </p>
             <p className="mt-4 text-white/80 max-w-2xl">Backed by 37+ years of hands-on plumbing experience, our skilled plumbers handle residential and commercial work across Stanislaus & San Joaquin County.</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+              <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
               <Link to="/areas-we-serve/" className="btn-outline">Areas We Serve</Link>
             </div>
           </div>
@@ -198,8 +198,8 @@ function ServicesPage() {
                 honest, no-pressure recommendation. Free.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <a href="tel:2098381000" className="inline-flex items-center gap-2 bg-white text-brand-orange-deep px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
-                  <Phone className="size-4" /> (209) 838-1000
+                <a href="tel:+12098381000" className="inline-flex items-center gap-2 bg-white text-brand-orange-deep px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
+                  <Phone className="size-4" /> 209.838.1000
                 </a>
                 <Link to="/contact-us/" className="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white hover:text-brand-orange transition">
                   Request a Free Quote
@@ -244,7 +244,7 @@ function ServicesPage() {
             <h3 className="text-3xl font-bold">Ready to schedule?</h3>
             <p className="mt-3 text-white/80">Call us or request service online, we'll be there fast.</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+              <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
               <Link to="/contact-us/" className="btn-outline">Contact Us</Link>
             </div>
           </div>

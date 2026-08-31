@@ -43,7 +43,7 @@ function VideoCenter() {
             to expect before you ever call.
           </p>
           <div className="mt-7">
-            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+            <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
           </div>
         </div>
       </section>

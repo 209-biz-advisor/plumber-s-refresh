@@ -38,7 +38,7 @@ export const posts: Post[] = [
       "A garbage disposal does not actually have knife-sharp blades. It has impellers that fling food against a grind ring, and when that ring loads up with grease and fibrous scraps, the whole unit slows down and starts to smell.",
       "The best maintenance is boring: run cold water while the disposal is on, keep it running a few seconds after the noise clears, and skip the things that wrap or expand, like celery, artichoke leaves, potato peels, rice and pasta. Grease is the worst offender because it coats the ring and the drain line downstream.",
       "For cleaning, grind a tray of ice cubes with a handful of coarse salt to knock buildup loose, then follow with citrus peels for odor. Avoid chemical drain cleaners, they sit on the metal and do more harm than good.",
-      "If the unit hums but does not turn, it is jammed rather than dead, and that is a quick fix. If it leaks from the bottom, the housing seal is gone and it needs replacing. Either way, call us at (209) 838-1000 and we will tell you straight which one you have.",
+      "If the unit hums but does not turn, it is jammed rather than dead, and that is a quick fix. If it leaks from the bottom, the housing seal is gone and it needs replacing. Either way, call us at 209.838.1000 and we will tell you straight which one you have.",
     ],
   },
   {
@@ -62,7 +62,7 @@ export const posts: Post[] = [
       "Start by figuring out whether it is one fixture or the whole house. A single slow faucet is almost always a clogged aerator or a failing cartridge, and both are quick repairs you may be able to do yourself.",
       "If pressure dropped everywhere at once, the usual suspects are a failing pressure regulator, a partially closed main valve, or a corroded service line between the meter and the house. Galvanized service lines in older Valley homes narrow from the inside as they scale up.",
       "There is also a quiet possibility worth ruling out: a hidden leak. If your meter keeps moving with every fixture off, water is going somewhere it should not.",
-      "We test static pressure at the hose bib, check the regulator, and locate leaks without tearing the house apart. Call (209) 838-1000 and we will diagnose it properly.",
+      "We test static pressure at the hose bib, check the regulator, and locate leaks without tearing the house apart. Call 209.838.1000 and we will diagnose it properly.",
     ],
   },
   {
@@ -86,7 +86,7 @@ export const posts: Post[] = [
       "Central Valley water is hard, and hardness turns into sediment on the bottom of your tank. Sediment insulates the burner from the water, so the tank works harder, rumbles, runs out of hot water early and eventually fails.",
       "An annual flush removes it. It takes under an hour and it is the single cheapest thing you can do to protect a water heater. On well water, twice a year is smarter.",
       "The anode rod matters just as much. It is a sacrificial metal rod that corrodes so your tank does not, and once it is consumed the tank starts rusting from the inside. Checking it every couple of years can add real years to the unit.",
-      "Add a softener if your hardness is high, test the T&P valve, and keep the temperature around 120 degrees. Then call us at (209) 838-1000 when it is time for the flush.",
+      "Add a softener if your hardness is high, test the T&P valve, and keep the temperature around 120 degrees. Then call us at 209.838.1000 when it is time for the flush.",
     ],
   },
   {
@@ -122,7 +122,7 @@ export const posts: Post[] = [
       "First, fix the leaks you already know about. A single dripping faucet or running toilet can waste thousands of gallons a year, and a running toilet is often the biggest silent user in the house.",
       "Second, check your irrigation. Broken heads, misaimed spray and watering in the middle of the afternoon waste more water than anything happening inside the home.",
       "Third, upgrade fixtures. Modern low-flow showerheads and aerators feel the same and cut usage substantially, and high-efficiency toilets pay for themselves.",
-      "Fourth, watch your meter. Shut everything off and see if it still moves. If it does, call (209) 838-1000 and we will find the hidden leak before it becomes a repair.",
+      "Fourth, watch your meter. Shut everything off and see if it still moves. If it does, call 209.838.1000 and we will find the hidden leak before it becomes a repair.",
     ],
   },
   {
@@ -146,7 +146,7 @@ export const posts: Post[] = [
       "It made a generation nervous about storm drains, and the imagery stuck because everyone has walked past one and wondered where it actually goes.",
       "In real life, storm drains and sanitary sewers are separate systems. Storm drains carry rainwater to creeks and rivers, which is exactly why dumping paint or oil into one is a genuine problem.",
       "The sanitary line leaving your house is the one we care about, and the horror story there is roots. Tree roots find hairline cracks in older clay laterals and grow into a mass that stops everything.",
-      "The good news is a camera inspection takes the mystery out of it. You see what we see, and nobody has to guess. Call (209) 838-1000.",
+      "The good news is a camera inspection takes the mystery out of it. You see what we see, and nobody has to guess. Call 209.838.1000.",
     ],
   },
   {
@@ -170,7 +170,7 @@ export const posts: Post[] = [
       "A smart leak detector that texts a phone when it senses water under the sink or next to the water heater. Unromantic, genuinely useful, and cheaper than a floor.",
       "A whole-home water filtration or softener system, which in this area shows up immediately in how the water tastes and how long fixtures last.",
       "A touchless kitchen faucet, a bidet seat, a high-efficiency showerhead that actually feels good, and a real drain strainer set for every sink.",
-      "And the practical one nobody thinks of: a water heater flush for their house. We will happily set it up. Call (209) 838-1000.",
+      "And the practical one nobody thinks of: a water heater flush for their house. We will happily set it up. Call 209.838.1000.",
     ],
   },
   {
@@ -254,7 +254,7 @@ export const posts: Post[] = [
       "Know where your main water shutoff is, and turn it once a year so it does not seize. In an active leak, that valve is the whole ballgame.",
       "For an overflowing toilet, close the angle stop behind it. For a leaking water heater, shut the cold inlet valve and kill the gas or breaker before anything else.",
       "Move belongings out of the water, get airflow moving, and photograph everything for insurance before you clean up.",
-      "Then call (209) 838-1000. We handle emergency plumbing repairs across the 209 and 350, and we will walk you through damage control while we are on the way.",
+      "Then call 209.838.1000. We handle emergency plumbing repairs across the 209 and 350, and we will walk you through damage control while we are on the way.",
     ],
   },
   {

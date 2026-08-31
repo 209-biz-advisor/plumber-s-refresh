@@ -33,7 +33,7 @@ export function QuickQuoteForm({
           </div>
           <h3 className="mt-4 text-xl font-bold">Thanks, we'll be in touch!</h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            For emergencies, call (209) 838-1000.
+            For emergencies, call 209.838.1000.
           </p>
         </div>
       ) : (
@@ -75,7 +75,7 @@ export function QuickQuoteForm({
             Request Service
           </button>
           <p className="mt-3 text-xs text-muted-foreground text-center">
-            * required. Or call <a href="tel:2098381000" className="font-bold text-navy">(209) 838-1000</a>
+            * required. Or call <a href="tel:+12098381000" className="font-bold text-navy">209.838.1000</a>
           </p>
         </>
       )}

@@ -10,7 +10,7 @@ const DESC =
   "Frequently asked questions about Mainline Plumbing Inc: hours, service area, pricing, permits, water heater replacement, emergency plumbing and our C-36 license.";
 
 const faqs = [
-  { q: "What are your hours?", a: "We're available 7:00 am to 7:00 pm. Call (209) 838-1000 and you'll reach a real person, not a call center." },
+  { q: "What are your hours?", a: "We're available 7:00 am to 7:00 pm. Call 209.838.1000 and you'll reach a real person, not a call center." },
   { q: "What areas do you serve?", a: "Escalon, Modesto, Manteca, Lathrop, Oakdale, Riverbank, Ceres, Turlock, Salida, Hughson, Del Rio and the surrounding Central Valley, the 209 & 350." },
   { q: "Are you licensed and insured?", a: `Yes. ${LICENSE_LABEL}, and we're bonded and insured. Every install is permitted where required.` },
   { q: "How long have you been in business?", a: "Mainline Plumbing Inc. was founded in 2010. Miguel, the owner and lead plumber, brings 37+ years of hands-on plumbing experience." },
@@ -83,7 +83,7 @@ function FaqPage() {
                 call and ask.
               </p>
               <div className="mt-7">
-                <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+                <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
               </div>
             </div>
             <QuickQuoteForm title="Ask Us Anything" subtitle="Send your question and we'll call you back." compact className="w-full max-w-md lg:ml-auto" />
