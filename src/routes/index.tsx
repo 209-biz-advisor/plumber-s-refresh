@@ -283,7 +283,7 @@ function HomePage() {
                 federal tax credit and utility rebates in the 209 & 350.
               </p>
               <div className="mt-4 inline-flex items-center gap-2 bg-accent text-navy-deep px-4 py-2 rounded-lg font-bold uppercase tracking-wider text-xs">
-                <BadgePercent className="size-4" /> $200 Off Electric Install, Limited Time
+                <BadgePercent className="size-4" /> Electric & Heat Pump Specialists
               </div>
             </div>
 
@@ -305,7 +305,7 @@ function HomePage() {
               </Link>
             </div>
             <p className="mt-4 text-xs text-muted-foreground">
-              Ask about our <span className="font-bold text-brand-orange">$250 off tankless</span> and financing options.
+              Ask about our <span className="font-bold text-brand-orange">current specials</span> when you call.
             </p>
           </div>
 
