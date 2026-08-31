@@ -45,7 +45,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-x py-5 text-xs text-white/60 flex flex-wrap justify-between gap-2">
-          <span>© {new Date().getFullYear()} Mainline Plumbing Inc. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Mainline Plumbing Inc. All rights reserved. {LICENSE_SHORT}</span>
           <span>Escalon · Modesto · Manteca · Stanislaus & San Joaquin County</span>
         </div>
       </div>
