@@ -25,6 +25,7 @@ import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as AreasWeServeIndexRouteImport } from './routes/areas-we-serve.index'
 import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
 import { Route as WaterHeatersSplatRouteImport } from './routes/water-heaters.$'
+import { Route as TemplatesSplatRouteImport } from './routes/templates.$'
 import { Route as PlumbingServicesSplatRouteImport } from './routes/plumbing-services.$'
 import { Route as PhotoGalleryCategoryRouteImport } from './routes/photo-gallery.$category'
 import { Route as BlogSplatRouteImport } from './routes/blog.$'
@@ -115,6 +116,11 @@ const WaterHeatersSplatRoute = WaterHeatersSplatRouteImport.update({
   path: '/water-heaters/$',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TemplatesSplatRoute = TemplatesSplatRouteImport.update({
+  id: '/templates/$',
+  path: '/templates/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PlumbingServicesSplatRoute = PlumbingServicesSplatRouteImport.update({
   id: '/plumbing-services/$',
   path: '/plumbing-services/$',
@@ -179,6 +185,7 @@ export interface FileRoutesByFullPath {
   '/blog/$': typeof BlogSplatRoute
   '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
+  '/templates/$': typeof TemplatesSplatRoute
   '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
@@ -206,6 +213,7 @@ export interface FileRoutesByTo {
   '/blog/$': typeof BlogSplatRoute
   '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
+  '/templates/$': typeof TemplatesSplatRoute
   '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us': typeof AboutUsIndexRoute
   '/areas-we-serve': typeof AreasWeServeIndexRoute
@@ -234,6 +242,7 @@ export interface FileRoutesById {
   '/blog/$': typeof BlogSplatRoute
   '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
+  '/templates/$': typeof TemplatesSplatRoute
   '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
@@ -263,6 +272,7 @@ export interface FileRouteTypes {
     | '/blog/$'
     | '/photo-gallery/$category'
     | '/plumbing-services/$'
+    | '/templates/$'
     | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
@@ -290,6 +300,7 @@ export interface FileRouteTypes {
     | '/blog/$'
     | '/photo-gallery/$category'
     | '/plumbing-services/$'
+    | '/templates/$'
     | '/water-heaters/$'
     | '/about-us'
     | '/areas-we-serve'
@@ -317,6 +328,7 @@ export interface FileRouteTypes {
     | '/blog/$'
     | '/photo-gallery/$category'
     | '/plumbing-services/$'
+    | '/templates/$'
     | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
@@ -345,6 +357,7 @@ export interface RootRouteChildren {
   BlogSplatRoute: typeof BlogSplatRoute
   PhotoGalleryCategoryRoute: typeof PhotoGalleryCategoryRoute
   PlumbingServicesSplatRoute: typeof PlumbingServicesSplatRoute
+  TemplatesSplatRoute: typeof TemplatesSplatRoute
   WaterHeatersSplatRoute: typeof WaterHeatersSplatRoute
   AboutUsIndexRoute: typeof AboutUsIndexRoute
   AreasWeServeIndexRoute: typeof AreasWeServeIndexRoute
@@ -471,6 +484,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WaterHeatersSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/templates/$': {
+      id: '/templates/$'
+      path: '/templates/$'
+      fullPath: '/templates/$'
+      preLoaderRoute: typeof TemplatesSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/plumbing-services/$': {
       id: '/plumbing-services/$'
       path: '/plumbing-services/$'
@@ -553,6 +573,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogSplatRoute: BlogSplatRoute,
   PhotoGalleryCategoryRoute: PhotoGalleryCategoryRoute,
   PlumbingServicesSplatRoute: PlumbingServicesSplatRoute,
+  TemplatesSplatRoute: TemplatesSplatRoute,
   WaterHeatersSplatRoute: WaterHeatersSplatRoute,
   AboutUsIndexRoute: AboutUsIndexRoute,
   AreasWeServeIndexRoute: AreasWeServeIndexRoute,
