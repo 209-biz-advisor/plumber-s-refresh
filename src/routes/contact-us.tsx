@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Phone, MapPin, Clock, Mail, Send } from "lucide-react";
+import { Phone, MapPin, Clock, Mail, Send, ShieldCheck } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
 export const Route = createFileRoute("/contact-us")({
   head: () => ({
@@ -86,6 +86,9 @@ function ContactPage() {
             <ContactCard icon={Clock} label="Hours">
               Mon–Fri: 7am – 7pm<br />Sat: 7am – 7pm<br />Sun: Closed<br />
               <span className="text-accent font-semibold">Emergency Repairs Available</span>
+            </ContactCard>
+            <ContactCard icon={ShieldCheck} label="Licensed & Insured">
+              {LICENSE_LABEL}<br />Bonded and insured for residential and light commercial work.
             </ContactCard>
             <ContactCard icon={Mail} label="Service Area">
               Escalon · Modesto · Manteca · Stanislaus & San Joaquin County

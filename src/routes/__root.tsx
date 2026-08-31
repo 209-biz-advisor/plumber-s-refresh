@@ -108,6 +108,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               image: "https://www.mainlineplumber.com/favicon.png",
               logo: "https://www.mainlineplumber.com/favicon.png",
               priceRange: "$$",
+              hasCredential: {
+                "@type": "EducationalOccupationalCredential",
+                credentialCategory: "license",
+                name: "California C-36 Plumbing Contractor License",
+                identifier: "953726",
+                recognizedBy: {
+                  "@type": "GovernmentOrganization",
+                  name: "California Contractors State License Board",
+                  url: "https://www.cslb.ca.gov/",
+                },
+              },
+              identifier: {
+                "@type": "PropertyValue",
+                name: "CSLB License (C-36 Plumbing)",
+                value: "953726",
+              },
               foundingDate: "2010",
               slogan: "Emergency Plumbing Repairs Available. Serving the 209 & 350.",
               description:
