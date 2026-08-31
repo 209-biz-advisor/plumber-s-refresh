@@ -30,6 +30,7 @@ import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$c
 import { Route as AboutUsFaqRouteImport } from './routes/about-us.faq'
 import { Route as AboutUsVideoCenterIndexRouteImport } from './routes/about-us.video-center.index'
 import { Route as AboutUsVideoCenterVideosIndexRouteImport } from './routes/about-us.video-center.videos.index'
+import { Route as AboutUsVideoCenterVideosAboutOurCompanyRouteImport } from './routes/about-us.video-center.videos.about-our-company'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -137,6 +138,12 @@ const AboutUsVideoCenterVideosIndexRoute =
     path: '/about-us/video-center/videos/',
     getParentRoute: () => rootRouteImport,
   } as any)
+const AboutUsVideoCenterVideosAboutOurCompanyRoute =
+  AboutUsVideoCenterVideosAboutOurCompanyRouteImport.update({
+    id: '/about-us/video-center/videos/about-our-company',
+    path: '/about-us/video-center/videos/about-our-company',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -159,6 +166,7 @@ export interface FileRoutesByFullPath {
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
   '/about-us/video-center/': typeof AboutUsVideoCenterIndexRoute
+  '/about-us/video-center/videos/about-our-company': typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
   '/about-us/video-center/videos/': typeof AboutUsVideoCenterVideosIndexRoute
 }
 export interface FileRoutesByTo {
@@ -182,6 +190,7 @@ export interface FileRoutesByTo {
   '/plumbing-services': typeof PlumbingServicesIndexRoute
   '/water-heaters': typeof WaterHeatersIndexRoute
   '/about-us/video-center': typeof AboutUsVideoCenterIndexRoute
+  '/about-us/video-center/videos/about-our-company': typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
   '/about-us/video-center/videos': typeof AboutUsVideoCenterVideosIndexRoute
 }
 export interface FileRoutesById {
@@ -206,6 +215,7 @@ export interface FileRoutesById {
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
   '/about-us/video-center/': typeof AboutUsVideoCenterIndexRoute
+  '/about-us/video-center/videos/about-our-company': typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
   '/about-us/video-center/videos/': typeof AboutUsVideoCenterVideosIndexRoute
 }
 export interface FileRouteTypes {
@@ -231,6 +241,7 @@ export interface FileRouteTypes {
     | '/plumbing-services/'
     | '/water-heaters/'
     | '/about-us/video-center/'
+    | '/about-us/video-center/videos/about-our-company'
     | '/about-us/video-center/videos/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -254,6 +265,7 @@ export interface FileRouteTypes {
     | '/plumbing-services'
     | '/water-heaters'
     | '/about-us/video-center'
+    | '/about-us/video-center/videos/about-our-company'
     | '/about-us/video-center/videos'
   id:
     | '__root__'
@@ -277,6 +289,7 @@ export interface FileRouteTypes {
     | '/plumbing-services/'
     | '/water-heaters/'
     | '/about-us/video-center/'
+    | '/about-us/video-center/videos/about-our-company'
     | '/about-us/video-center/videos/'
   fileRoutesById: FileRoutesById
 }
@@ -301,6 +314,7 @@ export interface RootRouteChildren {
   PlumbingServicesIndexRoute: typeof PlumbingServicesIndexRoute
   WaterHeatersIndexRoute: typeof WaterHeatersIndexRoute
   AboutUsVideoCenterIndexRoute: typeof AboutUsVideoCenterIndexRoute
+  AboutUsVideoCenterVideosAboutOurCompanyRoute: typeof AboutUsVideoCenterVideosAboutOurCompanyRoute
   AboutUsVideoCenterVideosIndexRoute: typeof AboutUsVideoCenterVideosIndexRoute
 }
 
@@ -453,6 +467,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutUsVideoCenterVideosIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about-us/video-center/videos/about-our-company': {
+      id: '/about-us/video-center/videos/about-our-company'
+      path: '/about-us/video-center/videos/about-our-company'
+      fullPath: '/about-us/video-center/videos/about-our-company'
+      preLoaderRoute: typeof AboutUsVideoCenterVideosAboutOurCompanyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -477,6 +498,8 @@ const rootRouteChildren: RootRouteChildren = {
   PlumbingServicesIndexRoute: PlumbingServicesIndexRoute,
   WaterHeatersIndexRoute: WaterHeatersIndexRoute,
   AboutUsVideoCenterIndexRoute: AboutUsVideoCenterIndexRoute,
+  AboutUsVideoCenterVideosAboutOurCompanyRoute:
+    AboutUsVideoCenterVideosAboutOurCompanyRoute,
   AboutUsVideoCenterVideosIndexRoute: AboutUsVideoCenterVideosIndexRoute,
 }
 export const routeTree = rootRouteImport

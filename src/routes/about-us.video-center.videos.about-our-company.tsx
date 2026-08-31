@@ -8,7 +8,7 @@ const URL = `${SITE_URL}/about-us/video-center/videos/about-our-company/`;
 const DESC =
   "Meet Mainline Plumbing Inc: family owned in Escalon since 2010, led by Miguel with 37+ years of hands-on plumbing experience. We treat your family like our family.";
 
-export const Route = createFileRoute("/about-us/video-center/videos/about-our-company/")({
+export const Route = createFileRoute("/about-us/video-center/videos/about-our-company")({
   head: () => ({
     meta: [
       { title: "About Our Company | Mainline Plumbing Video Center" },
