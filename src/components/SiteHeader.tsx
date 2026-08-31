@@ -26,6 +26,9 @@ export function SiteHeader() {
             <span className="hidden md:inline text-accent/90 uppercase tracking-wider font-semibold">
               Summer's Here, Beat the heat with a same-day water heater replacement.
             </span>
+            <span className="hidden xl:inline text-white/70 uppercase tracking-wider font-semibold">
+              {LICENSE_LABEL}
+            </span>
           </div>
           <div className="flex items-center gap-2">
             <Link to="/contact-us/" className="bg-brand-orange px-3 py-1 font-bold uppercase tracking-wider hover:bg-brand-orange/80">Contact Us</Link>
