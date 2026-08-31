@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import { findCity, serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
-import { SITE_URL, OG_IMAGE } from "@/lib/site";
+import { SITE_URL, OG_IMAGE, LICENSE_LABEL } from "@/lib/site";
 
 export const Route = createFileRoute("/areas-we-serve/$city")({
   loader: ({ params }) => {

@@ -3,7 +3,7 @@ import { Award, Users, HeartHandshake, Phone } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import miguel from "@/assets/miguel-owner.png";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
 export const Route = createFileRoute("/about-us/")({
   head: () => ({

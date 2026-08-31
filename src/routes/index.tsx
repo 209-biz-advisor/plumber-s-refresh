@@ -14,7 +14,7 @@ import miguelWithLogo from "@/assets/miguel-with-logo.png.asset.json";
 import shield from "@/assets/logo-shield.png";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { serviceCities } from "@/lib/service-cities";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, LICENSE_SHORT, LICENSE_LABEL } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
