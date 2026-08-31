@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
+import { reviewProfiles, GOOGLE_RATING, GOOGLE_REVIEW_COUNT, GOOGLE_MAPS_URL, GOOGLE_MAPS_EMBED, SAME_AS } from "@/lib/reviews";
 
 const URL = `${SITE_URL}/reviews/`;
 const DESC =
@@ -33,6 +34,26 @@ export const Route = createFileRoute("/reviews")({
           ],
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": ["Plumber", "LocalBusiness"],
+          "@id": `${SITE_URL}/#business`,
+          name: "Mainline Plumbing Inc.",
+          url: `${SITE_URL}/`,
+          telephone: "+1-209-838-1000",
+          hasMap: GOOGLE_MAPS_URL,
+          sameAs: SAME_AS,
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: GOOGLE_RATING,
+            reviewCount: GOOGLE_REVIEW_COUNT,
+            bestRating: "5",
+            worstRating: "1",
+          },
+        }),
+      },
     ],
   }),
   component: ReviewsPage,
@@ -55,8 +76,9 @@ function ReviewsPage() {
               <h1 className="text-4xl md:text-5xl font-bold mt-2">Reviews & Reputation</h1>
               <p className="mt-4 text-white/85 max-w-2xl">
                 We've been family owned in Escalon since 2010, and in a town this size your reputation
-                is the only marketing that matters. Reviews from real customers live on our Google
-                Business Profile and Facebook page, and we'd be grateful for yours after your service.
+                is the only marketing that matters. Real customers have left us
+                {" "}{GOOGLE_REVIEW_COUNT} reviews on Google, plus verified feedback on Yelp, Facebook,
+                Angi and HomeAdvisor. We'd be grateful for yours after your service.
               </p>
               <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider border border-accent/60 rounded-md px-4 py-2">{LICENSE_LABEL}</p>
               <div className="mt-7 flex flex-wrap gap-3">
@@ -87,6 +109,70 @@ function ReviewsPage() {
               </div>
             ))}
           </div>
+          <h2 className="mt-16 text-3xl font-bold text-navy">Verified Review Profiles</h2>
+          <p className="mt-3 text-muted-foreground max-w-3xl">
+            We don't publish testimonials we wrote ourselves. Every rating below lives on a
+            third-party profile you can verify yourself.
+          </p>
+          <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {reviewProfiles.map((p) => (
+              <a
+                key={p.name}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white rounded-2xl p-7 border border-border hover:border-brand-orange transition-colors"
+                style={{ boxShadow: "var(--shadow-elegant)" }}
+              >
+                <div className="flex items-center justify-between">
+                  <h3 className="text-xl font-bold text-navy">{p.name}</h3>
+                  {p.count ? (
+                    <span className="text-xs font-bold uppercase tracking-wider bg-brand-orange text-white rounded-md px-3 py-1">
+                      {p.count} Reviews
+                    </span>
+                  ) : null}
+                </div>
+                {p.name === "Google" ? (
+                  <div className="mt-3 flex items-center gap-2">
+                    <div className="flex gap-0.5 text-brand-orange">
+                      {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-4 fill-current" />)}
+                    </div>
+                    <span className="text-sm font-semibold text-navy">{GOOGLE_RATING} average</span>
+                  </div>
+                ) : null}
+                <p className="mt-3 text-muted-foreground text-sm">{p.note}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-brand-orange-deep uppercase tracking-wider">
+                  Read Reviews <ChevronRight className="size-4" />
+                </span>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-14 grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-navy">Find Us on Google Maps</h2>
+              <p className="mt-3 text-muted-foreground">
+                18332 Campbell Ave., Escalon, CA 95320. Monday through Saturday, 7:00 am to 7:00 pm.
+                Emergency plumbing repairs prioritized during operating hours across the 209 & 350.
+              </p>
+              <a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="btn-outline mt-6 inline-flex">
+                Open in Google Maps
+              </a>
+            </div>
+            <div className="rounded-2xl overflow-hidden border-4 border-brand-orange">
+              <iframe
+                src={GOOGLE_MAPS_EMBED}
+                title="Mainline Plumbing Inc. location on Google Maps"
+                width="600"
+                height="450"
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="w-full h-[340px] border-0"
+              />
+            </div>
+          </div>
+
           <div className="mt-12 bg-brand-orange text-white rounded-2xl p-8">
             <h2 className="text-2xl font-bold uppercase">Had Us Out Recently?</h2>
             <p className="mt-3 text-white/90 max-w-2xl">
