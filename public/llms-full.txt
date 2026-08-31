@@ -118,6 +118,29 @@ We tell customers honestly when a truck can be on-site rather than promising rou
 - Primary keyword: schedule plumbing service Escalon
 - Focus: Phone, form, hours, service area map.
 
+### Water Heaters Hub (/water-heaters/)
+- Primary keyword: water heater replacement Escalon CA
+- Focus: Tank, tankless, electric and hybrid heat-pump replacement, repair, and annual flushing.
+- Children: /water-heaters/water-heater-installation/, /water-heater-repair/, /tankless-water-heaters/, /water-heater-flushing/, /electric-water-heaters/
+
+### Individual Service Pages (/plumbing-services/{service}/)
+Every service in the catalog has its own page with unique copy, an H1, a quick quote form, symptom list, FAQs with FAQPage schema, Service schema, BreadcrumbList schema, related-service links, and city links. Nested paths mirror the service hierarchy, for example /plumbing-services/fixture-plumbing/fixture-repair/faucet-repair/ and /plumbing-services/gas-line/gas-line-installation/.
+
+### Authority Pages
+- /coupons/: Current specials in order: $50 off new customers, $150 off water heater replacement, $250 off electric water heater installation, 10% veteran & law enforcement discount.
+- /reviews/: Directs visitors to verified third-party review profiles. No fabricated testimonials or ratings.
+- /about-us/faq/: FAQPage schema covering hours, licensing, pricing, service areas, water heaters, and emergency response.
+- /photo-gallery/ with /photo-gallery/plumbing-work/ and /photo-gallery/team/.
+- /about-us/video-center/ with /videos/ and /videos/about-our-company/.
+- /blog/: Article archive at /blog/{year}/{month}/{slug}/ with /blog/{year}/, /blog/{year}/{month}/ and /blog/categories/{slug}/ archives. Article schema on every post.
+- /site-map/: HTML index of every URL, keeping crawl depth at three or less.
+
+### Retired URLs (301 redirects)
+- /templates/, /templates/home/, /templates/general/ redirect to /
+- /nps-survey/thank-you/ redirects to /reviews/
+- /plumbing-services/trenchless-sewer-line-replacement/ redirects to /plumbing-services/sewer-line-repair/ (Mainline does not offer trenchless lining)
+- /about, /contact, /services redirect to /about-us/, /contact-us/, /plumbing-services/
+
 ### City Pages (/areas-we-serve/{slug}/)
 Each city page carries: local identity, landmarks, community events, neighboring towns served, and a city-specific plumbing tie-in written from real knowledge of that town. City pages target "plumber in {City}, CA" and include the same core services plus locally relevant context (well systems in Oakdale, River Islands new construction in Lathrop, tract-home slab leaks in Riverbank, etc.). The Escalon hometown page lives at the long-form canonical path /areas-we-serve/escalon-plumber-emergency-plumbing-water-heater-/.
 
