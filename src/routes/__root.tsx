@@ -10,6 +10,7 @@ import {
 
 import appCss from "../styles.css?url";
 import { SITE_URL, OG_IMAGE } from "@/lib/site";
+import { GOOGLE_MAPS_URL, GOOGLE_RATING, GOOGLE_REVIEW_COUNT, SAME_AS } from "@/lib/reviews";
 
 function NotFoundComponent() {
   return (
@@ -137,6 +138,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 addressCountry: "US",
               },
               geo: { "@type": "GeoCoordinates", latitude: 37.7974, longitude: -120.9977 },
+              hasMap: GOOGLE_MAPS_URL,
+              sameAs: SAME_AS,
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: GOOGLE_RATING,
+                reviewCount: GOOGLE_REVIEW_COUNT,
+                bestRating: "5",
+                worstRating: "1",
+              },
               openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",

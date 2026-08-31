@@ -52,4 +52,11 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
+# Verified entity profiles (for AI and crawler entity resolution):
+# https://maps.app.goo.gl/ZCcmqY46FtzNxew98
+# https://www.yelp.com/biz/mainline-plumbing-escalon-4
+# https://www.facebook.com/mainlineplumbinginc/
+# https://www.angi.com/companylist/us/ca/escalon/mainline-plumbing-inc-reviews-9045449.htm
+# https://www.homeadvisor.com/rated.MainlinePlumbingInc.33776850.html
+
 Sitemap: https://www.mainlineplumber.com/sitemap.xml

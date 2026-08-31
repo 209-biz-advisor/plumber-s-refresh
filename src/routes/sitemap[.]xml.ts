@@ -26,7 +26,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/about-us/video-center/videos/about-our-company/", changefreq: "monthly", priority: "0.4" },
           { path: "/contact-us/", changefreq: "monthly", priority: "0.8" },
           { path: "/coupons/", changefreq: "weekly", priority: "0.8" },
-          { path: "/reviews/", changefreq: "monthly", priority: "0.7" },
+          { path: "/reviews/", changefreq: "weekly", priority: "0.8" },
           { path: "/photo-gallery/", changefreq: "monthly", priority: "0.5" },
           { path: "/photo-gallery/plumbing-work/", changefreq: "monthly", priority: "0.5" },
           { path: "/photo-gallery/team/", changefreq: "monthly", priority: "0.4" },

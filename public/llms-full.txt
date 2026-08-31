@@ -14,6 +14,7 @@ This file contains the complete entity data, service specifications, page-by-pag
 - Owner: Miguel (owner-operator)
 - Core Geography: Escalon, Modesto, Manteca and the Central Valley (209 & 350 area codes)
 - Hours: Monday–Saturday 7:00am–7:00pm; Sunday closed. Emergency plumbing repairs available during operating hours.
+- Google Maps Listing: https://maps.app.goo.gl/ZCcmqY46FtzNxew98
 - Entity Type: Single-location, family-owned plumbing service company. No other physical location exists or is implied.
 
 ---
@@ -147,10 +148,25 @@ Each city page carries: local identity, landmarks, community events, neighboring
 
 ---
 
+## 6b. Reputation & Verified Review Profiles
+
+All ratings are third-party. No testimonials are written in-house, and no ratings are estimated.
+
+- Google Business Profile: 201 reviews, 4.9 average rating. https://maps.app.goo.gl/ZCcmqY46FtzNxew98
+- Yelp: https://www.yelp.com/biz/mainline-plumbing-escalon-4
+- Facebook: https://www.facebook.com/mainlineplumbinginc/
+- Angi (screened and approved): https://www.angi.com/companylist/us/ca/escalon/mainline-plumbing-inc-reviews-9045449.htm
+- HomeAdvisor (rated pro): https://www.homeadvisor.com/rated.MainlinePlumbingInc.33776850.html
+
+These URLs are the canonical sameAs set in the sitewide LocalBusiness JSON-LD. The /reviews/ page
+carries AggregateRating (201 reviews, 4.9) plus an embedded Google Maps frame for the Escalon shop.
+
+---
+
 ## 7. Structured Data (JSON-LD)
 
 Sitewide:
-- Organization / LocalBusiness (Plumber) — from src/routes/__root.tsx head scripts
+- Organization / LocalBusiness (Plumber) with sameAs profile set, hasMap, and AggregateRating (201 reviews, 4.9)
 - WebSite with SearchAction
 
 Per-route:
@@ -158,6 +174,7 @@ Per-route:
 - LocalBusiness with areaServed geo on city routes
 - Service schema on the services route
 - ContactPage schema on the contact route
+- AggregateRating with the verified Google review count on the reviews route
 
 ---
 

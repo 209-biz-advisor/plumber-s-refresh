@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
+import { GOOGLE_MAPS_EMBED, GOOGLE_MAPS_URL } from "@/lib/reviews";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
 export const Route = createFileRoute("/contact-us")({
@@ -108,6 +109,21 @@ function ContactPage() {
           <div className="mt-10 mx-auto w-4/5 max-w-3xl rounded-2xl overflow-hidden border-4 border-accent shadow-2xl">
             <img src={serviceMap.url} alt="Mainline Plumbing service area map" className="w-full h-auto" />
           </div>
+          <div className="mt-10 mx-auto w-4/5 max-w-3xl rounded-2xl overflow-hidden border-4 border-brand-orange shadow-2xl">
+            <iframe
+              src={GOOGLE_MAPS_EMBED}
+              title="Mainline Plumbing Inc. location on Google Maps"
+              width="600"
+              height="450"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="w-full h-[360px] border-0"
+            />
+          </div>
+          <a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="btn-outline mt-6 inline-flex">
+            Get Directions in Google Maps
+          </a>
         </div>
       </section>
 
