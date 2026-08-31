@@ -72,6 +72,8 @@ function SiteMapPage() {
               { href: "/contact-us/", label: "Contact Us" },
               { href: "/reviews/", label: "Reviews" },
               { href: "/coupons/", label: "Coupons & Specials" },
+              { href: "/privacy-policy/", label: "Privacy Policy" },
+              { href: "/terms-and-conditions/", label: "Terms and Conditions" },
               { href: "/photo-gallery/", label: "Photo Gallery" },
               { href: "/photo-gallery/plumbing-work/", label: "Plumbing Work Gallery" },
               { href: "/photo-gallery/team/", label: "Our Team Gallery" },

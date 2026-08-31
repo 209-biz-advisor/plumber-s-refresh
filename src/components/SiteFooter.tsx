@@ -45,6 +45,8 @@ export function SiteFooter() {
             <li><a href="/about-us/faq/" className="hover:text-accent">FAQ</a></li>
             <li><Link to="/contact-us/" className="hover:text-accent">Contact</Link></li>
             <li><a href="/site-map/" className="hover:text-accent">Site Map</a></li>
+            <li><a href="/privacy-policy/" className="hover:text-accent">Privacy Policy</a></li>
+            <li><a href="/terms-and-conditions/" className="hover:text-accent">Terms and Conditions</a></li>
           </ul>
 
           <div className="flex gap-3 mt-5">
