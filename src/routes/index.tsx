@@ -39,7 +39,7 @@ const serviceColumns = [
   {
     icon: Droplets,
     title: "Drain & Sewer Solutions",
-    items: ["Drain Cleaning", "Trenchless Pipe Lining", "Trenchless Pipe Bursting", "Sewer Services", "Hydro Jetting"],
+    items: ["Drain Cleaning", "Sewer Line Repair", "Sewer Camera Inspection", "Sewer Services", "Hydro Jetting"],
   },
   {
     icon: Flame,
