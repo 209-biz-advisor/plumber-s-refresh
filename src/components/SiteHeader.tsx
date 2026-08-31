@@ -5,12 +5,13 @@ import logo from "@/assets/logo-horizontal.png";
 import { LICENSE_LABEL } from "@/lib/site";
 
 const nav = [
-  { to: "/", label: "Home" },
-  { to: "/about-us/", label: "About Us" },
-  { to: "/plumbing-services/", label: "Plumbing Services" },
-  { to: "/plumbing-services/", label: "Drain Cleaning" },
-  { to: "/plumbing-services/", label: "Water Heaters" },
-  { to: "/areas-we-serve/", label: "Areas We Serve" },
+  { href: "/", label: "Home" },
+  { href: "/about-us/", label: "About Us" },
+  { href: "/plumbing-services/", label: "Plumbing Services" },
+  { href: "/plumbing-services/drain-cleaning/", label: "Drain Cleaning" },
+  { href: "/water-heaters/", label: "Water Heaters" },
+  { href: "/coupons/", label: "Coupons" },
+  { href: "/areas-we-serve/", label: "Areas We Serve" },
 ] as const;
 
 export function SiteHeader() {
