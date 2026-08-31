@@ -11,6 +11,9 @@ export function SiteFooter() {
           <img src={logo} alt="Mainline Plumbing Inc." className="h-[100px] w-auto mb-4" />
           <p className="text-sm italic text-accent mb-2">"We Treat Your Family, Like Our Family."</p>
           <p className="text-sm">Family-owned plumbers serving Escalon, Modesto and the Central Valley since 2010, backed by 37+ years of plumbing experience.</p>
+          <p className="mt-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-white border border-accent/50 rounded-md px-3 py-2">
+            <ShieldCheck className="size-4 text-accent shrink-0" /> {LICENSE_LABEL}
+          </p>
         </div>
         <div>
           <h4 className="text-white font-display text-lg mb-4 uppercase tracking-wider">Contact</h4>
