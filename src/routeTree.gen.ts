@@ -29,6 +29,7 @@ import { Route as WaterHeatersSplatRouteImport } from './routes/water-heaters.$'
 import { Route as TemplatesSplatRouteImport } from './routes/templates.$'
 import { Route as PlumbingServicesSplatRouteImport } from './routes/plumbing-services.$'
 import { Route as PhotoGalleryCategoryRouteImport } from './routes/photo-gallery.$category'
+import { Route as NpsSurveyThankYouRouteImport } from './routes/nps-survey.thank-you'
 import { Route as BlogSplatRouteImport } from './routes/blog.$'
 import { Route as AreasWeServeEscalonRouteImport } from './routes/areas-we-serve.escalon'
 import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$city'
@@ -137,6 +138,11 @@ const PhotoGalleryCategoryRoute = PhotoGalleryCategoryRouteImport.update({
   path: '/photo-gallery/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NpsSurveyThankYouRoute = NpsSurveyThankYouRouteImport.update({
+  id: '/nps-survey/thank-you',
+  path: '/nps-survey/thank-you',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogSplatRoute = BlogSplatRouteImport.update({
   id: '/blog/$',
   path: '/blog/$',
@@ -189,6 +195,7 @@ export interface FileRoutesByFullPath {
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
   '/blog/$': typeof BlogSplatRoute
+  '/nps-survey/thank-you': typeof NpsSurveyThankYouRoute
   '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
   '/templates/$': typeof TemplatesSplatRoute
@@ -218,6 +225,7 @@ export interface FileRoutesByTo {
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
   '/blog/$': typeof BlogSplatRoute
+  '/nps-survey/thank-you': typeof NpsSurveyThankYouRoute
   '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
   '/templates/$': typeof TemplatesSplatRoute
@@ -248,6 +256,7 @@ export interface FileRoutesById {
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
   '/blog/$': typeof BlogSplatRoute
+  '/nps-survey/thank-you': typeof NpsSurveyThankYouRoute
   '/photo-gallery/$category': typeof PhotoGalleryCategoryRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
   '/templates/$': typeof TemplatesSplatRoute
@@ -279,6 +288,7 @@ export interface FileRouteTypes {
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
     | '/blog/$'
+    | '/nps-survey/thank-you'
     | '/photo-gallery/$category'
     | '/plumbing-services/$'
     | '/templates/$'
@@ -308,6 +318,7 @@ export interface FileRouteTypes {
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
     | '/blog/$'
+    | '/nps-survey/thank-you'
     | '/photo-gallery/$category'
     | '/plumbing-services/$'
     | '/templates/$'
@@ -337,6 +348,7 @@ export interface FileRouteTypes {
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
     | '/blog/$'
+    | '/nps-survey/thank-you'
     | '/photo-gallery/$category'
     | '/plumbing-services/$'
     | '/templates/$'
@@ -367,6 +379,7 @@ export interface RootRouteChildren {
   AreasWeServeCityRoute: typeof AreasWeServeCityRoute
   AreasWeServeEscalonRoute: typeof AreasWeServeEscalonRoute
   BlogSplatRoute: typeof BlogSplatRoute
+  NpsSurveyThankYouRoute: typeof NpsSurveyThankYouRoute
   PhotoGalleryCategoryRoute: typeof PhotoGalleryCategoryRoute
   PlumbingServicesSplatRoute: typeof PlumbingServicesSplatRoute
   TemplatesSplatRoute: typeof TemplatesSplatRoute
@@ -525,6 +538,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PhotoGalleryCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/nps-survey/thank-you': {
+      id: '/nps-survey/thank-you'
+      path: '/nps-survey/thank-you'
+      fullPath: '/nps-survey/thank-you'
+      preLoaderRoute: typeof NpsSurveyThankYouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/$': {
       id: '/blog/$'
       path: '/blog/$'
@@ -591,6 +611,7 @@ const rootRouteChildren: RootRouteChildren = {
   AreasWeServeCityRoute: AreasWeServeCityRoute,
   AreasWeServeEscalonRoute: AreasWeServeEscalonRoute,
   BlogSplatRoute: BlogSplatRoute,
+  NpsSurveyThankYouRoute: NpsSurveyThankYouRoute,
   PhotoGalleryCategoryRoute: PhotoGalleryCategoryRoute,
   PlumbingServicesSplatRoute: PlumbingServicesSplatRoute,
   TemplatesSplatRoute: TemplatesSplatRoute,
