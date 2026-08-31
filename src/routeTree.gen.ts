@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SiteMapRouteImport } from './routes/site-map'
 import { Route as ServicesRouteImport } from './routes/services'
@@ -39,6 +40,11 @@ import { Route as AboutUsVideoCenterIndexRouteImport } from './routes/about-us.v
 import { Route as AboutUsVideoCenterVideosIndexRouteImport } from './routes/about-us.video-center.videos.index'
 import { Route as AboutUsVideoCenterVideosAboutOurCompanyRouteImport } from './routes/about-us.video-center.videos.about-our-company'
 
+const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
+  id: '/terms-and-conditions',
+  path: '/terms-and-conditions',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -198,6 +204,7 @@ export interface FileRoutesByFullPath {
   '/services': typeof ServicesRoute
   '/site-map': typeof SiteMapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
@@ -229,6 +236,7 @@ export interface FileRoutesByTo {
   '/services': typeof ServicesRoute
   '/site-map': typeof SiteMapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
@@ -261,6 +269,7 @@ export interface FileRoutesById {
   '/services': typeof ServicesRoute
   '/site-map': typeof SiteMapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
@@ -294,6 +303,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/site-map'
     | '/sitemap.xml'
+    | '/terms-and-conditions'
     | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
@@ -325,6 +335,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/site-map'
     | '/sitemap.xml'
+    | '/terms-and-conditions'
     | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
@@ -356,6 +367,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/site-map'
     | '/sitemap.xml'
+    | '/terms-and-conditions'
     | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
@@ -388,6 +400,7 @@ export interface RootRouteChildren {
   ServicesRoute: typeof ServicesRoute
   SiteMapRoute: typeof SiteMapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TermsAndConditionsRoute: typeof TermsAndConditionsRoute
   AboutUsFaqRoute: typeof AboutUsFaqRoute
   AreasWeServeCityRoute: typeof AreasWeServeCityRoute
   AreasWeServeEscalonRoute: typeof AreasWeServeEscalonRoute
@@ -411,6 +424,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/terms-and-conditions': {
+      id: '/terms-and-conditions'
+      path: '/terms-and-conditions'
+      fullPath: '/terms-and-conditions'
+      preLoaderRoute: typeof TermsAndConditionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -628,6 +648,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServicesRoute: ServicesRoute,
   SiteMapRoute: SiteMapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TermsAndConditionsRoute: TermsAndConditionsRoute,
   AboutUsFaqRoute: AboutUsFaqRoute,
   AreasWeServeCityRoute: AreasWeServeCityRoute,
   AreasWeServeEscalonRoute: AreasWeServeEscalonRoute,

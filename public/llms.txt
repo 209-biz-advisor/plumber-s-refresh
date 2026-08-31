@@ -94,6 +94,8 @@ Mainline competes on trust, tenure, and craftsmanship, not price. Miguel persona
 - [Blog](/blog/): Plumbing tips, water heater guidance, and seasonal maintenance articles.
 - [Contact](/contact-us/): Phone, address, hours, service area map, and online request form.
 - [Site Map](/site-map/): Complete HTML index of every page on the site.
+- [Privacy Policy](/privacy-policy/): Data collection, SMS opt-in policy, and California CCPA/CPRA rights.
+- [Terms and Conditions](/terms-and-conditions/): Website use, service agreements, payment, SMS terms, and California governing law.
 
 ## Individual Service Pages
 Plumbing services live at /plumbing-services/{service}/ and include: drain-cleaning, emergency-plumbing, plumbing-repairs, leak-detection, gas-line (and gas-line/gas-line-installation), piping-repiping, frozen-pipe-repair, plumbing-inspections, plumbing-maintenance, hydrojetting, sewer-services, sewer-line-repair, video-camera-inspections, commercial-plumbing, kitchen-bath-remodeling (and kitchen-bath-remodeling/toilet-repair), water-softener-repair-installation, water-treatment-systems, water-purification-systems, toilet-installation, garbage-disposal-repair, garbage-disposal-installation, backflow-prevention-testing, grease-trap-cleaning, water-line-plumbing, and fixture-plumbing (with faucet-installation, shower-installation, sink-installation, fixture-repair, fixture-repair/faucet-repair, fixture-repair/sink-repair).

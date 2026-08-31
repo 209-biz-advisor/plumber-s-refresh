@@ -31,6 +31,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/photo-gallery/plumbing-work/", changefreq: "monthly", priority: "0.5" },
           { path: "/photo-gallery/team/", changefreq: "monthly", priority: "0.4" },
           { path: "/site-map/", changefreq: "monthly", priority: "0.3" },
+          { path: "/privacy-policy/", changefreq: "yearly", priority: "0.3" },
+          { path: "/terms-and-conditions/", changefreq: "yearly", priority: "0.3" },
 
           // Service hubs and every nested service URL
           { path: "/plumbing-services/", changefreq: "monthly", priority: "0.9" },
