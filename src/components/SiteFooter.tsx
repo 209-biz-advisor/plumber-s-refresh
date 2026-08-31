@@ -33,10 +33,20 @@ export function SiteFooter() {
         <div>
           <h4 className="text-white font-display text-lg mb-4 uppercase tracking-wider">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/plumbing-services/" className="hover:text-accent">Services</Link></li>
+            <li><Link to="/plumbing-services/" className="hover:text-accent">Plumbing Services</Link></li>
+            <li><a href="/water-heaters/" className="hover:text-accent">Water Heaters</a></li>
+            <li><a href="/plumbing-services/drain-cleaning/" className="hover:text-accent">Drain Cleaning</a></li>
+            <li><a href="/plumbing-services/emergency-plumbing/" className="hover:text-accent">Emergency Plumbing</a></li>
+            <li><Link to="/areas-we-serve/" className="hover:text-accent">Areas We Serve</Link></li>
+            <li><a href="/coupons/" className="hover:text-accent">Coupons & Specials</a></li>
+            <li><a href="/reviews/" className="hover:text-accent">Reviews</a></li>
+            <li><a href="/blog/" className="hover:text-accent">Blog</a></li>
             <li><Link to="/about-us/" className="hover:text-accent">About Us</Link></li>
+            <li><a href="/about-us/faq/" className="hover:text-accent">FAQ</a></li>
             <li><Link to="/contact-us/" className="hover:text-accent">Contact</Link></li>
+            <li><a href="/site-map/" className="hover:text-accent">Site Map</a></li>
           </ul>
+
           <div className="flex gap-3 mt-5">
             <a href="https://www.facebook.com/mainlineplumbinginc/" aria-label="Facebook" className="bg-white/10 hover:bg-accent p-2 rounded-full"><Facebook className="size-4" /></a>
             <a href="#" aria-label="Instagram" className="bg-white/10 hover:bg-accent p-2 rounded-full"><Instagram className="size-4" /></a>
