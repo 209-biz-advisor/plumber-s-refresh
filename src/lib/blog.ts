@@ -278,7 +278,7 @@ export const posts: Post[] = [
       "The serial number on the label encodes the manufacture date, usually with the year and week in the first four digits. If yours is past ten years, you are in replacement territory even if it is still working.",
       "The signs are consistent: rusty or metallic-smelling hot water, popping or rumbling, hot water running out faster than it used to, dampness or corrosion at the base, and rising energy bills with nothing else changed.",
       "Code has also moved. Newer installs require seismic strapping, an expansion tank in many cases, proper venting and a permit, so an old unit is often out of compliance in more ways than one.",
-      "We stock the common tank sizes and can usually replace yours the same day, permit included. Ask about $150 off water heater replacement, or $250 off electric water heater installation.",
+      "We stock the common tank sizes and can usually replace yours the same day, permit included. Ask about our current water heater and electric water heater specials.",
     ],
   },
 ];

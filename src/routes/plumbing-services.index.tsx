@@ -134,19 +134,19 @@ function ServicesPage() {
             {[
               {
                 title: "Tank Water Heaters",
-                price: "From $1,895 installed",
+                price: "Same-Day Swaps",
                 desc: "40, 50, and 75-gallon gas or electric. Bradford White, Rheem, and A.O. Smith. Full haul-away and code upgrades included.",
                 bullets: ["Same-day installation", "6- to 12-year warranty options", "Seismic strapping & new T&P valve"],
               },
               {
                 title: "Tankless Conversion",
-                price: "$250 off this month",
+                price: "Endless Hot Water",
                 desc: "Endless hot water, wall-mounted, up to 30% more efficient. We size the unit, upsize the gas line if needed, and register the warranty for you.",
-                bullets: ["Navien, Rinnai & Rheem certified", "20+ year expected lifespan", "Financing available"],
+                bullets: ["Navien, Rinnai & Rheem certified", "20+ year expected lifespan", "Warranty registered for you"],
               },
               {
                 title: "Repair & Rescue",
-                price: "$0 service call w/ repair",
+                price: "Fast Diagnosis",
                 desc: "Pilot won't stay lit? No hot water in half the house? We diagnose thermocouples, heating elements, dip tubes, gas valves, and mixing valves fast.",
                 bullets: ["Same-day diagnosis", "Upfront flat-rate pricing", "Honest repair-vs-replace advice"],
               },
