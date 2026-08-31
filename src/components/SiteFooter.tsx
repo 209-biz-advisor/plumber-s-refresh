@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, MapPin, Clock, Facebook, Instagram } from "lucide-react";
+import { Phone, MapPin, Clock, Facebook, Instagram, ShieldCheck } from "lucide-react";
+import { LICENSE_LABEL, LICENSE_SHORT } from "@/lib/site";
 import logo from "@/assets/logo-horizontal.png";
 import miguel from "@/assets/miguel-owner.png";
 
