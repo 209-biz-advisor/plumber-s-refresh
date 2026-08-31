@@ -67,7 +67,7 @@ function WaterHeatersHub() {
                 {LICENSE_LABEL}
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+                <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
                 <Link to="/coupons/" className="btn-outline">See Current Specials</Link>
               </div>
             </div>
@@ -118,8 +118,8 @@ function WaterHeatersHub() {
               heating costs dramatically and often qualify for rebates. We walk your home, check the
               gas line, venting and electrical, then give you an honest recommendation. Free.
             </p>
-            <a href="tel:2098381000" className="mt-6 inline-flex items-center gap-2 bg-white text-brand-orange-deep px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
-              <Phone className="size-4" /> (209) 838-1000
+            <a href="tel:+12098381000" className="mt-6 inline-flex items-center gap-2 bg-white text-brand-orange-deep px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
+              <Phone className="size-4" /> 209.838.1000
             </a>
           </div>
         </div>

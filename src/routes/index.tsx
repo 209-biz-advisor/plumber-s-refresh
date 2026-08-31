@@ -115,7 +115,7 @@ function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/contact-us/" className="btn-outline"><Mail className="size-4" /> Contact</Link>
-              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Call</a>
+              <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> Call</a>
               <a href="sms:2098381000" className="btn-outline"><MessageSquare className="size-4" /> Text</a>
             </div>
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-white/80">
@@ -149,7 +149,7 @@ function HomePage() {
               Call us day, night, weekends too. You can trust that our plumbing experts will deliver top-quality
               service and exceptional care regardless if it's a clogged drain or a burst pipe. And everything in between.
             </p>
-            <a href="tel:2098381000" className="btn-primary mt-7"><Phone className="size-4" /> Call Now</a>
+            <a href="tel:+12098381000" className="btn-primary mt-7"><Phone className="size-4" /> Call Now</a>
           </div>
           {serviceColumns.map((col) => (
             <div key={col.title} className="bg-white rounded-2xl p-7 border border-border hover:border-accent transition" style={{ boxShadow: "var(--shadow-elegant)" }}>
@@ -299,7 +299,7 @@ function HomePage() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Get a Free Quote</a>
+              <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> Get a Free Quote</a>
               <Link to="/contact-us/" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border-2 border-navy text-navy font-bold uppercase tracking-wider text-sm hover:bg-navy hover:text-white transition">
                 Book an Assessment
               </Link>
@@ -352,9 +352,9 @@ function HomePage() {
               <div className="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
                 <div>
                   <div className="text-xs uppercase tracking-widest text-white/60">Call the specialist</div>
-                  <div className="font-display text-xl text-accent">(209) 838-1000</div>
+                  <div className="font-display text-xl text-accent">209.838.1000</div>
                 </div>
-                <a href="tel:2098381000" className="bg-accent text-navy-deep p-3 rounded-full hover:opacity-90">
+                <a href="tel:+12098381000" className="bg-accent text-navy-deep p-3 rounded-full hover:opacity-90">
                   <Phone className="size-5" />
                 </a>
               </div>
@@ -460,7 +460,7 @@ function HomePage() {
                 ))}
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Call (209) 838-1000</a>
+                <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> Call 209.838.1000</a>
                 <Link to="/contact-us/" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border-2 border-navy text-navy font-bold uppercase tracking-wider text-sm hover:bg-navy hover:text-white transition">
                   Request Service
                 </Link>
@@ -534,7 +534,7 @@ function HomePage() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link to="/contact-us/" className="btn-primary"><Mail className="size-4" /> Schedule</Link>
-              <a href="tel:2098381000" className="btn-outline"><Phone className="size-4" /> Call</a>
+              <a href="tel:+12098381000" className="btn-outline"><Phone className="size-4" /> Call</a>
             </div>
           </div>
           <div className="bg-brand-red rounded-2xl p-8 border border-white/10">
@@ -543,8 +543,8 @@ function HomePage() {
             <p className="mt-3 text-white/90">
               Burst pipe? No hot water? We answer the phone for plumbing emergencies, day, night, weekends, holidays.
             </p>
-            <a href="tel:2098381000" className="mt-6 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
-              <Phone className="size-6" /> (209) 838-1000
+            <a href="tel:+12098381000" className="mt-6 inline-flex items-center gap-3 bg-white text-brand-red px-6 py-3.5 rounded-lg font-display text-2xl tracking-wider hover:bg-white/90 transition">
+              <Phone className="size-6" /> 209.838.1000
             </a>
           </div>
         </div>
@@ -560,12 +560,12 @@ function HomePage() {
               <span className="text-white/90">Bring It On.</span>
             </h2>
             <p className="mt-5 text-white/90 max-w-md">
-              Ready to work with plumbers who truly understand your home or business? Call (209) 838-1000
+              Ready to work with plumbers who truly understand your home or business? Call 209.838.1000
               or submit the form to request an appointment. Whether you're dealing with an emergency or
               planning preventive maintenance, we're here to help.
             </p>
             <div className="mt-8 space-y-3 text-white/95">
-              <div className="flex gap-3 items-center"><Phone className="size-5" /> <a href="tel:2098381000" className="font-bold">(209) 838-1000</a></div>
+              <div className="flex gap-3 items-center"><Phone className="size-5" /> <a href="tel:+12098381000" className="font-bold">209.838.1000</a></div>
               <div className="flex gap-3 items-center"><MapPin className="size-5" /> 18332 Campbell Ave, Escalon, CA</div>
               <div className="flex gap-3 items-center"><Clock className="size-5" /> Emergency Service Available</div>
             </div>
@@ -579,7 +579,7 @@ function HomePage() {
               <div className="text-center py-10">
                 <div className="size-16 mx-auto rounded-full bg-accent/20 flex items-center justify-center"><Send className="size-7 text-accent" /></div>
                 <h3 className="mt-5 text-2xl font-bold">Thanks, we'll be in touch!</h3>
-                <p className="mt-2 text-muted-foreground">For emergencies, call (209) 838-1000.</p>
+                <p className="mt-2 text-muted-foreground">For emergencies, call 209.838.1000.</p>
               </div>
             ) : (
               <>
@@ -623,7 +623,7 @@ function HomePage() {
               the flood, fix the failure, and restore your peace of mind.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> Call Now</a>
+              <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> Call Now</a>
               <Link to="/contact-us/" className="btn-outline">Request Service</Link>
             </div>
           </div>
@@ -651,8 +651,8 @@ function HomePage() {
                 From Escalon to Stockton, Modesto to Turlock, we cover the neighborhoods that keep the 209 running.
                 If you live inside the circle, you're in our service area.
               </p>
-              <a href="tel:2098381000" className="mt-8 inline-flex items-center gap-3 bg-accent text-navy-deep px-6 py-3.5 rounded-lg font-display text-xl tracking-wider hover:bg-white transition">
-                <Phone className="size-5" /> (209) 838-1000
+              <a href="tel:+12098381000" className="mt-8 inline-flex items-center gap-3 bg-accent text-navy-deep px-6 py-3.5 rounded-lg font-display text-xl tracking-wider hover:bg-white transition">
+                <Phone className="size-5" /> 209.838.1000
               </a>
             </div>
             <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 md:p-8">

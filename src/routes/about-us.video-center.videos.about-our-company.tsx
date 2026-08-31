@@ -61,7 +61,7 @@ function AboutOurCompanyVideo() {
           </p>
           <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider border border-accent/60 rounded-md px-4 py-2">{LICENSE_LABEL}</p>
           <div className="mt-7">
-            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+            <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
           </div>
         </div>
       </section>

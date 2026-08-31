@@ -39,7 +39,7 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
                 {LICENSE_LABEL}
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+                <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
                 <Link to="/contact-us/" className="btn-outline">Request a Free Quote</Link>
               </div>
             </div>
@@ -77,8 +77,8 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
               you move forward with the repair. Family owned since 2010, 37+ years of hands-on
               experience behind every job.
             </p>
-            <a href="tel:2098381000" className="mt-6 inline-flex items-center gap-2 bg-white text-brand-orange-deep px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
-              <Phone className="size-4" /> (209) 838-1000
+            <a href="tel:+12098381000" className="mt-6 inline-flex items-center gap-2 bg-white text-brand-orange-deep px-6 py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-white/90">
+              <Phone className="size-4" /> 209.838.1000
             </a>
           </div>
         </div>

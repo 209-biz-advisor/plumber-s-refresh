@@ -52,7 +52,7 @@ function BlogIndex() {
           <h1 className="text-4xl md:text-5xl font-bold mt-6">Plumbing Blog & Tips</h1>
           <p className="mt-4 text-white/85 max-w-2xl">{DESC}</p>
           <div className="mt-7">
-            <a href="tel:2098381000" className="btn-primary"><Phone className="size-4" /> (209) 838-1000</a>
+            <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
           </div>
         </div>
       </section>
