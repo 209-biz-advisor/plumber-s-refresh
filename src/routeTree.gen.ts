@@ -13,6 +13,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SiteMapRouteImport } from './routes/site-map'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as CouponsRouteImport } from './routes/coupons'
 import { Route as ContactUsRouteImport } from './routes/contact-us'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -56,6 +57,11 @@ const ServicesRoute = ServicesRouteImport.update({
 const ReviewsRoute = ReviewsRouteImport.update({
   id: '/reviews',
   path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CouponsRoute = CouponsRouteImport.update({
@@ -187,6 +193,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
   '/coupons': typeof CouponsRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/site-map': typeof SiteMapRoute
@@ -217,6 +224,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
   '/coupons': typeof CouponsRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/site-map': typeof SiteMapRoute
@@ -248,6 +256,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
   '/coupons': typeof CouponsRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/site-map': typeof SiteMapRoute
@@ -280,6 +289,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/contact-us'
     | '/coupons'
+    | '/privacy-policy'
     | '/reviews'
     | '/services'
     | '/site-map'
@@ -310,6 +320,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/contact-us'
     | '/coupons'
+    | '/privacy-policy'
     | '/reviews'
     | '/services'
     | '/site-map'
@@ -340,6 +351,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/contact-us'
     | '/coupons'
+    | '/privacy-policy'
     | '/reviews'
     | '/services'
     | '/site-map'
@@ -371,6 +383,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   ContactUsRoute: typeof ContactUsRoute
   CouponsRoute: typeof CouponsRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
   SiteMapRoute: typeof SiteMapRoute
@@ -424,6 +437,13 @@ declare module '@tanstack/react-router' {
       path: '/reviews'
       fullPath: '/reviews'
       preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/coupons': {
@@ -603,6 +623,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   ContactUsRoute: ContactUsRoute,
   CouponsRoute: CouponsRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
   ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
   SiteMapRoute: SiteMapRoute,
