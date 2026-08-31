@@ -25,6 +25,7 @@ import { Route as WaterHeatersSplatRouteImport } from './routes/water-heaters.$'
 import { Route as PlumbingServicesSplatRouteImport } from './routes/plumbing-services.$'
 import { Route as AreasWeServeEscalonRouteImport } from './routes/areas-we-serve.escalon'
 import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$city'
+import { Route as AboutUsFaqRouteImport } from './routes/about-us.faq'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -106,6 +107,11 @@ const AreasWeServeCityRoute = AreasWeServeCityRouteImport.update({
   path: '/areas-we-serve/$city',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutUsFaqRoute = AboutUsFaqRouteImport.update({
+  id: '/about-us/faq',
+  path: '/about-us/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -116,6 +122,7 @@ export interface FileRoutesByFullPath {
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
@@ -134,6 +141,7 @@ export interface FileRoutesByTo {
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
@@ -153,6 +161,7 @@ export interface FileRoutesById {
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
   '/plumbing-services/$': typeof PlumbingServicesSplatRoute
@@ -173,6 +182,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/services'
     | '/sitemap.xml'
+    | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
     | '/plumbing-services/$'
@@ -191,6 +201,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/services'
     | '/sitemap.xml'
+    | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
     | '/plumbing-services/$'
@@ -209,6 +220,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/services'
     | '/sitemap.xml'
+    | '/about-us/faq'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
     | '/plumbing-services/$'
@@ -228,6 +240,7 @@ export interface RootRouteChildren {
   ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  AboutUsFaqRoute: typeof AboutUsFaqRoute
   AreasWeServeCityRoute: typeof AreasWeServeCityRoute
   AreasWeServeEscalonRoute: typeof AreasWeServeEscalonRoute
   PlumbingServicesSplatRoute: typeof PlumbingServicesSplatRoute
@@ -352,6 +365,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AreasWeServeCityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about-us/faq': {
+      id: '/about-us/faq'
+      path: '/about-us/faq'
+      fullPath: '/about-us/faq'
+      preLoaderRoute: typeof AboutUsFaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -364,6 +384,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  AboutUsFaqRoute: AboutUsFaqRoute,
   AreasWeServeCityRoute: AreasWeServeCityRoute,
   AreasWeServeEscalonRoute: AreasWeServeEscalonRoute,
   PlumbingServicesSplatRoute: PlumbingServicesSplatRoute,

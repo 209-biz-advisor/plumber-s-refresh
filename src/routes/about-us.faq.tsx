@@ -22,7 +22,7 @@ const faqs = [
   { q: "What discounts do you offer?", a: "$50 off for new customers, $150 off water heater replacement, $250 off electric water heater installation, and 10% off for veterans and law enforcement." },
 ];
 
-export const Route = createFileRoute("/about-us/faq/")({
+export const Route = createFileRoute("/about-us/faq")({
   head: () => ({
     meta: [
       { title: "Plumbing FAQ | Mainline Plumbing Inc. Escalon, CA" },
