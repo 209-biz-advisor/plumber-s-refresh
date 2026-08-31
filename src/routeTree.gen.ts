@@ -11,13 +11,18 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as CouponsRouteImport } from './routes/coupons'
 import { Route as ContactUsRouteImport } from './routes/contact-us'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as WaterHeatersIndexRouteImport } from './routes/water-heaters.index'
 import { Route as PlumbingServicesIndexRouteImport } from './routes/plumbing-services.index'
 import { Route as AreasWeServeIndexRouteImport } from './routes/areas-we-serve.index'
 import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
+import { Route as WaterHeatersSplatRouteImport } from './routes/water-heaters.$'
+import { Route as PlumbingServicesSplatRouteImport } from './routes/plumbing-services.$'
 import { Route as AreasWeServeEscalonRouteImport } from './routes/areas-we-serve.escalon'
 import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$city'
 
@@ -29,6 +34,16 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CouponsRoute = CouponsRouteImport.update({
+  id: '/coupons',
+  path: '/coupons',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactUsRoute = ContactUsRouteImport.update({
@@ -51,6 +66,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WaterHeatersIndexRoute = WaterHeatersIndexRouteImport.update({
+  id: '/water-heaters/',
+  path: '/water-heaters/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PlumbingServicesIndexRoute = PlumbingServicesIndexRouteImport.update({
   id: '/plumbing-services/',
   path: '/plumbing-services/',
@@ -64,6 +84,16 @@ const AreasWeServeIndexRoute = AreasWeServeIndexRouteImport.update({
 const AboutUsIndexRoute = AboutUsIndexRouteImport.update({
   id: '/about-us/',
   path: '/about-us/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WaterHeatersSplatRoute = WaterHeatersSplatRouteImport.update({
+  id: '/water-heaters/$',
+  path: '/water-heaters/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumbingServicesSplatRoute = PlumbingServicesSplatRouteImport.update({
+  id: '/plumbing-services/$',
+  path: '/plumbing-services/$',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AreasWeServeEscalonRoute = AreasWeServeEscalonRouteImport.update({
@@ -82,26 +112,36 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
+  '/coupons': typeof CouponsRoute
+  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
+  '/plumbing-services/$': typeof PlumbingServicesSplatRoute
+  '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
+  '/water-heaters/': typeof WaterHeatersIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
+  '/coupons': typeof CouponsRoute
+  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
+  '/plumbing-services/$': typeof PlumbingServicesSplatRoute
+  '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us': typeof AboutUsIndexRoute
   '/areas-we-serve': typeof AreasWeServeIndexRoute
   '/plumbing-services': typeof PlumbingServicesIndexRoute
+  '/water-heaters': typeof WaterHeatersIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -109,13 +149,18 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
+  '/coupons': typeof CouponsRoute
+  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
   '/areas-we-serve/escalon': typeof AreasWeServeEscalonRoute
+  '/plumbing-services/$': typeof PlumbingServicesSplatRoute
+  '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
+  '/water-heaters/': typeof WaterHeatersIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -124,39 +169,54 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/contact-us'
+    | '/coupons'
+    | '/reviews'
     | '/services'
     | '/sitemap.xml'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
+    | '/plumbing-services/$'
+    | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
     | '/plumbing-services/'
+    | '/water-heaters/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/contact'
     | '/contact-us'
+    | '/coupons'
+    | '/reviews'
     | '/services'
     | '/sitemap.xml'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
+    | '/plumbing-services/$'
+    | '/water-heaters/$'
     | '/about-us'
     | '/areas-we-serve'
     | '/plumbing-services'
+    | '/water-heaters'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/contact'
     | '/contact-us'
+    | '/coupons'
+    | '/reviews'
     | '/services'
     | '/sitemap.xml'
     | '/areas-we-serve/$city'
     | '/areas-we-serve/escalon'
+    | '/plumbing-services/$'
+    | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
     | '/plumbing-services/'
+    | '/water-heaters/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -164,13 +224,18 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   ContactUsRoute: typeof ContactUsRoute
+  CouponsRoute: typeof CouponsRoute
+  ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   AreasWeServeCityRoute: typeof AreasWeServeCityRoute
   AreasWeServeEscalonRoute: typeof AreasWeServeEscalonRoute
+  PlumbingServicesSplatRoute: typeof PlumbingServicesSplatRoute
+  WaterHeatersSplatRoute: typeof WaterHeatersSplatRoute
   AboutUsIndexRoute: typeof AboutUsIndexRoute
   AreasWeServeIndexRoute: typeof AreasWeServeIndexRoute
   PlumbingServicesIndexRoute: typeof PlumbingServicesIndexRoute
+  WaterHeatersIndexRoute: typeof WaterHeatersIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -187,6 +252,20 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/coupons': {
+      id: '/coupons'
+      path: '/coupons'
+      fullPath: '/coupons'
+      preLoaderRoute: typeof CouponsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact-us': {
@@ -217,6 +296,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/water-heaters/': {
+      id: '/water-heaters/'
+      path: '/water-heaters'
+      fullPath: '/water-heaters/'
+      preLoaderRoute: typeof WaterHeatersIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/plumbing-services/': {
       id: '/plumbing-services/'
       path: '/plumbing-services'
@@ -236,6 +322,20 @@ declare module '@tanstack/react-router' {
       path: '/about-us'
       fullPath: '/about-us/'
       preLoaderRoute: typeof AboutUsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/water-heaters/$': {
+      id: '/water-heaters/$'
+      path: '/water-heaters/$'
+      fullPath: '/water-heaters/$'
+      preLoaderRoute: typeof WaterHeatersSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumbing-services/$': {
+      id: '/plumbing-services/$'
+      path: '/plumbing-services/$'
+      fullPath: '/plumbing-services/$'
+      preLoaderRoute: typeof PlumbingServicesSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/areas-we-serve/escalon': {
@@ -260,13 +360,18 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   ContactUsRoute: ContactUsRoute,
+  CouponsRoute: CouponsRoute,
+  ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   AreasWeServeCityRoute: AreasWeServeCityRoute,
   AreasWeServeEscalonRoute: AreasWeServeEscalonRoute,
+  PlumbingServicesSplatRoute: PlumbingServicesSplatRoute,
+  WaterHeatersSplatRoute: WaterHeatersSplatRoute,
   AboutUsIndexRoute: AboutUsIndexRoute,
   AreasWeServeIndexRoute: AreasWeServeIndexRoute,
   PlumbingServicesIndexRoute: PlumbingServicesIndexRoute,
+  WaterHeatersIndexRoute: WaterHeatersIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
