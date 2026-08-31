@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SiteMapRouteImport } from './routes/site-map'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as CouponsRouteImport } from './routes/coupons'
@@ -37,6 +38,11 @@ import { Route as AboutUsVideoCenterVideosAboutOurCompanyRouteImport } from './r
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SiteMapRoute = SiteMapRouteImport.update({
+  id: '/site-map',
+  path: '/site-map',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -165,6 +171,7 @@ export interface FileRoutesByFullPath {
   '/coupons': typeof CouponsRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/site-map': typeof SiteMapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
@@ -191,6 +198,7 @@ export interface FileRoutesByTo {
   '/coupons': typeof CouponsRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/site-map': typeof SiteMapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
@@ -218,6 +226,7 @@ export interface FileRoutesById {
   '/coupons': typeof CouponsRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
+  '/site-map': typeof SiteMapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/about-us/faq': typeof AboutUsFaqRoute
   '/areas-we-serve/$city': typeof AreasWeServeCityRoute
@@ -246,6 +255,7 @@ export interface FileRouteTypes {
     | '/coupons'
     | '/reviews'
     | '/services'
+    | '/site-map'
     | '/sitemap.xml'
     | '/about-us/faq'
     | '/areas-we-serve/$city'
@@ -272,6 +282,7 @@ export interface FileRouteTypes {
     | '/coupons'
     | '/reviews'
     | '/services'
+    | '/site-map'
     | '/sitemap.xml'
     | '/about-us/faq'
     | '/areas-we-serve/$city'
@@ -298,6 +309,7 @@ export interface FileRouteTypes {
     | '/coupons'
     | '/reviews'
     | '/services'
+    | '/site-map'
     | '/sitemap.xml'
     | '/about-us/faq'
     | '/areas-we-serve/$city'
@@ -325,6 +337,7 @@ export interface RootRouteChildren {
   CouponsRoute: typeof CouponsRoute
   ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
+  SiteMapRoute: typeof SiteMapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   AboutUsFaqRoute: typeof AboutUsFaqRoute
   AreasWeServeCityRoute: typeof AreasWeServeCityRoute
@@ -351,6 +364,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/site-map': {
+      id: '/site-map'
+      path: '/site-map'
+      fullPath: '/site-map'
+      preLoaderRoute: typeof SiteMapRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -525,6 +545,7 @@ const rootRouteChildren: RootRouteChildren = {
   CouponsRoute: CouponsRoute,
   ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
+  SiteMapRoute: SiteMapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   AboutUsFaqRoute: AboutUsFaqRoute,
   AreasWeServeCityRoute: AreasWeServeCityRoute,

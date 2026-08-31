@@ -11,7 +11,7 @@ const URL = `${SITE_URL}/site-map/`;
 const DESC =
   "Complete site map for Mainline Plumbing Inc: every plumbing service, water heater page, city service area, coupon, article and company page in one place.";
 
-export const Route = createFileRoute("/site-map/")({
+export const Route = createFileRoute("/site-map")({
   head: () => ({
     meta: [
       { title: "Site Map | Mainline Plumbing Inc. Escalon, CA" },
