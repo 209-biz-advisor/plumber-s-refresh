@@ -449,6 +449,11 @@ export const services: ServiceEntry[] = [
 export const plumbingServices = services.filter((s) => s.hub === "plumbing-services");
 export const waterHeaterServices = services.filter((s) => s.hub === "water-heaters");
 
+/** Canonical path for a service entry, always trailing-slashed. */
+export function servicePath(s: ServiceEntry) {
+  return `/${s.hub}/${s.slug}/`;
+}
+
 export function findService(hub: ServiceEntry["hub"], slug: string) {
   const clean = slug.replace(/^\/+|\/+$/g, "");
   return services.find((s) => s.hub === hub && s.slug === clean);
