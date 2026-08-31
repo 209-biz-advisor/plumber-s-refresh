@@ -29,6 +29,7 @@ import { Route as AreasWeServeEscalonRouteImport } from './routes/areas-we-serve
 import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$city'
 import { Route as AboutUsFaqRouteImport } from './routes/about-us.faq'
 import { Route as AboutUsVideoCenterIndexRouteImport } from './routes/about-us.video-center.index'
+import { Route as AboutUsVideoCenterVideosIndexRouteImport } from './routes/about-us.video-center.videos.index'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -130,6 +131,12 @@ const AboutUsVideoCenterIndexRoute = AboutUsVideoCenterIndexRouteImport.update({
   path: '/about-us/video-center/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutUsVideoCenterVideosIndexRoute =
+  AboutUsVideoCenterVideosIndexRouteImport.update({
+    id: '/about-us/video-center/videos/',
+    path: '/about-us/video-center/videos/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -152,6 +159,7 @@ export interface FileRoutesByFullPath {
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
   '/about-us/video-center/': typeof AboutUsVideoCenterIndexRoute
+  '/about-us/video-center/videos/': typeof AboutUsVideoCenterVideosIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -174,6 +182,7 @@ export interface FileRoutesByTo {
   '/plumbing-services': typeof PlumbingServicesIndexRoute
   '/water-heaters': typeof WaterHeatersIndexRoute
   '/about-us/video-center': typeof AboutUsVideoCenterIndexRoute
+  '/about-us/video-center/videos': typeof AboutUsVideoCenterVideosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -197,6 +206,7 @@ export interface FileRoutesById {
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
   '/about-us/video-center/': typeof AboutUsVideoCenterIndexRoute
+  '/about-us/video-center/videos/': typeof AboutUsVideoCenterVideosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -221,6 +231,7 @@ export interface FileRouteTypes {
     | '/plumbing-services/'
     | '/water-heaters/'
     | '/about-us/video-center/'
+    | '/about-us/video-center/videos/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -243,6 +254,7 @@ export interface FileRouteTypes {
     | '/plumbing-services'
     | '/water-heaters'
     | '/about-us/video-center'
+    | '/about-us/video-center/videos'
   id:
     | '__root__'
     | '/'
@@ -265,6 +277,7 @@ export interface FileRouteTypes {
     | '/plumbing-services/'
     | '/water-heaters/'
     | '/about-us/video-center/'
+    | '/about-us/video-center/videos/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -288,6 +301,7 @@ export interface RootRouteChildren {
   PlumbingServicesIndexRoute: typeof PlumbingServicesIndexRoute
   WaterHeatersIndexRoute: typeof WaterHeatersIndexRoute
   AboutUsVideoCenterIndexRoute: typeof AboutUsVideoCenterIndexRoute
+  AboutUsVideoCenterVideosIndexRoute: typeof AboutUsVideoCenterVideosIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -432,6 +446,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutUsVideoCenterIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about-us/video-center/videos/': {
+      id: '/about-us/video-center/videos/'
+      path: '/about-us/video-center/videos'
+      fullPath: '/about-us/video-center/videos/'
+      preLoaderRoute: typeof AboutUsVideoCenterVideosIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -456,6 +477,7 @@ const rootRouteChildren: RootRouteChildren = {
   PlumbingServicesIndexRoute: PlumbingServicesIndexRoute,
   WaterHeatersIndexRoute: WaterHeatersIndexRoute,
   AboutUsVideoCenterIndexRoute: AboutUsVideoCenterIndexRoute,
+  AboutUsVideoCenterVideosIndexRoute: AboutUsVideoCenterVideosIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
