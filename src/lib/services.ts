@@ -153,7 +153,7 @@ export const services: ServiceEntry[] = [
     bullets: ["Sewer camera inspection and locating", "Cleaning, cabling and hydrojetting", "Spot repairs and full replacement", "Cleanout installation", "City and county permitting handled"],
     faqs: [
       { q: "How do I know the sewer is the problem?", a: "Multiple fixtures backing up at once, gurgling toilets, or sewage at the lowest drain in the house." },
-      { q: "Do you offer trenchless replacement?", a: "We do not offer trenchless lining. We handle sewer line repair and full replacement using proven excavation methods." },
+      { q: "Can a damaged sewer line be repaired instead of replaced?", a: "Often yes. A camera inspection tells us whether we are dealing with a single break, root intrusion or a bellied line, and we repair the failed section when the rest of the pipe is sound." },
     ],
   },
   {
