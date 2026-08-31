@@ -20,6 +20,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as WaterHeatersIndexRouteImport } from './routes/water-heaters.index'
 import { Route as PlumbingServicesIndexRouteImport } from './routes/plumbing-services.index'
 import { Route as PhotoGalleryIndexRouteImport } from './routes/photo-gallery.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as AreasWeServeIndexRouteImport } from './routes/areas-we-serve.index'
 import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
 import { Route as WaterHeatersSplatRouteImport } from './routes/water-heaters.$'
@@ -85,6 +86,11 @@ const PlumbingServicesIndexRoute = PlumbingServicesIndexRouteImport.update({
 const PhotoGalleryIndexRoute = PhotoGalleryIndexRouteImport.update({
   id: '/photo-gallery/',
   path: '/photo-gallery/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AreasWeServeIndexRoute = AreasWeServeIndexRouteImport.update({
@@ -162,6 +168,7 @@ export interface FileRoutesByFullPath {
   '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
+  '/blog/': typeof BlogIndexRoute
   '/photo-gallery/': typeof PhotoGalleryIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
@@ -186,6 +193,7 @@ export interface FileRoutesByTo {
   '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us': typeof AboutUsIndexRoute
   '/areas-we-serve': typeof AreasWeServeIndexRoute
+  '/blog': typeof BlogIndexRoute
   '/photo-gallery': typeof PhotoGalleryIndexRoute
   '/plumbing-services': typeof PlumbingServicesIndexRoute
   '/water-heaters': typeof WaterHeatersIndexRoute
@@ -211,6 +219,7 @@ export interface FileRoutesById {
   '/water-heaters/$': typeof WaterHeatersSplatRoute
   '/about-us/': typeof AboutUsIndexRoute
   '/areas-we-serve/': typeof AreasWeServeIndexRoute
+  '/blog/': typeof BlogIndexRoute
   '/photo-gallery/': typeof PhotoGalleryIndexRoute
   '/plumbing-services/': typeof PlumbingServicesIndexRoute
   '/water-heaters/': typeof WaterHeatersIndexRoute
@@ -237,6 +246,7 @@ export interface FileRouteTypes {
     | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
+    | '/blog/'
     | '/photo-gallery/'
     | '/plumbing-services/'
     | '/water-heaters/'
@@ -261,6 +271,7 @@ export interface FileRouteTypes {
     | '/water-heaters/$'
     | '/about-us'
     | '/areas-we-serve'
+    | '/blog'
     | '/photo-gallery'
     | '/plumbing-services'
     | '/water-heaters'
@@ -285,6 +296,7 @@ export interface FileRouteTypes {
     | '/water-heaters/$'
     | '/about-us/'
     | '/areas-we-serve/'
+    | '/blog/'
     | '/photo-gallery/'
     | '/plumbing-services/'
     | '/water-heaters/'
@@ -310,6 +322,7 @@ export interface RootRouteChildren {
   WaterHeatersSplatRoute: typeof WaterHeatersSplatRoute
   AboutUsIndexRoute: typeof AboutUsIndexRoute
   AreasWeServeIndexRoute: typeof AreasWeServeIndexRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   PhotoGalleryIndexRoute: typeof PhotoGalleryIndexRoute
   PlumbingServicesIndexRoute: typeof PlumbingServicesIndexRoute
   WaterHeatersIndexRoute: typeof WaterHeatersIndexRoute
@@ -395,6 +408,13 @@ declare module '@tanstack/react-router' {
       path: '/photo-gallery'
       fullPath: '/photo-gallery/'
       preLoaderRoute: typeof PhotoGalleryIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/areas-we-serve/': {
@@ -494,6 +514,7 @@ const rootRouteChildren: RootRouteChildren = {
   WaterHeatersSplatRoute: WaterHeatersSplatRoute,
   AboutUsIndexRoute: AboutUsIndexRoute,
   AreasWeServeIndexRoute: AreasWeServeIndexRoute,
+  BlogIndexRoute: BlogIndexRoute,
   PhotoGalleryIndexRoute: PhotoGalleryIndexRoute,
   PlumbingServicesIndexRoute: PlumbingServicesIndexRoute,
   WaterHeatersIndexRoute: WaterHeatersIndexRoute,
