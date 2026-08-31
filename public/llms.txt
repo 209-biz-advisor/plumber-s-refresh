@@ -41,24 +41,37 @@ Mainline competes on trust, tenure, and craftsmanship, not price. Miguel persona
 
 ## Pages
 - [Home](/): Mainline Plumbing homepage, hub for services, water heaters, and emergency plumbing repairs.
-- [About](/about-us/): 16+ year family plumbing business history, owner Miguel, and Central Valley service philosophy.
-- [Services](/plumbing-services/): Full service catalog including the water heater deep-dive guide.
-- [Areas We Serve](/areas-we-serve): Central Valley coverage hub routing to individual city pages.
+- [About Us](/about-us/): 16+ year family plumbing business history, owner Miguel, and Central Valley service philosophy.
+- [FAQ](/about-us/faq/): Answers on hours, pricing, licensing, service areas, water heaters, and emergency response.
+- [Video Center](/about-us/video-center/): Company videos and homeowner plumbing explainers.
+- [Plumbing Services](/plumbing-services/): Full service catalog hub linking every individual service page.
+- [Water Heaters](/water-heaters/): Water heater hub covering installation, repair, tankless, electric, and flushing.
+- [Areas We Serve](/areas-we-serve/): Central Valley coverage hub routing to individual city pages.
+- [Coupons & Specials](/coupons/): Current discounts including water heater and electric water heater offers.
+- [Reviews](/reviews/): Where to read and leave verified reviews for Mainline Plumbing.
+- [Photo Gallery](/photo-gallery/): Completed plumbing work and team photos.
+- [Blog](/blog/): Plumbing tips, water heater guidance, and seasonal maintenance articles.
 - [Contact](/contact-us/): Phone, address, hours, service area map, and online request form.
+- [Site Map](/site-map/): Complete HTML index of every page on the site.
+
+## Individual Service Pages
+Plumbing services live at /plumbing-services/{service}/ and include: drain-cleaning, emergency-plumbing, plumbing-repairs, leak-detection, gas-line (and gas-line/gas-line-installation), piping-repiping, frozen-pipe-repair, plumbing-inspections, plumbing-maintenance, hydrojetting, sewer-services, sewer-line-repair, video-camera-inspections, commercial-plumbing, kitchen-bath-remodeling (and kitchen-bath-remodeling/toilet-repair), water-softener-repair-installation, water-treatment-systems, water-purification-systems, toilet-installation, garbage-disposal-repair, garbage-disposal-installation, backflow-prevention-testing, grease-trap-cleaning, water-line-plumbing, and fixture-plumbing (with faucet-installation, shower-installation, sink-installation, fixture-repair, fixture-repair/faucet-repair, fixture-repair/sink-repair).
+Water heater pages live at /water-heaters/{service}/ and include: water-heater-installation, water-heater-repair, tankless-water-heaters, water-heater-flushing, electric-water-heaters.
+
 
 ## Service Areas
 Escalon (headquarters), Ripon, Manteca, Lathrop, Modesto, Salida, Riverbank, Oakdale, Hughson, Turlock, Ceres, Del Rio, and the greater Central Valley (209 & 350). All served from the Escalon location. Individual city pages:
-- [Ceres](/areas-we-serve/ceres)
-- [Central Valley](/areas-we-serve/central-valley)
-- [Del Rio](/areas-we-serve/del-rio)
-- [Escalon](/areas-we-serve/escalon)
-- [Hughson](/areas-we-serve/hughson)
-- [Lathrop](/areas-we-serve/lathrop)
-- [Manteca](/areas-we-serve/manteca)
-- [Oakdale](/areas-we-serve/oakdale)
-- [Riverbank](/areas-we-serve/riverbank)
-- [Salida](/areas-we-serve/salida)
-- [Turlock](/areas-we-serve/turlock)
+- [Ceres](/areas-we-serve/ceres/)
+- [Central Valley](/areas-we-serve/central-valley/)
+- [Del Rio](/areas-we-serve/del-rio/)
+- [Escalon](/areas-we-serve/escalon-plumber-emergency-plumbing-water-heater-/)
+- [Hughson](/areas-we-serve/hughson/)
+- [Lathrop](/areas-we-serve/lathrop/)
+- [Manteca](/areas-we-serve/manteca/)
+- [Oakdale](/areas-we-serve/oakdale/)
+- [Riverbank](/areas-we-serve/riverbank/)
+- [Salida](/areas-we-serve/salida/)
+- [Turlock](/areas-we-serve/turlock/)
 
 ## Optional
 - [Full Site Specification](/llms-full.txt): Complete entity data, service specs, page metadata, city knowledge, and FAQs.
