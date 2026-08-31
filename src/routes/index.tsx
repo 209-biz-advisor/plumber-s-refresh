@@ -14,7 +14,7 @@ import miguelWithLogo from "@/assets/miguel-with-logo.png.asset.json";
 import shield from "@/assets/logo-shield.png";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { serviceCities } from "@/lib/service-cities";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, LICENSE_SHORT, LICENSE_LABEL } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -70,6 +70,7 @@ const specials = [
 ];
 
 const badges = [
+  `CA C-36 Licensed #953726`,
   "BBB A+ Accredited",
   "Google 5-Star Rated",
   "Angi Certified Pro",
@@ -120,7 +121,7 @@ function HomePage() {
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-white/80">
               <div className="flex items-center gap-2"><Star className="size-4 text-accent fill-accent" /> 5-Star Rated</div>
               <div className="flex items-center gap-2"><Clock className="size-4 text-accent" /> Emergency Service</div>
-              <div className="flex items-center gap-2"><ShieldCheck className="size-4 text-accent" /> Licensed & Insured</div>
+              <div className="flex items-center gap-2"><ShieldCheck className="size-4 text-accent" /> {LICENSE_SHORT}</div>
             </div>
           </div>
           <QuickQuoteForm

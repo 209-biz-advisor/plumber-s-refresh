@@ -9,6 +9,7 @@ This file contains the complete entity data, service specifications, page-by-pag
 - Verified Address: 18332 Campbell Ave., Escalon, CA 95320
 - Operational Phone: (209) 838-1000
 - Canonical Domain: https://www.mainlineplumber.com
+- California Contractor License: CSLB #953726, C-36 Plumbing classification (bonded and insured)
 - Inception Year: 2010 (16+ years in business)
 - Owner: Miguel (owner-operator)
 - Core Geography: Escalon, Modesto, Manteca and the Central Valley (209 & 350 area codes)
@@ -177,7 +178,7 @@ All service is dispatched from the Escalon location; no branch offices exist.
 On-site estimates for replacements (water heaters, repipes, sewer work) are free. Diagnostic dispatch on a live problem carries a service call fee that is credited toward the repair.
 
 **Are you licensed and insured?**
-Yes. California licensed plumbing contractor, fully insured for residential and light commercial work.
+Yes. California licensed plumbing contractor, CSLB license #953726 (C-36 Plumbing), bonded and fully insured for residential and light commercial work.
 
 **Do you offer 24/7 service?**
 No, and we say so honestly. Emergency plumbing repairs are prioritized during operating hours, Monday–Saturday 7am–7pm.

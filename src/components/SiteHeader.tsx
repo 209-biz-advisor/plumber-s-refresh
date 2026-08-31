@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo-horizontal.png";
+import { LICENSE_LABEL } from "@/lib/site";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -25,6 +26,9 @@ export function SiteHeader() {
             </a>
             <span className="hidden md:inline text-accent/90 uppercase tracking-wider font-semibold">
               Summer's Here, Beat the heat with a same-day water heater replacement.
+            </span>
+            <span className="hidden xl:inline text-white/70 uppercase tracking-wider font-semibold">
+              {LICENSE_LABEL}
             </span>
           </div>
           <div className="flex items-center gap-2">

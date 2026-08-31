@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { QuickQuoteForm } from "@/components/QuickQuoteForm";
 import { findCity, serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
-import { SITE_URL, OG_IMAGE } from "@/lib/site";
+import { SITE_URL, OG_IMAGE, LICENSE_LABEL } from "@/lib/site";
 
 export const Route = createFileRoute("/areas-we-serve/$city")({
   loader: ({ params }) => {
@@ -311,6 +311,7 @@ function CityPage() {
             <p className="mt-4 text-muted-foreground">
               Plumbing problems range from small annoyances to full emergencies. Mainline Plumbing Inc. covers the whole
               range for {city.name} homes and businesses, with licensed plumbers, upfront pricing and clean work.
+              Mainline Plumbing Inc. is a California licensed C-36 plumbing contractor, {LICENSE_LABEL}, bonded and insured.
             </p>
           </div>
           <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">

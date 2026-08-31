@@ -13,3 +13,8 @@ export function canonical(path: string): string {
 }
 
 export const OG_IMAGE = `${SITE_URL}/og-cover.png`;
+
+/** California contractor license (C-36 Plumbing classification). */
+export const LICENSE_NUMBER = "953726";
+export const LICENSE_LABEL = `CA Lic. #${LICENSE_NUMBER} (C-36 Plumbing)`;
+export const LICENSE_SHORT = `Licensed, Bonded & Insured · CA C-36 Lic. #${LICENSE_NUMBER}`;
