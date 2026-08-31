@@ -137,6 +137,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 addressCountry: "US",
               },
               geo: { "@type": "GeoCoordinates", latitude: 37.7974, longitude: -120.9977 },
+              hasMap: GOOGLE_MAPS_URL,
+              sameAs: SAME_AS,
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: GOOGLE_RATING,
+                reviewCount: GOOGLE_REVIEW_COUNT,
+                bestRating: "5",
+                worstRating: "1",
+              },
               openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",
