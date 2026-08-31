@@ -18,7 +18,7 @@ const faqs = [
   { q: "Do you handle emergency plumbing?", a: "Yes. Burst pipes, major leaks, sewer backups and dead water heaters get priority scheduling. Shut your main off and call us." },
   { q: "How fast can you replace a water heater?", a: "Most standard tank replacements are done the same day. We stock common sizes and pull the permit as part of the job." },
   { q: "Do you offer a maintenance membership?", a: "No monthly membership plans. You book service when you need it, at a straightforward price." },
-  { q: "Do you offer trenchless sewer replacement?", a: "No. We handle sewer line repair and full replacement using proven methods, with camera verification before and after." },
+  { q: "Do you repair and replace sewer lines?", a: "Yes. We camera the line first, then repair the failed section or replace the run using proven methods, with camera verification before and after." },
   { q: "What discounts do you offer?", a: "$50 off for new customers, $150 off water heater replacement, $250 off electric water heater installation, and 10% off for veterans and law enforcement." },
 ];
 
