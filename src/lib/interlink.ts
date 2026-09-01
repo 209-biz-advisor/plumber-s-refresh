@@ -22,14 +22,14 @@ export type LinkGroup = {
 };
 
 export const LINK_MAP: LinkGroup[] = [
-  { path: "/plumbing-services/kitchen-bath-remodeling/toilet-repair/", phrases: ["running toilet", "clogged toilet", "toilet repair", "leaking toilet"] },
+  { path: "/plumbing-services/kitchen-bath-remodeling/toilet-repair/", phrases: ["running toilet", "clogged toilet", "toilet repair", "leaking toilet", "toilet"] },
   { path: "/plumbing-services/toilet-installation/", phrases: ["toilet installation", "new toilet"] },
-  { path: "/plumbing-services/fixture-plumbing/fixture-repair/faucet-repair/", phrases: ["dripping faucet", "leaky faucet", "faucet repair"] },
+  { path: "/plumbing-services/fixture-plumbing/fixture-repair/faucet-repair/", phrases: ["dripping faucet", "leaky faucet", "faucet repair", "faucet"] },
   { path: "/plumbing-services/fixture-plumbing/faucet-installation/", phrases: ["faucet installation", "new faucet"] },
-  { path: "/plumbing-services/fixture-plumbing/sink-installations/", phrases: ["sink installation"] },
-  { path: "/plumbing-services/fixture-plumbing/shower-installation/", phrases: ["shower installation"] },
+  { path: "/plumbing-services/fixture-plumbing/sink-installations/", phrases: ["sink installation", "sink"] },
+  { path: "/plumbing-services/fixture-plumbing/shower-installation/", phrases: ["shower installation", "shower valve", "shower"] },
   { path: "/plumbing-services/fixture-plumbing/", phrases: ["fixture plumbing", "plumbing fixtures"] },
-  { path: "/plumbing-services/drain-cleaning/", phrases: ["clogged drain", "clogged drains", "drain cleaning", "slow drain", "slow drains"] },
+  { path: "/plumbing-services/drain-cleaning/", phrases: ["clogged drain", "clogged drains", "drain cleaning", "slow drain", "slow drains", "drain"] },
   { path: "/plumbing-services/sewer-line-repair/", phrases: ["sewer line repair", "sewer line", "sewer lines", "sewer backup"] },
   { path: "/plumbing-services/sewer-services/", phrases: ["sewer services"] },
   { path: "/plumbing-services/video-camera-inspections/", phrases: ["camera inspection", "video camera inspection", "sewer camera"] },
@@ -40,7 +40,7 @@ export const LINK_MAP: LinkGroup[] = [
   { path: "/plumbing-services/leak-detection/", phrases: ["slab leak", "leak detection", "water leak", "hidden leak"] },
   { path: "/plumbing-services/frozen-pipe-repair/", phrases: ["frozen pipe", "frozen pipes"] },
   { path: "/plumbing-services/water-softener-repair-installation/", phrases: ["water softener", "hard water", "scale buildup"] },
-  { path: "/plumbing-services/water-treatment-systems/", phrases: ["water treatment"] },
+  { path: "/plumbing-services/water-treatment-systems/", phrases: ["water treatment", "chlorine taste"] },
   { path: "/plumbing-services/water-purification-systems/", phrases: ["water purification", "reverse osmosis"] },
   { path: "/plumbing-services/water-line-plumbing/", phrases: ["water line", "main water line"] },
   { path: "/plumbing-services/garbage-disposal-repair/", phrases: ["garbage disposal repair", "garbage disposal"] },
