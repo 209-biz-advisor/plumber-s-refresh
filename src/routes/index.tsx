@@ -175,8 +175,8 @@ function HomePage() {
               <h3 className="text-xl font-bold text-brand-orange uppercase leading-tight">{col.title}</h3>
               <ul className="mt-4 space-y-2 text-sm">
                 {col.items.map((item) => (
-                  <li key={item}>
-                    <Link to="/plumbing-services/" className="text-navy hover:text-accent underline-offset-4 hover:underline">{item}</Link>
+                  <li key={item.href}>
+                    <a href={item.href} className="text-navy hover:text-accent underline-offset-4 hover:underline">{item.label}</a>
                   </li>
                 ))}
               </ul>
