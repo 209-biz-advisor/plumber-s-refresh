@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Wrench, Droplets, Flame, ShieldCheck, Pipette, Bath, Phone, CheckCircle2 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { QuickQuoteForm } from "@/components/QuickQuoteForm";
+import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 import { topLevel, childrenOf, servicePath, waterHeaterServices } from "@/lib/services";
 
@@ -47,12 +47,7 @@ function ServicesPage() {
               <Link to="/areas-we-serve/" className="btn-outline">Areas We Serve</Link>
             </div>
           </div>
-          <QuickQuoteForm
-            title="Request Service"
-            subtitle="Tell us what's going on and we'll call you right back."
-            compact
-            className="w-full max-w-md lg:ml-auto"
-          />
+          <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
         </div>
       </section>
 

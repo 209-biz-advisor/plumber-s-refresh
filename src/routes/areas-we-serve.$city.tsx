@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Phone, MapPin, CheckCircle2, ArrowRight, Wrench, Droplets, Flame, ShieldCheck, Star, Landmark, Users, Calendar, AlertTriangle } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { QuickQuoteForm } from "@/components/QuickQuoteForm";
+import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { findCity, serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { SITE_URL, OG_IMAGE, LICENSE_LABEL } from "@/lib/site";
@@ -160,11 +160,7 @@ function CityPage() {
               <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
             </div>
           </div>
-          <QuickQuoteForm
-            title="Need Help?"
-            subtitle={`Fast response for ${city.name} homes and businesses.`}
-            compact
-          />
+          <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
         </div>
       </section>
 

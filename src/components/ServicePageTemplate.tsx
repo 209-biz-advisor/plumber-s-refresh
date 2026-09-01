@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Phone, CheckCircle2, ChevronRight, Flame, Wrench } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { QuickQuoteForm } from "@/components/QuickQuoteForm";
+import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { LICENSE_LABEL } from "@/lib/site";
 import { serviceCities } from "@/lib/service-cities";
 import { childrenOf, topLevel, type ServiceEntry } from "@/lib/services";
@@ -43,12 +43,7 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
                 <Link to="/contact-us/" className="btn-outline">Request a Free Quote</Link>
               </div>
             </div>
-            <QuickQuoteForm
-              title="Need Help?"
-              subtitle={`Tell us about your ${service.name.toLowerCase()} job and we'll call you right back.`}
-              compact
-              className="w-full max-w-md lg:ml-auto"
-            />
+            <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
           </div>
         </div>
       </section>
