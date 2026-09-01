@@ -101,9 +101,56 @@ export const services: ServiceEntry[] = [
     intro:
       "When water is going somewhere it shouldn't, minutes matter. Our emergency plumbing crew handles burst supply lines, slab leaks, sewer backups and dead water heaters, and we walk you through shutting the water off while we're on the way.",
     bullets: ["Burst and leaking pipe repair", "Sewer and main line backups", "No hot water and leaking water heaters", "Overflowing toilets and failed shutoff valves", "Damage control guidance while we roll"],
+    sections: [
+      {
+        heading: "Emergency Plumbing in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A plumbing emergency is any moment where waiting makes the damage worse. Water spreading across a floor, sewage coming up a shower drain, a supply line that let go inside a wall. Those calls do not wait for a convenient appointment window, and we do not treat them like they should.",
+          "We handle emergency repairs for homes and businesses across Stanislaus and San Joaquin County. To be straight with you, we are not a 24-hour call center; we are a family-owned shop that gets emergency work to the front of the schedule and gets a licensed plumber to you fast. Call 209.838.1000 and you will talk to people who know the area and the equipment.",
+        ],
+      },
+      {
+        heading: "What to Do First When You Have a Plumbing Emergency",
+        body: ["Before anything else, stop the water. These four steps limit the damage while we are on the way."],
+        list: [
+          { lead: "Shut off the main water valve", text: "usually at the front of the house near the hose bib or at the street meter. Turn it clockwise until it stops." },
+          { lead: "Kill power or gas to the water heater", text: "if the heater is the source, flip its breaker or turn the gas control to off." },
+          { lead: "Move what you can", text: "get boxes, rugs and electronics off the wet floor before the water wicks into them." },
+          { lead: "Do not use the fixtures", text: "with a sewer backup, every flush and every load of laundry adds to what is coming up." },
+          { lead: "Call 209.838.1000", text: "tell us what you are seeing and we will talk you through anything else while a truck is dispatched." },
+        ],
+      },
+      {
+        heading: "Slow Leaks Are Emergencies Too, They Just Hide",
+        body: [
+          "The expensive leaks are often the quiet ones. Water moving behind drywall or under a slab can run for weeks before anyone notices, and by then you are dealing with framing, flooring and mold instead of a pipe.",
+          "Watch for water stains on ceilings or walls, damp or warm spots on the floor, a sudden jump in your water bill, a musty smell in one room, or a meter that keeps creeping with every fixture off. Any one of those is worth a leak detection visit now rather than a restoration bill later.",
+        ],
+      },
+      {
+        heading: "The Emergencies We Get Called For Most",
+        body: [
+          "Burst and split supply lines, failed angle stops and hose bibs, water heaters leaking from the tank body, overflowing toilets, main sewer backups, slab leaks, broken pressure regulators and gas odors. We arrive with the parts and equipment those jobs actually take, so the first visit is usually the fix.",
+          "Every repair gets a flat-rate quote before we start. Even in an emergency you should know the number first, and you should never feel rushed into a decision by the person holding the wrench.",
+        ],
+      },
+      {
+        heading: "Local, Licensed and Accountable",
+        body: [
+          "Mainline Plumbing Inc. is family owned in Escalon and licensed as a California C-36 plumbing contractor, Lic. #953726. Miguel has 37+ years in the trade and has run this company since 2010, and our reputation is built on hundreds of local reviews from neighbors, not on an ad budget.",
+          "We respond throughout Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding 209 & 350 communities.",
+        ],
+      },
+    ],
     faqs: [
       { q: "What counts as a plumbing emergency?", a: "Any active leak, sewage backup, no-water situation or gas smell. If water is spreading or you had to shut the main off, call us." },
       { q: "What should I do before you arrive?", a: "Shut off the main water valve, kill power to the water heater if it is leaking, and move belongings out of the water." },
+      { q: "Where is my main water shutoff?", a: "On most Valley homes it is on the street-facing wall near the hose bib, or in a box at the curb. It is worth finding it today, before you need it in the dark." },
+      { q: "I smell gas. What should I do?", a: "Leave the building, do not flip switches, and call your gas utility from outside. Once they have made it safe, call us at 209.838.1000 for the line repair." },
+      { q: "Are you available around the clock?", a: "We are not a 24-hour operation and we will not pretend otherwise. Emergency calls go to the top of the schedule and we get a licensed plumber out fast." },
+      { q: "Do you handle commercial emergencies?", a: "Yes. Restaurants, offices, retail and multi-unit properties, where a backup means lost revenue every hour it continues." },
+      { q: "Will my homeowners insurance cover this?", a: "Sudden failures are often covered while long-term seepage often is not. Take photos before cleanup and keep our written invoice; both help your claim." },
+      { q: "Can a small drip really wait?", a: "It can wait for an appointment, but not indefinitely. A drip inside a wall or under a slab is doing damage you cannot see, and it never gets cheaper." },
     ],
   },
   {
