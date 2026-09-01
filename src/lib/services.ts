@@ -1293,9 +1293,61 @@ export const services: ServiceEntry[] = [
     intro:
       "A humming disposal is usually jammed, a silent one is usually electrical, and a dripping one is usually done. We diagnose in minutes and tell you which of the three you have.",
     bullets: ["Jam clearing and reset", "Leaking flange and housing diagnosis", "Electrical and switch troubleshooting", "Drain and dishwasher line clearing", "Straight repair-or-replace recommendation"],
+    sections: [
+      {
+        heading: "Garbage Disposal Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A disposal tells you what is wrong by the sound it makes. A hum with no rotation is a jammed flywheel. Total silence usually means a tripped reset, a failed switch or a burned-out motor. A drip under the cabinet is a seal or a mount, and where the water shows up decides whether it gets fixed or replaced.",
+          "We work on every common brand and horsepower, and because Miguel has 37+ years in the trade and has led this crew since 2010, the diagnosis happens in minutes instead of by trial and error. If the unit is worth saving, we say so. If it is not, we tell you that too.",
+        ],
+      },
+      {
+        heading: "Signs Your Disposal Needs Service",
+        body: ["Most homeowners live with a failing disposal far longer than they need to. These are the symptoms worth a call."],
+        list: [
+          { lead: "Humming without grinding", text: "the motor has power but the flywheel is jammed on bone, fruit pit or fibrous waste." },
+          { lead: "No sound at all", text: "a tripped reset button, a dead switch, a bad outlet or a failed motor winding." },
+          { lead: "Water under the sink", text: "a leaking sink flange, a loose drain arm, or a housing seal that has given up." },
+          { lead: "Standing water in the sink", text: "the drain line downstream of the disposal is restricted, not the unit itself." },
+          { lead: "Rattling or metal-on-metal noise", text: "loose hardware inside the chamber or a shredder ring that has come apart." },
+          { lead: "Persistent odor after cleaning", text: "food packed under the baffle or in the chamber walls, often with a slow drain behind it." },
+        ],
+      },
+      {
+        heading: "Repair or Replace: How We Decide",
+        body: [
+          "Jams, resets, switches, flanges, drain arms and dishwasher inlets are all repairs, and they are quick ones. A leak coming from the bottom shell is different: that is the internal seal, the water is already in the motor, and rebuilding it is not a real option.",
+          "Age matters as well. A unit under about eight years old with a fixable fault gets repaired. An older unit that has already had a repair, is undersized for the household, or is loud enough to be heard across the kitchen is usually better replaced with a quieter, higher-torque model.",
+        ],
+      },
+      {
+        heading: "Keeping a Disposal Alive Longer",
+        list: [
+          { lead: "Run cold water while grinding", text: "cold keeps fats firm so they wash out of the line instead of coating it." },
+          { lead: "Keep grease out of the sink", text: "the disposal handles solids, not oil, and oil is what builds the clog downstream." },
+          { lead: "Skip fibrous and starchy waste", text: "celery, artichoke, onion skins, potato peels and coffee grounds are the usual jam and sludge culprits." },
+          { lead: "Feed it gradually", text: "small amounts with running water instead of a full chamber packed at once." },
+          { lead: "Run it regularly", text: "a disposal that sits unused corrodes internally and seizes." },
+          { lead: "Never use chemical drain cleaner", text: "it attacks the seals and the drain line and leaves the clog in place." },
+        ],
+      },
+      {
+        heading: "Why Homeowners Here Call Mainline",
+        body: [
+          "We show up in a marked truck, quote it before we start, protect the cabinet we are working under, and clean up when we are done. CA Lic. #953726 (C-36 Plumbing), licensed, bonded and insured, family owned in Escalon since 2010, serving the 209 & 350.",
+          "Disposal trouble often shows up alongside a slow kitchen line. If the sink is backing up as well, tell us on the phone and we will bring the drain equipment on the same trip.",
+        ],
+      },
+    ],
     faqs: [
       { q: "My disposal just hums. Is it dead?", a: "Usually not. That's typically a jam, and it's a quick fix." },
       { q: "It's leaking from the bottom. Can it be fixed?", a: "A bottom leak means the housing seal failed. That one is a replacement." },
+      { q: "How do I know if my disposal needs repair or replacement?", a: "Jams, resets, switches, flanges and drain connections are repairs. A leak from the bottom shell, a seized motor or a unit past about a decade with a second failure is a replacement." },
+      { q: "What should I do if my disposal won't turn on?", a: "Press the red reset button on the bottom of the unit and check the breaker. If it still does nothing, the switch, outlet or motor needs testing, which is where we come in." },
+      { q: "Can a jammed disposal be fixed without replacing it?", a: "Almost always. We clear the obstruction, free the flywheel, confirm the motor spins true, and check the drain line while we are there." },
+      { q: "How can I prevent garbage disposal problems?", a: "Cold water while it runs, no grease, no fibrous or starchy waste, small loads, and regular use. That combination prevents most of the calls we get." },
+      { q: "What items should never go in a garbage disposal?", a: "Grease and oil, bones, fruit pits, coffee grounds, eggshells in volume, celery and onion skins, potato peels, pasta and rice, and anything not food." },
+      { q: "Is it safe to use chemical drain cleaner in a disposal?", a: "No. It corrodes the seals and hardware, sits on top of the clog, and makes the eventual repair worse and messier." },
     ],
   },
   {
@@ -1304,9 +1356,61 @@ export const services: ServiceEntry[] = [
     intro:
       "The right disposal for a busy kitchen isn't the cheapest one on the shelf. We install quiet, higher-horsepower units, tie in the dishwasher correctly, and make sure the drain arm isn't fighting you.",
     bullets: ["1/2 to 1 HP unit sizing", "Sound-insulated models", "Dishwasher inlet connection", "Drain alignment and P-trap correction", "Old unit removed and hauled away"],
+    sections: [
+      {
+        heading: "Garbage Disposal Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A disposal is the one appliance under your sink that touches every meal you cook. When it is sized right and mounted right, cleanup is quiet and the drain stays clear. When it is undersized or installed carelessly, you get noise, jams, leaks at the flange and a kitchen line that clogs every few months.",
+          "We install new disposals and replace failed ones for homeowners across Stanislaus and San Joaquin County. Family owned in Escalon since 2010, CA Lic. #953726 (C-36 Plumbing), with Miguel's 37+ years in the trade behind every recommendation.",
+        ],
+      },
+      {
+        heading: "The Installation Process",
+        body: ["Nothing about this is improvised. Every install follows the same sequence so the result is repeatable."],
+        list: [
+          { lead: "Assessment", text: "we confirm the sink flange type, cabinet clearance, drain arm height and whether the outlet and switch are correct for the new unit." },
+          { lead: "Removal", text: "the old unit comes off, the flange and hardware are cleaned up, and we inspect the trap and drain arm for wear." },
+          { lead: "Mounting", text: "a fresh mounting assembly and seal at the sink flange, torqued evenly so it does not weep months later." },
+          { lead: "Drain and dishwasher tie-in", text: "the discharge is aligned to the trap without strain and the dishwasher inlet is connected and secured with a high loop." },
+          { lead: "Electrical connection", text: "cord or hardwire terminated properly and the switch confirmed under load." },
+          { lead: "Test and cleanup", text: "we run it under water, watch every joint for drips, then haul the old unit away and leave the cabinet dry." },
+        ],
+      },
+      {
+        heading: "Choosing the Right Unit for Your Kitchen",
+        body: [
+          "Horsepower is about how much waste you generate and how forgiving you want the unit to be. Half-horse units suit light single-person cooking. Three-quarter horse is the right answer for most families in this valley. A full horsepower unit belongs in a household that cooks heavily, hosts often, or has had jams with the previous disposal.",
+          "Beyond horsepower, the differences that actually matter day to day are sound insulation, stainless grinding components that resist corrosion in hard water, and continuous versus batch feed. We will talk through those before anything is ordered, and we install customer-supplied units without complaint.",
+        ],
+      },
+      {
+        heading: "What a Modern Disposal Upgrades For You",
+        list: [
+          { lead: "Noticeably quieter operation", text: "insulated chambers and better motor mounts make normal conversation possible during cleanup." },
+          { lead: "More grinding power", text: "higher torque means fewer jams and less standing over the sink with the reset button." },
+          { lead: "Better corrosion resistance", text: "stainless components hold up to the hard water we deal with across the 209 & 350." },
+          { lead: "Fewer kitchen drain clogs", text: "finer grinding sends smaller particles into the line instead of sludge that packs the trap." },
+          { lead: "Lower water use per cycle", text: "current models grind faster, so the tap runs for less time." },
+          { lead: "A correct, code-compliant install", text: "proper high loop, secure electrical and a flange that stays sealed." },
+        ],
+      },
+      {
+        heading: "Why Mainline for Kitchen Work",
+        body: [
+          "Most disposal failures we replace were installed with a reused mounting seal, a strained drain arm, or a dishwasher line run flat. Those shortcuts are why a two-hour job becomes a leak call. We do it once, correctly, and stand behind it.",
+          "If your kitchen line is slow along with the disposal, mention it when you call and we will bring drain equipment on the same visit rather than scheduling twice.",
+        ],
+      },
+    ],
     faqs: [
       { q: "What horsepower do I need?", a: "3/4 HP suits most families; 1 HP if you cook heavily or have a large household." },
       { q: "Can you install one I bought?", a: "Yes, customer-supplied units are fine." },
+      { q: "How long does a garbage disposal installation take?", a: "Most replacements run about an hour to ninety minutes. A first-time install that needs a switch, an outlet or drain rework takes longer, and we will tell you before we start." },
+      { q: "What are the signs I need a new disposal instead of a repair?", a: "Leaking from the bottom shell, a motor that will not turn after the reset, repeated jams on normal food waste, or a unit past about a decade that has already been repaired once." },
+      { q: "What types of disposals do you install?", a: "Continuous feed and batch feed, half through one horsepower, sound-insulated and stainless-component models from the major brands, plus units you supply yourself." },
+      { q: "Can a new disposal reduce kitchen odors?", a: "Yes. Finer grinding and a properly sealed flange leave less food packed in the chamber and less residue coating the drain line, which is where most of the smell comes from." },
+      { q: "Do I need a special drain or electrical setup?", a: "You need a dedicated switched circuit and a drain arm at the right height. We verify both during the assessment and correct them if they are wrong." },
+      { q: "Do you remove and dispose of the old unit?", a: "Yes. Removal, haul-away and cleanup are part of the installation." },
     ],
   },
   {
@@ -1315,9 +1419,59 @@ export const services: ServiceEntry[] = [
     intro:
       "Backflow devices protect the drinking water supply, and most water districts require an annual certified test. We install, test, repair and file the paperwork.",
     bullets: ["Annual certified testing", "Device installation and replacement", "Repair and rebuild kits", "Irrigation and fire line assemblies", "Reports filed with your water district"],
+    sections: [
+      {
+        heading: "Backflow Testing & Prevention Across the 209 & 350",
+        body: [
+          "Backflow is what happens when pressure reverses and water that already left the potable system gets pulled back into it. Irrigation water, boiler water, wash-down water, fire line water: none of it belongs at your kitchen tap. A backflow assembly is the one device standing between the two, and it is a mechanical part that wears.",
+          "We install, test, repair and certify assemblies for homes, businesses, irrigation systems and fire lines throughout Stanislaus and San Joaquin County, and we file the passing report with your water district so the compliance side is handled, not just the wrench side. CA Lic. #953726 (C-36 Plumbing).",
+        ],
+      },
+      {
+        heading: "Why Testing and Early Detection Matter",
+        body: ["An assembly can look perfectly fine and still fail its test. The internals are springs, seats and check valves, and they degrade quietly."],
+        list: [
+          { lead: "Health protection", text: "a failed check valve is a direct path for irrigation, chemical or stagnant water into drinking water." },
+          { lead: "Regulatory compliance", text: "districts here require annual certified testing on most assemblies, with deadlines and penalties for missed tests." },
+          { lead: "Early repair instead of replacement", text: "a worn seat caught on a test is a rebuild kit; the same assembly ignored for years becomes a full replacement." },
+          { lead: "Business continuity", text: "for restaurants, medical offices and commercial buildings, an out-of-compliance assembly can interrupt operations." },
+          { lead: "Documentation you can produce", text: "a filed passing report answers the district, the inspector and the insurer without a scramble." },
+        ],
+      },
+      {
+        heading: "Common Causes of Backflow Problems",
+        list: [
+          { lead: "Pressure loss on the main", text: "a break or heavy draw drops supply pressure and reverses flow direction." },
+          { lead: "Worn check valves and springs", text: "the most common test failure, and usually a rebuild rather than a replacement." },
+          { lead: "Debris and scale fouling the seats", text: "hard water and grit in the line keep the check from sealing fully." },
+          { lead: "Freeze damage", text: "an unprotected assembly cracked over winter often tests fine until it is put back under pressure." },
+          { lead: "Cross-connections added later", text: "an irrigation zone, water feature or utility sink plumbed in without proper protection." },
+          { lead: "Aging assemblies", text: "older devices with obsolete parts that no longer hold pressure at the required differential." },
+        ],
+      },
+      {
+        heading: "Our Complete Backflow Solution",
+        body: [
+          "We start with the device you already have: identify the type, verify it is the right assembly for the hazard level, and test it to certification standards. If it passes, you get the report. If it does not, we tell you on the spot whether it is a rebuild or a replacement and what the district needs from you.",
+          "New installations are sized and placed to be testable and serviceable later, with proper clearances and freeze protection, so next year's test is a fifteen-minute visit instead of a project.",
+        ],
+      },
+      {
+        heading: "Schedule Certified Backflow Testing",
+        body: [
+          "If you have a notice from your water district with a deadline on it, call 209.838.1000 and we will get you on the schedule before it lapses. Family owned in Escalon since 2010, serving the 209 & 350, licensed, bonded and insured.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How often must it be tested?", a: "Annually in nearly every district here, and you'll usually get a notice with a deadline." },
       { q: "What if it fails?", a: "We rebuild or replace the assembly and retest, then submit the passing report." },
+      { q: "What are the signs my backflow device may be failing?", a: "Continuous discharge from the relief port, water pooling under the assembly, a pressure drop after the device, discolored water, or visible corrosion and freeze cracking on the body." },
+      { q: "Can you repair a failed device or does it need replacing?", a: "Most failures are worn checks, springs or seats, and a rebuild kit restores them. Cracked bodies, freeze damage and obsolete assemblies with no available parts get replaced." },
+      { q: "Do I need backflow testing on a residential property?", a: "If your home has an irrigation system, a well, a fire sprinkler line, a pool fill line or any similar cross-connection, your district very likely requires an annual test." },
+      { q: "How do I receive proof of compliance after the test?", a: "We complete the certified test report, provide you a copy, and file it with your water district so the record is on their side as well as yours." },
+      { q: "How long does a backflow test take?", a: "A standard assembly test takes about twenty to thirty minutes, including a short water shutdown while the device is isolated." },
+      { q: "What makes Mainline the right choice for backflow work?", a: "Certified testing, 37+ years of field experience under Miguel, CA Lic. #953726, honest rebuild-versus-replace calls, and paperwork filed for you rather than left on your counter." },
     ],
   },
   {
@@ -1326,9 +1480,61 @@ export const services: ServiceEntry[] = [
     intro:
       "A neglected grease trap ends in a kitchen backup during dinner service and a health inspection you didn't want. We keep traps on a schedule and document every service.",
     bullets: ["Interior and exterior trap cleaning", "Scheduled maintenance intervals", "Line jetting for grease-loaded drains", "Service documentation for inspections", "Off-hours service available"],
+    sections: [
+      {
+        heading: "Commercial Grease Trap Cleaning for Compliance and Zero Backups",
+        body: [
+          "A grease trap has one job: catch fats, oils and grease before they reach the sewer. It does that job until it fills, and then it stops doing it entirely. What follows is a slow kitchen drain, a backup in the middle of service, an odor complaint, and an inspection finding that nobody wants in the file.",
+          "We clean and pump interior and exterior traps and interceptors for restaurants, bakeries, cafeterias, markets and commercial kitchens across the 209 & 350, and we schedule the work around your service hours so the kitchen keeps running.",
+        ],
+      },
+      {
+        heading: "The Grease Trap Cleaning Process",
+        body: ["Cleaning a trap properly is more than pumping the liquid out. If the walls, baffles and inlet are not cleaned, it fills again in weeks."],
+        list: [
+          { lead: "Thorough pump-out", text: "the full contents removed, not just the floating grease layer off the top." },
+          { lead: "Scraping walls, baffles and lid", text: "hardened grease removed from every interior surface so capacity is actually restored." },
+          { lead: "Inlet and outlet inspection", text: "checked for restriction, damage and improper flow that would defeat the trap." },
+          { lead: "Downstream line check", text: "we look at the line the trap discharges into, since that is where a neglected trap does its damage." },
+          { lead: "Jetting when needed", text: "grease-loaded branch lines cleared with hot-water jetting rather than left to reclog." },
+          { lead: "Documented service record", text: "date, volume and condition recorded so you can produce it for a health or wastewater inspection." },
+        ],
+      },
+      {
+        heading: "Maintenance Plans for Restaurants and Facilities",
+        body: [
+          "Frequency is driven by volume, menu and trap size. A high-volume fryer kitchen with an undersized interior trap may need service monthly. A moderate cafe with a properly sized exterior interceptor often runs a quarterly interval comfortably. Guessing wrong in either direction costs money: too often wastes it, not often enough buys you an emergency during dinner rush.",
+          "We set the interval based on what we actually pull out of your trap on the first two services, then hold you to it so the schedule protects you instead of surprising you.",
+        ],
+      },
+      {
+        heading: "Warning Signs Your Trap Needs Immediate Service",
+        list: [
+          { lead: "Slow floor or prep sink drains", text: "the trap is at capacity and backing pressure into the branch lines." },
+          { lead: "Odor in the kitchen or near the lid", text: "grease has broken down and the trap is well past its interval." },
+          { lead: "Grease visible at the outlet side", text: "FOG is passing straight through into the sewer line, which is a violation risk." },
+          { lead: "Standing water around an exterior lid", text: "the interceptor is full or the outlet is restricted." },
+          { lead: "Backup during peak service", text: "stop and call, because the next step is a closed kitchen." },
+          { lead: "Missed service date on the log", text: "the interval exists for a reason and inspectors check the log." },
+        ],
+      },
+      {
+        heading: "Why Food Service Operators Call Mainline",
+        body: [
+          "We work clean, we work around your hours, and we leave documentation you can hand to an inspector without explanation. Family owned in Escalon since 2010, CA Lic. #953726 (C-36 Plumbing), with 37+ years of field experience behind the crew.",
+          "Additives and enzymes are not a substitute for pumping. They move grease further down the line and turn a trap problem into a sewer line problem, which is a far more expensive repair.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How often should it be cleaned?", a: "Most kitchens need service every one to three months depending on volume and trap size." },
       { q: "Can you service during off hours?", a: "Yes, we schedule around your service hours." },
+      { q: "How often should my grease trap be pumped to meet local regulations?", a: "Most jurisdictions expect service before the trap reaches a quarter of its capacity in grease and solids, which for typical kitchens here lands between monthly and quarterly." },
+      { q: "What signs indicate my grease trap needs immediate cleaning?", a: "Slow prep or floor drains, odor near the lid, grease showing at the outlet, standing water around an exterior interceptor, or any backup during service." },
+      { q: "What happens if a business does not maintain its grease trap?", a: "Grease passes into the sewer line and hardens, which brings backups, odor complaints, health and wastewater violations, and eventually a sewer line that needs jetting or repair." },
+      { q: "How long does a typical commercial grease trap cleaning take?", a: "A standard interior trap is usually under an hour. Larger exterior interceptors take longer depending on size and how overdue the service is." },
+      { q: "Can I use enzymes or additives instead of professional pumping?", a: "No. They emulsify grease so it leaves the trap and re-solidifies downstream in your sewer line. They do not remove solids and they do not satisfy inspection requirements." },
+      { q: "Do you provide documentation for health inspections?", a: "Yes. Every service is logged with date, condition and volume removed so you have a maintenance record ready when an inspector asks." },
     ],
   },
   {
@@ -1337,9 +1543,57 @@ export const services: ServiceEntry[] = [
     intro:
       "The line from the meter to your house is the one nobody sees until it fails. Low pressure, a soggy yard patch or a jumping meter usually points right at it.",
     bullets: ["Main water service replacement", "Underground leak repair", "Pressure regulator installation", "Meter-to-house line upsizing", "Yard restoration after the work"],
+    sections: [
+      {
+        heading: "Water Line Plumbing Across the 209 & 350",
+        body: [
+          "Everything in the house depends on one line: the run from the meter to the building. It is buried, it is out of sight, and it is the last thing anyone suspects when pressure drops or the bill climbs. Because it is underground, diagnosing it takes equipment and experience rather than guesswork.",
+          "We locate, repair, replace and upsize residential and commercial water service lines throughout Stanislaus and San Joaquin County. Miguel has 37+ years in the trade and has owned this company since 2010, and CA Lic. #953726 (C-36 Plumbing) covers every job we put in the ground.",
+        ],
+      },
+      {
+        heading: "Knowing When It's Time for Repair",
+        body: ["A failing service line gives warning signs before it fails outright. Catching it at the warning stage is the difference between a repair and an emergency excavation."],
+        list: [
+          { lead: "Water running with every fixture off", text: "listen at the meter; if it is moving, something between it and the house is leaking." },
+          { lead: "An unexplained jump in the water bill", text: "the most common first symptom of an underground leak." },
+          { lead: "Wet spots, soft ground or unusually green grass", text: "the line is losing water into the yard along its run." },
+          { lead: "A sudden drop in water pressure", text: "either a failing pressure regulator or a line that has corroded or been crushed." },
+          { lead: "Discolored or rusty water", text: "galvanized service lines shedding scale as they reach the end of their life." },
+          { lead: "Pavement or slab that has heaved or cracked", text: "water working under hardscape near the service run." },
+        ],
+      },
+      {
+        heading: "Repair or Full Replacement",
+        body: [
+          "A single clean break in an otherwise sound copper or PEX line is a repair, and we make it and restore the area. Old galvanized steel is a different conversation: once it is corroding at one point it is corroding along its length, and repairing it in pieces means paying for the same excavation repeatedly.",
+          "We also look at diameter. Homes that have added bathrooms, an irrigation system or a tankless water heater often outgrew the original service line, and upsizing solves pressure complaints that no fixture-level repair ever will.",
+        ],
+      },
+      {
+        heading: "Installation and Water Quality",
+        body: [
+          "New service lines go in with modern materials rated for the soil and pressure conditions here, with a properly sized pressure regulator, an accessible main shutoff, and correct depth and bedding so the line is not fighting rock or settlement for the next thirty years.",
+          "Line condition affects what comes out of your tap. A deteriorating galvanized service contributes rust, sediment and taste problems that filtration alone cannot fully solve. Replacing it is often the step that makes softening and filtration equipment finally perform the way it was supposed to.",
+        ],
+      },
+      {
+        heading: "Yard Restoration and What to Expect",
+        body: [
+          "We plan the route to minimize disruption, protect what we can, and backfill and restore the work area when the line is in and tested. You get a written scope before we start, and no surprises added mid-job.",
+          "If you suspect a water line problem right now, shut the main off, call 209.838.1000, and we will get someone out to confirm it before the loss gets larger.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Why is my water pressure low everywhere?", a: "Commonly a failing pressure regulator or an undersized, corroded service line. We test to confirm which." },
       { q: "How long is a main line replacement?", a: "Typically one day for a standard residential run." },
+      { q: "How do I know if my water line is leaking underground?", a: "Shut every fixture off and watch the meter. Movement means a leak. Add a rising bill, soft or unusually green ground along the run, or a pressure drop and it is almost certainly the service line." },
+      { q: "Should I repair or replace my main water line?", a: "One isolated break in sound copper or PEX is a repair. Corroded galvanized pipe, repeat failures, or a line too small for the house should be replaced once rather than patched repeatedly." },
+      { q: "Does a bad water line affect water quality?", a: "Yes. Aging galvanized service lines shed rust and scale, which shows up as discolored water, sediment in aerators and a metallic taste, and it shortens the life of filtration equipment." },
+      { q: "Will my yard be torn up?", a: "We plan the shortest practical route, keep the disruption contained, and backfill and restore the work area after the line is tested." },
+      { q: "Can you increase my water line size for better pressure?", a: "Yes. Upsizing the service is often the correct fix for homes that added bathrooms, irrigation or a tankless water heater after the original line was installed." },
+      { q: "Do you handle commercial water service lines?", a: "Yes, for commercial and multi-unit properties, including larger diameter services, regulators and shutoff placement." },
     ],
   },
   {
