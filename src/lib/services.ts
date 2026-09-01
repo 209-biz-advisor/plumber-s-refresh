@@ -456,9 +456,61 @@ export const services: ServiceEntry[] = [
     intro:
       "Sink swaps look simple until the drain height doesn't line up. We handle the trap, tailpiece and disposal connection so everything drains right and nothing weeps behind the cabinet.",
     bullets: ["Farmhouse, undermount and drop-in sinks", "Vanity and pedestal sink setting", "P-trap and drain re-plumbing", "Garbage disposal and dishwasher tie-in", "Leak test before we leave"],
+    sections: [
+      {
+        heading: "Sink Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A sink swap is one of the highest-impact changes you can make in a kitchen or bath, and it is also where amateur installs cause the most hidden damage. The visible part is the bowl. The part that matters is the drain height, the trap alignment and the seal, because that is what keeps the cabinet floor dry for the next fifteen years.",
+          "We set farmhouse, undermount, drop-in, vanity and pedestal sinks for homeowners and businesses across Stanislaus and San Joaquin County, and we leak test everything under pressure before we pack up.",
+        ],
+      },
+      {
+        heading: "Sink Types and What Each One Gives You",
+        body: ["Choose based on how you use the room, not only on how the sink looks in the showroom."],
+        list: [
+          { lead: "Undermount", text: "mounts below the counter, so crumbs and water wipe straight into the bowl. Needs solid-surface countertop support." },
+          { lead: "Drop-in", text: "the most forgiving and versatile option, and the easiest to swap later because the rim covers the cutout." },
+          { lead: "Farmhouse or apron-front", text: "big, deep and comfortable for large pans. Heavy, so the cabinet usually needs modification and added support." },
+          { lead: "Stainless steel", text: "durable and easy to live with. Thicker gauge means less noise and fewer dents." },
+          { lead: "Composite granite or quartz", text: "excellent at hiding hard water spotting, which matters in Valley water." },
+          { lead: "Fireclay and cast iron", text: "beautiful and long-lived, and heavy enough that support has to be planned before install day." },
+        ],
+      },
+      {
+        heading: "Installation Mistakes That Cost Real Money",
+        body: ["Nearly every failed sink install we get called out to repair traces back to one of these."],
+        list: [
+          { lead: "Reusing old supply lines and angle stops", text: "the new sink is fine, the twenty-year-old valve under it is what leaks." },
+          { lead: "Improper drain slope", text: "a trap arm without fall will hold water, smell and clog repeatedly." },
+          { lead: "Wrong or missing sealant", text: "the wrong bead at the rim lets water wick under the counter where nobody sees it." },
+          { lead: "Undersupported heavy sinks", text: "a farmhouse or cast iron bowl needs a rebuilt cabinet base, not hope." },
+          { lead: "Overtightened connections", text: "cracked nuts and split tailpieces that weep months later." },
+        ],
+      },
+      {
+        heading: "What Your Sink Installation Includes",
+        body: [
+          "We remove and haul away the old sink, dry fit the new one, rework the drain, trap and tailpiece as needed, replace the supply lines and angle stops, reconnect the garbage disposal and dishwasher, seal the rim correctly and then run water and check every joint by hand.",
+          "If the countertop cutout, cabinet or drain height needs modification, you hear about it before we start and it is written into the flat-rate quote. No mid-job surprises.",
+        ],
+      },
+      {
+        heading: "Why Central Valley Homes Choose Mainline",
+        body: [
+          "Family owned in Escalon since 2010, licensed as a California C-36 plumbing contractor, Lic. #953726, with Miguel's 37+ years in the trade behind every install. Hundreds of local reviews and a work area that gets left cleaner than we found it.",
+          "We install sinks in Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding 209 & 350 communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Can you install an apron-front sink?", a: "Yes, and we'll tell you upfront if your cabinet needs modification." },
       { q: "Do you re-plumb the drain?", a: "Whenever the new sink sits at a different depth, yes, it's included in the quote." },
+      { q: "Can I get a new sink without replacing my countertop?", a: "Often yes, if the new sink matches the existing cutout or is slightly larger for a drop-in. Undermount changes usually need a fabricator to modify the stone." },
+      { q: "How long does a sink installation take?", a: "A straightforward swap is usually a couple of hours. Farmhouse sinks, cabinet modification or drain rework add time, and we tell you the realistic window when we quote." },
+      { q: "Which sink material holds up best in hard water?", a: "Composite granite and quartz hide mineral spotting best, and thicker-gauge stainless cleans up easily. Polished chrome-look finishes show every water spot." },
+      { q: "Will a new sink help when I sell?", a: "Kitchen and bath updates are among the most noticed changes in a walkthrough, and a properly installed sink with no cabinet water damage underneath is part of that impression." },
+      { q: "Should I replace the sink or repair it?", a: "Repair makes sense for a leaking trap, a failed drain assembly or a loose mount. Replace when the bowl is cracked, badly corroded or you are changing the layout." },
+      { q: "Do you connect the garbage disposal and dishwasher?", a: "Yes, both are part of the installation, including the disposal dishwasher inlet and a proper high loop or air gap." },
     ],
   },
   {
