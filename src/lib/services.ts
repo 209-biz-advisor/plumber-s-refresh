@@ -467,9 +467,58 @@ export const services: ServiceEntry[] = [
     intro:
       "Most fixtures don't need replacing, they need the right cartridge, seat or seal. We carry parts for the common brands and fix it on the first trip whenever possible.",
     bullets: ["Cartridge, stem and seat replacement", "Leaking spouts and diverters", "Low flow and aerator restoration", "Drain assembly and pop-up repair", "Loose and wobbling fixtures re-secured"],
+    sections: [
+      {
+        heading: "Fixture Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A fixture that drips, sticks or trickles is easy to live with and expensive to ignore. A steady drip wastes thousands of gallons a year, a weeping shower valve rots the framing behind the tile, and a running toilet quietly inflates your water bill every single month.",
+          "We repair faucets, sinks, showers, tubs and toilets for homeowners and businesses across Stanislaus and San Joaquin County. Most repairs are done on the first visit because we stock cartridges, stems, seats and seals for the brands that are actually in Valley homes.",
+        ],
+      },
+      {
+        heading: "Common Fixture Problems We Fix",
+        body: ["If you recognize any of these, it is a repair and not a replacement in most cases."],
+        list: [
+          { lead: "Constant dripping", text: "a worn cartridge, stem or seat. The part is small, the water waste is not." },
+          { lead: "Leaking at the base", text: "a failed O-ring or a loose mounting nut letting water run under the deck." },
+          { lead: "Weak or uneven flow", text: "usually hard water scale in the aerator or cartridge, sometimes a partly closed angle stop." },
+          { lead: "Stiff or sloppy handles", text: "internal wear. Left alone, the handle eventually snaps off in someone's hand." },
+          { lead: "Shower that will not shut fully off", text: "a worn valve cartridge, and the water is running down the wall cavity while you wait." },
+          { lead: "Slow drain at one fixture", text: "a fouled pop-up assembly or trap rather than a main line problem." },
+          { lead: "Loose or rocking sink or toilet", text: "failed seal or mounting, which is a water damage problem waiting to happen." },
+        ],
+      },
+      {
+        heading: "Repair or Replace? We Tell You Straight",
+        body: [
+          "Repair is the right call when the fixture body is sound, the finish still looks good and parts are available. That covers most major brands, even fixtures that are fifteen or twenty years old.",
+          "Replacement makes more sense when the body is corroded through, the brand is long gone with no parts available, or you are already planning to change the look. We will tell you which side of that line your fixture falls on before you spend anything, and we do not upsell a replacement to avoid doing a repair.",
+        ],
+      },
+      {
+        heading: "Hard Water Is Why Central Valley Fixtures Wear Faster",
+        body: [
+          "Our water carries a lot of mineral. That mineral settles inside aerators, cartridges and valve bodies, cuts flow, and grinds away at rubber seals until they leak. It is the single biggest reason fixtures here need attention sooner than the manufacturer's literature suggests.",
+          "Cleaning aerators and showerheads a couple of times a year helps, and a properly sized water softener helps a lot more. We handle that side too, so the fix can address the cause and not just the last failed part.",
+        ],
+      },
+      {
+        heading: "Why Homeowners Call Mainline for Fixture Work",
+        body: [
+          "Family owned in Escalon since 2010, licensed as a California C-36 plumbing contractor, Lic. #953726, and led by Miguel with 37+ years in the trade. Flat-rate quote before we start, quality replacement parts, clean work area, and no lecture about the thing you have been meaning to fix.",
+          "We serve Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Are parts still available for my old fixture?", a: "Usually yes for major brands. If not, we'll show you replacement options." },
       { q: "Is repair cheaper than replacement?", a: "Almost always, and we'll say so when it isn't." },
+      { q: "What kinds of fixtures do you repair?", a: "Kitchen and bath faucets, sinks, showers, tubs, toilets, laundry sinks, hose bibs and utility fixtures, in both homes and commercial buildings." },
+      { q: "Can you fix a leaking faucet in one visit?", a: "In most cases yes. We carry cartridges, seats and seals for the common brands, so the repair happens on the first trip." },
+      { q: "Why is the water pressure low at just one fixture?", a: "Almost always scale in the aerator or cartridge, or a partly closed shutoff valve under the sink. Both are quick to correct." },
+      { q: "My toilet keeps running. Is that a fixture repair?", a: "Yes. It is normally a worn flapper, fill valve or a chain adjustment, and it is one of the cheapest ways to cut a high water bill." },
+      { q: "How often should fixtures be checked?", a: "Look under sinks a couple of times a year for dampness or staining and clean your aerators. Anything you find early is a small repair instead of a cabinet replacement." },
+      { q: "Do you repair high-efficiency and touchless fixtures?", a: "Yes, including sensor faucets and low-flow trim. Their cartridges and solenoids still fail on hard water, and parts are available for the major brands." },
     ],
   },
   {
