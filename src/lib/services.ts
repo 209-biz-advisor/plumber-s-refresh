@@ -423,9 +423,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Fixtures are what you touch every day, so they're what you notice failing. We repair and install faucets, sinks, showers and tubs, and we set them so they stay tight.",
     bullets: ["Faucet, sink and shower installation", "Cartridge and valve repair", "Angle stops and supply lines replaced", "Tub spouts, diverters and trim kits", "Fixture removal and haul-away"],
+    sections: [
+      {
+        heading: "Fixture Installation & Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Fixtures are the plumbing you actually touch. Faucets, sinks, showers, tubs and toilets get used dozens of times a day, which is why they wear out first and why a small failure in one of them turns into water damage faster than anything else in the house.",
+          "We install, upgrade and repair fixtures for homes and businesses throughout Stanislaus and San Joaquin County. Family owned in Escalon since 2010, licensed C-36, Lic. #953726, with Miguel's 37+ years in the trade behind the work.",
+        ],
+      },
+      {
+        heading: "Small Fixture Problems Have Big Consequences",
+        body: [
+          "A drip is not just a drip. A faucet losing one drop a second wastes thousands of gallons a year. A shower valve that never quite shuts off sends that water into the wall cavity instead of the drain. A running toilet can add more to a monthly bill than any other single fixture in the house.",
+          "The other cost is the one you cannot see. Slow seepage under a sink swells the cabinet base, lifts the flooring and creates exactly the damp, dark conditions that mold wants. Fixing the fixture is cheap. Fixing the cabinet, floor and drywall is not.",
+        ],
+      },
+      {
+        heading: "Fixtures We Work On",
+        body: ["One licensed crew for the whole list, so you are not scheduling three different trades for one bathroom."],
+        list: [
+          { lead: "Faucets", text: "kitchen, bath, laundry, bar and outdoor, installed new or repaired with quality cartridges." },
+          { lead: "Sinks", text: "farmhouse, undermount, drop-in, vanity and pedestal, including drain and disposal tie-in." },
+          { lead: "Showers and tubs", text: "valve replacement, trim, diverters, conversions and drain work." },
+          { lead: "Toilets", text: "installation, reseating, flapper and fill valve repair, and running-toilet fixes." },
+          { lead: "Garbage disposals", text: "replaced or repaired along with the dishwasher connection." },
+          { lead: "Angle stops and supply lines", text: "the unglamorous parts that cause most fixture leaks." },
+        ],
+      },
+      {
+        heading: "Our Fixture Installation Process",
+        body: [
+          "We confirm fit against your rough-in and countertop before anything comes out, shut off and isolate the supply, remove and haul away the old fixture, replace supply lines and angle stops, set the new fixture level and properly sealed, then pressure test and check every joint by hand.",
+          "You get a flat-rate quote before we start, and if we find something behind the old fixture that changes the scope, such as a corroded stop or a drain that has to be reworked, you hear about it and approve it before we continue.",
+        ],
+      },
+      {
+        heading: "Why Upgrading Fixtures Pays Off",
+        body: [
+          "Current fixtures move less water while feeling the same at the tap, which lowers both your water use and the energy spent heating it. Better cartridges last longer in hard water. And a matched set of fixtures is one of the first things a buyer or a guest notices in a kitchen or bath.",
+          "If you are already opening a wall or replacing a countertop, that is the moment to do the fixture work. It is far cheaper as part of the same visit than as a separate call six months later.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Can you install a fixture I bought?", a: "Yes. We'll flag anything that won't fit your rough-in before we start." },
       { q: "Why does my new faucet drip already?", a: "Usually a defective cartridge or debris in the line from the install. Both are quick fixes." },
+      { q: "What are the most common fixture problems in Valley homes?", a: "Hard water scale in cartridges and aerators, worn seals causing drips, failing angle stops under sinks, and running toilets. All four are routine repairs." },
+      { q: "How often should fixtures be inspected?", a: "Glance under your sinks a couple of times a year for dampness or staining, and clean aerators and showerheads. That catches most problems while they are still small." },
+      { q: "Can I upgrade fixtures without replacing my plumbing lines?", a: "Usually yes. We only recommend re-piping a branch when the existing galvanized line is so scaled that a new fixture would never get proper flow." },
+      { q: "Are water-saving fixtures effective in the Central Valley?", a: "Yes. Modern low-flow trim maintains the feel of good pressure while using less water, and less hot water used means less energy burned heating it." },
+      { q: "How do I choose the best fixture material and finish?", a: "Solid brass bodies with serviceable cartridges last longest. For finish, brushed nickel and matte black hide our hard water spotting far better than polished chrome." },
+      { q: "Do fixture installations require a permit?", a: "Straight fixture swaps generally do not. Relocating a drain or supply, or altering walls during a remodel, often does, and we pull it when the scope calls for it." },
     ],
   },
   {
