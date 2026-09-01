@@ -159,9 +159,58 @@ export const services: ServiceEntry[] = [
     intro:
       "Most plumbing calls aren't dramatic, they're just the thing that has been dripping, running or half-working for months. We fix it properly, with parts that last, and we show you what failed and why.",
     bullets: ["Leaking pipes, valves and supply lines", "Running toilets and dripping faucets", "Angle stops, hose bibs and pressure regulators", "Garbage disposals and dishwasher connections", "Written flat-rate quote before any work begins"],
+    sections: [
+      {
+        heading: "Plumbing Repairs in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Most plumbing repair calls are not dramatic. They are the toilet that has been running since spring, the faucet that drips at night, the shutoff valve nobody has dared touch in fifteen years. None of it is urgent, and all of it is costing you water, money and eventually drywall.",
+          "We repair residential and commercial plumbing across Stanislaus and San Joaquin County. Miguel has 37+ years in the trade and has owned this company since 2010, and every repair comes with a flat-rate quote up front and an explanation of what failed and why.",
+        ],
+      },
+      {
+        heading: "Signs You Need Plumbing Repairs",
+        body: ["A plumbing system tells you it is in trouble long before it fails. These are the signals worth acting on."],
+        list: [
+          { lead: "Water bill climbing with no change in habits", text: "something is running or leaking, often a toilet or an underground line." },
+          { lead: "Low water pressure through the house", text: "scaled galvanized piping, a failing pressure regulator or a developing leak." },
+          { lead: "Stains on ceilings or walls", text: "an active leak inside the structure. This one does not improve on its own." },
+          { lead: "Warm or damp spots on the floor", text: "a classic slab leak indicator, and worth a leak detection visit immediately." },
+          { lead: "Rattling or banging pipes", text: "water hammer or loose strapping, which fatigues joints over time." },
+          { lead: "Sewer or musty odors", text: "a dry trap, a failed wax ring or a vent problem." },
+          { lead: "Fixtures that drain slowly all over the house", text: "a main line issue rather than a fixture issue." },
+        ],
+      },
+      {
+        heading: "The Repairs We Handle Most",
+        body: [
+          "Leaking supply and drain lines, failed angle stops and hose bibs, pressure regulators, water hammer arrestors, running toilets and wax rings, dripping faucets and shower valves, garbage disposals, dishwasher and washer connections, gas line repairs and repiping of failed galvanized branches.",
+          "We show you the failed part when we pull it. You should be able to see why the repair was needed, and you should never have to take a plumber's word for it on faith.",
+        ],
+      },
+      {
+        heading: "Maintaining Your Plumbing System for the Long Run",
+        body: [
+          "The cheapest plumbing is preventive. Know where your main shutoff is. Keep house pressure in a sane range with a working regulator, because high pressure kills water heaters and fixtures early. Flush your water heater annually in our hard water. Test angle stops once a year so they still turn when you need them.",
+          "Replace washing machine and dishwasher hoses on a schedule instead of after they burst, keep grease out of the kitchen drain, and get a camera inspection on the main line if you have mature trees over it. A yearly plumbing inspection catches nearly all of this before it becomes an emergency call.",
+        ],
+      },
+      {
+        heading: "Why Central Valley Homeowners Call Mainline",
+        body: [
+          "Hard water, aging galvanized and cast iron systems, expansive local soil and mature root systems are the four things that shape plumbing repair in this area. We have worked on all of it, in these neighborhoods, for decades.",
+          "Family owned in Escalon, licensed as a California C-36 plumbing contractor, Lic. #953726, serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Do you charge for a diagnosis?", a: "We quote the repair upfront, and the service call is waived when you move forward with the repair." },
       { q: "Do you repair commercial plumbing too?", a: "Yes. We handle restaurants, offices, retail and multi-unit properties throughout the 209 & 350." },
+      { q: "What is the most common plumbing repair?", a: "Running toilets and dripping faucets by volume, and failing angle stops right behind them. All three are quick fixes that stop real water waste." },
+      { q: "How do I know whether to repair or replace?", a: "If the fixture body or pipe is sound and parts are available, repair. If the same component has failed repeatedly or the material itself is at the end of its life, replacement is the better spend, and we will say so." },
+      { q: "What does plumbing maintenance actually involve?", a: "An annual look at supply lines, angle stops, water pressure, the water heater, visible drain connections and the main line. It is the difference between scheduling work and reacting to it." },
+      { q: "Can I prevent plumbing emergencies?", a: "Most of them, yes. Correct house pressure, an annual water heater flush, hoses replaced before they fail and drains kept clear eliminate the majority of the calls we get at the worst possible time." },
+      { q: "Do you repair galvanized pipes or do they need replacing?", a: "We can repair a section, but galvanized scales from the inside and the flow never fully returns. When several branches are affected, repiping is the honest recommendation." },
+      { q: "How fast can you get out for a non-emergency repair?", a: "Usually within a day or two, and same day when the schedule allows. Active leaks and no-water situations get moved ahead of routine work." },
     ],
   },
   {
