@@ -86,7 +86,7 @@ const stats = [
 ];
 
 function HomePage() {
-  const [sent, setSent] = useState(false);
+
 
   return (
     <div className="min-h-screen flex flex-col">
