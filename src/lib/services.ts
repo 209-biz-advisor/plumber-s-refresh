@@ -1480,9 +1480,61 @@ export const services: ServiceEntry[] = [
     intro:
       "A neglected grease trap ends in a kitchen backup during dinner service and a health inspection you didn't want. We keep traps on a schedule and document every service.",
     bullets: ["Interior and exterior trap cleaning", "Scheduled maintenance intervals", "Line jetting for grease-loaded drains", "Service documentation for inspections", "Off-hours service available"],
+    sections: [
+      {
+        heading: "Commercial Grease Trap Cleaning for Compliance and Zero Backups",
+        body: [
+          "A grease trap has one job: catch fats, oils and grease before they reach the sewer. It does that job until it fills, and then it stops doing it entirely. What follows is a slow kitchen drain, a backup in the middle of service, an odor complaint, and an inspection finding that nobody wants in the file.",
+          "We clean and pump interior and exterior traps and interceptors for restaurants, bakeries, cafeterias, markets and commercial kitchens across the 209 & 350, and we schedule the work around your service hours so the kitchen keeps running.",
+        ],
+      },
+      {
+        heading: "The Grease Trap Cleaning Process",
+        body: ["Cleaning a trap properly is more than pumping the liquid out. If the walls, baffles and inlet are not cleaned, it fills again in weeks."],
+        list: [
+          { lead: "Thorough pump-out", text: "the full contents removed, not just the floating grease layer off the top." },
+          { lead: "Scraping walls, baffles and lid", text: "hardened grease removed from every interior surface so capacity is actually restored." },
+          { lead: "Inlet and outlet inspection", text: "checked for restriction, damage and improper flow that would defeat the trap." },
+          { lead: "Downstream line check", text: "we look at the line the trap discharges into, since that is where a neglected trap does its damage." },
+          { lead: "Jetting when needed", text: "grease-loaded branch lines cleared with hot-water jetting rather than left to reclog." },
+          { lead: "Documented service record", text: "date, volume and condition recorded so you can produce it for a health or wastewater inspection." },
+        ],
+      },
+      {
+        heading: "Maintenance Plans for Restaurants and Facilities",
+        body: [
+          "Frequency is driven by volume, menu and trap size. A high-volume fryer kitchen with an undersized interior trap may need service monthly. A moderate cafe with a properly sized exterior interceptor often runs a quarterly interval comfortably. Guessing wrong in either direction costs money: too often wastes it, not often enough buys you an emergency during dinner rush.",
+          "We set the interval based on what we actually pull out of your trap on the first two services, then hold you to it so the schedule protects you instead of surprising you.",
+        ],
+      },
+      {
+        heading: "Warning Signs Your Trap Needs Immediate Service",
+        list: [
+          { lead: "Slow floor or prep sink drains", text: "the trap is at capacity and backing pressure into the branch lines." },
+          { lead: "Odor in the kitchen or near the lid", text: "grease has broken down and the trap is well past its interval." },
+          { lead: "Grease visible at the outlet side", text: "FOG is passing straight through into the sewer line, which is a violation risk." },
+          { lead: "Standing water around an exterior lid", text: "the interceptor is full or the outlet is restricted." },
+          { lead: "Backup during peak service", text: "stop and call, because the next step is a closed kitchen." },
+          { lead: "Missed service date on the log", text: "the interval exists for a reason and inspectors check the log." },
+        ],
+      },
+      {
+        heading: "Why Food Service Operators Call Mainline",
+        body: [
+          "We work clean, we work around your hours, and we leave documentation you can hand to an inspector without explanation. Family owned in Escalon since 2010, CA Lic. #953726 (C-36 Plumbing), with 37+ years of field experience behind the crew.",
+          "Additives and enzymes are not a substitute for pumping. They move grease further down the line and turn a trap problem into a sewer line problem, which is a far more expensive repair.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How often should it be cleaned?", a: "Most kitchens need service every one to three months depending on volume and trap size." },
       { q: "Can you service during off hours?", a: "Yes, we schedule around your service hours." },
+      { q: "How often should my grease trap be pumped to meet local regulations?", a: "Most jurisdictions expect service before the trap reaches a quarter of its capacity in grease and solids, which for typical kitchens here lands between monthly and quarterly." },
+      { q: "What signs indicate my grease trap needs immediate cleaning?", a: "Slow prep or floor drains, odor near the lid, grease showing at the outlet, standing water around an exterior interceptor, or any backup during service." },
+      { q: "What happens if a business does not maintain its grease trap?", a: "Grease passes into the sewer line and hardens, which brings backups, odor complaints, health and wastewater violations, and eventually a sewer line that needs jetting or repair." },
+      { q: "How long does a typical commercial grease trap cleaning take?", a: "A standard interior trap is usually under an hour. Larger exterior interceptors take longer depending on size and how overdue the service is." },
+      { q: "Can I use enzymes or additives instead of professional pumping?", a: "No. They emulsify grease so it leaves the trap and re-solidifies downstream in your sewer line. They do not remove solids and they do not satisfy inspection requirements." },
+      { q: "Do you provide documentation for health inspections?", a: "Yes. Every service is logged with date, condition and volume removed so you have a maintenance record ready when an inspector asks." },
     ],
   },
   {
