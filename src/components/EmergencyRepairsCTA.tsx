@@ -52,7 +52,7 @@ export function EmergencyRepairsCTA({ city, className = "" }: Props) {
           </ul>
         </div>
 
-        <GHLQuoteForm className="w-full lg:ml-auto" />
+        <GHLQuoteForm instanceId="emergency" className="w-full lg:ml-auto" />
       </div>
     </section>
   );
