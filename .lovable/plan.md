@@ -1,108 +1,78 @@
-# Today's Work: Page Content First, Keyword Interlinking Second
+# AI Crawler + Entity Graph Alignment
 
-## Answering the question first
+Goal: make the AI-facing layer (robots, llms.txt, llms-full.txt, JSON-LD, sitemap) the most complete
+in the local plumbing market, including neutral competitive entity mapping.
 
-Yes. Every page is written individually. Each service entry has its own intro, bullets and
-FAQ set, and the four water-heater pages have their own long-form sections. Nothing is
-copied word-for-word from the old site and no body text is shared between slugs, so there is
-no duplicate-content risk.
+## 1. robots.txt
 
-What's missing is the second half: when a page mentions toilets, faucets, sewer lines or hard
-water, it's plain text today. Those mentions should link to the page that owns that topic.
+Current file already allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, anthropic-ai,
+Applebot, plus the major search bots. Missing from the requested list:
 
-## Phase 1 - Load the remaining pages (do this first)
+- `OAI-SearchBot` (ChatGPT search crawler)
+- `Applebot-Extended` (Apple Intelligence training)
 
-Bring the rest of the catalog up to the depth the four water-heater pages now have, using the
-old-site screenshots as source material, rewritten in our voice on the existing slugs.
+Add those two blocks, keep every existing block untouched, keep `Disallow: /lovable/` and `/api/`,
+keep the `Sitemap:` directive on the .com host.
 
-Order of attack:
+## 2. JSON-LD (`src/routes/__root.tsx` + city pages)
 
-1. Plumbing core: drain cleaning, sewer services, sewer line repair, hydrojetting, video
-   camera inspections, leak detection, emergency plumbing, plumbing repairs.
-2. Fixtures and remodel: fixture plumbing and its children, toilet repair, toilet
-   installation, faucet/sink/shower work, garbage disposal, kitchen and bath remodeling.
-3. Water quality and lines: water softener, water treatment, water purification, water line
-   plumbing, piping and repiping, gas line, backflow, grease trap, commercial.
-4. Remaining water heaters: electric water heaters brought to the same depth as the other four.
+Add to the root `#business` node:
 
-Each page gets: 3 to 5 headed long-form sections, a symptom or benefit list with bolded
-lead-ins, and 6 to 8 FAQs flowing into the existing FAQPage schema. All of it runs through the
-existing `sections` field on `ServiceEntry` and the existing `ServicePageTemplate`, so no
-layout or styling changes.
+- `knowsAbout`: Wikipedia entity URLs for the topics we actually own - Plumbing, Water heating,
+  Tankless water heating, Sanitary sewer, Hydro jetting, Backflow prevention, Water softening,
+  Plumbing fixture, Leak detection.
+- `areaServed`: add a `GeoCircle` node (Escalon center, ~40 mi radius, "Central Valley 209 & 350")
+  alongside the existing named-city list, so both machine geo and human-readable names are present.
+- `isSimilarTo`: neutral `LocalBusiness` nodes with `name` + `url` only, for Tony's Plumbing,
+  DeHart Plumbing Heating & Air, Valley View Plumbing, Noble Plumbing, Roto-Rooter (Modesto),
+  Herk's Plumbing. No `sameAs` on those nodes, no ratings, no superiority claims.
+- `memberOf` / `brand` left alone; `slogan`, license, rating, hours, offer catalog unchanged.
 
-Rules kept throughout: no prices, no financing, no trenchless, no 24/7 claims, phone
-209.838.1000, CA Lic. #953726 (C-36), 37+ years, founded 2010, "209 & 350" geo phrasing.
+City pages: add a city-scoped `GeoCircle` `areaServed` variant plus the same `knowsAbout` topic set,
+keeping the existing `parentOrganization` link so the graph stays one entity, not twelve.
 
-## Phase 2 - Contextual internal linking
+Safety rules applied: `isSimilarTo` never uses `sameAs` to a competitor, comparisons stay factual,
+no competitor logos, no unverified metric claims.
 
-Once the pages carry their content, add a single keyword-to-page map plus a renderer that
-turns the first mention of a keyword in a paragraph into a link to the canonical page for
-that topic.
+## 3. llms.txt
 
-Rules that keep it clean and Google-safe:
+Keep the existing intent-routing structure (symptom routing, service areas, guardrails). Additions:
 
-1. **One link per keyword per page.** First mention only; later mentions stay plain text.
-2. **Never self-link.** A page never links a keyword pointing at itself.
-3. **Caps.** Max 2 links per paragraph, max 8 per page, so the copy reads like copy.
-4. **Longest phrase wins.** "tankless water heater" beats "water heater".
-5. **Descriptive anchor text.** The anchor is the real phrase in the sentence, so anchors
-   vary naturally instead of repeating one exact-match string.
+- One neutral line in the H1 blockquote noting Mainline is a regional alternative to the larger
+  Central Valley providers, phrased factually.
+- New `## Regional Alternatives & Comparable Providers` section listing the named competitors as
+  plain text with their URLs and one factual differentiator each (owner-run, C-36 #953726, same-day
+  water heater replacement, honest non-24/7 hours).
+- Spec compliance pass: exactly one H1, blockquote directly under it, H2 sections only, bullet
+  links in `- [Text](URL): note` form.
 
-### Keyword map (starting set)
+## 4. llms-full.txt
 
-Roughly 40 phrase groups, for example:
+Same competitive section expanded into a factual service/coverage matrix (services offered, coverage
+footprint, hours, license, review profile) written as prose + bullets, no pricing, no claims of
+being faster or cheaper. Confirm the file remains a single self-contained document.
 
-- toilet, toilet repair, running toilet, clogged toilet -> /plumbing-services/kitchen-bath-remodeling/toilet-repair/
-- new toilet, toilet installation -> /plumbing-services/toilet-installation/
-- faucet, dripping faucet -> /plumbing-services/fixture-plumbing/fixture-repair/faucet-repair/
-- clogged drain, drain cleaning, slow drain -> /plumbing-services/drain-cleaning/
-- sewer line, sewer backup -> /plumbing-services/sewer-line-repair/
-- camera inspection -> /plumbing-services/video-camera-inspections/
-- hydrojetting -> /plumbing-services/hydrojetting/
-- gas line -> /plumbing-services/gas-line/
-- repipe, repiping, galvanized pipe -> /plumbing-services/piping-repiping/
-- water leak, leak detection, slab leak -> /plumbing-services/leak-detection/
-- hard water, water softener, scale -> /plumbing-services/water-softener-repair-installation/
-- garbage disposal -> /plumbing-services/garbage-disposal-repair/
-- emergency plumber, burst pipe -> /plumbing-services/emergency-plumbing/
-- water heater, tank replacement -> /water-heaters/water-heater-installation/
-- tankless -> /water-heaters/tankless-water-heaters/
-- flush the tank, annual flush, sediment -> /water-heaters/water-heater-flushing/
-- electric water heater, heat pump -> /water-heaters/electric-water-heaters/
-- no hot water, pilot light, thermocouple -> /water-heaters/water-heater-repair/
-- commercial -> /plumbing-services/commercial-plumbing/
-- backflow -> /plumbing-services/backflow-prevention-testing/
-- City names (Modesto, Turlock, Oakdale, Riverbank, Ripon, Manteca, Lathrop, Salida) ->
-  their /areas-we-serve/{city}/ pages, one city link per page max.
+## 5. Sitemap
 
-### Where linking is applied
+Verify all current routes are present and the file has no `lastmod` values derived from build time.
+No new URLs are introduced by this pass, so the sitemap change is a verification + cleanup only.
 
-- Service and water-heater long-form sections and list items.
-- Service page intro paragraphs.
-- City page body prose.
-- Blog post bodies (this is where interlinking earns the most).
+## Constraints preserved
 
-Not applied in: headings, hero H1 area, FAQ answers (kept clean for schema extraction),
-JSON-LD, llms.txt, nav or footer.
+No prices, no financing, no Trenchless, no 24/7 claims. Phone 209.838.1000, CA Lic. #953726,
+founded 2010, Miguel 37+ years, "209 & 350", canonical host www.mainlineplumber.com.
 
-### Content additions in the same pass
+## Not included (say the word and I'll add it)
 
-A short "Related services" line at the bottom of each long-form body where the topic hands
-off naturally, for example flushing pointing to repair and installation, and tankless
-pointing to gas line work.
+A public on-page `/compare/` comparison page. That carries the most trademark exposure of anything
+here and needs objective, verifiable data per row, so it should be a deliberate separate decision.
 
 ## Technical notes
 
-- Phase 1 is data-only: new `sections` and longer `faqs` arrays in `src/lib/services.ts`.
-  `ServicePageTemplate` already renders both.
-- Phase 2 adds `src/lib/interlink.ts`: the keyword map plus `linkify(text, { currentPath })`
-  returning `ReactNode[]`. Matching is word-boundary and case-insensitive, skips text already
-  inside a link, and honors the per-paragraph/per-page caps through a counter passed into the
-  render.
-- `ServicePageTemplate.tsx`, the city template and the blog post route render body paragraphs
-  and list text through `linkify` instead of raw strings.
-- Internal links use `<Link to>` where the route is static-typed, and trailing-slash `href`
-  for the splat-based service routes, matching what those pages do today.
-- No styling change: links inherit the existing accent hover treatment already used in body
-  copy.
-- No changes to slugs, canonicals, sitemap or schema in either phase.
+- Competitor and topic entity lists get centralized in `src/lib/site.ts` (or a new
+  `src/lib/entities.ts`) so root and city schema share one source.
+- Files touched: `public/robots.txt`, `public/llms.txt`, `public/llms-full.txt`,
+  `src/routes/__root.tsx`, `src/routes/areas-we-serve.$city.tsx`, `src/lib/*`,
+  `src/routes/sitemap[.]xml.ts` (verification).
+- Verify by typechecking, fetching `/robots.txt`, `/llms.txt`, `/sitemap.xml`, and reading the
+  rendered JSON-LD from `/` and a city page.
