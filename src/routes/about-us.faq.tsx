@@ -20,6 +20,12 @@ const faqs = [
   { q: "Do you offer a maintenance membership?", a: "No monthly membership plans. You book service when you need it, at a straightforward price." },
   { q: "Do you repair and replace sewer lines?", a: "Yes. We camera the line first, then repair the failed section or replace the run using proven methods, with camera verification before and after." },
   { q: "What discounts do you offer?", a: "$50 off for new customers, $150 off water heater replacement, $250 off electric water heater installation, and 10% off for veterans and law enforcement." },
+  { q: "What causes leaky pipes?", a: "Age and corrosion on galvanized lines, hard-water scale, high water pressure with no working regulator, shifting soil, poorly made joints and, on outdoor runs, freeze damage. We find the cause instead of only patching the wet spot." },
+  { q: "Why do drains become clogged?", a: "Grease and food in kitchen lines, hair and soap in bath lines, wipes and paper in toilets, root intrusion in older sewer lines, and pipe bellies that hold water. Most clogs build for months before the drain finally stops." },
+  { q: "What types of plumbing jobs can we do?", a: "All phases, residential and commercial: drain cleaning, sewer repair and camera inspection, water heaters including tankless and electric, leak detection, repiping, gas lines, fixtures, water softeners and treatment, backflow testing, grease trap service, and kitchen and bath remodel plumbing." },
+  { q: "Does Mainline Plumbing cover warranties?", a: "Yes. Our workmanship is warrantied, and the equipment we install carries the manufacturer warranty. We register it and handle warranty service on what we installed so you are not chasing the manufacturer yourself." },
+  { q: "Why should you go with Mainline Plumbing?", a: `You get the owner's standard on every call: Miguel has 37+ years in the trade, the company has been family owned in Escalon since 2010, and we quote before we start. ${LICENSE_LABEL}, bonded and insured.` },
+  { q: "What makes Mainline Plumbing a company you can trust?", a: "Background-checked technicians, marked trucks, upfront flat-rate quotes, permits pulled where required, clean work areas, and hundreds of Google reviews from neighbors across the 209 & 350. We treat your family like our family." },
 ];
 
 export const Route = createFileRoute("/about-us/faq")({
