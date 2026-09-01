@@ -1293,9 +1293,61 @@ export const services: ServiceEntry[] = [
     intro:
       "A humming disposal is usually jammed, a silent one is usually electrical, and a dripping one is usually done. We diagnose in minutes and tell you which of the three you have.",
     bullets: ["Jam clearing and reset", "Leaking flange and housing diagnosis", "Electrical and switch troubleshooting", "Drain and dishwasher line clearing", "Straight repair-or-replace recommendation"],
+    sections: [
+      {
+        heading: "Garbage Disposal Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A disposal tells you what is wrong by the sound it makes. A hum with no rotation is a jammed flywheel. Total silence usually means a tripped reset, a failed switch or a burned-out motor. A drip under the cabinet is a seal or a mount, and where the water shows up decides whether it gets fixed or replaced.",
+          "We work on every common brand and horsepower, and because Miguel has 37+ years in the trade and has led this crew since 2010, the diagnosis happens in minutes instead of by trial and error. If the unit is worth saving, we say so. If it is not, we tell you that too.",
+        ],
+      },
+      {
+        heading: "Signs Your Disposal Needs Service",
+        body: ["Most homeowners live with a failing disposal far longer than they need to. These are the symptoms worth a call."],
+        list: [
+          { lead: "Humming without grinding", text: "the motor has power but the flywheel is jammed on bone, fruit pit or fibrous waste." },
+          { lead: "No sound at all", text: "a tripped reset button, a dead switch, a bad outlet or a failed motor winding." },
+          { lead: "Water under the sink", text: "a leaking sink flange, a loose drain arm, or a housing seal that has given up." },
+          { lead: "Standing water in the sink", text: "the drain line downstream of the disposal is restricted, not the unit itself." },
+          { lead: "Rattling or metal-on-metal noise", text: "loose hardware inside the chamber or a shredder ring that has come apart." },
+          { lead: "Persistent odor after cleaning", text: "food packed under the baffle or in the chamber walls, often with a slow drain behind it." },
+        ],
+      },
+      {
+        heading: "Repair or Replace: How We Decide",
+        body: [
+          "Jams, resets, switches, flanges, drain arms and dishwasher inlets are all repairs, and they are quick ones. A leak coming from the bottom shell is different: that is the internal seal, the water is already in the motor, and rebuilding it is not a real option.",
+          "Age matters as well. A unit under about eight years old with a fixable fault gets repaired. An older unit that has already had a repair, is undersized for the household, or is loud enough to be heard across the kitchen is usually better replaced with a quieter, higher-torque model.",
+        ],
+      },
+      {
+        heading: "Keeping a Disposal Alive Longer",
+        list: [
+          { lead: "Run cold water while grinding", text: "cold keeps fats firm so they wash out of the line instead of coating it." },
+          { lead: "Keep grease out of the sink", text: "the disposal handles solids, not oil, and oil is what builds the clog downstream." },
+          { lead: "Skip fibrous and starchy waste", text: "celery, artichoke, onion skins, potato peels and coffee grounds are the usual jam and sludge culprits." },
+          { lead: "Feed it gradually", text: "small amounts with running water instead of a full chamber packed at once." },
+          { lead: "Run it regularly", text: "a disposal that sits unused corrodes internally and seizes." },
+          { lead: "Never use chemical drain cleaner", text: "it attacks the seals and the drain line and leaves the clog in place." },
+        ],
+      },
+      {
+        heading: "Why Homeowners Here Call Mainline",
+        body: [
+          "We show up in a marked truck, quote it before we start, protect the cabinet we are working under, and clean up when we are done. CA Lic. #953726 (C-36 Plumbing), licensed, bonded and insured, family owned in Escalon since 2010, serving the 209 & 350.",
+          "Disposal trouble often shows up alongside a slow kitchen line. If the sink is backing up as well, tell us on the phone and we will bring the drain equipment on the same trip.",
+        ],
+      },
+    ],
     faqs: [
       { q: "My disposal just hums. Is it dead?", a: "Usually not. That's typically a jam, and it's a quick fix." },
       { q: "It's leaking from the bottom. Can it be fixed?", a: "A bottom leak means the housing seal failed. That one is a replacement." },
+      { q: "How do I know if my disposal needs repair or replacement?", a: "Jams, resets, switches, flanges and drain connections are repairs. A leak from the bottom shell, a seized motor or a unit past about a decade with a second failure is a replacement." },
+      { q: "What should I do if my disposal won't turn on?", a: "Press the red reset button on the bottom of the unit and check the breaker. If it still does nothing, the switch, outlet or motor needs testing, which is where we come in." },
+      { q: "Can a jammed disposal be fixed without replacing it?", a: "Almost always. We clear the obstruction, free the flywheel, confirm the motor spins true, and check the drain line while we are there." },
+      { q: "How can I prevent garbage disposal problems?", a: "Cold water while it runs, no grease, no fibrous or starchy waste, small loads, and regular use. That combination prevents most of the calls we get." },
+      { q: "What items should never go in a garbage disposal?", a: "Grease and oil, bones, fruit pits, coffee grounds, eggshells in volume, celery and onion skins, potato peels, pasta and rice, and anything not food." },
+      { q: "Is it safe to use chemical drain cleaner in a disposal?", a: "No. It corrodes the seals and hardware, sits on top of the clog, and makes the eventual repair worse and messier." },
     ],
   },
   {
