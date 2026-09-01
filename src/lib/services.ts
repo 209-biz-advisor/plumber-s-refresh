@@ -42,9 +42,57 @@ export const services: ServiceEntry[] = [
     intro:
       "A slow sink is annoying. A backed-up main line is a wrecked weekend. We cable, snake and camera drain lines across Stanislaus and San Joaquin County, and we tell you straight whether you have a one-time clog or a line that needs real attention.",
     bullets: ["Kitchen, bath, laundry and main line clearing", "Cable machines and hydrojetting", "Camera inspection to confirm the cause", "Root intrusion and grease buildup removal", "Upfront flat-rate pricing before we start"],
+    sections: [
+      {
+        heading: "Drain Cleaning in Escalon, Modesto & Across the 209 & 350",
+        body: [
+          "Drains almost never fail all at once. They get slower, they gurgle, they hold water for a second longer each week, and then one evening the kitchen sink backs up while dinner is on the stove. By that point the blockage has usually been building for months.",
+          "We clear kitchen, bath, laundry, tub, shower and main sewer lines for homeowners and businesses throughout Stanislaus and San Joaquin County. Miguel has 37+ years in the trade and has been the owner and lead plumber here since 2010, so the tech at your door is not guessing about what a line is doing.",
+        ],
+      },
+      {
+        heading: "Signs Your Drain Needs Professional Cleaning",
+        body: ["One slow fixture is usually local. Several slow fixtures at once points at the main line, and that is the call you want to make sooner rather than later."],
+        list: [
+          { lead: "Water standing in the sink or tub", text: "the line is partially blocked and the restriction is only going to tighten." },
+          { lead: "Gurgling from another fixture", text: "air is being pushed back through the trap, which means the blockage is downstream." },
+          { lead: "Bad smell at the drain", text: "grease, food and biofilm coating the pipe wall, not just something in the trap." },
+          { lead: "Multiple fixtures slow at the same time", text: "a main line or branch line issue rather than a single clogged trap." },
+          { lead: "Water backing up somewhere else", text: "flush the toilet and the tub fills, and you have a main line blockage." },
+          { lead: "Repeat clogs in the same drain", text: "the cause was never removed. Cabling the same spot every few months is a symptom, not a repair." },
+        ],
+      },
+      {
+        heading: "How We Actually Clear the Line",
+        body: [
+          "We start by identifying which line is blocked and where the accessible cleanout is, then match the tool to the job. A cable machine cuts through soft blockages and root hair. Hydrojetting scours the full diameter of the pipe with water, which is what grease-loaded kitchen and restaurant lines actually need.",
+          "When a line has backed up more than once, we put a camera down it. That turns guesswork into a picture: roots at a joint, a belly holding water, a crushed section, or simply years of buildup. You see the screen with us, so the repair decision is yours and it is informed.",
+        ],
+      },
+      {
+        heading: "Why Drains Clog Harder in the Central Valley",
+        body: [
+          "Two local realities work against your drain lines. Our water is hard, so scale builds on the inside of the pipe and gives grease and debris something to grab. And a lot of Escalon, Modesto, Riverbank and Oakdale homes sit on mature lots where established tree and shrub roots have spent decades finding their way toward the moisture in a sewer joint.",
+          "Older neighborhoods add clay and cast iron lines to the mix, both of which roughen and scale with age. That is why a line that ran fine for twenty years suddenly needs attention twice in one year.",
+        ],
+      },
+      {
+        heading: "Keeping Drains Clear Between Visits",
+        body: [
+          "Scrape plates instead of rinsing them, keep grease and coffee grounds out of the sink, run hot water after doing dishes, and use a strainer in the shower. Skip the caustic store-bought drain chemicals. They sit on the blockage, generate heat, and in older galvanized and cast iron lines they attack the pipe more effectively than the clog.",
+          "If your home has a history of main line trouble, an annual cleaning is cheaper than a backup. We serve Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How fast can you clear my drain?", a: "Most residential clogs are cleared in a single visit, and we hold same-day slots every day for backups that can't wait." },
       { q: "Why does my drain keep clogging?", a: "Repeat clogs usually mean grease buildup, root intrusion or a bellied line. We run a camera so you are fixing the cause, not the symptom." },
+      { q: "How often should drains be professionally cleaned?", a: "Most homes do well with a main line cleaning every year or two. Homes with mature trees over the sewer line, or kitchens that see heavy cooking, benefit from an annual visit." },
+      { q: "Are chemical drain cleaners safe for my pipes?", a: "We do not recommend them. They rarely remove the real blockage and they are hard on older galvanized, cast iron and ABS lines as well as on your trap seals." },
+      { q: "What is the difference between snaking and hydrojetting?", a: "A cable punches through the blockage and restores flow. Hydrojetting uses high-pressure water to scrub the pipe wall clean, which is the better answer for grease, scale and recurring clogs." },
+      { q: "Do you use a camera on every drain call?", a: "Not on a simple one-time clog. We recommend it any time a line has backed up more than once, or when we need to confirm roots, a belly or a broken section before you spend money on a repair." },
+      { q: "Can you clear a main sewer line backup?", a: "Yes. Main line backups are one of our most common calls, and we will locate the cleanout, clear the line and tell you honestly what condition the pipe is in." },
+      { q: "Do you handle commercial kitchen drains and grease lines?", a: "Yes, including restaurants and multi-unit properties. Grease-loaded lines respond best to jetting on a scheduled interval so you are not closing the kitchen unexpectedly." },
     ],
   },
   {
@@ -53,9 +101,56 @@ export const services: ServiceEntry[] = [
     intro:
       "When water is going somewhere it shouldn't, minutes matter. Our emergency plumbing crew handles burst supply lines, slab leaks, sewer backups and dead water heaters, and we walk you through shutting the water off while we're on the way.",
     bullets: ["Burst and leaking pipe repair", "Sewer and main line backups", "No hot water and leaking water heaters", "Overflowing toilets and failed shutoff valves", "Damage control guidance while we roll"],
+    sections: [
+      {
+        heading: "Emergency Plumbing in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A plumbing emergency is any moment where waiting makes the damage worse. Water spreading across a floor, sewage coming up a shower drain, a supply line that let go inside a wall. Those calls do not wait for a convenient appointment window, and we do not treat them like they should.",
+          "We handle emergency repairs for homes and businesses across Stanislaus and San Joaquin County. To be straight with you, we are not a 24-hour call center; we are a family-owned shop that gets emergency work to the front of the schedule and gets a licensed plumber to you fast. Call 209.838.1000 and you will talk to people who know the area and the equipment.",
+        ],
+      },
+      {
+        heading: "What to Do First When You Have a Plumbing Emergency",
+        body: ["Before anything else, stop the water. These four steps limit the damage while we are on the way."],
+        list: [
+          { lead: "Shut off the main water valve", text: "usually at the front of the house near the hose bib or at the street meter. Turn it clockwise until it stops." },
+          { lead: "Kill power or gas to the water heater", text: "if the heater is the source, flip its breaker or turn the gas control to off." },
+          { lead: "Move what you can", text: "get boxes, rugs and electronics off the wet floor before the water wicks into them." },
+          { lead: "Do not use the fixtures", text: "with a sewer backup, every flush and every load of laundry adds to what is coming up." },
+          { lead: "Call 209.838.1000", text: "tell us what you are seeing and we will talk you through anything else while a truck is dispatched." },
+        ],
+      },
+      {
+        heading: "Slow Leaks Are Emergencies Too, They Just Hide",
+        body: [
+          "The expensive leaks are often the quiet ones. Water moving behind drywall or under a slab can run for weeks before anyone notices, and by then you are dealing with framing, flooring and mold instead of a pipe.",
+          "Watch for water stains on ceilings or walls, damp or warm spots on the floor, a sudden jump in your water bill, a musty smell in one room, or a meter that keeps creeping with every fixture off. Any one of those is worth a leak detection visit now rather than a restoration bill later.",
+        ],
+      },
+      {
+        heading: "The Emergencies We Get Called For Most",
+        body: [
+          "Burst and split supply lines, failed angle stops and hose bibs, water heaters leaking from the tank body, overflowing toilets, main sewer backups, slab leaks, broken pressure regulators and gas odors. We arrive with the parts and equipment those jobs actually take, so the first visit is usually the fix.",
+          "Every repair gets a flat-rate quote before we start. Even in an emergency you should know the number first, and you should never feel rushed into a decision by the person holding the wrench.",
+        ],
+      },
+      {
+        heading: "Local, Licensed and Accountable",
+        body: [
+          "Mainline Plumbing Inc. is family owned in Escalon and licensed as a California C-36 plumbing contractor, Lic. #953726. Miguel has 37+ years in the trade and has run this company since 2010, and our reputation is built on hundreds of local reviews from neighbors, not on an ad budget.",
+          "We respond throughout Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding 209 & 350 communities.",
+        ],
+      },
+    ],
     faqs: [
       { q: "What counts as a plumbing emergency?", a: "Any active leak, sewage backup, no-water situation or gas smell. If water is spreading or you had to shut the main off, call us." },
       { q: "What should I do before you arrive?", a: "Shut off the main water valve, kill power to the water heater if it is leaking, and move belongings out of the water." },
+      { q: "Where is my main water shutoff?", a: "On most Valley homes it is on the street-facing wall near the hose bib, or in a box at the curb. It is worth finding it today, before you need it in the dark." },
+      { q: "I smell gas. What should I do?", a: "Leave the building, do not flip switches, and call your gas utility from outside. Once they have made it safe, call us at 209.838.1000 for the line repair." },
+      { q: "Are you available around the clock?", a: "We are not a 24-hour operation and we will not pretend otherwise. Emergency calls go to the top of the schedule and we get a licensed plumber out fast." },
+      { q: "Do you handle commercial emergencies?", a: "Yes. Restaurants, offices, retail and multi-unit properties, where a backup means lost revenue every hour it continues." },
+      { q: "Will my homeowners insurance cover this?", a: "Sudden failures are often covered while long-term seepage often is not. Take photos before cleanup and keep our written invoice; both help your claim." },
+      { q: "Can a small drip really wait?", a: "It can wait for an appointment, but not indefinitely. A drip inside a wall or under a slab is doing damage you cannot see, and it never gets cheaper." },
     ],
   },
   {
@@ -64,9 +159,58 @@ export const services: ServiceEntry[] = [
     intro:
       "Most plumbing calls aren't dramatic, they're just the thing that has been dripping, running or half-working for months. We fix it properly, with parts that last, and we show you what failed and why.",
     bullets: ["Leaking pipes, valves and supply lines", "Running toilets and dripping faucets", "Angle stops, hose bibs and pressure regulators", "Garbage disposals and dishwasher connections", "Written flat-rate quote before any work begins"],
+    sections: [
+      {
+        heading: "Plumbing Repairs in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Most plumbing repair calls are not dramatic. They are the toilet that has been running since spring, the faucet that drips at night, the shutoff valve nobody has dared touch in fifteen years. None of it is urgent, and all of it is costing you water, money and eventually drywall.",
+          "We repair residential and commercial plumbing across Stanislaus and San Joaquin County. Miguel has 37+ years in the trade and has owned this company since 2010, and every repair comes with a flat-rate quote up front and an explanation of what failed and why.",
+        ],
+      },
+      {
+        heading: "Signs You Need Plumbing Repairs",
+        body: ["A plumbing system tells you it is in trouble long before it fails. These are the signals worth acting on."],
+        list: [
+          { lead: "Water bill climbing with no change in habits", text: "something is running or leaking, often a toilet or an underground line." },
+          { lead: "Low water pressure through the house", text: "scaled galvanized piping, a failing pressure regulator or a developing leak." },
+          { lead: "Stains on ceilings or walls", text: "an active leak inside the structure. This one does not improve on its own." },
+          { lead: "Warm or damp spots on the floor", text: "a classic slab leak indicator, and worth a leak detection visit immediately." },
+          { lead: "Rattling or banging pipes", text: "water hammer or loose strapping, which fatigues joints over time." },
+          { lead: "Sewer or musty odors", text: "a dry trap, a failed wax ring or a vent problem." },
+          { lead: "Fixtures that drain slowly all over the house", text: "a main line issue rather than a fixture issue." },
+        ],
+      },
+      {
+        heading: "The Repairs We Handle Most",
+        body: [
+          "Leaking supply and drain lines, failed angle stops and hose bibs, pressure regulators, water hammer arrestors, running toilets and wax rings, dripping faucets and shower valves, garbage disposals, dishwasher and washer connections, gas line repairs and repiping of failed galvanized branches.",
+          "We show you the failed part when we pull it. You should be able to see why the repair was needed, and you should never have to take a plumber's word for it on faith.",
+        ],
+      },
+      {
+        heading: "Maintaining Your Plumbing System for the Long Run",
+        body: [
+          "The cheapest plumbing is preventive. Know where your main shutoff is. Keep house pressure in a sane range with a working regulator, because high pressure kills water heaters and fixtures early. Flush your water heater annually in our hard water. Test angle stops once a year so they still turn when you need them.",
+          "Replace washing machine and dishwasher hoses on a schedule instead of after they burst, keep grease out of the kitchen drain, and get a camera inspection on the main line if you have mature trees over it. A yearly plumbing inspection catches nearly all of this before it becomes an emergency call.",
+        ],
+      },
+      {
+        heading: "Why Central Valley Homeowners Call Mainline",
+        body: [
+          "Hard water, aging galvanized and cast iron systems, expansive local soil and mature root systems are the four things that shape plumbing repair in this area. We have worked on all of it, in these neighborhoods, for decades.",
+          "Family owned in Escalon, licensed as a California C-36 plumbing contractor, Lic. #953726, serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Do you charge for a diagnosis?", a: "We quote the repair upfront, and the service call is waived when you move forward with the repair." },
       { q: "Do you repair commercial plumbing too?", a: "Yes. We handle restaurants, offices, retail and multi-unit properties throughout the 209 & 350." },
+      { q: "What is the most common plumbing repair?", a: "Running toilets and dripping faucets by volume, and failing angle stops right behind them. All three are quick fixes that stop real water waste." },
+      { q: "How do I know whether to repair or replace?", a: "If the fixture body or pipe is sound and parts are available, repair. If the same component has failed repeatedly or the material itself is at the end of its life, replacement is the better spend, and we will say so." },
+      { q: "What does plumbing maintenance actually involve?", a: "An annual look at supply lines, angle stops, water pressure, the water heater, visible drain connections and the main line. It is the difference between scheduling work and reacting to it." },
+      { q: "Can I prevent plumbing emergencies?", a: "Most of them, yes. Correct house pressure, an annual water heater flush, hoses replaced before they fail and drains kept clear eliminate the majority of the calls we get at the worst possible time." },
+      { q: "Do you repair galvanized pipes or do they need replacing?", a: "We can repair a section, but galvanized scales from the inside and the flow never fully returns. When several branches are affected, repiping is the honest recommendation." },
+      { q: "How fast can you get out for a non-emergency repair?", a: "Usually within a day or two, and same day when the schedule allows. Active leaks and no-water situations get moved ahead of routine work." },
     ],
   },
   {
@@ -328,9 +472,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Fixtures are what you touch every day, so they're what you notice failing. We repair and install faucets, sinks, showers and tubs, and we set them so they stay tight.",
     bullets: ["Faucet, sink and shower installation", "Cartridge and valve repair", "Angle stops and supply lines replaced", "Tub spouts, diverters and trim kits", "Fixture removal and haul-away"],
+    sections: [
+      {
+        heading: "Fixture Installation & Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Fixtures are the plumbing you actually touch. Faucets, sinks, showers, tubs and toilets get used dozens of times a day, which is why they wear out first and why a small failure in one of them turns into water damage faster than anything else in the house.",
+          "We install, upgrade and repair fixtures for homes and businesses throughout Stanislaus and San Joaquin County. Family owned in Escalon since 2010, licensed C-36, Lic. #953726, with Miguel's 37+ years in the trade behind the work.",
+        ],
+      },
+      {
+        heading: "Small Fixture Problems Have Big Consequences",
+        body: [
+          "A drip is not just a drip. A faucet losing one drop a second wastes thousands of gallons a year. A shower valve that never quite shuts off sends that water into the wall cavity instead of the drain. A running toilet can add more to a monthly bill than any other single fixture in the house.",
+          "The other cost is the one you cannot see. Slow seepage under a sink swells the cabinet base, lifts the flooring and creates exactly the damp, dark conditions that mold wants. Fixing the fixture is cheap. Fixing the cabinet, floor and drywall is not.",
+        ],
+      },
+      {
+        heading: "Fixtures We Work On",
+        body: ["One licensed crew for the whole list, so you are not scheduling three different trades for one bathroom."],
+        list: [
+          { lead: "Faucets", text: "kitchen, bath, laundry, bar and outdoor, installed new or repaired with quality cartridges." },
+          { lead: "Sinks", text: "farmhouse, undermount, drop-in, vanity and pedestal, including drain and disposal tie-in." },
+          { lead: "Showers and tubs", text: "valve replacement, trim, diverters, conversions and drain work." },
+          { lead: "Toilets", text: "installation, reseating, flapper and fill valve repair, and running-toilet fixes." },
+          { lead: "Garbage disposals", text: "replaced or repaired along with the dishwasher connection." },
+          { lead: "Angle stops and supply lines", text: "the unglamorous parts that cause most fixture leaks." },
+        ],
+      },
+      {
+        heading: "Our Fixture Installation Process",
+        body: [
+          "We confirm fit against your rough-in and countertop before anything comes out, shut off and isolate the supply, remove and haul away the old fixture, replace supply lines and angle stops, set the new fixture level and properly sealed, then pressure test and check every joint by hand.",
+          "You get a flat-rate quote before we start, and if we find something behind the old fixture that changes the scope, such as a corroded stop or a drain that has to be reworked, you hear about it and approve it before we continue.",
+        ],
+      },
+      {
+        heading: "Why Upgrading Fixtures Pays Off",
+        body: [
+          "Current fixtures move less water while feeling the same at the tap, which lowers both your water use and the energy spent heating it. Better cartridges last longer in hard water. And a matched set of fixtures is one of the first things a buyer or a guest notices in a kitchen or bath.",
+          "If you are already opening a wall or replacing a countertop, that is the moment to do the fixture work. It is far cheaper as part of the same visit than as a separate call six months later.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Can you install a fixture I bought?", a: "Yes. We'll flag anything that won't fit your rough-in before we start." },
       { q: "Why does my new faucet drip already?", a: "Usually a defective cartridge or debris in the line from the install. Both are quick fixes." },
+      { q: "What are the most common fixture problems in Valley homes?", a: "Hard water scale in cartridges and aerators, worn seals causing drips, failing angle stops under sinks, and running toilets. All four are routine repairs." },
+      { q: "How often should fixtures be inspected?", a: "Glance under your sinks a couple of times a year for dampness or staining, and clean aerators and showerheads. That catches most problems while they are still small." },
+      { q: "Can I upgrade fixtures without replacing my plumbing lines?", a: "Usually yes. We only recommend re-piping a branch when the existing galvanized line is so scaled that a new fixture would never get proper flow." },
+      { q: "Are water-saving fixtures effective in the Central Valley?", a: "Yes. Modern low-flow trim maintains the feel of good pressure while using less water, and less hot water used means less energy burned heating it." },
+      { q: "How do I choose the best fixture material and finish?", a: "Solid brass bodies with serviceable cartridges last longest. For finish, brushed nickel and matte black hide our hard water spotting far better than polished chrome." },
+      { q: "Do fixture installations require a permit?", a: "Straight fixture swaps generally do not. Relocating a drain or supply, or altering walls during a remodel, often does, and we pull it when the scope calls for it." },
     ],
   },
   {
@@ -339,9 +531,61 @@ export const services: ServiceEntry[] = [
     intro:
       "New faucet, clean install. We replace the supply lines and angle stops at the same time, because that's where the next leak comes from otherwise.",
     bullets: ["Kitchen, bath and utility faucets", "Pull-down, touchless and wall-mount models", "New braided supply lines and angle stops", "Deck plate and hole configuration handled", "Old faucet removed"],
+    sections: [
+      {
+        heading: "Faucet Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A new faucet is the fastest visible upgrade in a kitchen or bathroom, and it is also the easiest place to create a slow leak that nobody notices until the cabinet floor is soft. The faucet itself is rarely the problem. The connections underneath it are.",
+          "We install kitchen, bathroom, laundry, bar and outdoor faucets across Stanislaus and San Joaquin County. Every install includes new braided supply lines and, where they are worn, new angle stops, because that is exactly where the next leak would have come from.",
+        ],
+      },
+      {
+        heading: "Faucet Types We Install",
+        body: ["Bring us a faucet you already bought or let us recommend one. Either way we flag fit issues before anything is uninstalled."],
+        list: [
+          { lead: "Pull-down and pull-out kitchen faucets", text: "the most practical choice for rinsing large pans and cleaning the sink itself." },
+          { lead: "Single-handle and widespread bath faucets", text: "matched to your existing hole configuration or a new deck plate." },
+          { lead: "Touchless and sensor faucets", text: "genuinely useful in a busy kitchen, and they need a clean power and solenoid setup to be reliable." },
+          { lead: "Wall-mount and pot filler", text: "great look, but they need the supply run planned before the wall is closed." },
+          { lead: "Laundry, bar and utility faucets", text: "the ones that get forgotten until they seize up." },
+          { lead: "Outdoor hose bibs and frost-proof sillcocks", text: "replaced with proper backflow protection." },
+        ],
+      },
+      {
+        heading: "Signs You May Need Faucet Replacement",
+        body: ["If the fixture keeps coming back for repair, replacement is usually the better spend."],
+        list: [
+          { lead: "Dripping that returns after repair", text: "the valve seat inside the body is worn past the point a new cartridge fixes." },
+          { lead: "Corrosion or mineral crust at the base", text: "water has been sitting where it should not, and the finish is failing." },
+          { lead: "No parts available", text: "an off-brand or discontinued faucet with no serviceable cartridge." },
+          { lead: "Weak flow that cleaning does not fix", text: "scale inside the body itself rather than in the aerator." },
+          { lead: "Wobbling or loose spout", text: "worn mounting hardware, and often a leak under the deck already." },
+        ],
+      },
+      {
+        heading: "Caring for a New Faucet in Valley Water",
+        body: [
+          "Hard water is the enemy of a shiny finish. Wipe the faucet dry after heavy use, clean the aerator every few months by unscrewing it and soaking it in white vinegar, and skip abrasive cleaners and anything with bleach on brushed and matte finishes.",
+          "Brushed nickel and matte black hide spotting better than polished chrome, which is worth knowing before you buy. If mineral is aggressive at your address, a properly sized water softener protects the faucet, the water heater and everything else on the line.",
+        ],
+      },
+      {
+        heading: "Why Homeowners Trust Mainline With Fixture Work",
+        body: [
+          "Family owned in Escalon since 2010, licensed as a California C-36 plumbing contractor, Lic. #953726, and led by Miguel with 37+ years in the trade. Flat-rate quote before we start, old faucet hauled away, and a leak check by hand at every joint before we leave.",
+          "We install faucets in Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding 209 & 350 communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Do you replace the shutoff valves too?", a: "We recommend it on any faucet install; old angle stops are the most common post-install leak." },
       { q: "How long does it take?", a: "Most faucet installs run one to two hours." },
+      { q: "How do I know which faucet is right for my home?", a: "It comes down to your sink's hole configuration, the depth of the basin, how you use the room and the finish you want to live with. We will confirm fit before removing anything." },
+      { q: "Can I install a faucet myself?", a: "Some people do. What we get called out for afterward is a reused angle stop that weeps, an overtightened supply nut, or a mounting that was never fully sealed to the deck." },
+      { q: "Will a new faucet improve water efficiency?", a: "Yes. Current models move less water while feeling the same at the sink, which shows up on both the water and the water heating side." },
+      { q: "What faucets work best for commercial spaces?", a: "Commercial-grade single-handle or sensor faucets with serviceable cartridges and metal bodies. They cost more up front and last far longer under heavy use." },
+      { q: "Is a new faucet covered under warranty?", a: "Manufacturers warranty the fixture itself, and our workmanship covers the installation. Keep your paperwork and we will note the model on the invoice." },
+      { q: "How can I keep a faucet from leaking again?", a: "New supply lines and angle stops at install time, an aerator cleaned a few times a year, and a look under the sink for dampness every so often. That is most of it." },
     ],
   },
   {
@@ -350,9 +594,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Shower work is valve work. We set pressure-balanced or thermostatic valves so the temperature holds when someone flushes, and we get the rough-in right before tile goes up.",
     bullets: ["New shower rough-in and valve setting", "Tub-to-shower conversions", "Pressure-balanced and thermostatic valves", "Rain heads, body sprays and hand showers", "Drain and pan connections"],
+    sections: [
+      {
+        heading: "Shower Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Shower projects are judged on tile and glass, but they succeed or fail on the valve and the drain. Set the rough-in wrong and you find out after the wall is closed, when the temperature swings every time someone flushes or water finds its way into the framing.",
+          "We handle the plumbing side of shower installations and replacements across Stanislaus and San Joaquin County: new rough-ins, valve replacement, tub-to-shower conversions, multi-head layouts and drain work, coordinated with your tile or surround installer so nobody is waiting on anybody.",
+        ],
+      },
+      {
+        heading: "Think These Through Before the Project Starts",
+        body: ["Decisions made before demolition are cheap. The same decisions made after tile is up are not."],
+        list: [
+          { lead: "Layout and drain location", text: "moving the drain means opening the floor, so decide the footprint first." },
+          { lead: "Valve type", text: "pressure-balanced holds temperature during a flush; thermostatic holds an exact setting and supports multiple heads." },
+          { lead: "Water volume", text: "rain heads and body sprays together can outrun a half-inch supply line. We size the supply to the fixtures you actually want." },
+          { lead: "Accessibility", text: "curbless entry, a bench, grab bar blocking and a hand shower are far easier to plan now than to retrofit later." },
+          { lead: "Waterproofing", text: "the pan, curb and wall assembly have to be right underneath the tile. This is where shortcut installs fail." },
+          { lead: "Water heater capacity", text: "a larger shower with more heads changes your hot water demand, and we will tell you if your heater can keep up." },
+        ],
+      },
+      {
+        heading: "Upgrading Showers in Older Valley Homes",
+        body: [
+          "Plenty of homes in Escalon, Modesto, Riverbank and Oakdale still have original single-handle or two-handle valves with no pressure balancing, galvanized supply lines, and a tub nobody has taken a bath in for a decade.",
+          "Those are the best candidates for real improvement. Replacing the valve stops the cold-water shock when a toilet flushes. Re-piping the branch in copper or PEX restores flow that scale took away years ago. And a tub-to-shower conversion gives back usable space in a small bathroom while making it safer to get in and out of.",
+        ],
+      },
+      {
+        heading: "Hard Water and Shower Longevity",
+        body: [
+          "Central Valley water leaves mineral behind, and showers are where you see it first: crusted heads, weak spray, cartridges that stiffen up. Choosing quality trim with serviceable cartridges means the fixture can be repaired in ten years instead of replaced.",
+          "We also recommend a hand shower or a head with cleanable nozzles, and where hardness is severe, a properly sized softener. It protects the shower valve, the water heater and every other fixture in the house at the same time.",
+        ],
+      },
+      {
+        heading: "What You Get From Mainline",
+        body: [
+          "A flat-rate quote before work starts, code-compliant valve and drain work, permits where the scope requires them, and a licensed C-36 contractor on the job, Lic. #953726. Family owned in Escalon since 2010, with Miguel's 37+ years in the trade behind the rough-in.",
+          "We serve Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding communities. Call 209.838.1000 to talk through your shower project.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Why does my shower go cold when a toilet flushes?", a: "An old non-balanced valve. A pressure-balanced replacement solves it." },
       { q: "Can you convert my tub to a walk-in shower?", a: "Yes, we handle the plumbing side and coordinate with your tile or surround installer." },
+      { q: "How long does a shower installation take?", a: "A valve and trim replacement is often a single day. A full conversion or new rough-in runs longer because tile, waterproofing and inspection have to fit in the schedule." },
+      { q: "Can you build in accessibility features?", a: "Yes. Curbless entry, benches, hand showers and proper blocking for grab bars are all easiest to include while the wall is open." },
+      { q: "What types of showers do you install?", a: "Standard tub-shower combinations, walk-in and curbless showers, tiled custom enclosures, prefabricated units, and multi-head or rain head layouts." },
+      { q: "How do I choose the right shower for my bathroom?", a: "Start with the space and the drain, then the valve, then the fixtures. We walk the room with you and tell you what the existing supply lines and water heater can actually support." },
+      { q: "Can you work in an older home with dated plumbing?", a: "Yes, and it is a lot of what we do. Galvanized supply lines, odd rough-in heights and obsolete valve bodies are all normal for Valley homes of a certain age." },
+      { q: "Is a permit required for shower work?", a: "Trim and valve swaps usually are not. Moving drains, altering walls or a full conversion often are, and we pull the permit and handle the inspection when the scope calls for it." },
     ],
   },
   {
@@ -361,9 +653,61 @@ export const services: ServiceEntry[] = [
     intro:
       "Sink swaps look simple until the drain height doesn't line up. We handle the trap, tailpiece and disposal connection so everything drains right and nothing weeps behind the cabinet.",
     bullets: ["Farmhouse, undermount and drop-in sinks", "Vanity and pedestal sink setting", "P-trap and drain re-plumbing", "Garbage disposal and dishwasher tie-in", "Leak test before we leave"],
+    sections: [
+      {
+        heading: "Sink Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A sink swap is one of the highest-impact changes you can make in a kitchen or bath, and it is also where amateur installs cause the most hidden damage. The visible part is the bowl. The part that matters is the drain height, the trap alignment and the seal, because that is what keeps the cabinet floor dry for the next fifteen years.",
+          "We set farmhouse, undermount, drop-in, vanity and pedestal sinks for homeowners and businesses across Stanislaus and San Joaquin County, and we leak test everything under pressure before we pack up.",
+        ],
+      },
+      {
+        heading: "Sink Types and What Each One Gives You",
+        body: ["Choose based on how you use the room, not only on how the sink looks in the showroom."],
+        list: [
+          { lead: "Undermount", text: "mounts below the counter, so crumbs and water wipe straight into the bowl. Needs solid-surface countertop support." },
+          { lead: "Drop-in", text: "the most forgiving and versatile option, and the easiest to swap later because the rim covers the cutout." },
+          { lead: "Farmhouse or apron-front", text: "big, deep and comfortable for large pans. Heavy, so the cabinet usually needs modification and added support." },
+          { lead: "Stainless steel", text: "durable and easy to live with. Thicker gauge means less noise and fewer dents." },
+          { lead: "Composite granite or quartz", text: "excellent at hiding hard water spotting, which matters in Valley water." },
+          { lead: "Fireclay and cast iron", text: "beautiful and long-lived, and heavy enough that support has to be planned before install day." },
+        ],
+      },
+      {
+        heading: "Installation Mistakes That Cost Real Money",
+        body: ["Nearly every failed sink install we get called out to repair traces back to one of these."],
+        list: [
+          { lead: "Reusing old supply lines and angle stops", text: "the new sink is fine, the twenty-year-old valve under it is what leaks." },
+          { lead: "Improper drain slope", text: "a trap arm without fall will hold water, smell and clog repeatedly." },
+          { lead: "Wrong or missing sealant", text: "the wrong bead at the rim lets water wick under the counter where nobody sees it." },
+          { lead: "Undersupported heavy sinks", text: "a farmhouse or cast iron bowl needs a rebuilt cabinet base, not hope." },
+          { lead: "Overtightened connections", text: "cracked nuts and split tailpieces that weep months later." },
+        ],
+      },
+      {
+        heading: "What Your Sink Installation Includes",
+        body: [
+          "We remove and haul away the old sink, dry fit the new one, rework the drain, trap and tailpiece as needed, replace the supply lines and angle stops, reconnect the garbage disposal and dishwasher, seal the rim correctly and then run water and check every joint by hand.",
+          "If the countertop cutout, cabinet or drain height needs modification, you hear about it before we start and it is written into the flat-rate quote. No mid-job surprises.",
+        ],
+      },
+      {
+        heading: "Why Central Valley Homes Choose Mainline",
+        body: [
+          "Family owned in Escalon since 2010, licensed as a California C-36 plumbing contractor, Lic. #953726, with Miguel's 37+ years in the trade behind every install. Hundreds of local reviews and a work area that gets left cleaner than we found it.",
+          "We install sinks in Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding 209 & 350 communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Can you install an apron-front sink?", a: "Yes, and we'll tell you upfront if your cabinet needs modification." },
       { q: "Do you re-plumb the drain?", a: "Whenever the new sink sits at a different depth, yes, it's included in the quote." },
+      { q: "Can I get a new sink without replacing my countertop?", a: "Often yes, if the new sink matches the existing cutout or is slightly larger for a drop-in. Undermount changes usually need a fabricator to modify the stone." },
+      { q: "How long does a sink installation take?", a: "A straightforward swap is usually a couple of hours. Farmhouse sinks, cabinet modification or drain rework add time, and we tell you the realistic window when we quote." },
+      { q: "Which sink material holds up best in hard water?", a: "Composite granite and quartz hide mineral spotting best, and thicker-gauge stainless cleans up easily. Polished chrome-look finishes show every water spot." },
+      { q: "Will a new sink help when I sell?", a: "Kitchen and bath updates are among the most noticed changes in a walkthrough, and a properly installed sink with no cabinet water damage underneath is part of that impression." },
+      { q: "Should I replace the sink or repair it?", a: "Repair makes sense for a leaking trap, a failed drain assembly or a loose mount. Replace when the bowl is cracked, badly corroded or you are changing the layout." },
+      { q: "Do you connect the garbage disposal and dishwasher?", a: "Yes, both are part of the installation, including the disposal dishwasher inlet and a proper high loop or air gap." },
     ],
   },
   {
@@ -372,9 +716,58 @@ export const services: ServiceEntry[] = [
     intro:
       "Most fixtures don't need replacing, they need the right cartridge, seat or seal. We carry parts for the common brands and fix it on the first trip whenever possible.",
     bullets: ["Cartridge, stem and seat replacement", "Leaking spouts and diverters", "Low flow and aerator restoration", "Drain assembly and pop-up repair", "Loose and wobbling fixtures re-secured"],
+    sections: [
+      {
+        heading: "Fixture Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A fixture that drips, sticks or trickles is easy to live with and expensive to ignore. A steady drip wastes thousands of gallons a year, a weeping shower valve rots the framing behind the tile, and a running toilet quietly inflates your water bill every single month.",
+          "We repair faucets, sinks, showers, tubs and toilets for homeowners and businesses across Stanislaus and San Joaquin County. Most repairs are done on the first visit because we stock cartridges, stems, seats and seals for the brands that are actually in Valley homes.",
+        ],
+      },
+      {
+        heading: "Common Fixture Problems We Fix",
+        body: ["If you recognize any of these, it is a repair and not a replacement in most cases."],
+        list: [
+          { lead: "Constant dripping", text: "a worn cartridge, stem or seat. The part is small, the water waste is not." },
+          { lead: "Leaking at the base", text: "a failed O-ring or a loose mounting nut letting water run under the deck." },
+          { lead: "Weak or uneven flow", text: "usually hard water scale in the aerator or cartridge, sometimes a partly closed angle stop." },
+          { lead: "Stiff or sloppy handles", text: "internal wear. Left alone, the handle eventually snaps off in someone's hand." },
+          { lead: "Shower that will not shut fully off", text: "a worn valve cartridge, and the water is running down the wall cavity while you wait." },
+          { lead: "Slow drain at one fixture", text: "a fouled pop-up assembly or trap rather than a main line problem." },
+          { lead: "Loose or rocking sink or toilet", text: "failed seal or mounting, which is a water damage problem waiting to happen." },
+        ],
+      },
+      {
+        heading: "Repair or Replace? We Tell You Straight",
+        body: [
+          "Repair is the right call when the fixture body is sound, the finish still looks good and parts are available. That covers most major brands, even fixtures that are fifteen or twenty years old.",
+          "Replacement makes more sense when the body is corroded through, the brand is long gone with no parts available, or you are already planning to change the look. We will tell you which side of that line your fixture falls on before you spend anything, and we do not upsell a replacement to avoid doing a repair.",
+        ],
+      },
+      {
+        heading: "Hard Water Is Why Central Valley Fixtures Wear Faster",
+        body: [
+          "Our water carries a lot of mineral. That mineral settles inside aerators, cartridges and valve bodies, cuts flow, and grinds away at rubber seals until they leak. It is the single biggest reason fixtures here need attention sooner than the manufacturer's literature suggests.",
+          "Cleaning aerators and showerheads a couple of times a year helps, and a properly sized water softener helps a lot more. We handle that side too, so the fix can address the cause and not just the last failed part.",
+        ],
+      },
+      {
+        heading: "Why Homeowners Call Mainline for Fixture Work",
+        body: [
+          "Family owned in Escalon since 2010, licensed as a California C-36 plumbing contractor, Lic. #953726, and led by Miguel with 37+ years in the trade. Flat-rate quote before we start, quality replacement parts, clean work area, and no lecture about the thing you have been meaning to fix.",
+          "We serve Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Are parts still available for my old fixture?", a: "Usually yes for major brands. If not, we'll show you replacement options." },
       { q: "Is repair cheaper than replacement?", a: "Almost always, and we'll say so when it isn't." },
+      { q: "What kinds of fixtures do you repair?", a: "Kitchen and bath faucets, sinks, showers, tubs, toilets, laundry sinks, hose bibs and utility fixtures, in both homes and commercial buildings." },
+      { q: "Can you fix a leaking faucet in one visit?", a: "In most cases yes. We carry cartridges, seats and seals for the common brands, so the repair happens on the first trip." },
+      { q: "Why is the water pressure low at just one fixture?", a: "Almost always scale in the aerator or cartridge, or a partly closed shutoff valve under the sink. Both are quick to correct." },
+      { q: "My toilet keeps running. Is that a fixture repair?", a: "Yes. It is normally a worn flapper, fill valve or a chain adjustment, and it is one of the cheapest ways to cut a high water bill." },
+      { q: "How often should fixtures be checked?", a: "Look under sinks a couple of times a year for dampness or staining and clean your aerators. Anything you find early is a small repair instead of a cabinet replacement." },
+      { q: "Do you repair high-efficiency and touchless fixtures?", a: "Yes, including sensor faucets and low-flow trim. Their cartridges and solenoids still fail on hard water, and parts are available for the major brands." },
     ],
   },
   {
