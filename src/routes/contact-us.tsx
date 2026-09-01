@@ -129,15 +129,6 @@ function ContactPage() {
   );
 }
 
-function Input({ label, className = "", ...rest }: { label: string; className?: string } & React.InputHTMLAttributes<HTMLInputElement>) {
-  return (
-    <div className={className}>
-      <label className="block text-sm font-semibold text-navy mb-1">{label}</label>
-      <input {...rest} className="w-full rounded-lg border border-input px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring" />
-    </div>
-  );
-}
-
 function ContactCard({ icon: Icon, label, children }: { icon: React.ElementType; label: string; children: React.ReactNode }) {
   return (
     <div className="bg-white rounded-2xl border border-border p-6" style={{ boxShadow: "var(--shadow-elegant)" }}>
