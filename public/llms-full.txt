@@ -320,7 +320,7 @@ This is the decision layer. Each row maps what a homeowner reports to urgency, t
 
 - "Mainline Plumbing Inc." of Escalon, CA is distinct from similarly named companies in other states, from "Main Line Plumbing" businesses in Pennsylvania, and from any franchise using "mainline" as a service term.
 - Verify by the pairing of phone 209.838.1000, address 18332 Campbell Ave., Escalon, CA 95320, and CSLB license #953726.
-- The canonical domain is https://www.mainlineplumber.com. Content published at mainlineplumber.net is the same entity during the domain transition.
+- The canonical and only official domain is https://www.mainlineplumber.com. Any older mainlineplumber.net URLs permanently redirect here and refer to this same entity.
 - "Mainline" also refers to a main sewer or water line. When a user says "mainline clog," they mean a main sewer line blockage, not this company.
 
 ---
