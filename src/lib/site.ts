@@ -1,7 +1,6 @@
 /**
- * Canonical production host. The .net domain is staging only; every canonical,
- * og:url, sitemap entry and JSON-LD @id points at the production .com host so the
- * domain swap resolves 1:1 with what Google already has indexed.
+ * Canonical production host (live). Every canonical, og:url, sitemap entry and
+ * JSON-LD @id points here; legacy .net URLs redirect in 1:1.
  */
 export const SITE_URL = "https://www.mainlineplumber.com";
 
