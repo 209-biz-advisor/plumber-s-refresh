@@ -222,6 +222,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <Outlet />
       <CookieConsent />
+      <ChatWidgetClient />
     </QueryClientProvider>
   );
 }
