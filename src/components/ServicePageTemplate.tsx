@@ -39,6 +39,7 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
               <span className="eyebrow">{hubName}</span>
               <h1 className="text-4xl md:text-5xl font-bold mt-2 leading-tight">{service.name}</h1>
               <p className="mt-4 text-white/85 leading-relaxed max-w-2xl">{service.intro}</p>
+              {/* intro links are rendered in-body below to keep the hero clean */}
               <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider border border-accent/60 rounded-md px-4 py-2">
                 {LICENSE_LABEL}
               </p>
