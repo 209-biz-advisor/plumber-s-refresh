@@ -13,6 +13,7 @@ import { SITE_URL, OG_IMAGE } from "@/lib/site";
 import { GOOGLE_MAPS_URL, GOOGLE_RATING, GOOGLE_REVIEW_COUNT, SAME_AS } from "@/lib/reviews";
 import { KNOWS_ABOUT, serviceGeoCircle, similarToNodes } from "@/lib/entities";
 import { CookieConsent } from "@/components/CookieConsent";
+import { ChatWidgetClient } from "@/components/ChatWidget";
 
 function NotFoundComponent() {
   return (
