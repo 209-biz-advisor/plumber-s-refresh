@@ -7,8 +7,11 @@ import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { LICENSE_LABEL } from "@/lib/site";
 import { serviceCities } from "@/lib/service-cities";
 import { childrenOf, topLevel, type ServiceEntry } from "@/lib/services";
+import { Linkify } from "@/components/Linkify";
+import { createBudget } from "@/lib/interlink";
 
 export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
+  const budget = createBudget(`/${service.hub}/${service.slug}/`);
   const hubPath = `/${service.hub}/`;
   const hubName = service.hub === "water-heaters" ? "Water Heaters" : "Plumbing Services";
   const kids = childrenOf(service.hub, service.slug);
@@ -35,7 +38,9 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
             <div>
               <span className="eyebrow">{hubName}</span>
               <h1 className="text-4xl md:text-5xl font-bold mt-2 leading-tight">{service.name}</h1>
-              <p className="mt-4 text-white/85 leading-relaxed max-w-2xl">{service.intro}</p>
+              <p className="mt-4 text-white/85 leading-relaxed max-w-2xl">
+                <Linkify text={service.intro} budget={budget} />
+              </p>
               <p className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider border border-accent/60 rounded-md px-4 py-2">
                 {LICENSE_LABEL}
               </p>
@@ -90,7 +95,9 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
                   <h2 className="text-2xl md:text-3xl font-bold text-navy">{sec.heading}</h2>
                   <div className="mt-3 h-1 w-16 bg-brand-orange rounded-full" />
                   {sec.body?.map((p) => (
-                    <p key={p} className="mt-4 text-muted-foreground leading-relaxed">{p}</p>
+                    <p key={p} className="mt-4 text-muted-foreground leading-relaxed">
+                      <Linkify text={p} budget={budget} />
+                    </p>
                   ))}
                   {sec.list && (
                     <ul className="mt-5 space-y-3">
@@ -99,7 +106,7 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
                           <CheckCircle2 className="size-5 text-accent shrink-0 mt-0.5" />
                           <span>
                             {item.lead && <strong className="text-navy">{item.lead}: </strong>}
-                            {item.text}
+                            <Linkify text={item.text} budget={budget} />
                           </span>
                         </li>
                       ))}
