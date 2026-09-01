@@ -7,6 +7,15 @@
  */
 export type ServiceFaq = { q: string; a: string };
 
+/** A long-form content block rendered between "What's Included" and the FAQ. */
+export type ServiceSection = {
+  heading: string;
+  /** Paragraphs of prose. */
+  body?: string[];
+  /** Symptom / benefit list. `lead` is the bolded phrase before the colon. */
+  list?: { lead?: string; text: string }[];
+};
+
 export type ServiceEntry = {
   slug: string;
   hub: "plumbing-services" | "water-heaters";
@@ -16,9 +25,12 @@ export type ServiceEntry = {
   intro: string;
   bullets: string[];
   faqs: ServiceFaq[];
+  /** Optional long-form authority content. Pages without it render as before. */
+  sections?: ServiceSection[];
   /** Optional parent slug within the same hub, for breadcrumbs. */
   parent?: string;
 };
+
 
 const P = "plumbing-services" as const;
 const W = "water-heaters" as const;
