@@ -1,5 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Phone, ChevronRight, CalendarDays } from "lucide-react";
+import { Linkify } from "@/components/Linkify";
+import { createBudget } from "@/lib/interlink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
@@ -167,6 +169,7 @@ function BlogSplat() {
 
   if (data.kind === "post") {
     const p = findPost(data.year, data.month, data.slug)!;
+    const budget = createBudget(postPath(p));
     const related = posts.filter((o) => o !== p && o.categories.some((c) => p.categories.includes(c))).slice(0, 3);
     return (
       <div className="min-h-screen flex flex-col">
@@ -182,7 +185,9 @@ function BlogSplat() {
               ))}
             </div>
             <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
-              {p.body.map((para) => <p key={para}>{para}</p>)}
+              {p.body.map((para) => (
+                <p key={para}><Linkify text={para} budget={budget} /></p>
+              ))}
             </div>
             <div className="mt-10 rounded-2xl bg-brand-orange text-white p-8">
               <h2 className="text-2xl font-bold">Need a plumber in the 209 & 350?</h2>

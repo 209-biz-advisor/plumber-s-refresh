@@ -1,5 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Phone, MapPin, CheckCircle2, ArrowRight, Wrench, Droplets, Flame, ShieldCheck, Star, Landmark, Users, Calendar, AlertTriangle } from "lucide-react";
+import { Linkify } from "@/components/Linkify";
+import { createBudget } from "@/lib/interlink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
@@ -185,7 +187,7 @@ function CityPage() {
               <span className="eyebrow">Part of the {city.name} Community</span>
               <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">{city.local.identity}</h2>
               <p className="mt-4 text-lg text-navy/80 font-semibold italic">{city.local.tagline}</p>
-              <p className="mt-4 text-muted-foreground">{city.local.intro}</p>
+              <p className="mt-4 text-muted-foreground"><Linkify text={city.local.intro} budget={budget} /></p>
             </div>
 
             <div className="mt-10 grid lg:grid-cols-3 gap-6">
@@ -237,7 +239,7 @@ function CityPage() {
             <div className="mt-10 bg-navy-deep text-white rounded-2xl p-8 md:p-10" style={{ boxShadow: "var(--shadow-elegant)" }}>
               <span className="eyebrow text-accent">Why It Matters for Your {city.name} Home</span>
               <h3 className="text-2xl md:text-3xl font-bold mt-2">The Mainline Approach in {city.name}</h3>
-              <p className="mt-4 text-white/85">{city.local.plumbingTieIn}</p>
+              <p className="mt-4 text-white/85"><Linkify text={city.local.plumbingTieIn} budget={budget} /></p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
                 <Link to="/contact-us/" className="btn-outline border-white text-white hover:bg-white hover:text-navy">Request Service</Link>
