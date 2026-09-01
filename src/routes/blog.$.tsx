@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Phone, ChevronRight, CalendarDays } from "lucide-react";
 import { Linkify } from "@/components/Linkify";
-import { createBudget } from "@/lib/interlink";
+import { planLinks } from "@/lib/interlink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
