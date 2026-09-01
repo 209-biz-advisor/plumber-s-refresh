@@ -8,6 +8,7 @@ import {
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { QuickQuoteForm } from "@/components/QuickQuoteForm";
+import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import heroCover from "@/assets/hero-cover.png";
 import miguelOwner from "@/assets/miguel-owner.png";
 import miguelWithLogo from "@/assets/miguel-with-logo.png.asset.json";
@@ -124,12 +125,7 @@ function HomePage() {
               <div className="flex items-center gap-2"><ShieldCheck className="size-4 text-accent" /> {LICENSE_SHORT}</div>
             </div>
           </div>
-          <QuickQuoteForm
-            title="Need Help?"
-            subtitle="Send a quick request and we'll call you right back."
-            compact
-            className="w-full max-w-md lg:ml-auto"
-          />
+          <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
           </div>
         </div>
       </section>
