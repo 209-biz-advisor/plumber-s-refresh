@@ -1356,9 +1356,61 @@ export const services: ServiceEntry[] = [
     intro:
       "The right disposal for a busy kitchen isn't the cheapest one on the shelf. We install quiet, higher-horsepower units, tie in the dishwasher correctly, and make sure the drain arm isn't fighting you.",
     bullets: ["1/2 to 1 HP unit sizing", "Sound-insulated models", "Dishwasher inlet connection", "Drain alignment and P-trap correction", "Old unit removed and hauled away"],
+    sections: [
+      {
+        heading: "Garbage Disposal Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A disposal is the one appliance under your sink that touches every meal you cook. When it is sized right and mounted right, cleanup is quiet and the drain stays clear. When it is undersized or installed carelessly, you get noise, jams, leaks at the flange and a kitchen line that clogs every few months.",
+          "We install new disposals and replace failed ones for homeowners across Stanislaus and San Joaquin County. Family owned in Escalon since 2010, CA Lic. #953726 (C-36 Plumbing), with Miguel's 37+ years in the trade behind every recommendation.",
+        ],
+      },
+      {
+        heading: "The Installation Process",
+        body: ["Nothing about this is improvised. Every install follows the same sequence so the result is repeatable."],
+        list: [
+          { lead: "Assessment", text: "we confirm the sink flange type, cabinet clearance, drain arm height and whether the outlet and switch are correct for the new unit." },
+          { lead: "Removal", text: "the old unit comes off, the flange and hardware are cleaned up, and we inspect the trap and drain arm for wear." },
+          { lead: "Mounting", text: "a fresh mounting assembly and seal at the sink flange, torqued evenly so it does not weep months later." },
+          { lead: "Drain and dishwasher tie-in", text: "the discharge is aligned to the trap without strain and the dishwasher inlet is connected and secured with a high loop." },
+          { lead: "Electrical connection", text: "cord or hardwire terminated properly and the switch confirmed under load." },
+          { lead: "Test and cleanup", text: "we run it under water, watch every joint for drips, then haul the old unit away and leave the cabinet dry." },
+        ],
+      },
+      {
+        heading: "Choosing the Right Unit for Your Kitchen",
+        body: [
+          "Horsepower is about how much waste you generate and how forgiving you want the unit to be. Half-horse units suit light single-person cooking. Three-quarter horse is the right answer for most families in this valley. A full horsepower unit belongs in a household that cooks heavily, hosts often, or has had jams with the previous disposal.",
+          "Beyond horsepower, the differences that actually matter day to day are sound insulation, stainless grinding components that resist corrosion in hard water, and continuous versus batch feed. We will talk through those before anything is ordered, and we install customer-supplied units without complaint.",
+        ],
+      },
+      {
+        heading: "What a Modern Disposal Upgrades For You",
+        list: [
+          { lead: "Noticeably quieter operation", text: "insulated chambers and better motor mounts make normal conversation possible during cleanup." },
+          { lead: "More grinding power", text: "higher torque means fewer jams and less standing over the sink with the reset button." },
+          { lead: "Better corrosion resistance", text: "stainless components hold up to the hard water we deal with across the 209 & 350." },
+          { lead: "Fewer kitchen drain clogs", text: "finer grinding sends smaller particles into the line instead of sludge that packs the trap." },
+          { lead: "Lower water use per cycle", text: "current models grind faster, so the tap runs for less time." },
+          { lead: "A correct, code-compliant install", text: "proper high loop, secure electrical and a flange that stays sealed." },
+        ],
+      },
+      {
+        heading: "Why Mainline for Kitchen Work",
+        body: [
+          "Most disposal failures we replace were installed with a reused mounting seal, a strained drain arm, or a dishwasher line run flat. Those shortcuts are why a two-hour job becomes a leak call. We do it once, correctly, and stand behind it.",
+          "If your kitchen line is slow along with the disposal, mention it when you call and we will bring drain equipment on the same visit rather than scheduling twice.",
+        ],
+      },
+    ],
     faqs: [
       { q: "What horsepower do I need?", a: "3/4 HP suits most families; 1 HP if you cook heavily or have a large household." },
       { q: "Can you install one I bought?", a: "Yes, customer-supplied units are fine." },
+      { q: "How long does a garbage disposal installation take?", a: "Most replacements run about an hour to ninety minutes. A first-time install that needs a switch, an outlet or drain rework takes longer, and we will tell you before we start." },
+      { q: "What are the signs I need a new disposal instead of a repair?", a: "Leaking from the bottom shell, a motor that will not turn after the reset, repeated jams on normal food waste, or a unit past about a decade that has already been repaired once." },
+      { q: "What types of disposals do you install?", a: "Continuous feed and batch feed, half through one horsepower, sound-insulated and stainless-component models from the major brands, plus units you supply yourself." },
+      { q: "Can a new disposal reduce kitchen odors?", a: "Yes. Finer grinding and a properly sealed flange leave less food packed in the chamber and less residue coating the drain line, which is where most of the smell comes from." },
+      { q: "Do I need a special drain or electrical setup?", a: "You need a dedicated switched circuit and a drain arm at the right height. We verify both during the assessment and correct them if they are wrong." },
+      { q: "Do you remove and dispose of the old unit?", a: "Yes. Removal, haul-away and cleanup are part of the installation." },
     ],
   },
   {
