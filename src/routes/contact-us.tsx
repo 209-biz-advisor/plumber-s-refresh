@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { Phone, MapPin, Clock, Mail, Send, ShieldCheck } from "lucide-react";
+import { Phone, MapPin, Clock, Mail, ShieldCheck } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { QuickQuoteForm } from "@/components/QuickQuoteForm";
+import { GHLQuoteForm } from "@/components/GHLQuoteForm";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { GOOGLE_MAPS_EMBED, GOOGLE_MAPS_URL } from "@/lib/reviews";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
@@ -23,7 +23,6 @@ export const Route = createFileRoute("/contact-us")({
 });
 
 function ContactPage() {
-  const [sent, setSent] = useState(false);
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
@@ -39,12 +38,7 @@ function ContactPage() {
               <a href="sms:2098381000" className="btn-outline">Text Us</a>
             </div>
           </div>
-          <QuickQuoteForm
-            title="Need Help?"
-            subtitle="Quick request, fast callback."
-            compact
-            className="w-full max-w-md lg:ml-auto"
-          />
+          <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
         </div>
       </section>
 
@@ -52,29 +46,30 @@ function ContactPage() {
       <section className="py-20">
         <div className="container-x grid lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2 bg-white rounded-2xl border border-border p-8" style={{ boxShadow: "var(--shadow-elegant)" }}>
-            {sent ? (
-              <div className="text-center py-12">
-                <div className="size-16 mx-auto rounded-full bg-accent/20 flex items-center justify-center"><Send className="size-7 text-accent" /></div>
-                <h3 className="mt-5 text-2xl font-bold text-navy">Thanks, we'll be in touch!</h3>
-                <p className="mt-2 text-muted-foreground">We'll reply shortly. For emergencies, call 209.838.1000.</p>
-              </div>
-            ) : (
-              <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="grid sm:grid-cols-2 gap-4">
-                <h2 className="sm:col-span-2 text-2xl font-bold text-navy">Request Service</h2>
-                <Input label="First Name" name="first" required />
-                <Input label="Last Name" name="last" required />
-                <Input label="Phone" name="phone" type="tel" required />
-                <Input label="Email" name="email" type="email" required />
-                <Input label="Address" name="address" className="sm:col-span-2" />
-                <div className="sm:col-span-2">
-                  <label className="block text-sm font-semibold text-navy mb-1">How can we help?</label>
-                  <textarea required rows={5} className="w-full rounded-lg border border-input px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring" />
-                </div>
-                <button type="submit" className="btn-primary sm:col-span-2 justify-self-start">
-                  <Send className="size-4" /> Send Message
-                </button>
-              </form>
-            )}
+            <span className="eyebrow">What Happens Next</span>
+            <h2 className="text-2xl md:text-3xl font-bold text-navy mt-2">How We Handle Your Request</h2>
+            <ol className="mt-6 space-y-5">
+              {[
+                { t: "You reach a real person", d: "Call 209.838.1000 during business hours and you'll talk to our team, never a call center." },
+                { t: "We triage the problem", d: "Emergencies like burst pipes, sewer backups and dead water heaters get priority scheduling." },
+                { t: "You get a flat-rate quote", d: "We diagnose on site and quote before any work begins, so the invoice is never a surprise." },
+                { t: "Licensed work, cleaned up", d: `${LICENSE_LABEL}. Permits pulled where required, and we leave the space cleaner than we found it.` },
+              ].map((s, i) => (
+                <li key={s.t} className="flex gap-4">
+                  <div className="size-10 shrink-0 rounded-lg bg-brand-orange-deep text-white font-display text-xl flex items-center justify-center">
+                    {i + 1}
+                  </div>
+                  <div>
+                    <div className="font-bold uppercase tracking-wider text-navy text-sm">{s.t}</div>
+                    <p className="mt-1 text-muted-foreground text-sm">{s.d}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
+              <a href="sms:2098381000" className="btn-outline">Text Us</a>
+            </div>
           </div>
 
           <aside className="space-y-5">
@@ -127,16 +122,9 @@ function ContactPage() {
         </div>
       </section>
 
-      <SiteFooter />
-    </div>
-  );
-}
+      <EmergencyRepairsCTA />
 
-function Input({ label, className = "", ...rest }: { label: string; className?: string } & React.InputHTMLAttributes<HTMLInputElement>) {
-  return (
-    <div className={className}>
-      <label className="block text-sm font-semibold text-navy mb-1">{label}</label>
-      <input {...rest} className="w-full rounded-lg border border-input px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring" />
+      <SiteFooter />
     </div>
   );
 }

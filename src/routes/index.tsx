@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
 import {
   Phone, Wrench, Droplets, Flame, ShieldCheck, Clock, Star, ArrowRight,
-  CheckCircle2, MessageSquare, Mail, MapPin, DollarSign, Users, Award, BookOpen, Send,
+  CheckCircle2, MessageSquare, Mail, MapPin, DollarSign, Users, Award, BookOpen,
   BadgePercent, CalendarClock, AlertTriangle, ThumbsUp,
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { GHLQuoteForm } from "@/components/GHLQuoteForm";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import heroCover from "@/assets/hero-cover.png";
 import miguelOwner from "@/assets/miguel-owner.png";
 import miguelWithLogo from "@/assets/miguel-with-logo.png.asset.json";
@@ -86,7 +86,7 @@ const stats = [
 ];
 
 function HomePage() {
-  const [sent, setSent] = useState(false);
+
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -545,81 +545,23 @@ function HomePage() {
         </div>
       </section>
 
-      {/* INLINE CONTACT FORM */}
-      <section className="bg-brand-orange-deep text-white py-20">
-        <div className="container-x grid lg:grid-cols-2 gap-12 items-start">
-          <div>
-            <span className="eyebrow !text-white/80">Let's Get Started</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-2 leading-tight">
-              Plumbing Can Get a Bit Hairy. <br />
-              <span className="text-white/90">Bring It On.</span>
-            </h2>
-            <p className="mt-5 text-white/90 max-w-md">
-              Ready to work with plumbers who truly understand your home or business? Call 209.838.1000
-              or submit the form to request an appointment. Whether you're dealing with an emergency or
-              planning preventive maintenance, we're here to help.
-            </p>
-            <div className="mt-8 space-y-3 text-white/95">
-              <div className="flex gap-3 items-center"><Phone className="size-5" /> <a href="tel:+12098381000" className="font-bold">209.838.1000</a></div>
-              <div className="flex gap-3 items-center"><MapPin className="size-5" /> 18332 Campbell Ave, Escalon, CA</div>
-              <div className="flex gap-3 items-center"><Clock className="size-5" /> Emergency Service Available</div>
-            </div>
-          </div>
-          <form
-            onSubmit={(e) => { e.preventDefault(); setSent(true); }}
-            className="bg-white rounded-2xl p-7 text-navy"
-            style={{ boxShadow: "var(--shadow-elegant)" }}
-          >
-            {sent ? (
-              <div className="text-center py-10">
-                <div className="size-16 mx-auto rounded-full bg-accent/20 flex items-center justify-center"><Send className="size-7 text-accent" /></div>
-                <h3 className="mt-5 text-2xl font-bold">Thanks, we'll be in touch!</h3>
-                <p className="mt-2 text-muted-foreground">For emergencies, call 209.838.1000.</p>
-              </div>
-            ) : (
-              <>
-                <div className="grid grid-cols-2 gap-3">
-                  <input required placeholder="First Name*" className="border border-border rounded-lg px-4 py-3 text-sm" />
-                  <input required placeholder="Last Name*" className="border border-border rounded-lg px-4 py-3 text-sm" />
-                  <input required placeholder="Phone*" className="border border-border rounded-lg px-4 py-3 text-sm" />
-                  <input required type="email" placeholder="Email*" className="border border-border rounded-lg px-4 py-3 text-sm" />
-                </div>
-                <select className="w-full mt-3 border border-border rounded-lg px-4 py-3 text-sm bg-white">
-                  <option>Are you a new customer?</option>
-                  <option>Yes, first time</option>
-                  <option>No, returning customer</option>
-                </select>
-                <select className="w-full mt-3 border border-border rounded-lg px-4 py-3 text-sm bg-white">
-                  <option>How did you hear about us?</option>
-                  <option>Google</option>
-                  <option>Referral</option>
-                  <option>Facebook</option>
-                  <option>Other</option>
-                </select>
-                <textarea placeholder="How can we help?" rows={4} className="w-full mt-3 border border-border rounded-lg px-4 py-3 text-sm" />
-                <button type="submit" className="mt-4 w-full bg-navy-deep text-white py-3 rounded-lg font-bold uppercase tracking-wider text-sm hover:bg-navy transition">
-                  Contact Us
-                </button>
-                <p className="mt-3 text-xs text-muted-foreground">* required</p>
-              </>
-            )}
-          </form>
-        </div>
-      </section>
+      {/* EMERGENCY REPAIRS + PRIMARY FORM */}
+      <EmergencyRepairsCTA />
 
-      {/* EMERGENCY CTA */}
+      {/* MEET MIGUEL */}
       <section className="relative bg-navy-deep text-white overflow-hidden">
         <div className="container-x grid md:grid-cols-2 gap-8 items-center py-16">
           <div>
-            <span className="eyebrow">Emergency Service</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-2">Emergency Plumbing Repairs</h2>
+            <span className="eyebrow">Local &amp; Family Owned</span>
+            <h2 className="text-4xl md:text-5xl font-bold mt-2">The Mainline's Got Your Back</h2>
             <p className="mt-4 text-white/80 max-w-lg">
-              When disaster strikes, we move fast. Our team is on call for plumbing emergencies to stop
-              the flood, fix the failure, and restore your peace of mind.
+              Miguel, our owner and lead plumber, brings 37+ years of hands-on experience to every
+              call. When something fails in your home, you get a licensed pro who treats your family
+              like his own.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> Call Now</a>
-              <Link to="/contact-us/" className="btn-outline">Request Service</Link>
+              <Link to="/about-us/" className="btn-outline">Meet the Team</Link>
             </div>
           </div>
           <div className="flex justify-center">

@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Star, ChevronRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { QuickQuoteForm } from "@/components/QuickQuoteForm";
+import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 import { reviewProfiles, GOOGLE_RATING, GOOGLE_REVIEW_COUNT, GOOGLE_MAPS_URL, GOOGLE_MAPS_EMBED, SAME_AS } from "@/lib/reviews";
 
@@ -86,7 +86,7 @@ function ReviewsPage() {
                 <Link to="/contact-us/" className="btn-outline">Leave Us Feedback</Link>
               </div>
             </div>
-            <QuickQuoteForm title="Need Help?" subtitle="Tell us what's going on and we'll call you right back." compact className="w-full max-w-md lg:ml-auto" />
+            <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
           </div>
         </div>
       </section>

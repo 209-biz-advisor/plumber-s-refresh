@@ -2,7 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Flame, Phone, CheckCircle2, ChevronRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { QuickQuoteForm } from "@/components/QuickQuoteForm";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
+import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 import { waterHeaterServices } from "@/lib/services";
 import { serviceCities } from "@/lib/service-cities";
@@ -71,7 +72,7 @@ function WaterHeatersHub() {
                 <Link to="/coupons/" className="btn-outline">See Current Specials</Link>
               </div>
             </div>
-            <QuickQuoteForm title="Need Hot Water?" subtitle="Tell us what's going on and we'll call you right back." compact className="w-full max-w-md lg:ml-auto" />
+            <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
           </div>
         </div>
       </section>
@@ -137,6 +138,8 @@ function WaterHeatersHub() {
           </ul>
         </div>
       </section>
+
+      <EmergencyRepairsCTA />
 
       <SiteFooter />
     </div>

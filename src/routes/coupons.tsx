@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Ticket, ChevronRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { QuickQuoteForm } from "@/components/QuickQuoteForm";
+import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
 const URL = `${SITE_URL}/coupons/`;
@@ -69,7 +69,7 @@ function CouponsPage() {
                 <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
               </div>
             </div>
-            <QuickQuoteForm title="Claim An Offer" subtitle="Tell us which coupon you want and what you need done." compact className="w-full max-w-md lg:ml-auto" />
+            <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
           </div>
         </div>
       </section>
