@@ -104,7 +104,7 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
                           <CheckCircle2 className="size-5 text-accent shrink-0 mt-0.5" />
                           <span>
                             {item.lead && <strong className="text-navy">{item.lead}: </strong>}
-                            {item.text}
+                            <Linkify text={item.text} budget={budget} />
                           </span>
                         </li>
                       ))}
