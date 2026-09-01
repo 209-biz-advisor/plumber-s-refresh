@@ -9,6 +9,7 @@ import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { findCity, serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { SITE_URL, OG_IMAGE, LICENSE_LABEL } from "@/lib/site";
+import { KNOWS_ABOUT, serviceGeoCircle, similarToNodes } from "@/lib/entities";
 
 export const Route = createFileRoute("/areas-we-serve/$city")({
   loader: ({ params }) => {
