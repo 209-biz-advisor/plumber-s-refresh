@@ -42,9 +42,57 @@ export const services: ServiceEntry[] = [
     intro:
       "A slow sink is annoying. A backed-up main line is a wrecked weekend. We cable, snake and camera drain lines across Stanislaus and San Joaquin County, and we tell you straight whether you have a one-time clog or a line that needs real attention.",
     bullets: ["Kitchen, bath, laundry and main line clearing", "Cable machines and hydrojetting", "Camera inspection to confirm the cause", "Root intrusion and grease buildup removal", "Upfront flat-rate pricing before we start"],
+    sections: [
+      {
+        heading: "Drain Cleaning in Escalon, Modesto & Across the 209 & 350",
+        body: [
+          "Drains almost never fail all at once. They get slower, they gurgle, they hold water for a second longer each week, and then one evening the kitchen sink backs up while dinner is on the stove. By that point the blockage has usually been building for months.",
+          "We clear kitchen, bath, laundry, tub, shower and main sewer lines for homeowners and businesses throughout Stanislaus and San Joaquin County. Miguel has 37+ years in the trade and has been the owner and lead plumber here since 2010, so the tech at your door is not guessing about what a line is doing.",
+        ],
+      },
+      {
+        heading: "Signs Your Drain Needs Professional Cleaning",
+        body: ["One slow fixture is usually local. Several slow fixtures at once points at the main line, and that is the call you want to make sooner rather than later."],
+        list: [
+          { lead: "Water standing in the sink or tub", text: "the line is partially blocked and the restriction is only going to tighten." },
+          { lead: "Gurgling from another fixture", text: "air is being pushed back through the trap, which means the blockage is downstream." },
+          { lead: "Bad smell at the drain", text: "grease, food and biofilm coating the pipe wall, not just something in the trap." },
+          { lead: "Multiple fixtures slow at the same time", text: "a main line or branch line issue rather than a single clogged trap." },
+          { lead: "Water backing up somewhere else", text: "flush the toilet and the tub fills, and you have a main line blockage." },
+          { lead: "Repeat clogs in the same drain", text: "the cause was never removed. Cabling the same spot every few months is a symptom, not a repair." },
+        ],
+      },
+      {
+        heading: "How We Actually Clear the Line",
+        body: [
+          "We start by identifying which line is blocked and where the accessible cleanout is, then match the tool to the job. A cable machine cuts through soft blockages and root hair. Hydrojetting scours the full diameter of the pipe with water, which is what grease-loaded kitchen and restaurant lines actually need.",
+          "When a line has backed up more than once, we put a camera down it. That turns guesswork into a picture: roots at a joint, a belly holding water, a crushed section, or simply years of buildup. You see the screen with us, so the repair decision is yours and it is informed.",
+        ],
+      },
+      {
+        heading: "Why Drains Clog Harder in the Central Valley",
+        body: [
+          "Two local realities work against your drain lines. Our water is hard, so scale builds on the inside of the pipe and gives grease and debris something to grab. And a lot of Escalon, Modesto, Riverbank and Oakdale homes sit on mature lots where established tree and shrub roots have spent decades finding their way toward the moisture in a sewer joint.",
+          "Older neighborhoods add clay and cast iron lines to the mix, both of which roughen and scale with age. That is why a line that ran fine for twenty years suddenly needs attention twice in one year.",
+        ],
+      },
+      {
+        heading: "Keeping Drains Clear Between Visits",
+        body: [
+          "Scrape plates instead of rinsing them, keep grease and coffee grounds out of the sink, run hot water after doing dishes, and use a strainer in the shower. Skip the caustic store-bought drain chemicals. They sit on the blockage, generate heat, and in older galvanized and cast iron lines they attack the pipe more effectively than the clog.",
+          "If your home has a history of main line trouble, an annual cleaning is cheaper than a backup. We serve Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How fast can you clear my drain?", a: "Most residential clogs are cleared in a single visit, and we hold same-day slots every day for backups that can't wait." },
       { q: "Why does my drain keep clogging?", a: "Repeat clogs usually mean grease buildup, root intrusion or a bellied line. We run a camera so you are fixing the cause, not the symptom." },
+      { q: "How often should drains be professionally cleaned?", a: "Most homes do well with a main line cleaning every year or two. Homes with mature trees over the sewer line, or kitchens that see heavy cooking, benefit from an annual visit." },
+      { q: "Are chemical drain cleaners safe for my pipes?", a: "We do not recommend them. They rarely remove the real blockage and they are hard on older galvanized, cast iron and ABS lines as well as on your trap seals." },
+      { q: "What is the difference between snaking and hydrojetting?", a: "A cable punches through the blockage and restores flow. Hydrojetting uses high-pressure water to scrub the pipe wall clean, which is the better answer for grease, scale and recurring clogs." },
+      { q: "Do you use a camera on every drain call?", a: "Not on a simple one-time clog. We recommend it any time a line has backed up more than once, or when we need to confirm roots, a belly or a broken section before you spend money on a repair." },
+      { q: "Can you clear a main sewer line backup?", a: "Yes. Main line backups are one of our most common calls, and we will locate the cleanout, clear the line and tell you honestly what condition the pipe is in." },
+      { q: "Do you handle commercial kitchen drains and grease lines?", a: "Yes, including restaurants and multi-unit properties. Grease-loaded lines respond best to jetting on a scheduled interval so you are not closing the kitchen unexpectedly." },
     ],
   },
   {
