@@ -38,12 +38,7 @@ function ContactPage() {
               <a href="sms:2098381000" className="btn-outline">Text Us</a>
             </div>
           </div>
-          <QuickQuoteForm
-            title="Need Help?"
-            subtitle="Quick request, fast callback."
-            compact
-            className="w-full max-w-md lg:ml-auto"
-          />
+          <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
         </div>
       </section>
 
