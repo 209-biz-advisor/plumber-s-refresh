@@ -93,7 +93,9 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
                   <h2 className="text-2xl md:text-3xl font-bold text-navy">{sec.heading}</h2>
                   <div className="mt-3 h-1 w-16 bg-brand-orange rounded-full" />
                   {sec.body?.map((p) => (
-                    <p key={p} className="mt-4 text-muted-foreground leading-relaxed">{p}</p>
+                    <p key={p} className="mt-4 text-muted-foreground leading-relaxed">
+                      <Linkify text={p} budget={budget} />
+                    </p>
                   ))}
                   {sec.list && (
                     <ul className="mt-5 space-y-3">
