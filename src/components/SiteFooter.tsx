@@ -46,7 +46,14 @@ export function SiteFooter() {
             <li><Link to="/contact-us/" className="hover:text-accent">Contact</Link></li>
             <li><a href="/site-map/" className="hover:text-accent">Site Map</a></li>
             <li><a href="/privacy-policy/" className="hover:text-accent">Privacy Policy</a></li>
+            <li><a href="/cookie-policy/" className="hover:text-accent">Cookie Policy</a></li>
+            <li>
+              <button type="button" onClick={openCookiePreferences} className="text-left hover:text-accent">
+                Your Privacy Choices / Cookie Settings
+              </button>
+            </li>
             <li><a href="/terms-and-conditions/" className="hover:text-accent">Terms and Conditions</a></li>
+
           </ul>
 
           <div className="flex gap-3 mt-5">
