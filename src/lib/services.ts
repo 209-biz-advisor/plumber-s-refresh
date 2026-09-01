@@ -434,9 +434,61 @@ export const services: ServiceEntry[] = [
     intro:
       "New faucet, clean install. We replace the supply lines and angle stops at the same time, because that's where the next leak comes from otherwise.",
     bullets: ["Kitchen, bath and utility faucets", "Pull-down, touchless and wall-mount models", "New braided supply lines and angle stops", "Deck plate and hole configuration handled", "Old faucet removed"],
+    sections: [
+      {
+        heading: "Faucet Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A new faucet is the fastest visible upgrade in a kitchen or bathroom, and it is also the easiest place to create a slow leak that nobody notices until the cabinet floor is soft. The faucet itself is rarely the problem. The connections underneath it are.",
+          "We install kitchen, bathroom, laundry, bar and outdoor faucets across Stanislaus and San Joaquin County. Every install includes new braided supply lines and, where they are worn, new angle stops, because that is exactly where the next leak would have come from.",
+        ],
+      },
+      {
+        heading: "Faucet Types We Install",
+        body: ["Bring us a faucet you already bought or let us recommend one. Either way we flag fit issues before anything is uninstalled."],
+        list: [
+          { lead: "Pull-down and pull-out kitchen faucets", text: "the most practical choice for rinsing large pans and cleaning the sink itself." },
+          { lead: "Single-handle and widespread bath faucets", text: "matched to your existing hole configuration or a new deck plate." },
+          { lead: "Touchless and sensor faucets", text: "genuinely useful in a busy kitchen, and they need a clean power and solenoid setup to be reliable." },
+          { lead: "Wall-mount and pot filler", text: "great look, but they need the supply run planned before the wall is closed." },
+          { lead: "Laundry, bar and utility faucets", text: "the ones that get forgotten until they seize up." },
+          { lead: "Outdoor hose bibs and frost-proof sillcocks", text: "replaced with proper backflow protection." },
+        ],
+      },
+      {
+        heading: "Signs You May Need Faucet Replacement",
+        body: ["If the fixture keeps coming back for repair, replacement is usually the better spend."],
+        list: [
+          { lead: "Dripping that returns after repair", text: "the valve seat inside the body is worn past the point a new cartridge fixes." },
+          { lead: "Corrosion or mineral crust at the base", text: "water has been sitting where it should not, and the finish is failing." },
+          { lead: "No parts available", text: "an off-brand or discontinued faucet with no serviceable cartridge." },
+          { lead: "Weak flow that cleaning does not fix", text: "scale inside the body itself rather than in the aerator." },
+          { lead: "Wobbling or loose spout", text: "worn mounting hardware, and often a leak under the deck already." },
+        ],
+      },
+      {
+        heading: "Caring for a New Faucet in Valley Water",
+        body: [
+          "Hard water is the enemy of a shiny finish. Wipe the faucet dry after heavy use, clean the aerator every few months by unscrewing it and soaking it in white vinegar, and skip abrasive cleaners and anything with bleach on brushed and matte finishes.",
+          "Brushed nickel and matte black hide spotting better than polished chrome, which is worth knowing before you buy. If mineral is aggressive at your address, a properly sized water softener protects the faucet, the water heater and everything else on the line.",
+        ],
+      },
+      {
+        heading: "Why Homeowners Trust Mainline With Fixture Work",
+        body: [
+          "Family owned in Escalon since 2010, licensed as a California C-36 plumbing contractor, Lic. #953726, and led by Miguel with 37+ years in the trade. Flat-rate quote before we start, old faucet hauled away, and a leak check by hand at every joint before we leave.",
+          "We install faucets in Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding 209 & 350 communities. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Do you replace the shutoff valves too?", a: "We recommend it on any faucet install; old angle stops are the most common post-install leak." },
       { q: "How long does it take?", a: "Most faucet installs run one to two hours." },
+      { q: "How do I know which faucet is right for my home?", a: "It comes down to your sink's hole configuration, the depth of the basin, how you use the room and the finish you want to live with. We will confirm fit before removing anything." },
+      { q: "Can I install a faucet myself?", a: "Some people do. What we get called out for afterward is a reused angle stop that weeps, an overtightened supply nut, or a mounting that was never fully sealed to the deck." },
+      { q: "Will a new faucet improve water efficiency?", a: "Yes. Current models move less water while feeling the same at the sink, which shows up on both the water and the water heating side." },
+      { q: "What faucets work best for commercial spaces?", a: "Commercial-grade single-handle or sensor faucets with serviceable cartridges and metal bodies. They cost more up front and last far longer under heavy use." },
+      { q: "Is a new faucet covered under warranty?", a: "Manufacturers warranty the fixture itself, and our workmanship covers the installation. Keep your paperwork and we will note the model on the invoice." },
+      { q: "How can I keep a faucet from leaking again?", a: "New supply lines and angle stops at install time, an aerator cleaned a few times a year, and a look under the sink for dampness every so often. That is most of it." },
     ],
   },
   {
