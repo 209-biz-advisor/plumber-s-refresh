@@ -7,6 +7,7 @@ import { plumbingServices, waterHeaterServices, servicePath } from "@/lib/servic
 import { serviceCities } from "@/lib/service-cities";
 import { categories, posts, postPath } from "@/lib/blog";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/site-map/`;
 const DESC =
   "Complete site map for Mainline Plumbing Inc: every plumbing service, water heater page, city service area, coupon, article and company page in one place.";
@@ -111,6 +112,7 @@ function SiteMapPage() {
           <Group title="Articles" links={posts.map((p) => ({ href: postPath(p), label: p.title }))} />
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

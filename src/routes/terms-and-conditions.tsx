@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/terms-and-conditions/`;
 const DESC =
   "Terms and Conditions for Mainline Plumbing Inc. of Escalon, CA. Website use, service agreements, payment terms, SMS terms, liability, and California governing law.";
@@ -338,6 +339,7 @@ function TermsPage() {
           </div>
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

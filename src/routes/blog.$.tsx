@@ -5,6 +5,7 @@ import { planLinks } from "@/lib/interlink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import {
   categories,
   findPost,
@@ -267,6 +268,7 @@ function BlogSplat() {
         sub={`Mainline Plumbing articles from ${titleCase(data.month)} ${data.year}.`}
       />
       <PostGrid list={postsByMonth(data.year, data.month)} />
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/about-us/video-center/`;
 const DESC =
   "Mainline Plumbing video center: meet Miguel, see how we approach water heater replacement, and get plain-English plumbing tips for Central Valley homes.";
@@ -64,6 +65,7 @@ function VideoCenter() {
           ))}
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

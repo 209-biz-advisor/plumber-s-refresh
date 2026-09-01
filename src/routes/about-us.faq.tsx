@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/about-us/faq/`;
 const DESC =
   "Frequently asked questions about Mainline Plumbing Inc: hours, service area, pricing, permits, water heater replacement, emergency plumbing and our C-36 license.";
@@ -107,6 +108,7 @@ function FaqPage() {
           ))}
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

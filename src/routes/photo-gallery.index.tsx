@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/photo-gallery/`;
 const DESC =
   "Photo gallery from Mainline Plumbing Inc: water heater installs, repipes, drain and sewer work, plus the Escalon crew behind every job.";
@@ -61,6 +62,7 @@ function GalleryIndex() {
           ))}
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

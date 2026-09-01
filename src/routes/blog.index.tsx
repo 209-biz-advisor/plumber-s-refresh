@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL } from "@/lib/site";
 import { posts, postPath, categories, years, titleCase } from "@/lib/blog";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/blog/`;
 const DESC =
   "Plumbing tips, water heater guidance and emergency advice from Mainline Plumbing Inc., a family-owned C-36 licensed plumber serving Escalon and the Central Valley since 2010.";
@@ -95,6 +96,7 @@ function BlogIndex() {
           </aside>
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

@@ -6,6 +6,7 @@ import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 import { reviewProfiles, GOOGLE_RATING, GOOGLE_REVIEW_COUNT, GOOGLE_MAPS_URL, GOOGLE_MAPS_EMBED, SAME_AS } from "@/lib/reviews";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/reviews/`;
 const DESC =
   "See why Central Valley homeowners trust Mainline Plumbing Inc. Read reviews, leave your own, and learn what to expect from our licensed C-36 plumbers.";
@@ -185,6 +186,7 @@ function ReviewsPage() {
           </div>
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );
