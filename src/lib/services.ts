@@ -1419,9 +1419,59 @@ export const services: ServiceEntry[] = [
     intro:
       "Backflow devices protect the drinking water supply, and most water districts require an annual certified test. We install, test, repair and file the paperwork.",
     bullets: ["Annual certified testing", "Device installation and replacement", "Repair and rebuild kits", "Irrigation and fire line assemblies", "Reports filed with your water district"],
+    sections: [
+      {
+        heading: "Backflow Testing & Prevention Across the 209 & 350",
+        body: [
+          "Backflow is what happens when pressure reverses and water that already left the potable system gets pulled back into it. Irrigation water, boiler water, wash-down water, fire line water: none of it belongs at your kitchen tap. A backflow assembly is the one device standing between the two, and it is a mechanical part that wears.",
+          "We install, test, repair and certify assemblies for homes, businesses, irrigation systems and fire lines throughout Stanislaus and San Joaquin County, and we file the passing report with your water district so the compliance side is handled, not just the wrench side. CA Lic. #953726 (C-36 Plumbing).",
+        ],
+      },
+      {
+        heading: "Why Testing and Early Detection Matter",
+        body: ["An assembly can look perfectly fine and still fail its test. The internals are springs, seats and check valves, and they degrade quietly."],
+        list: [
+          { lead: "Health protection", text: "a failed check valve is a direct path for irrigation, chemical or stagnant water into drinking water." },
+          { lead: "Regulatory compliance", text: "districts here require annual certified testing on most assemblies, with deadlines and penalties for missed tests." },
+          { lead: "Early repair instead of replacement", text: "a worn seat caught on a test is a rebuild kit; the same assembly ignored for years becomes a full replacement." },
+          { lead: "Business continuity", text: "for restaurants, medical offices and commercial buildings, an out-of-compliance assembly can interrupt operations." },
+          { lead: "Documentation you can produce", text: "a filed passing report answers the district, the inspector and the insurer without a scramble." },
+        ],
+      },
+      {
+        heading: "Common Causes of Backflow Problems",
+        list: [
+          { lead: "Pressure loss on the main", text: "a break or heavy draw drops supply pressure and reverses flow direction." },
+          { lead: "Worn check valves and springs", text: "the most common test failure, and usually a rebuild rather than a replacement." },
+          { lead: "Debris and scale fouling the seats", text: "hard water and grit in the line keep the check from sealing fully." },
+          { lead: "Freeze damage", text: "an unprotected assembly cracked over winter often tests fine until it is put back under pressure." },
+          { lead: "Cross-connections added later", text: "an irrigation zone, water feature or utility sink plumbed in without proper protection." },
+          { lead: "Aging assemblies", text: "older devices with obsolete parts that no longer hold pressure at the required differential." },
+        ],
+      },
+      {
+        heading: "Our Complete Backflow Solution",
+        body: [
+          "We start with the device you already have: identify the type, verify it is the right assembly for the hazard level, and test it to certification standards. If it passes, you get the report. If it does not, we tell you on the spot whether it is a rebuild or a replacement and what the district needs from you.",
+          "New installations are sized and placed to be testable and serviceable later, with proper clearances and freeze protection, so next year's test is a fifteen-minute visit instead of a project.",
+        ],
+      },
+      {
+        heading: "Schedule Certified Backflow Testing",
+        body: [
+          "If you have a notice from your water district with a deadline on it, call 209.838.1000 and we will get you on the schedule before it lapses. Family owned in Escalon since 2010, serving the 209 & 350, licensed, bonded and insured.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How often must it be tested?", a: "Annually in nearly every district here, and you'll usually get a notice with a deadline." },
       { q: "What if it fails?", a: "We rebuild or replace the assembly and retest, then submit the passing report." },
+      { q: "What are the signs my backflow device may be failing?", a: "Continuous discharge from the relief port, water pooling under the assembly, a pressure drop after the device, discolored water, or visible corrosion and freeze cracking on the body." },
+      { q: "Can you repair a failed device or does it need replacing?", a: "Most failures are worn checks, springs or seats, and a rebuild kit restores them. Cracked bodies, freeze damage and obsolete assemblies with no available parts get replaced." },
+      { q: "Do I need backflow testing on a residential property?", a: "If your home has an irrigation system, a well, a fire sprinkler line, a pool fill line or any similar cross-connection, your district very likely requires an annual test." },
+      { q: "How do I receive proof of compliance after the test?", a: "We complete the certified test report, provide you a copy, and file it with your water district so the record is on their side as well as yours." },
+      { q: "How long does a backflow test take?", a: "A standard assembly test takes about twenty to thirty minutes, including a short water shutdown while the device is isolated." },
+      { q: "What makes Mainline the right choice for backflow work?", a: "Certified testing, 37+ years of field experience under Miguel, CA Lic. #953726, honest rebuild-versus-replace calls, and paperwork filed for you rather than left on your counter." },
     ],
   },
   {
