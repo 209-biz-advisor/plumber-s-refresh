@@ -756,9 +756,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Cracked clay, offset joints and root intrusion are the three things we find under most older Valley properties. We locate the exact failure point, quote a spot repair when that's honest, and a replacement when it isn't.",
     bullets: ["Camera locate before any digging", "Spot repair on isolated failures", "Full lateral replacement", "Root intrusion and collapsed line correction", "Site restored and compacted when we're done"],
+    sections: [
+      {
+        heading: "Sewer Line Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Every drain in your home ends up in one buried pipe. When that lateral cracks, shifts or fills with roots, the problem does not stay outside; it comes back through the lowest drain in the house. Sewage on a floor is not a plumbing inconvenience, it is a health issue and a property damage issue at the same time.",
+          "We locate the failure with a camera before anything gets dug, then repair the section or replace the run based on what the pipe actually looks like. You see the footage. CA Lic. #953726, C-36 plumbing, family owned in Escalon since 2010.",
+        ],
+      },
+      {
+        heading: "Do You Need Sewer Line Service?",
+        body: ["Laterals give warning signs long before they back up completely. These are the ones that matter."],
+        list: [
+          { lead: "Recurring backups in the same line", text: "the defect is structural, and cabling it is only buying time." },
+          { lead: "Multiple drains slow at once", text: "the shared lateral is restricted rather than one fixture trap." },
+          { lead: "Gurgling toilets and drains", text: "air displaced by a blockage or a bellied section holding water." },
+          { lead: "Sewer smell indoors or in the yard", text: "gas escaping through a crack or an open joint." },
+          { lead: "Lush green or sunken patches over the line", text: "wastewater feeding the soil, or soil washing away beneath it." },
+          { lead: "Slab cracks or shifting near the line path", text: "long-term leakage undermining the ground under the structure." },
+        ],
+      },
+      {
+        heading: "Why Older Valley Laterals Fail",
+        body: [
+          "Homes across Escalon, Modesto, Riverbank, Oakdale and Ripon were built with clay or cast iron laterals. Clay joints separate as soil expands and contracts through our wet winters and dry summers, and every separated joint is an invitation to roots. Cast iron roughens and scales from the inside until debris has something to catch on.",
+          "Mature landscaping does the rest. A tree planted forty years ago has spent every summer since sending roots toward the only reliable moisture in the yard, which is the seam in your sewer pipe.",
+        ],
+      },
+      {
+        heading: "Repair Options and How We Decide",
+        body: [
+          "A single break, one offset joint or roots at one point is a spot repair when the camera shows the rest of the pipe is sound. That means a targeted excavation, a replaced section, and a verified camera pass afterward.",
+          "Widespread cracking, a bellied run that holds water, or clay that has deteriorated end to end calls for replacing the lateral. Replacing once costs less than paying for the same emergency three times, and we will tell you plainly which category your line falls into rather than defaulting to the bigger job.",
+        ],
+      },
+      {
+        heading: "Protecting Your Sewer Line Going Forward",
+        body: [
+          "Keep grease, wipes, paper towels and hygiene products out of the drains, because those are what catch on a rough joint and start a blockage. Avoid planting trees over the lateral path. Install a cleanout if the property does not have one, so future inspections are quick and non-invasive.",
+          "If the line has already given you trouble, an annual camera check tells you whether it is stable or moving. Call 209.838.1000. Serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop and Salida.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Spot repair or full replacement?", a: "If the rest of the line images clean, a spot repair is right. If the pipe is failing throughout, replacing it once beats paying twice." },
       { q: "How long does it take?", a: "Most residential sewer repairs are completed in one to two days including inspection." },
+      { q: "What are the early warning signs of a sewer line issue?", a: "Repeat backups, several drains slowing together, gurgling toilets, sewer odor, and unusually green or sunken ground over the line." },
+      { q: "What should I avoid flushing to protect my sewer line?", a: "Wipes of any kind, paper towels, hygiene products, grease, coffee grounds and food solids. Wipes cause more backups than anything else we see." },
+      { q: "Will my landscaping be affected during a sewer repair?", a: "We keep excavation as narrow as the repair allows, and we backfill, compact and restore the area when the work is finished." },
+      { q: "Do I need a permit for sewer line work?", a: "Yes for replacement and most repairs. We pull the city or county permit and meet the inspector." },
+      { q: "Can roots be cleared instead of repairing the pipe?", a: "Clearing restores flow, but roots return through the same joint. The camera shows whether that joint needs repair to end the cycle." },
+      { q: "Should I have the sewer inspected before buying a home?", a: "On any home built before 1980, yes. A lateral is one of the largest surprise costs a new owner can inherit." },
     ],
   },
   {
@@ -767,9 +815,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Guessing is expensive. We push a camera down the line, locate the trouble spot to the foot, and hand you the footage so any recommendation we make is something you can see for yourself.",
     bullets: ["Sewer lateral and drain line inspection", "Depth and location marking above ground", "Recorded video provided to you", "Pre-purchase inspections for buyers", "Post-repair verification"],
+    sections: [
+      {
+        heading: "Video Camera Inspections in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Plumbing problems are hard to diagnose because they happen inside a pipe you cannot see. For most of the history of the trade, the only way to know what was happening in a buried line was to dig it up and look. A camera on a flexible reel changed that completely.",
+          "We feed a high-resolution camera down the drain or sewer lateral and watch the inside of the pipe in real time. You watch with us. Whatever we recommend afterward is based on something you have already seen with your own eyes.",
+        ],
+      },
+      {
+        heading: "What a Camera Inspection Finds",
+        body: ["A single pass usually answers every question worth asking about a line."],
+        list: [
+          { lead: "Blockages", text: "grease, sludge, solids and debris, and exactly how far down the line they sit." },
+          { lead: "Root intrusion", text: "which joint the roots entered through and how much of the diameter they are taking." },
+          { lead: "Cracks and offset joints", text: "structural failures that clearing will never fix." },
+          { lead: "Bellied sections", text: "a sag holding standing water, which is why some lines clog again and again." },
+          { lead: "Corrosion and scale", text: "how much life is realistically left in cast iron or galvanized pipe." },
+          { lead: "Collapse", text: "a crushed section, often under a driveway or a settled area of the yard." },
+        ],
+      },
+      {
+        heading: "On-Screen Locating: Marking the Spot Above Ground",
+        body: [
+          "Our camera carries a sonde transmitter, so as we watch the footage we also track the camera head from the surface. That means we can mark the exact spot and depth of the problem on your driveway or lawn with paint.",
+          "This is what keeps excavation small. Instead of trenching a line to search for a failure, we dig one targeted hole where we already know the break is.",
+        ],
+      },
+      {
+        heading: "Before You Buy, and After We Repair",
+        body: [
+          "For homebuyers, a sewer camera is the cheapest insurance in the transaction. A lateral replacement discovered before closing is a negotiating item; discovered after, it is your problem. On any Valley home built before 1980, we consider it essential.",
+          "We also camera lines after a repair or a jetting, so you have verification that the work actually accomplished what it was supposed to. And we recover lost valuables from traps and lines more often than you would expect.",
+        ],
+      },
+      {
+        heading: "Individualized Analysis, Not a Template",
+        body: [
+          "The equipment matters, but the interpretation matters more. Miguel has 37+ years in the trade, and knowing what a hairline offset means in clay pipe versus what scale means in cast iron is the part that determines whether you spend money in the right place.",
+          "You get the footage to keep. Call 209.838.1000 to schedule an inspection. CA Lic. #953726.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Can you tell where the problem is from the surface?", a: "Yes. Our camera has a sonde locator, so we mark the exact spot and depth on the ground." },
       { q: "Is a camera worth it before buying a home?", a: "Absolutely. A lateral replacement is one of the largest surprise costs a new homeowner can hit." },
+      { q: "Do I get a copy of the video?", a: "Yes. You keep the footage, which is useful for insurance, for a real estate negotiation, or simply for comparison at the next inspection." },
+      { q: "Does a camera inspection require digging?", a: "No. It goes in through an existing cleanout or fixture opening, which is the entire point of doing it before any excavation." },
+      { q: "How long does an inspection take?", a: "Usually under an hour for a residential sewer lateral, longer if we are inspecting several branch lines." },
+      { q: "Can a camera find a water leak?", a: "Not a pressurized supply leak; that calls for acoustic leak detection. A camera inspects drain and sewer lines." },
+      { q: "Should I camera the line after a backup?", a: "Yes, especially if it is the second one. Clearing tells you the line flows again; a camera tells you why it stopped." },
+      { q: "Can you inspect commercial drain lines?", a: "Yes, including restaurants, multi-unit buildings and commercial kitchens across the 209 & 350." },
     ],
   },
   {
@@ -778,9 +874,58 @@ export const services: ServiceEntry[] = [
     intro:
       "Downtime costs you money, so we schedule around your hours and show up with the truck stocked. From restaurant kitchens to property management portfolios, we keep commercial plumbing running.",
     bullets: ["Restaurant and commercial kitchen plumbing", "Commercial water heaters and recirculation", "Grease trap service and drain maintenance", "Multi-unit and property management accounts", "Before-hours and after-hours scheduling"],
+    sections: [
+      {
+        heading: "Commercial Plumbing in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Commercial plumbing is a different discipline than residential work. The volume is higher, the code requirements are stricter, the equipment is larger, and the cost of a failure is measured in closed doors and lost revenue rather than inconvenience.",
+          "We serve restaurants, retail, offices, salons, medical and dental suites, warehouses, churches, schools and multi-unit residential properties throughout Stanislaus and San Joaquin County. Miguel has 37+ years in the trade and CA Lic. #953726, C-36 plumbing.",
+        ],
+      },
+      {
+        heading: "A Full Range of Commercial Services Under One Roof",
+        body: ["One licensed contractor for the whole building, rather than three vendors who each know one system."],
+        list: [
+          { lead: "Commercial water heaters", text: "installation, repair and recirculation systems sized for real demand." },
+          { lead: "Drain and sewer maintenance", text: "cabling, hydrojetting and camera inspection on a schedule you choose." },
+          { lead: "Grease trap service", text: "cleaning and maintenance that keeps you compliant and keeps the kitchen line open." },
+          { lead: "Backflow prevention and testing", text: "required certification handled and documented." },
+          { lead: "Fixture and restroom plumbing", text: "commercial toilets, urinals, flush valves, sinks and ADA fixtures." },
+          { lead: "Gas line work", text: "for commercial ranges, fryers, water heaters and rooftop equipment." },
+          { lead: "Leak detection and repiping", text: "for aging commercial supply systems." },
+        ],
+      },
+      {
+        heading: "Scheduling Around Your Operation",
+        body: [
+          "A restaurant cannot shut its kitchen at noon and an office cannot lose its restrooms at 10 AM. We plan commercial work around your hours, including before opening and after closing when the job allows it, and we arrive with the truck stocked so one visit finishes the work.",
+          "For emergencies, commercial calls go to the front of the schedule. We are honest that we are not a 24-hour operation, and we are equally honest that a business down is the first call we take.",
+        ],
+      },
+      {
+        heading: "Why Local Businesses and Property Managers Choose Mainline",
+        body: [
+          "You get a licensed C-36 contractor who has worked in these buildings for years, flat-rate quotes before work begins, and consolidated invoicing for portfolios. No layers of dispatch between you and the person who will actually do the work.",
+          "We work with property managers on both one-off calls and ongoing maintenance across multiple addresses, with documentation that supports your records and your compliance obligations.",
+        ],
+      },
+      {
+        heading: "Preventive Maintenance Is Cheaper Than Closing",
+        body: [
+          "Scheduled drain jetting in a commercial kitchen, annual water heater service, backflow testing on time and periodic camera inspection of the main line eliminate most of the emergencies that shut a business down mid-shift.",
+          "Call 209.838.1000 to set up commercial service. Serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding 209 & 350 communities.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Do you work with property managers?", a: "Yes, on both one-off calls and ongoing portfolios, with consolidated invoicing." },
       { q: "Can you work outside business hours?", a: "Yes. We schedule commercial work around your operating hours whenever possible." },
+      { q: "What are common signs a commercial plumbing system needs repair?", a: "Slow or backing-up floor drains, recurring clogs in the same line, low pressure, water stains, running fixtures and rising water bills." },
+      { q: "How often should a commercial plumbing system be inspected?", a: "Annually for most properties, and more often for restaurants and high-traffic buildings where grease loading and constant use accelerate wear." },
+      { q: "What preventative steps can a business take?", a: "Scheduled drain jetting, on-time grease trap service, annual water heater maintenance, current backflow certification and periodic main line camera checks." },
+      { q: "Should I try to fix a commercial plumbing problem myself?", a: "No. Commercial systems carry code, health and liability requirements that residential fixes do not, and an improper repair can put your permits at risk." },
+      { q: "Do you service restaurants and commercial kitchens?", a: "Yes, including kitchen drain lines, grease traps, commercial gas lines, prep sinks and water heaters." },
+      { q: "What should I do about a commercial plumbing emergency?", a: "Shut off water to the affected area if you can and call 209.838.1000. Business-down calls get moved to the top of our schedule." },
     ],
   },
   {
@@ -789,9 +934,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Your remodel is only as good as the plumbing behind the tile. We handle rough-in, fixture relocation, venting and final connections so the finish work goes on straight the first time.",
     bullets: ["Supply and drain rough-in", "Fixture and appliance relocation", "Tub-to-shower conversions", "Pot fillers, farmhouse sinks and vanity sets", "Coordination with your contractor's schedule"],
+    sections: [
+      {
+        heading: "Kitchen & Bath Remodel Plumbing in Escalon, Modesto & the 209 & 350",
+        body: [
+          "The plumbing in a remodel is the part nobody sees and everybody depends on. Fixtures get chosen for looks, but whether they work and whether they pass inspection comes down to supply sizing, drain slope and venting that was set weeks before the tile went up.",
+          "We are regularly the plumbing trade on kitchen and bathroom remodels across Stanislaus and San Joaquin County, working alongside homeowners and general contractors. CA Lic. #953726, C-36 plumbing, 37+ years of trade experience behind the work.",
+        ],
+      },
+      {
+        heading: "What We Remodel",
+        body: ["Almost every part of a kitchen or bath touches plumbing somewhere."],
+        list: [
+          { lead: "Kitchen sinks and faucets", text: "including farmhouse and undermount installations that need deck and cabinet modification." },
+          { lead: "Dishwashers, disposals and pot fillers", text: "new supply, drain and air gap connections done to code." },
+          { lead: "Tubs and tub-to-shower conversions", text: "one of the most requested remodels we do, and one that changes the drain." },
+          { lead: "Showers, valves and pans", text: "mixing valve selection, pan slope and drain placement before waterproofing." },
+          { lead: "Toilets and bidet-ready setups", text: "flange height, rough-in dimension and supply set correctly for the model chosen." },
+          { lead: "Vanities and bathroom sinks", text: "new supply, drain and shutoff work for relocated or resized cabinetry." },
+        ],
+      },
+      {
+        heading: "Moving a Sink, Toilet or Shower",
+        body: [
+          "Relocating a fixture is usually possible, and the deciding factor is almost always the drain and vent, not the water supply. Drains need fall, and vents need a path. On a slab home that can mean cutting concrete; on a raised foundation it is generally much simpler.",
+          "We check the existing layout before quoting so you find out what a relocation actually involves at the design stage rather than midway through demolition.",
+        ],
+      },
+      {
+        heading: "Working With Your Contractor and the Inspector",
+        body: [
+          "Remodel plumbing happens in two visits that bracket everyone else's work: rough-in before drywall, and final connections after the finishes are in. Missing either window costs the whole project time, so we schedule to your contractor's timeline and hold to it.",
+          "Rough-in gets inspected. We install to current California code, pull what needs pulling, and meet the inspector so your project keeps moving.",
+        ],
+      },
+      {
+        heading: "Upgrades Worth Considering During a Remodel",
+        body: [
+          "A remodel is the one time the walls are already open, which makes it the cheapest moment to replace aging galvanized branches, add a shutoff where there never was one, upsize a drain, or run the gas line for a future range. Efficient fixtures and a properly sized water heater also fit naturally into this stage.",
+          "Planning a kitchen or bath project? Call 209.838.1000 and let us look at the plumbing before the design is final.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Do you work with our contractor?", a: "Yes, we're regularly the plumbing trade on remodels and we schedule to their timeline." },
       { q: "Can you move a sink or toilet?", a: "Usually yes, depending on the drain and vent layout. We check before quoting." },
+      { q: "What is the average timeline for remodel plumbing?", a: "Rough-in is typically one to three days depending on scope, then final connections happen after the finishes are installed." },
+      { q: "Can you help me choose fixtures?", a: "Yes. We will tell you which fixtures hold up in hard Central Valley water and which ones we get called back to service, before you buy." },
+      { q: "Do remodels need a permit?", a: "Relocated fixtures, new drain or vent work and gas line changes are permitted and inspected. We handle the plumbing side of that." },
+      { q: "Can you convert a tub to a walk-in shower?", a: "Yes, and it is one of our most common remodel requests. The drain location and pan slope are the parts that need to be right." },
+      { q: "How can I make my remodel more efficient?", a: "Efficient fixtures, a correctly sized water heater and properly insulated hot water runs. Small choices at rough-in that show up on every bill afterward." },
+      { q: "Should I replace old piping during the remodel?", a: "If you have galvanized or a history of pinholes, yes. The walls are already open, which is the least expensive that work will ever be." },
     ],
   },
   {
@@ -800,9 +993,57 @@ export const services: ServiceEntry[] = [
     intro:
       "A running toilet can waste hundreds of gallons a day, and a rocking one is usually a failed wax ring quietly soaking your subfloor. Both are quick fixes when they're caught early.",
     bullets: ["Running and phantom-flushing toilets", "Wax ring and flange replacement", "Fill valve, flapper and handle repair", "Rocking, leaking and loose toilets", "Stubborn clogs and weak flush"],
+    sections: [
+      {
+        heading: "Toilet Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "The toilet is the most used fixture in the house and the one most likely to waste water without anyone noticing. A worn flapper can pass hundreds of gallons a day silently, and it will show up on your bill long before you hear it.",
+          "We repair running, leaking, clogged, rocking and weak-flushing toilets for homes and businesses across Stanislaus and San Joaquin County, usually in a single visit. CA Lic. #953726, owner-operated since 2010.",
+        ],
+      },
+      {
+        heading: "Common Toilet Problems and What Causes Them",
+        body: ["Most toilet trouble comes down to six parts, and all six are repairable."],
+        list: [
+          { lead: "Constant running", text: "a worn flapper or a misadjusted fill valve letting water pass continuously into the bowl." },
+          { lead: "Phantom flushing", text: "the tank refilling on its own, which means water is leaking past the flapper seat." },
+          { lead: "Water pooling at the base", text: "a failed wax ring or a corroded flange. This water reaches your subfloor." },
+          { lead: "A rocking or loose toilet", text: "loose bolts or a damaged flange, and every rock breaks the wax seal further." },
+          { lead: "Weak or incomplete flush", text: "clogged rim jets, mineral buildup in the trapway, or a chain adjusted wrong." },
+          { lead: "Repeat clogs", text: "often a partially blocked branch line rather than the toilet itself." },
+        ],
+      },
+      {
+        heading: "Repair or Replace: How We Decide",
+        body: [
+          "Under roughly ten years old, with a sound tank and bowl, repair almost always wins. Flappers, fill valves, flush valves, supply lines, angle stops and wax rings are inexpensive parts and a straightforward job.",
+          "A cracked tank or bowl gets replaced, full stop; a hairline crack becomes a flood eventually. We also recommend replacement when a very old low-efficiency unit clogs constantly, because a modern fixture uses far less water per flush and actually clears the bowl.",
+        ],
+      },
+      {
+        heading: "Hard Water and Why Valley Toilets Struggle",
+        body: [
+          "Mineral-heavy Central Valley water leaves scale everywhere water sits or passes. In a toilet that means deposits in the rim jets and siphon jet, which is the single most common reason for a flush that seems to have lost its power over the years.",
+          "The same minerals stiffen flapper rubber and coat the flapper seat, which is why a toilet that never used to run suddenly does. Both are repairs, not replacements, when they are caught in time.",
+        ],
+      },
+      {
+        heading: "Water Conservation and California Standards",
+        body: [
+          "California limits new toilets to 1.28 gallons per flush, and modern high-efficiency fixtures clear the bowl at that volume better than the 3.5 and 5 gallon units they replaced. If you still have an original 1980s toilet, a replacement pays back in water use rather than just in appearance.",
+          "Either way, fixing a running toilet is the highest-return small plumbing repair in any house. Call 209.838.1000. Serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop and Salida.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Repair or replace?", a: "Under about ten years old, repair almost always wins. Cracked tanks or bowls get replaced." },
       { q: "Why is water pooling at the base?", a: "Usually a failed wax ring or a corroded flange. Don't wait on it, that water is reaching the subfloor." },
+      { q: "Why does my toilet keep running?", a: "Almost always a worn flapper or a fill valve out of adjustment. Both are quick, inexpensive repairs, and both waste a startling amount of water until they are done." },
+      { q: "Can a running toilet raise my water bill?", a: "Considerably. A silently leaking flapper can pass hundreds of gallons a day, and it is one of the most common causes of an unexplained bill jump." },
+      { q: "Why is my flush weak?", a: "Usually mineral buildup in the rim and siphon jets from hard water, or a flush chain adjusted too long. We clear the jets and reset the mechanism." },
+      { q: "Is it normal for a toilet to rock slightly?", a: "No. Movement means loose bolts or a damaged flange, and every rock works the wax seal loose. It should be corrected before it leaks." },
+      { q: "How can I prevent toilet clogs?", a: "Flush only waste and toilet paper. Wipes labeled flushable, paper towels and hygiene products are the cause of most of the clogs we clear." },
+      { q: "Can you repair commercial toilets?", a: "Yes, including flush valve and pressure-assist units in restaurants, offices and multi-unit properties." },
     ],
   },
   {
@@ -811,9 +1052,58 @@ export const services: ServiceEntry[] = [
     intro:
       "Central Valley water is hard, and hard water is what shortens water heater life, spots your glassware and crusts your fixtures. A properly sized softener is one of the highest-return plumbing upgrades here.",
     bullets: ["Softener sizing based on your actual hardness", "New installation with bypass and drain", "Resin, valve and control head repair", "Salt-free conditioner options", "Loop installation for new construction"],
+    sections: [
+      {
+        heading: "Water Softener Installation & Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Central Valley water is hard, and hard water is not just a nuisance about spotty glassware. Dissolved calcium and magnesium plate out as scale inside your water heater, inside your supply lines and inside every fixture cartridge in the house. That scale is why heaters fail early here and why faucets stop working smoothly.",
+          "We size, install, repair and service water softeners for homes and businesses throughout Stanislaus and San Joaquin County. CA Lic. #953726, and 37+ years of experience with exactly the water you have.",
+        ],
+      },
+      {
+        heading: "Signs You Need a Softener or Yours Has Failed",
+        body: ["Hard water leaves the same evidence in every house. If a softener is already installed and you see these, the unit has stopped working."],
+        list: [
+          { lead: "White crust on faucets and shower heads", text: "mineral scale depositing wherever water evaporates." },
+          { lead: "Spotted dishes and cloudy glassware", text: "minerals left behind as the water dries." },
+          { lead: "Soap and shampoo that will not lather", text: "hardness binding with soap instead of foaming." },
+          { lead: "Stiff laundry and faded fabrics", text: "minerals embedding in the fibers through every wash." },
+          { lead: "Dry skin and dull hair", text: "the residue hard water leaves behind on both." },
+          { lead: "A water heater that failed early", text: "scale on the bottom of the tank insulating the burner from the water." },
+          { lead: "Salt not being consumed", text: "on an existing softener, this means the unit has stopped regenerating." },
+        ],
+      },
+      {
+        heading: "Sizing Matters More Than Brand",
+        body: [
+          "A softener that is undersized for the household regenerates constantly, wears out early and still lets hard water through during peak use. Oversized, it wastes salt and water. The right size comes from two numbers: your measured hardness and your actual daily water use.",
+          "We test hardness on site rather than working from an average for the area, then match grain capacity to the household. Installation includes a bypass so the unit can be serviced without shutting off the house, and a proper drain connection.",
+        ],
+      },
+      {
+        heading: "Water Softener Repairs",
+        body: [
+          "Most softener failures are not the tank; they are the control head, the resin or the brine system. A unit that stops regenerating, a control valve stuck in bypass, a brine tank with a salt bridge crusted over the water, a leaking bypass valve or resin that has finally exhausted after ten to fifteen years are all repairable.",
+          "We diagnose the actual failure and tell you whether repair or replacement makes better sense given the unit's age. If a control head repair buys five more good years, that is what we will recommend.",
+        ],
+      },
+      {
+        heading: "Salt-Free Conditioners and Which to Choose",
+        body: [
+          "Salt-based softeners remove hardness minerals through ion exchange; that is true softening, and it is what protects a water heater. Salt-free conditioners do not remove minerals, they alter them so they are less likely to adhere, which reduces scale without the slick feel or the salt.",
+          "Both have a place. If your priority is water heater and fixture protection, a softener is the answer. If you are on a sodium-restricted diet or cannot accommodate a drain, a conditioner is a reasonable compromise. We will explain the tradeoff honestly instead of pushing one. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How hard is the water here?", a: "Hard enough to matter. We test on site and size the unit to your household's hardness and usage." },
       { q: "Will a softener help my water heater?", a: "Yes. Scale is the number one reason tanks fail early in this area." },
+      { q: "Are salt-free systems as effective as traditional softeners?", a: "They reduce scale but they do not remove hardness minerals. For water heater and fixture protection, a salt-based softener does more." },
+      { q: "How often should I maintain or replace my softener?", a: "Check salt monthly, have the unit serviced annually, and expect resin to last roughly ten to fifteen years before capacity drops off." },
+      { q: "Can hard water damage my water heater?", a: "Yes, and it is the most common cause of early tank failure here. Scale settles on the tank bottom and insulates the burner from the water it is heating." },
+      { q: "What are the installation requirements?", a: "A supply connection point, a drain for regeneration discharge, and power. Homes without a plumbed softener loop need one added, which we handle." },
+      { q: "Does softening affect the taste of drinking water?", a: "Slightly, and some households prefer a separate drinking water filter or reverse osmosis unit at the kitchen sink alongside a softener." },
+      { q: "My softener is not using salt. What is wrong?", a: "It has stopped regenerating, usually a control head problem or a salt bridge crusted over the brine tank water. Both are common and both are repairable." },
     ],
   },
   {
@@ -822,9 +1112,61 @@ export const services: ServiceEntry[] = [
     intro:
       "Between municipal chlorine and rural well water, no two homes here have the same water problem. We test first, then build a treatment system around what's actually in your water.",
     bullets: ["On-site water testing", "Whole-home filtration", "Iron, sulfur and sediment removal", "Well water treatment and pressure tanks", "Annual media and filter service"],
+    sections: [
+      {
+        heading: "Water Treatment Systems in Escalon, Modesto & the 209 & 350",
+        body: [
+          "No two properties in this area have the same water. A house on Modesto municipal supply is dealing with hardness and chlorine. A rural property on a well two miles away might be dealing with iron, sulfur odor, sediment and bacteria instead. Selling the same system to both is how people end up with equipment that does not solve their problem.",
+          "We test first. Then we design treatment around what the test actually shows. CA Lic. #953726, family owned in Escalon since 2010.",
+        ],
+      },
+      {
+        heading: "Common Water Treatment Problems and How to Prevent Them",
+        body: ["Most of the failures we get called about are maintenance items, not equipment defects."],
+        list: [
+          { lead: "Hard water breaking through", text: "an undersized or failing softener no longer removing hardness minerals." },
+          { lead: "Clogged filters", text: "restricting flow and dropping pressure through the whole house. Replace on schedule." },
+          { lead: "System leaks", text: "worn fittings, connections and O-rings at the treatment equipment itself." },
+          { lead: "Loud or cycling equipment", text: "often a pressure tank or control valve issue rather than the treatment media." },
+          { lead: "Frequent regeneration", text: "the unit is undersized for the household, or the control settings are wrong." },
+          { lead: "Iron staining or sulfur smell", text: "common on well water, and treatable with the right media." },
+        ],
+      },
+      {
+        heading: "Benefits of Professional Water Treatment",
+        body: ["Treated water is a plumbing investment as much as a comfort one."],
+        list: [
+          { lead: "Protects your plumbing", text: "less scale in the pipes, the water heater and every fixture in the house." },
+          { lead: "Extends appliance life", text: "dishwashers, washing machines and water heaters all last longer on treated water." },
+          { lead: "Better taste and odor", text: "chlorine, sulfur and metallic taste removed at the source." },
+          { lead: "Skin, hair and laundry", text: "no mineral residue left behind on any of the three." },
+          { lead: "Lower operating cost", text: "a scale-free water heater uses less energy every single month." },
+        ],
+      },
+      {
+        heading: "Choosing the Right System",
+        body: [
+          "The right system follows the test results, the household's water use, the space and drain available where the equipment will live, and how much maintenance you actually want to perform. A whole-home carbon filter, a softener, a sediment prefilter and an iron filter all solve different problems, and some homes need two of them in series.",
+          "We lay out what each piece does and what it will not do, so you are buying based on your water rather than on a brochure.",
+        ],
+      },
+      {
+        heading: "Well Water and Rural Properties",
+        body: [
+          "Rural properties around Escalon, Oakdale and Riverbank often need sediment filtration, iron and manganese removal, sulfur odor treatment, and in some cases disinfection, along with a correctly sized pressure tank. Well systems also need periodic testing, because well water changes over time in ways municipal supply does not.",
+          "We service what we install and we service equipment other companies installed. Call 209.838.1000 for testing and treatment.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Do you test the water first?", a: "Always. Selling a system before testing is how people end up with the wrong equipment." },
       { q: "Do you service well systems?", a: "Yes, including sediment, iron and bacteria treatment for rural properties." },
+      { q: "How do I know if my water treatment system is failing?", a: "Hardness symptoms returning, a pressure drop through the house, no salt consumption, staining or odor coming back, or visible leaking at the equipment." },
+      { q: "What is the average lifespan of a water treatment system?", a: "Well-maintained equipment commonly serves ten to fifteen years, with filters and media replaced on schedule along the way." },
+      { q: "Can water treatment remove all contaminants?", a: "No single system does. Each technology targets specific contaminants, which is exactly why testing comes before equipment selection." },
+      { q: "How often should filters be changed?", a: "Depending on the stage and your water, typically every six to twelve months. Sediment prefilters on well water often need it sooner." },
+      { q: "Is professional installation necessary?", a: "For whole-home equipment, yes. It ties into the main supply and needs a proper bypass, drain and correct sizing to work and to stay serviceable." },
+      { q: "Do treatment systems need regular inspections?", a: "An annual check keeps performance where it should be and catches a failing control valve or exhausted media before you notice it at the tap." },
     ],
   },
   {
@@ -833,9 +1175,57 @@ export const services: ServiceEntry[] = [
     intro:
       "If you're buying bottled water by the case, a purification system pays for itself fast. We install reverse osmosis and carbon systems at the sink or for the whole house, and we keep the filters on schedule.",
     bullets: ["Reverse osmosis under-sink systems", "Whole-home carbon purification", "Refrigerator and pot filler tie-ins", "Filter replacement service", "Post-install water quality verification"],
+    sections: [
+      {
+        heading: "Water Purification in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Water that meets every regulatory standard can still taste like a swimming pool, leave scale on your kettle and carry more dissolved solids than you would choose to drink. Purification is about what comes out of the tap you actually drink from.",
+          "We install and service multi-stage purification, from under-sink reverse osmosis for drinking and cooking water to whole-home carbon systems that treat every fixture. We test before and after, so you can see what changed. CA Lic. #953726.",
+        ],
+      },
+      {
+        heading: "Signs You May Need a Purification System",
+        body: ["The tap usually tells you before a test does."],
+        list: [
+          { lead: "Chlorine taste or smell", text: "municipal disinfectant residual, and the most common complaint we hear." },
+          { lead: "Metallic or bitter taste", text: "dissolved metals or high total dissolved solids." },
+          { lead: "Cloudy water at the tap", text: "sediment or trapped air, and worth identifying which." },
+          { lead: "Buying bottled water regularly", text: "the clearest sign a purification system will pay for itself in convenience alone." },
+          { lead: "Rotten egg smell", text: "hydrogen sulfide, common on well water and treatable." },
+          { lead: "Staining in sinks and tubs", text: "iron, manganese or high mineral content." },
+        ],
+      },
+      {
+        heading: "Understanding Your Water Test Results",
+        body: [
+          "A test report is only useful if someone explains it. Total dissolved solids tell you the overall mineral load. Hardness tells you what will scale your water heater. Chlorine and chloramine explain taste and smell. Iron and manganese explain staining. pH affects how aggressive the water is toward your piping. Nitrates and bacteria matter most on well water.",
+          "We walk through the numbers with you and connect each one to a specific stage of treatment, so you know exactly what you are paying to remove and why.",
+        ],
+      },
+      {
+        heading: "Reverse Osmosis, Whole-Home Carbon, or Both",
+        body: [
+          "Reverse osmosis pushes water through a semi-permeable membrane and removes the widest range of dissolved contaminants. It is the right choice for drinking and cooking water at a single point of use, typically the kitchen sink, and it can tie into the refrigerator and a pot filler.",
+          "Whole-home carbon treats every tap in the house for chlorine, taste and odor, which is what you want for showers and laundry. Plenty of households install both: carbon for the whole house, reverse osmosis at the kitchen for drinking water.",
+        ],
+      },
+      {
+        heading: "Our Installation Process and Ongoing Service",
+        body: [
+          "We start with an on-site test and a conversation about what bothers you most about your water. Then we recommend the stages that address it, install with proper shutoffs and drain connections, and verify results by testing again afterward.",
+          "Filters and membranes are consumables. Carbon and sediment stages typically run six to twelve months, RO membranes several years, and we handle replacement on schedule so the system keeps performing rather than quietly stopping. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "RO or whole-home?", a: "RO for drinking and cooking water, whole-home carbon for taste, odor and chlorine at every tap. Many homes use both." },
       { q: "How often do filters change?", a: "Typically every six to twelve months depending on the stage and your usage." },
+      { q: "How do I know if my water is contaminated?", a: "Testing is the only definitive answer. Taste, smell, staining and cloudiness are useful clues about what to test for." },
+      { q: "What is the difference between filtration and purification?", a: "Filtration removes particles and specific compounds like chlorine. Purification goes further, removing dissolved solids and a much broader contaminant range, which is what reverse osmosis does." },
+      { q: "How long does installation take?", a: "An under-sink reverse osmosis system is usually a same-day install. Whole-home equipment takes longer because it ties into the main supply." },
+      { q: "Can I customize my purification system?", a: "Yes. Stages are selected from your test results, so a home with sulfur odor gets a different configuration than one with only chlorine taste." },
+      { q: "Do I need to replace filters regularly?", a: "Yes. A neglected filter stops treating and starts restricting flow, so scheduled replacement is part of owning the system." },
+      { q: "Is purified water safe for children and pets?", a: "Yes. Purified water is safe for everyone in the household, including for baby formula and pet bowls." },
     ],
   },
   {
@@ -844,9 +1234,57 @@ export const services: ServiceEntry[] = [
     intro:
       "A new toilet is a same-day upgrade. We set it level on a solid flange with a new supply line and shutoff, and we take the old one with us.",
     bullets: ["Standard, comfort height and dual flush models", "New wax ring, bolts, supply line and angle stop", "Flange repair or replacement when needed", "Bidet-ready and smart toilet setups", "Old toilet hauled away"],
+    sections: [
+      {
+        heading: "Toilet Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Setting a toilet looks simple and goes wrong in quiet ways. A flange sitting below finished floor height, a bolt overtightened into porcelain, a wax ring that never fully seated: none of those announce themselves on day one. They show up months later as a rocking fixture, a stained ceiling below, or a soft spot in the subfloor.",
+          "We install standard, comfort height, dual flush, one-piece, wall-hung, bidet-ready and smart toilets, and we haul the old unit away. CA Lic. #953726, 37+ years in the trade.",
+        ],
+      },
+      {
+        heading: "What a Complete Installation Includes",
+        body: ["A proper install replaces the parts that fail, not just the fixture."],
+        list: [
+          { lead: "Flange inspection and repair", text: "the most common hidden problem, and the one that causes rocking and leaks." },
+          { lead: "New wax ring or seal", text: "never reused, because a compressed ring will not seal a second time." },
+          { lead: "New closet bolts", text: "corroded bolts are why old toilets cannot be tightened properly." },
+          { lead: "New supply line and angle stop", text: "the two parts most likely to fail years after the toilet itself is fine." },
+          { lead: "Level setting and shimming", text: "so the fixture does not rock and break the wax seal." },
+          { lead: "Leak test and haul-away", text: "we verify a dry base under load and take the old unit with us." },
+        ],
+      },
+      {
+        heading: "Choosing the Right Toilet",
+        body: [
+          "Rough-in dimension comes first, and it is the measurement most people miss: the distance from the wall to the center of the drain, typically 12 inches but sometimes 10 or 14. Buy the wrong rough-in and the toilet will not fit the space.",
+          "After that it is preference. Comfort height suits most adults and anyone with mobility considerations. Dual flush saves water on liquid waste. One-piece units are easier to clean. Elongated bowls are more comfortable; round bowls fit tight bathrooms. We will tell you which brands we get called back to repair, which is worth knowing before you buy.",
+        ],
+      },
+      {
+        heading: "Do You Need a New Toilet or a Repair?",
+        body: [
+          "If the fixture is under about ten years old with a sound tank and bowl, repair is usually the better spend: flapper, fill valve, wax ring and supply line are inexpensive parts.",
+          "Replace when there is a crack anywhere in the tank or bowl, when a very old low-efficiency unit clogs constantly, when scale in the trapway has permanently weakened the flush, or when a wobble traces back to a floor and flange problem that has already been repaired once.",
+        ],
+      },
+      {
+        heading: "Water Savings and Local Standards",
+        body: [
+          "California requires new toilets to use no more than 1.28 gallons per flush. If your bathroom still has an original 3.5 or 5 gallon fixture, a modern high-efficiency toilet clears the bowl better and uses a fraction of the water, which shows up on the bill rather than just in the room.",
+          "Most installations are finished in under two hours, including flange work. Call 209.838.1000. Serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop and Salida.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How long does it take?", a: "Most installs are under two hours, including flange work." },
       { q: "Can you supply the toilet?", a: "Yes, or we'll install one you already purchased." },
+      { q: "Do I need to replace my toilet or can it be repaired?", a: "Under about ten years old with no cracks, repair usually wins. Cracked porcelain, constant clogging in a very old unit, or a repeat flange failure point to replacement." },
+      { q: "What are the benefits of a new toilet?", a: "Far less water per flush, a stronger and quieter flush, easier cleaning, and no more chasing repairs on worn internals." },
+      { q: "Can I install a toilet myself?", a: "You can, and flange height, bolt torque and wax ring seating are exactly where DIY installs fail. Those failures leak into the subfloor before you see them." },
+      { q: "How do I choose the right toilet for my bathroom?", a: "Start with the rough-in measurement from the wall to the drain center, then decide on height, bowl shape and flush type. We will confirm the fit before you buy." },
+      { q: "Do you haul away the old toilet?", a: "Yes, removal and disposal are part of the installation." },
+      { q: "Can you install a bidet-ready or smart toilet?", a: "Yes. Those need a supply connection for the bidet function and, for smart units, a nearby GFCI outlet, which we will confirm before install day." },
     ],
   },
   {
