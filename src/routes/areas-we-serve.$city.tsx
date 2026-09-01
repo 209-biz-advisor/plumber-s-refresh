@@ -66,7 +66,12 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
                   postalCode: "95320",
                   addressCountry: "US",
                 },
-                areaServed: { "@type": "City", name: `${city.name}, CA` },
+                areaServed: [
+                  { "@type": "City", name: `${city.name}, CA` },
+                  serviceGeoCircle(`${city.name}, CA and surrounding Central Valley (209 & 350)`),
+                ],
+                knowsAbout: KNOWS_ABOUT,
+                isSimilarTo: similarToNodes(),
                 openingHoursSpecification: [{
                   "@type": "OpeningHoursSpecification",
                   dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
