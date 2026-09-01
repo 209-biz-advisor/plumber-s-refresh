@@ -16,6 +16,7 @@ import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as CouponsRouteImport } from './routes/coupons'
+import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
 import { Route as ContactUsRouteImport } from './routes/contact-us'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
@@ -73,6 +74,11 @@ const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
 const CouponsRoute = CouponsRouteImport.update({
   id: '/coupons',
   path: '/coupons',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CookiePolicyRoute = CookiePolicyRouteImport.update({
+  id: '/cookie-policy',
+  path: '/cookie-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactUsRoute = ContactUsRouteImport.update({
@@ -198,6 +204,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
+  '/cookie-policy': typeof CookiePolicyRoute
   '/coupons': typeof CouponsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
@@ -230,6 +237,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
+  '/cookie-policy': typeof CookiePolicyRoute
   '/coupons': typeof CouponsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
@@ -263,6 +271,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/contact-us': typeof ContactUsRoute
+  '/cookie-policy': typeof CookiePolicyRoute
   '/coupons': typeof CouponsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
@@ -297,6 +306,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/contact-us'
+    | '/cookie-policy'
     | '/coupons'
     | '/privacy-policy'
     | '/reviews'
@@ -329,6 +339,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/contact-us'
+    | '/cookie-policy'
     | '/coupons'
     | '/privacy-policy'
     | '/reviews'
@@ -361,6 +372,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/contact-us'
+    | '/cookie-policy'
     | '/coupons'
     | '/privacy-policy'
     | '/reviews'
@@ -394,6 +406,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   ContactUsRoute: typeof ContactUsRoute
+  CookiePolicyRoute: typeof CookiePolicyRoute
   CouponsRoute: typeof CouponsRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ReviewsRoute: typeof ReviewsRoute
@@ -471,6 +484,13 @@ declare module '@tanstack/react-router' {
       path: '/coupons'
       fullPath: '/coupons'
       preLoaderRoute: typeof CouponsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cookie-policy': {
+      id: '/cookie-policy'
+      path: '/cookie-policy'
+      fullPath: '/cookie-policy'
+      preLoaderRoute: typeof CookiePolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact-us': {
@@ -642,6 +662,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   ContactUsRoute: ContactUsRoute,
+  CookiePolicyRoute: CookiePolicyRoute,
   CouponsRoute: CouponsRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   ReviewsRoute: ReviewsRoute,

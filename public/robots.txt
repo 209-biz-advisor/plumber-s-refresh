@@ -8,6 +8,7 @@ Allow: /
 Allow: /sitemap.xml
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /cookie-policy/
 Disallow: /lovable/
 Disallow: /api/
 

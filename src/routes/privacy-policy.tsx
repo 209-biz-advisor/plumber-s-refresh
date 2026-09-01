@@ -131,8 +131,8 @@ const sections: Section[] = [
     title: "7. Cookies and Tracking Technologies",
     body: (
       <>
-        <p>Our website may use cookies and similar technologies to improve website performance, understand user behavior, and enhance user experience.</p>
-        <p>You may disable cookies through your browser settings.</p>
+        <p>Our website uses cookies and similar technologies to improve website performance, understand user behavior, and enhance user experience. Analytics, advertising, and personalization technologies do not load until you allow that category in our consent banner.</p>
+        <p>You may change your choices at any time, and you may also disable cookies through your browser settings. We honor Global Privacy Control opt-out preference signals. Full details, including the categories you control and your CCPA and CPRA choices, are in our <Link to="/cookie-policy/" className="text-brand-orange font-semibold hover:underline">Cookie Policy</Link>.</p>
       </>
     ),
   },
