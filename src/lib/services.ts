@@ -219,9 +219,58 @@ export const services: ServiceEntry[] = [
     intro:
       "A high water bill with nothing visibly wrong usually means a hidden leak. We locate slab, wall and underground leaks with acoustic and pressure equipment so the repair is surgical instead of destructive.",
     bullets: ["Slab leak location", "Wall and ceiling leak tracing", "Underground water and irrigation line leaks", "Pressure testing and meter verification", "Repair or reroute options quoted side by side"],
+    sections: [
+      {
+        heading: "Slab Leak Detection in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A slab leak is a supply line failing underneath the concrete your house sits on. Nothing drips from a ceiling and nothing sprays across a floor, which is why most homeowners find one through a water bill, a warm patch of tile, or the faint sound of running water at night with every fixture closed.",
+          "We locate leaks acoustically and with pressure isolation, which means we find the failure point before anything gets opened up. Miguel has 37+ years in the trade and has owned this company since 2010, and we are licensed as a California C-36 plumbing contractor, Lic. #953726.",
+        ],
+      },
+      {
+        heading: "Signs You Have a Hidden Plumbing Leak",
+        body: ["Hidden leaks announce themselves in small ways for weeks before they cause visible damage. Any one of these is worth a call."],
+        list: [
+          { lead: "Water bill jumped without a change in use", text: "the most reliable early indicator of a line leaking underground or inside a wall." },
+          { lead: "A warm or damp spot on the floor", text: "classic slab leak on the hot water side, and it will only spread." },
+          { lead: "Running water sound with everything off", text: "pressurized water escaping somewhere it should not be." },
+          { lead: "The meter dial keeps creeping", text: "shut every fixture, watch the meter, and if it moves you have a leak." },
+          { lead: "Musty smell or mildew in one room", text: "moisture behind drywall or under flooring feeding mold growth." },
+          { lead: "Cracks in tile, flooring or foundation", text: "water moving under a slab shifts soil, and the floor above it follows." },
+          { lead: "Soggy patches in the yard", text: "the service line or irrigation main is leaking below grade." },
+        ],
+      },
+      {
+        heading: "How We Find a Leak Without Tearing Up Your House",
+        body: [
+          "Detection comes first, demolition last. We isolate the system and pressure test to confirm whether the leak is on the supply side, then use acoustic listening equipment to trace the escaping water to a specific point, and thermal reading to confirm hot-line leaks under slab.",
+          "Once we know exactly where the failure is, you get real options: open a small access point and repair the section, or reroute the line overhead and leave the concrete alone. Both get quoted side by side so you can weigh cost against disruption.",
+        ],
+      },
+      {
+        heading: "Why Central Valley Homes Develop Slab Leaks",
+        body: [
+          "Two local conditions drive most of the slab leaks we find. Our water is hard and mineral-heavy, which scales and abrades copper from the inside until a pinhole opens. And Valley soil expands and contracts with our wet winters and long dry summers, flexing the lines cast into and under the slab.",
+          "Homes built with soft copper under the slab in the 1970s through 1990s are the ones we see most often in Escalon, Modesto, Riverbank, Oakdale and Ripon. A single pinhole in that era of piping usually means more are coming, which is worth knowing before you decide between a spot repair and a reroute.",
+        ],
+      },
+      {
+        heading: "What Waiting Actually Costs",
+        body: [
+          "A leak under a slab does not stay a plumbing problem for long. Left alone it wets subfloor and framing, lifts flooring, feeds mold in wall cavities, and washes soil out from under the foundation. The plumbing repair stays roughly the same price; the restoration is what climbs.",
+          "If you suspect a leak, shut the main and call 209.838.1000. We serve Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding 209 & 350 communities.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How do I know I have a hidden leak?", a: "Warm spots on the floor, a spiking water bill, the sound of running water with everything off, or a meter that keeps moving." },
       { q: "Do you have to break the slab?", a: "Not always. Depending on the location we can often reroute the line overhead instead of opening the concrete." },
+      { q: "How do you detect a leak without cutting into walls?", a: "We isolate and pressure test the system, then trace the escaping water acoustically and confirm hot-line leaks by temperature before anything is opened." },
+      { q: "Is a slab leak covered by homeowners insurance?", a: "Sudden failures and the resulting damage are often covered while long-term seepage frequently is not. Photograph everything before cleanup and keep our written invoice for the claim." },
+      { q: "How soon should I address a suspected leak?", a: "Right away. The pipe repair costs about the same next month, but the flooring, framing and mold remediation do not." },
+      { q: "Can you find a leak in an irrigation or underground line?", a: "Yes. Yard and service line leaks are located the same way, and we will pinpoint the spot so digging is limited to one small area." },
+      { q: "What causes slab leaks around here?", a: "Hard water abrading copper from the inside, and expansive Valley soil flexing lines under the slab through our wet-dry seasonal swing." },
+      { q: "Should I repair the section or reroute the line?", a: "If the piping is otherwise healthy, a spot repair is honest. If the same run has already leaked once, a reroute usually ends the cycle instead of postponing it." },
     ],
   },
   {
@@ -230,9 +279,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Gas work is not the place to gamble. We're a licensed C-36 contractor and we pressure test every line we touch, whether it's a leak repair or a new run out to a barbecue island.",
     bullets: ["Gas leak location and repair", "Pressure testing and certification", "Appliance, range and water heater connections", "Permits pulled and inspections handled", "Sediment traps and shutoffs to code"],
+    sections: [
+      {
+        heading: "Gas Line Repair & Replacement in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Natural gas runs the appliances you rely on most: the range, the furnace, the water heater, the dryer. It is also the one utility in the house with no margin for a sloppy repair, which is why California requires a licensed contractor to touch it.",
+          "Mainline Plumbing Inc. is family owned in Escalon and licensed as a California C-36 plumbing contractor, Lic. #953726. Miguel has 37+ years in the trade. Every line we repair, extend or replace gets pressure tested before we call it finished.",
+        ],
+      },
+      {
+        heading: "Signs of a Gas Leak",
+        body: ["If you suspect a leak, leave the building first, do not touch light switches, and call your gas utility from outside. Once the property is safe, call us for the repair."],
+        list: [
+          { lead: "Rotten egg or sulfur smell", text: "the odorant added to natural gas, and the most common way a leak is found." },
+          { lead: "Hissing or whistling near a line or appliance", text: "gas escaping under pressure. Leave and call from outside." },
+          { lead: "Dead plants or bare soil along the line", text: "an underground leak displacing oxygen at the roots." },
+          { lead: "Dirt or dust blowing from the ground", text: "gas venting up through soil above a buried line." },
+          { lead: "A gas bill higher than the season explains", text: "gas is going somewhere other than your appliances." },
+          { lead: "Headaches, dizziness or nausea indoors that clear outside", text: "treat this as an emergency, not an inconvenience." },
+        ],
+      },
+      {
+        heading: "Why Older Valley Gas Lines Need Attention",
+        body: [
+          "Many Escalon and Modesto homes still run on their original steel gas piping. Buried steel corrodes from the outside in, and our irrigation-heavy soil accelerates it. Add decades of remodels, appliance swaps and add-on runs, and the system stops matching what the house actually demands.",
+          "We evaluate the whole run rather than just the failure point, so you find out whether you are dealing with one bad section or piping that has reached the end of its service life.",
+        ],
+      },
+      {
+        heading: "What We Handle",
+        body: [
+          "Leak location and repair, corroded section replacement, appliance and range connections, water heater and furnace lines, dryer hookups, sediment traps, appliance shutoff valves, capping abandoned runs, and pressure testing and certification after any modification.",
+          "Permits and inspections are part of the job, not an upcharge surprise. We pull them, meet the inspector, and hand you the paperwork.",
+        ],
+      },
+      {
+        heading: "Local, Licensed and Accountable",
+        body: [
+          "Gas work is exactly where a license and a local reputation matter. We have been serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop and Salida since 2010, and hundreds of local reviews back that up.",
+          "Call 209.838.1000 to schedule gas line service.",
+        ],
+      },
+    ],
     faqs: [
       { q: "I smell gas. What now?", a: "Leave the house, don't touch switches, and call your utility from outside. Then call us for the repair." },
       { q: "Do gas lines need a permit?", a: "New runs and most modifications do. We pull the permit and meet the inspector so you don't have to." },
+      { q: "How do you test a gas line?", a: "We isolate the section, pressurize it and watch it hold on a gauge over time. A line that drops pressure has a leak, no matter how small." },
+      { q: "Can you repair a section instead of replacing the whole line?", a: "Yes, when the rest of the piping is sound. When we find widespread corrosion, we tell you that plainly rather than selling you a patch you will call us back about." },
+      { q: "How long do gas lines last?", a: "Steel piping commonly serves 50 years or more, but buried runs in irrigated Valley soil age faster. Age plus soil conditions matter more than the number alone." },
+      { q: "Can you connect a new gas appliance?", a: "Yes, including ranges, dryers, furnaces, water heaters, fire pits and outdoor kitchens, with the correct shutoff and sediment trap." },
+      { q: "Is it safe to run a gas line near electrical wiring?", a: "Yes, when clearances and bonding follow California code. That is part of what a licensed installation and inspection verify." },
+      { q: "Do you handle commercial gas line work?", a: "Yes, including restaurants and multi-unit properties throughout the 209 & 350." },
     ],
   },
   {
@@ -241,9 +338,55 @@ export const services: ServiceEntry[] = [
     intro:
       "Adding a gas range, converting to tankless, or running a line out to a fire pit means sizing the pipe for real demand, not guessing. We calculate the load, size the run, and certify the finished line.",
     bullets: ["Load calculation and correct pipe sizing", "Black iron, CSST and underground PE runs", "Tankless water heater gas upsizing", "Outdoor kitchen, fire pit and pool heater lines", "Permitted, tested and inspected"],
+    sections: [
+      {
+        heading: "Gas Line Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A new gas line is a sizing problem before it is a plumbing problem. Every appliance on the system draws BTU, and a run that is undersized starves the appliance farthest from the meter. That is why the first thing we do is add up the load and size the pipe for it, not for the appliance in front of us.",
+          "We install new runs for ranges, cooktops, dryers, furnaces, tankless water heaters, pool heaters, fire pits, patio heaters and outdoor kitchens, permitted and pressure certified. CA Lic. #953726, C-36 plumbing.",
+        ],
+      },
+      {
+        heading: "Understanding Gas Line Materials",
+        body: ["The right material depends on where the line runs and what it feeds. We explain the tradeoff before we install anything."],
+        list: [
+          { lead: "Black iron pipe", text: "the workhorse for indoor runs. Strong, heat tolerant and long-serving." },
+          { lead: "Corrugated stainless steel tubing (CSST)", text: "flexible and fast to route through finished spaces, and bonded per code." },
+          { lead: "Copper", text: "used where local code and the application allow, typically for shorter appliance runs." },
+          { lead: "Polyethylene (PE)", text: "the standard for underground runs out to a pool heater or outdoor kitchen because it does not corrode in soil." },
+        ],
+      },
+      {
+        heading: "Going Tankless? Check the Gas Line First",
+        body: [
+          "This is the single most common surprise in a tankless conversion. A tank water heater might draw 40,000 BTU. A whole-home tankless unit can call for 150,000 to 199,000. The existing half-inch branch that fed the tank usually cannot deliver that, and the new unit will short-cycle or fault if you force it.",
+          "We calculate the load for the entire house, then size and run the correct line so the unit performs the way the manufacturer intended and the warranty stays intact.",
+        ],
+      },
+      {
+        heading: "Safety, Permits and Testing",
+        body: [
+          "Every installation ends the same way: the line is pressurized, held on a gauge, and inspected. We install an accessible shutoff at each appliance, add sediment traps where required, bond CSST properly, and protect any run through framing.",
+          "We pull the permit, meet the inspector, and leave you the documentation. That paperwork matters at resale and it matters to your insurer.",
+        ],
+      },
+      {
+        heading: "Maintaining a New Gas System",
+        body: [
+          "Schedule annual inspections, know where your appliance shutoffs and main gas valve are, keep vegetation and irrigation off the ground above buried lines, and never dig in the yard without calling for a utility locate first. Install gas detectors near sleeping areas for the same reason you install smoke alarms.",
+          "Planning a remodel, a new appliance or an outdoor kitchen? Call 209.838.1000 and we will size it correctly the first time.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Can my current gas line run a tankless heater?", a: "Often not without upsizing. Tankless units demand far more BTU than a tank, and we verify before quoting." },
       { q: "How long does an install take?", a: "Most residential runs are a one-day job, plus inspection scheduling." },
+      { q: "Do I need a permit for a new gas line?", a: "Yes. New runs and most modifications are permitted and inspected in California, and we handle both." },
+      { q: "What gas line material is best for my project?", a: "Black iron for most indoor runs, CSST where flexible routing through finished space helps, and polyethylene for anything buried. We match the material to the run." },
+      { q: "Can you run a line out to a fire pit or outdoor kitchen?", a: "Yes. Those are underground PE runs with a proper shutoff at the appliance, sized for the burner load." },
+      { q: "Can I upgrade my gas line to support new appliances?", a: "Yes. We recalculate the whole-house load and upsize the run so the new appliance does not starve the old ones." },
+      { q: "Do older homes need gas line replacement?", a: "Many do eventually. Original buried steel in irrigated Valley soil corrodes, and an inspection tells you whether replacement is due." },
+      { q: "What should I do if I smell gas after an installation?", a: "Leave the building, avoid switches and flames, call the gas utility from outside, then call us at 209.838.1000." },
     ],
   },
   {
@@ -252,9 +395,57 @@ export const services: ServiceEntry[] = [
     intro:
       "When you're patching a new pinhole every few months, you're paying for a repipe on the installment plan. We repipe homes in copper or PEX with clean access cuts, one shutdown, and a warranty behind it.",
     bullets: ["Whole-home and partial repipes", "Galvanized and polybutylene replacement", "Copper and PEX-A options", "Minimal, patch-ready drywall access", "Water back on the same day in most homes"],
+    sections: [
+      {
+        heading: "Piping & Repiping in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Pipes fail on a schedule, and older Valley homes are on it. Galvanized steel scales shut from the inside until the shower has no pressure. Polybutylene fails at the fittings. Copper in hard water develops pinholes, and once the first one shows up, others follow.",
+          "We repipe homes and small commercial buildings in copper or PEX-A, with one planned shutdown, clean patch-ready access cuts, and water back on the same day in most houses. CA Lic. #953726, owner-operated since 2010.",
+        ],
+      },
+      {
+        heading: "Signs Your Home Needs Repiping",
+        body: ["A repipe is rarely a surprise. The system tells you for a year or two first."],
+        list: [
+          { lead: "Pressure that drops when a second fixture runs", text: "supply lines scaled down to a fraction of their original diameter." },
+          { lead: "Rusty or discolored water at startup", text: "galvanized pipe shedding corrosion from the pipe wall." },
+          { lead: "Repeated pinhole leaks", text: "the material itself is failing. Patching it is a rental agreement, not a repair." },
+          { lead: "Visible corrosion or green staining at joints", text: "active deterioration you can see from outside the pipe." },
+          { lead: "A house built before 1970 with original piping", text: "galvanized has usually reached the end of its useful life." },
+          { lead: "Gray polybutylene lines", text: "known fitting failures, and worth replacing before one lets go behind drywall." },
+        ],
+      },
+      {
+        heading: "Copper or PEX: The Honest Comparison",
+        body: [
+          "PEX-A resists the scale and pinhole corrosion our hard water causes, flexes instead of splitting, needs fewer fittings, and installs with far less demolition. Copper remains an excellent choice for exposed runs, mechanical rooms and anywhere UV exposure or rodent access is a factor.",
+          "We quote both when both are appropriate and tell you which we would put in our own house, and why. There is no upsell either direction.",
+        ],
+      },
+      {
+        heading: "Reliable Pipe Repair and Preventive Maintenance",
+        body: [
+          "Not every failing line means a whole-home repipe. When a single branch is the problem and the rest of the system is healthy, we replace that branch. When the same house has already produced two or three pinholes, replacing the system is the cheaper answer over five years.",
+          "Between now and then, keep house pressure regulated, insulate exposed runs in the garage and crawlspace, and get any weeping joint looked at rather than watching it. High pressure is the quietest killer of both piping and water heaters in this area.",
+        ],
+      },
+      {
+        heading: "Codes, Permits and What the Job Looks Like",
+        body: [
+          "Repiping is permitted and inspected work in Stanislaus and San Joaquin County. We pull the permit, install to current code with correct support, fittings and dielectric transitions, and get it inspected.",
+          "Most homes take one to three days. Water goes back on each evening, drywall access is cut small and left ready for patching, and you get a flat-rate quote before anyone opens a wall. Call 209.838.1000.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Copper or PEX?", a: "PEX resists the hard water and pinhole corrosion common here and costs less; copper is still preferred in exposed runs. We'll quote both." },
       { q: "Do I have to move out?", a: "No. Most repipes are one to three days with water restored each evening." },
+      { q: "What are the benefits of repiping my home?", a: "Full water pressure returns, discolored water stops, leak risk drops sharply, and you stop paying for repeat patch repairs." },
+      { q: "How long does a repiping project take?", a: "One to three days for most single-family homes, depending on size, stories and how much of the piping is accessible." },
+      { q: "What is involved in the repiping process?", a: "We map the runs, cut minimal access, install and pressure test the new lines, get the permit inspected, then reconnect fixtures and leave the openings patch-ready." },
+      { q: "Can you repair just one section instead?", a: "Yes, when the rest of the system is sound. With galvanized or a house that has already produced several pinholes, replacement is the honest recommendation." },
+      { q: "Will my walls be destroyed?", a: "No. Access cuts are deliberately small and placed where a drywall patch is straightforward. We plan the route to minimize openings." },
+      { q: "Do you repipe commercial buildings?", a: "Yes, including small commercial and multi-unit properties throughout the 209 & 350." },
     ],
   },
   {
@@ -263,9 +454,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Valley winters don't stay cold long, which is exactly why local pipes aren't built for it. Exposed lines in garages, crawlspaces and along exterior walls are the ones that split when a hard freeze rolls through.",
     bullets: ["Safe thawing without damaging the pipe", "Burst section replacement", "Hose bib and irrigation line repair", "Insulation and heat tape on vulnerable runs", "Freeze-season prevention checks"],
+    sections: [
+      {
+        heading: "Frozen Pipe Repair in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Central Valley homes are not built for hard freezes, because we only get a handful of them. That is exactly the problem. Hose bibs, garage lines, crawlspace runs and pipes along uninsulated exterior walls sit unprotected, and one December night in the twenties finds every one of them.",
+          "Water expands as it freezes. The ice does not usually split the pipe where it forms; pressure builds between the ice plug and a closed faucet until the pipe fails at its weakest point. Then it thaws, and that is when the water arrives.",
+        ],
+      },
+      {
+        heading: "What to Do the Moment You Suspect a Frozen Pipe",
+        body: ["Acting in the first few minutes is what decides whether this is a repair or a restoration project."],
+        list: [
+          { lead: "Open the affected faucet", text: "it gives melting water somewhere to go and relieves pressure behind the ice." },
+          { lead: "Shut off the main water valve", text: "if the pipe has already split, this is the single most important step." },
+          { lead: "Warm the area gently", text: "a space heater or hair dryer on the pipe. Never an open flame or a torch." },
+          { lead: "Open cabinet doors under sinks", text: "let household heat reach the supply lines on exterior walls." },
+          { lead: "Do not run appliances", text: "no laundry, no dishwasher, until you know the line is intact." },
+          { lead: "Call 209.838.1000", text: "we thaw the line safely and check for splits before the water comes back on." },
+        ],
+      },
+      {
+        heading: "Signs a Pipe Is Frozen But Has Not Burst Yet",
+        body: [
+          "No water or a thin trickle from one fixture while the rest of the house runs normally is the clearest sign. Look also for frost on an exposed pipe, unusual bulging, gurgling or banging when a faucet is opened, and a distinct sewer-like smell from a drain whose trap has frozen.",
+          "A pipe caught in that window can often be thawed and inspected with no replacement at all. That is worth a phone call before the thaw does it for you.",
+        ],
+      },
+      {
+        heading: "How We Repair a Burst Pipe",
+        body: [
+          "We shut and isolate the system, locate the failure, and cut out the compromised section rather than clamping over it. A pipe that has been stretched by ice is weakened along its length, so we replace to sound material on both sides, then pressure test before restoring service.",
+          "Most single-point repairs are same-day work. If the freeze found several exposed runs, we prioritize getting water safely back on and lay out the rest in order of urgency, with a flat-rate quote before we start.",
+        ],
+      },
+      {
+        heading: "Freeze-Proofing So It Does Not Happen Again",
+        body: [
+          "Insulate exposed lines in the garage, crawlspace and along exterior walls. Cover hose bibs with faucet socks before the first cold snap. Drain and shut off irrigation for winter. Add heat tape to the runs that have frozen before, and seal the crawlspace vents and wall penetrations that let cold air blow directly across pipe.",
+          "We handle all of that in a single prevention visit, and it costs a fraction of a burst-pipe cleanup. Serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop and Salida.",
+        ],
+      },
+    ],
     faqs: [
       { q: "My pipe is frozen but not burst. What should I do?", a: "Open the faucet, shut the main if you can, and don't use an open flame. Call us to thaw it safely." },
       { q: "How do I prevent it next winter?", a: "Insulate exposed lines, cover hose bibs, and drain irrigation. We handle all three in one visit." },
+      { q: "What are the most common signs a pipe is frozen but has not burst?", a: "No water or a trickle from one fixture, frost on an exposed pipe, and banging or gurgling when you open the faucet." },
+      { q: "How long does it take to repair a burst frozen pipe?", a: "Most single-point repairs are completed the same day once the line is accessible. Multiple failures take longer, and we restore safe water service first." },
+      { q: "Why is it dangerous to ignore a frozen pipe that has not burst?", a: "Pressure keeps building behind the ice, and ice stretches the pipe wall. A line that survives the freeze can still fail during the thaw." },
+      { q: "Can I thaw a pipe myself?", a: "Gently, with a space heater or hair dryer, never a torch or open flame. And shut the main first so a hidden split does not flood the house when it opens up." },
+      { q: "Do Central Valley homes really freeze?", a: "A few nights most winters, and that is enough. Our exposed piping is not built for cold, which is why one hard freeze produces a wave of calls." },
+      { q: "How can I permanently protect the pipes that froze?", a: "Insulation, heat tape on the vulnerable run, hose bib covers, irrigation shutoff and sealing the air path that let cold reach the pipe in the first place." },
     ],
   },
   {
@@ -274,9 +513,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Buying, selling or just tired of surprises? We inspect supply lines, drains, fixtures, water heater, pressure and shutoffs, then hand you a plain-English report with what's urgent and what can wait.",
     bullets: ["Buyer and seller pre-sale inspections", "Water pressure and regulator testing", "Water heater age and condition review", "Sewer camera add-on available", "Photo report with prioritized findings"],
+    sections: [
+      {
+        heading: "Plumbing Inspections in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Most plumbing problems are invisible until they are expensive. An inspection by a licensed plumber is how you find out what your system is actually doing before it decides to tell you at 6 AM on a holiday weekend.",
+          "We test supply lines, drains, fixtures, shutoff valves, water pressure, the pressure regulator, the water heater and visible piping, then hand you a photo report that separates what needs attention now from what can be budgeted for later. CA Lic. #953726.",
+        ],
+      },
+      {
+        heading: "When a Plumbing Inspection Is the Right Call",
+        body: ["An inspection pays for itself in any of these situations."],
+        list: [
+          { lead: "Buying a home", text: "so you learn about the sewer line and the 22-year-old water heater before you own them." },
+          { lead: "Selling a home", text: "fix what an inspector would flag, on your schedule and at your price." },
+          { lead: "Planning a kitchen or bath remodel", text: "confirm the existing supply and drain lines can carry the new fixtures." },
+          { lead: "You do not know the age or condition of the system", text: "the most common reason homeowners call us for one." },
+          { lead: "Mature trees over the sewer lateral", text: "roots find joints, and a camera confirms it before a backup does." },
+          { lead: "Rental or investment property", text: "documented condition protects you and your tenants." },
+        ],
+      },
+      {
+        heading: "Why This Is Not the Same as a Home Inspection",
+        body: [
+          "A general home inspector looks at plumbing among two dozen other systems, visually and briefly. We are licensed plumbers, and we test. Pressure gets measured against a gauge. Angle stops get operated. Drains get run under load. The water heater gets evaluated on age, anode condition, venting and connections.",
+          "That difference is why plumbing issues so often surface after a clean general inspection. If plumbing is the thing you are worried about, have a plumber look at it.",
+        ],
+      },
+      {
+        heading: "A More Thorough Inspection With Camera Technology",
+        body: [
+          "For any home built before 1980, or any property with established trees near the sewer path, add a camera inspection of the main line. It is the only way to see cracked clay, offset joints, root intrusion or a bellied section, and it converts the biggest unknown in the house into a picture.",
+          "You watch the screen with us. Nothing gets diagnosed off camera and described to you secondhand.",
+        ],
+      },
+      {
+        heading: "How Often and What You Get",
+        body: [
+          "Every two years suits most homes, annually for properties over 40 years old, on well water, with a history of main line trouble, or with a tankless unit. Your report includes photos, findings ranked by urgency, water heater age and expected remaining life, measured pressure, and a plain-English explanation of anything we flagged.",
+          "Call 209.838.1000 to schedule an inspection in Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop or Salida.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Is this the same as a home inspection?", a: "No. A general inspector glances at plumbing; we're licensed plumbers testing the system in depth." },
       { q: "Should I add a sewer camera?", a: "On any home built before 1980, yes. Main line surprises are the expensive kind." },
+      { q: "How often should I have my plumbing inspected?", a: "Every two years for most homes, and annually for older properties, well water, tankless units or a history of main line problems." },
+      { q: "What do you actually check?", a: "Supply lines, drains, fixtures, shutoff valves, water pressure and regulator, water heater condition and age, visible piping and accessible connections." },
+      { q: "How long does an inspection take?", a: "Usually one to two hours for a single-family home, longer if we add a sewer camera run." },
+      { q: "Do I get a written report?", a: "Yes, with photos and findings ranked by urgency, so you can act on what matters and plan for the rest." },
+      { q: "Is an inspection worth it before buying?", a: "It is the cheapest information you will buy in the whole transaction. A sewer line or slab leak found before closing is a negotiating point instead of your problem." },
+      { q: "Can you inspect a commercial property?", a: "Yes, including restaurants, offices and multi-unit buildings across the 209 & 350." },
     ],
   },
   {
@@ -285,9 +572,63 @@ export const services: ServiceEntry[] = [
     intro:
       "Hard Central Valley water is rough on water heaters, fixtures and valves. An annual once-over catches the small stuff before it turns into an emergency call at 6 AM.",
     bullets: ["Water heater flush and anode check", "Angle stop and shutoff valve exercise", "Pressure regulator verification", "Drain and disposal maintenance", "Leak and corrosion walkthrough"],
+    sections: [
+      {
+        heading: "Plumbing Maintenance in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Nearly every plumbing emergency we respond to was preventable, and most of them were visible months earlier. Sediment in a water heater. Pressure creeping too high. An angle stop that has not turned since the house was built. Maintenance is simply catching those before they pick their own timing.",
+          "Miguel has 37+ years in the trade and has owned this company since 2010. A maintenance visit means an experienced licensed plumber going through your system on purpose, not a technician looking for something to sell.",
+        ],
+      },
+      {
+        heading: "Schedule Maintenance If Any of These Apply",
+        body: ["Some homes need it more than others. These are the ones where it makes the biggest difference."],
+        list: [
+          { lead: "You want the system to keep performing", text: "pressure, drainage and hot water all degrade quietly and gradually." },
+          { lead: "You just bought the property", text: "start from a documented baseline instead of a guess." },
+          { lead: "You do not know the current condition", text: "that alone is the reason to have it looked at." },
+          { lead: "The house is over 30 years old", text: "original valves, supply lines and drains are all past middle age." },
+          { lead: "You are on hard water without treatment", text: "scale is accumulating in the heater and at every fixture right now." },
+          { lead: "You manage a rental or commercial property", text: "planned service beats emergency calls from tenants." },
+        ],
+      },
+      {
+        heading: "What a Maintenance Visit Covers",
+        body: ["More than a walkthrough. Each item below is a real failure mode we are heading off."],
+        list: [
+          { lead: "Pipe and fixture inspection", text: "checking for leaks, corrosion and damage at pipes, faucets and connections." },
+          { lead: "Drain care", text: "clearing early buildup so a slow drain never becomes a backup." },
+          { lead: "Water heater service", text: "flushing sediment, checking the anode rod, the T&P valve, venting and connections." },
+          { lead: "Toilet inspection", text: "silent leaks at the flapper and wax ring waste more water than anything else in the house." },
+          { lead: "Leak detection", text: "finding hidden moisture in walls, floors and ceilings before it becomes structural." },
+          { lead: "Pressure check", text: "confirming house pressure is in range, because high pressure destroys heaters and fixtures early." },
+          { lead: "Shutoff valve exercise", text: "making sure every angle stop and the main valve actually turn when you need them to." },
+        ],
+      },
+      {
+        heading: "Why Hard Water Makes This Matter More Here",
+        body: [
+          "Central Valley water is mineral-heavy. Scale collects in the bottom of the water heater and insulates the burner from the water, so the unit works harder, costs more to run and fails years early. The same minerals build up in aerators, shower valves and fixture cartridges.",
+          "An annual flush and fixture check is the single highest-return maintenance item for a home in this area. On tankless units it is not optional; it is a warranty condition.",
+        ],
+      },
+      {
+        heading: "No Membership Required",
+        body: [
+          "We do not sell monthly plans or lock anyone into a contract. You call when you want maintenance done, you get a straightforward quote, and we do the work. That is the whole arrangement.",
+          "Call 209.838.1000. Serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding 209 & 350 communities.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How often should plumbing be serviced?", a: "Once a year for most homes, and more often on well water or with a tankless unit." },
       { q: "Do you offer a membership plan?", a: "No monthly plans. You book maintenance when you want it, at a straightforward price." },
+      { q: "What does plumbing maintenance include?", a: "Pipe and fixture inspection, drain care, water heater flush and anode check, toilet inspection, leak detection, pressure verification and shutoff valve exercise." },
+      { q: "Can maintenance really prevent emergencies?", a: "Most of them. Correct pressure, an annual heater flush, working shutoffs and clear drains eliminate the majority of the after-hours calls we get." },
+      { q: "Why does hard water matter so much here?", a: "Scale insulates the burner in your water heater and clogs fixture cartridges and aerators. An annual flush is the highest-return maintenance item in the Valley." },
+      { q: "How long does a maintenance visit take?", a: "Typically one to two hours for a single-family home, including the water heater flush." },
+      { q: "Will maintenance extend the life of my water heater?", a: "Yes, meaningfully. Sediment left in the tank shortens its life and raises operating cost every month it stays there." },
+      { q: "Do you maintain commercial plumbing?", a: "Yes. Restaurants, offices and multi-unit properties, on whatever interval the property actually needs." },
     ],
   },
   {
@@ -296,9 +637,58 @@ export const services: ServiceEntry[] = [
     intro:
       "A cable punches a hole through a clog. Hydrojetting scrubs the pipe wall back to full diameter. For grease-loaded kitchen lines and root-invaded sewers, it's the difference between a fix and a rerun.",
     bullets: ["Grease, sludge and scale removal", "Root cutting in sewer laterals", "Restaurant and commercial kitchen lines", "Before-and-after camera verification", "Safe pressure matched to your pipe material"],
+    sections: [
+      {
+        heading: "Hydrojetting in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Cabling a drain opens a channel through the blockage. That restores flow, and for a one-time clog it is the right tool. But the grease, sludge and scale still coating the pipe wall are what the next clog will be made of, which is why some lines back up again a few months later.",
+          "Hydrojetting uses high-pressure water and a specialized nozzle to scour the full inside diameter of the pipe. The line comes out closer to how it left the factory than how you found it.",
+        ],
+      },
+      {
+        heading: "Understanding How Hydro Jetting Works",
+        body: [
+          "We feed a flexible hose into the line through a cleanout. The nozzle directs streams forward to break through the blockage and backward to pull debris toward the cleanout while propelling the hose up the pipe. Everything it cuts loose gets flushed out rather than pushed further downstream.",
+          "Pressure is chosen deliberately. We camera the line first to identify material and condition, then set pressure to match. Cast iron, clay, ABS and PVC all tolerate different things, and knowing that beforehand is the difference between a cleaning and a repair.",
+        ],
+      },
+      {
+        heading: "Top Benefits of Hydro Jetting",
+        body: ["Why we recommend jetting over repeat cabling on lines with a history."],
+        list: [
+          { lead: "Removes the cause, not just the blockage", text: "grease and biofilm come off the pipe wall instead of staying behind to rebuild." },
+          { lead: "Restores full diameter", text: "flow returns to what the pipe was designed to carry, not just enough to drain." },
+          { lead: "Cuts roots", text: "root hair invading a lateral joint gets cleared, and the camera shows whether the joint needs repair." },
+          { lead: "No chemicals", text: "water only, which matters for septic systems, older piping and anything downstream." },
+          { lead: "Longer intervals between service", text: "a properly jetted line stays clear far longer than a cabled one." },
+          { lead: "Verified results", text: "we camera before and after, so you see the condition rather than take our word for it." },
+        ],
+      },
+      {
+        heading: "Local Conditions That Make Jetting the Right Call",
+        body: [
+          "Hard Valley water leaves scale on the inside of drain lines, and scale gives grease something to hold onto. Add older cast iron and clay laterals in Escalon, Modesto, Riverbank and Oakdale, plus mature trees whose roots have spent forty years working toward the moisture at a sewer joint, and you get lines that need more than a cable.",
+          "Commercial kitchens are the clearest case of all. Grease loading is constant, and a scheduled jetting interval means you decide when the line is serviced instead of finding out mid-dinner rush.",
+        ],
+      },
+      {
+        heading: "Residential and Commercial Service",
+        body: [
+          "We jet residential main lines, kitchen branches, laundry lines and sewer laterals, along with restaurant, retail and multi-unit commercial systems. Every job includes camera verification and an honest assessment of whether the pipe needs repair rather than just cleaning.",
+          "Call 209.838.1000. CA Lic. #953726, C-36 plumbing, family owned in Escalon since 2010.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Will jetting damage old pipes?", a: "We camera the line first and set pressure to the material. If a line is too fragile, we say so." },
       { q: "How often do restaurants need it?", a: "Most commercial kitchens run on a quarterly or semiannual schedule." },
+      { q: "What is hydro jetting and how does it work?", a: "A high-pressure water nozzle fed through a cleanout that breaks up the blockage and scours the pipe wall clean, flushing debris back out rather than downstream." },
+      { q: "Is hydro jetting safe for all types of pipes?", a: "Not at the same pressure. We inspect the line by camera first, identify the material and condition, and set pressure accordingly, or recommend cabling instead when the pipe is too compromised." },
+      { q: "How is jetting different from snaking?", a: "A cable opens a path through the clog. Jetting removes the buildup that formed it, restoring the pipe's full diameter." },
+      { q: "How often should residential lines be jetted?", a: "Most homes do not need it routinely. Lines with a history of grease buildup or root intrusion benefit from an annual or every-other-year interval." },
+      { q: "Does hydro jetting use chemicals?", a: "No, water only. That makes it appropriate for septic systems and for older piping that caustic drain products would attack." },
+      { q: "Can jetting clear tree roots?", 
+        a: "Yes, it cuts root intrusion out of the line. The camera then shows whether the joint the roots entered through needs repair to keep them out." },
     ],
   },
   {
@@ -307,9 +697,57 @@ export const services: ServiceEntry[] = [
     intro:
       "The sewer lateral is the one line nobody thinks about until everything backs up at once. We inspect, clean, repair and replace laterals, and we show you the camera footage so you can see what you're paying to fix.",
     bullets: ["Sewer camera inspection and locating", "Cleaning, cabling and hydrojetting", "Spot repairs and full replacement", "Cleanout installation", "City and county permitting handled"],
+    sections: [
+      {
+        heading: "Sewer Services in Escalon, Modesto & the 209 & 350",
+        body: [
+          "The sewer lateral carries everything out of your house through one buried pipe. When it slows, every fixture slows. When it fails, you find out in the lowest drain in the building, usually at the worst possible moment.",
+          "We inspect, clean, repair and replace sewer lines for homes and businesses across Stanislaus and San Joaquin County. Every diagnosis starts with a camera and you watch the screen with us, because a decision about a buried pipe should be based on a picture, not a description.",
+        ],
+      },
+      {
+        heading: "Advanced Inspection and Sewer Clearing Technology",
+        body: [
+          "A camera locate tells us the material, the condition, the depth and the exact distance to the problem. That is what turns an expensive unknown into a defined repair: roots at a joint at 38 feet, a belly holding water at 55, a crushed section under the driveway.",
+          "For clearing, we match the tool to what the camera shows. Cabling handles soft blockages and root hair. Hydrojetting scours grease, sludge and scale off the pipe wall and restores full diameter. Both end with a second camera pass so the result is verified, not assumed.",
+        ],
+      },
+      {
+        heading: "Signs You Need a Sewer Inspection",
+        body: ["A lateral rarely fails without warning. These are the signals that mean the main line, not a single fixture."],
+        list: [
+          { lead: "Multiple drains slow at the same time", text: "the shared line is restricted, not the individual traps." },
+          { lead: "Gurgling toilets or a tub filling when you flush", text: "air being displaced by a blockage downstream." },
+          { lead: "Sewage backing up at the lowest drain", text: "the lateral is blocked. Stop using water and call." },
+          { lead: "Sewer odor indoors or in the yard", text: "escaping gas from a cracked or broken section." },
+          { lead: "Unusually green or sunken patches in the lawn", text: "a leaking lateral feeding or washing out the soil above it." },
+          { lead: "Repeat backups in the same line", text: "the underlying defect was never addressed, only the symptom." },
+        ],
+      },
+      {
+        heading: "Cleanouts, Access and Pipe Rerouting",
+        body: [
+          "A properly placed cleanout is the cheapest sewer investment a house can have. It gives direct access for camera work and clearing, which makes every future service call faster and less invasive. Many older Escalon and Modesto homes have none, and installing one is often the first thing we recommend.",
+          "When a lateral runs under a slab, a driveway or mature landscaping, rerouting the line along a better path is sometimes less disruptive and less expensive than replacing it where it sits. We lay out both options with real numbers so the choice is yours.",
+        ],
+      },
+      {
+        heading: "Repair, Replacement and What Drives the Decision",
+        body: [
+          "A single break, an offset joint or root intrusion at one point is a spot repair when the rest of the pipe is sound. Widespread cracking, a bellied run holding water, or clay that has deteriorated end to end calls for replacement, and we will tell you which one you are looking at.",
+          "Permits and inspections through the city and county are part of the job. Call 209.838.1000. CA Lic. #953726, serving Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop and Salida.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How do I know the sewer is the problem?", a: "Multiple fixtures backing up at once, gurgling toilets, or sewage at the lowest drain in the house." },
       { q: "Can a damaged sewer line be repaired instead of replaced?", a: "Often yes. A camera inspection tells us whether we are dealing with a single break, root intrusion or a bellied line, and we repair the failed section when the rest of the pipe is sound." },
+      { q: "What are the most common causes of sewer line blockages?", a: "Tree root intrusion at joints, grease and solids buildup, offset or cracked clay pipe, and bellied sections that hold water and collect debris." },
+      { q: "When is hydrojetting recommended for sewer cleaning?", a: "When the line has backed up more than once, or when the camera shows grease, sludge or scale coating the pipe rather than a single obstruction." },
+      { q: "How often should sewer inspections be scheduled?", a: "Every few years for most homes, and more often for properties with mature trees over the lateral or a history of backups. Always before buying a home built before 1980." },
+      { q: "How can I prevent future sewer line issues?", a: "Keep grease and wipes out of the drains, avoid planting trees over the lateral path, install a cleanout for access, and have the line inspected periodically." },
+      { q: "Do I need a cleanout installed?", a: "If your home does not have one, it is worth adding. It makes every future inspection and clearing faster, cheaper and far less invasive." },
+      { q: "Do you handle permits for sewer replacement?", a: "Yes. We pull city and county permits, meet the inspector, and restore and compact the site when the work is done." },
     ],
   },
   {
