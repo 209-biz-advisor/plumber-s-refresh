@@ -1,5 +1,5 @@
-# Mainline Plumbing Inc. — canonical host: https://www.mainlineplumber.com
-# All indexable content lives at www.mainlineplumber.com. Non-canonical
+# Mainline Plumbing Inc. — canonical host: https://mainlineplumber.com
+# All indexable content lives at mainlineplumber.com. Non-canonical
 # hosts (Lovable preview/published mirrors) self-canonicalize via
 # <link rel="canonical"> in every route head.
 
@@ -81,4 +81,4 @@ Allow: /
 # https://www.angi.com/companylist/us/ca/escalon/mainline-plumbing-inc-reviews-9045449.htm
 # https://www.homeadvisor.com/rated.MainlinePlumbingInc.33776850.html
 
-Sitemap: https://www.mainlineplumber.com/sitemap.xml
+Sitemap: https://mainlineplumber.com/sitemap.xml

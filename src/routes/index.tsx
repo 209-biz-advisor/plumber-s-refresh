@@ -34,17 +34,38 @@ const serviceColumns = [
   {
     icon: Wrench,
     title: "Plumbing Repairs & Upgrades",
-    items: ["Plumbing Fixtures", "Water Lines", "Gas Lines", "Leak Detection", "Repiping", "Remodeling", "Commercial Plumbing"],
+    items: [
+      { label: "Plumbing Fixtures", href: "/plumbing-services/fixture-plumbing/" },
+      { label: "Water Lines", href: "/plumbing-services/water-line-plumbing/" },
+      { label: "Gas Lines", href: "/plumbing-services/gas-line/" },
+      { label: "Leak Detection", href: "/plumbing-services/leak-detection/" },
+      { label: "Repiping", href: "/plumbing-services/piping-repiping/" },
+      { label: "Remodeling", href: "/plumbing-services/kitchen-bath-remodeling/" },
+      { label: "Commercial Plumbing", href: "/plumbing-services/commercial-plumbing/" },
+    ],
   },
   {
     icon: Droplets,
     title: "Drain & Sewer Solutions",
-    items: ["Drain Cleaning", "Sewer Line Repair", "Sewer Camera Inspection", "Sewer Services", "Hydro Jetting"],
+    items: [
+      { label: "Drain Cleaning", href: "/plumbing-services/drain-cleaning/" },
+      { label: "Sewer Line Repair", href: "/plumbing-services/sewer-line-repair/" },
+      { label: "Sewer Camera Inspection", href: "/plumbing-services/video-camera-inspections/" },
+      { label: "Sewer Services", href: "/plumbing-services/sewer-services/" },
+      { label: "Hydro Jetting", href: "/plumbing-services/hydrojetting/" },
+    ],
   },
   {
     icon: Flame,
     title: "Water Heaters",
-    items: ["Electric Water Heaters", "Tank Water Heaters", "Tankless Water Heaters", "Heat Pump Hybrids", "Repair & Replacement", "Same-Day Installation"],
+    items: [
+      { label: "Electric Water Heaters", href: "/water-heaters/electric-water-heaters/" },
+      { label: "Tank Water Heaters", href: "/water-heaters/" },
+      { label: "Tankless Water Heaters", href: "/water-heaters/tankless-water-heaters/" },
+      { label: "Water Heater Flushing", href: "/water-heaters/water-heater-flushing/" },
+      { label: "Repair & Replacement", href: "/water-heaters/water-heater-repair/" },
+      { label: "Same-Day Installation", href: "/water-heaters/water-heater-installation/" },
+    ],
   },
 ];
 
@@ -154,8 +175,8 @@ function HomePage() {
               <h3 className="text-xl font-bold text-brand-orange uppercase leading-tight">{col.title}</h3>
               <ul className="mt-4 space-y-2 text-sm">
                 {col.items.map((item) => (
-                  <li key={item}>
-                    <Link to="/plumbing-services/" className="text-navy hover:text-accent underline-offset-4 hover:underline">{item}</Link>
+                  <li key={item.href}>
+                    <a href={item.href} className="text-navy hover:text-accent underline-offset-4 hover:underline">{item.label}</a>
                   </li>
                 ))}
               </ul>

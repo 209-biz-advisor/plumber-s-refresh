@@ -2,7 +2,7 @@
  * Canonical production host (live). Every canonical, og:url, sitemap entry and
  * JSON-LD @id points here; legacy .net URLs redirect in 1:1.
  */
-export const SITE_URL = "https://www.mainlineplumber.com";
+export const SITE_URL = "https://mainlineplumber.com";
 
 /** Absolute canonical URL for a path. Production uses trailing slashes. */
 export function canonical(path: string): string {

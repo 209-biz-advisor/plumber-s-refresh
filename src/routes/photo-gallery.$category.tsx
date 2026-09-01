@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const galleries = {
   "plumbing-work": {
     name: "Plumbing Work",
@@ -111,6 +112,7 @@ function GalleryCategory() {
           ))}
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

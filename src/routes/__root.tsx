@@ -105,12 +105,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@graph": [
             {
               "@type": ["Organization", "Plumber", "LocalBusiness"],
-              "@id": "https://www.mainlineplumber.com/#business",
+              "@id": "https://mainlineplumber.com/#business",
               name: "Mainline Plumbing Inc.",
-              url: "https://www.mainlineplumber.com",
+              url: "https://mainlineplumber.com",
               telephone: "+1-209-838-1000",
-              image: "https://www.mainlineplumber.com/favicon.png",
-              logo: "https://www.mainlineplumber.com/favicon.png",
+              image: "https://mainlineplumber.com/favicon.png",
+              logo: "https://mainlineplumber.com/favicon.png",
               priceRange: "$$",
               hasCredential: {
                 "@type": "EducationalOccupationalCredential",
@@ -185,10 +185,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             },
             {
               "@type": "WebSite",
-              "@id": "https://www.mainlineplumber.com/#website",
-              url: "https://www.mainlineplumber.com",
+              "@id": "https://mainlineplumber.com/#website",
+              url: "https://mainlineplumber.com",
               name: "Mainline Plumbing Inc.",
-              publisher: { "@id": "https://www.mainlineplumber.com/#business" },
+              publisher: { "@id": "https://mainlineplumber.com/#business" },
             },
           ],
         }),

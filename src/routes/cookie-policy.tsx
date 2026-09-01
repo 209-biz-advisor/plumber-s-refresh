@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL, LICENSE_LABEL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { openCookiePreferences } from "@/lib/consent";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/cookie-policy/`;
 const DESC =
   "Cookie Policy for Mainline Plumbing Inc. of Escalon, CA. What cookies and tracking technologies we use, the categories you can control, how we honor Global Privacy Control, and your California CCPA and CPRA rights.";
@@ -487,6 +488,7 @@ function CookiePolicyPage() {
           </div>
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

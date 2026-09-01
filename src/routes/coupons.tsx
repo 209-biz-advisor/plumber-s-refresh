@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/coupons/`;
 const DESC =
   "Current plumbing coupons and specials from Mainline Plumbing Inc: $50 off for new customers, $150 off water heater replacement, $250 off electric water heater installation, and 10% off for veterans and law enforcement.";
@@ -88,6 +89,7 @@ function CouponsPage() {
           ))}
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

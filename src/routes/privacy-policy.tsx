@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/privacy-policy/`;
 const DESC =
   "Privacy Policy for Mainline Plumbing Inc. of Escalon, CA. How we collect, use, share and protect your information, our SMS policy, and your California CCPA and CPRA rights.";
@@ -316,6 +317,7 @@ function PrivacyPolicyPage() {
           </div>
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

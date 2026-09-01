@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/about-us/video-center/videos/about-our-company/`;
 const DESC =
   "Meet Mainline Plumbing Inc: family owned in Escalon since 2010, led by Miguel with 37+ years of hands-on plumbing experience. We treat your family like our family.";
@@ -94,6 +95,7 @@ function AboutOurCompanyVideo() {
           </div>
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

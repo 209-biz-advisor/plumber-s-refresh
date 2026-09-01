@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_URL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 const URL = `${SITE_URL}/about-us/video-center/videos/`;
 const DESC =
   "Browse Mainline Plumbing videos: company introduction, water heater replacement walkthroughs, and homeowner plumbing tips for the 209 & 350.";
@@ -77,6 +78,7 @@ function VideoList() {
           })}
         </div>
       </section>
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );

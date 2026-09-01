@@ -8,7 +8,7 @@
 - Name: Mainline Plumbing Inc.
 - Address: 18332 Campbell Ave., Escalon, CA 95320
 - Phone: 209.838.1000
-- Domain: https://www.mainlineplumber.com
+- Domain: https://mainlineplumber.com
 - California License: CSLB #953726 (C-36 Plumbing classification), bonded and insured
 - Founded: 2010. Owner and lead plumber Miguel has 37+ years in the trade.
 - Tagline: We Treat Your Family, Like Our Family

@@ -56,9 +56,9 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
                 name: `Mainline Plumbing Inc. of ${city.name}, CA`,
                 url,
                 telephone: "+1-209-838-1000",
-                image: "https://www.mainlineplumber.com/favicon.png",
+                image: "https://mainlineplumber.com/favicon.png",
                 priceRange: "$$",
-                parentOrganization: { "@id": "https://www.mainlineplumber.com/#business" },
+                parentOrganization: { "@id": "https://mainlineplumber.com/#business" },
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "18332 Campbell Ave.",

@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import miguel from "@/assets/miguel-owner.png";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 export const Route = createFileRoute("/about-us/")({
   head: () => ({
     meta: [
@@ -85,6 +86,7 @@ function AboutPage() {
         </div>
       </section>
 
+      <EmergencyRepairsCTA />
       <SiteFooter />
     </div>
   );
