@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Flame, Phone, CheckCircle2, ChevronRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 import { waterHeaterServices } from "@/lib/services";
@@ -137,6 +138,8 @@ function WaterHeatersHub() {
           </ul>
         </div>
       </section>
+
+      <EmergencyRepairsCTA />
 
       <SiteFooter />
     </div>

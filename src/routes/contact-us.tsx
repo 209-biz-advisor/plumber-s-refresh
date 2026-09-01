@@ -122,6 +122,8 @@ function ContactPage() {
         </div>
       </section>
 
+      <EmergencyRepairsCTA />
+
       <SiteFooter />
     </div>
   );

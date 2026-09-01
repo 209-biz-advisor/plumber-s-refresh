@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Phone, MapPin, CheckCircle2, ArrowRight, Wrench, Droplets, Flame, ShieldCheck, Star, Landmark, Users, Calendar, AlertTriangle } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { findCity, serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
@@ -624,6 +625,8 @@ function CityPage() {
           </div>
         </div>
       </section>
+
+      <EmergencyRepairsCTA city={city.name} />
 
       <SiteFooter />
     </div>

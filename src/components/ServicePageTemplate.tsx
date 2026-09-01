@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Phone, CheckCircle2, ChevronRight, Flame, Wrench } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { LICENSE_LABEL } from "@/lib/site";
 import { serviceCities } from "@/lib/service-cities";
@@ -140,6 +141,8 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
           </div>
         </div>
       </section>
+
+      <EmergencyRepairsCTA />
 
       <SiteFooter />
     </div>

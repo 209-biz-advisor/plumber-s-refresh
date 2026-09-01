@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin, Phone, ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import { serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
 import { SITE_URL } from "@/lib/site";
@@ -69,6 +70,8 @@ function AreasIndex() {
           </div>
         </div>
       </section>
+
+      <EmergencyRepairsCTA />
 
       <SiteFooter />
     </div>

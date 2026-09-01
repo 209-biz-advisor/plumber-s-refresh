@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Wrench, Droplets, Flame, ShieldCheck, Pipette, Bath, Phone, CheckCircle2 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { SITE_URL, LICENSE_LABEL } from "@/lib/site";
 import { topLevel, childrenOf, servicePath, waterHeaterServices } from "@/lib/services";
@@ -245,6 +246,8 @@ function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <EmergencyRepairsCTA />
 
       <SiteFooter />
     </div>
