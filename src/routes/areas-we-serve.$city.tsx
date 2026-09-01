@@ -134,6 +134,7 @@ const drainSigns = [
 
 function CityPage() {
   const { city } = Route.useLoaderData();
+  const budget = createBudget(`/areas-we-serve/${city?.slug ?? ""}/`);
 
   return (
     <div className="min-h-screen flex flex-col">
