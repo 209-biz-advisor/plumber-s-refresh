@@ -7,6 +7,15 @@
  */
 export type ServiceFaq = { q: string; a: string };
 
+/** A long-form content block rendered between "What's Included" and the FAQ. */
+export type ServiceSection = {
+  heading: string;
+  /** Paragraphs of prose. */
+  body?: string[];
+  /** Symptom / benefit list. `lead` is the bolded phrase before the colon. */
+  list?: { lead?: string; text: string }[];
+};
+
 export type ServiceEntry = {
   slug: string;
   hub: "plumbing-services" | "water-heaters";
@@ -16,9 +25,12 @@ export type ServiceEntry = {
   intro: string;
   bullets: string[];
   faqs: ServiceFaq[];
+  /** Optional long-form authority content. Pages without it render as before. */
+  sections?: ServiceSection[];
   /** Optional parent slug within the same hub, for breadcrumbs. */
   parent?: string;
 };
+
 
 const P = "plumbing-services" as const;
 const W = "water-heaters" as const;
@@ -391,48 +403,236 @@ export const services: ServiceEntry[] = [
   // ---------- Water heaters hub ----------
   {
     slug: "water-heater-installation", hub: W, name: "Water Heater Installation",
-    desc: "Water heater installation in Escalon, Modesto and across the 209 & 350. Tank and tankless units, permitted, most swaps same day.",
+    desc: "Water heater installation and replacement in Escalon, Modesto and across the 209 & 350. Tank, electric and tankless units, permitted, most swaps same day.",
     intro:
       "Water heater replacement is our number one specialty. We stock the most common tank sizes, pull the permit, handle gas and venting, bring the install up to current code and haul the old unit away.",
     bullets: ["40, 50 and 75 gallon gas and electric tanks", "Bradford White, Rheem and A.O. Smith", "Seismic strapping, new T&P valve and expansion tank", "Permits pulled and inspection handled", "Same-day installation on most standard swaps"],
+    sections: [
+      {
+        heading: "Water Heater Replacement in Escalon, Modesto & the 209 & 350",
+        body: [
+          "A water heater is easy to forget about right up until the morning it quits. When yours is done, you do not want a sales pitch, you want hot water back today from someone who has installed hundreds of these units in Valley homes.",
+          "Miguel has 37+ years in the trade and has been the owner and lead plumber here since 2010. Every replacement is quoted flat rate before we touch anything, so what you approve is what you pay. Most standard tank swaps are finished the same day.",
+        ],
+      },
+      {
+        heading: "Signs You Need a Water Heater Replacement",
+        body: ["Tanks rarely fail without warning. If you are seeing any of these, plan the replacement instead of waiting for a flooded garage."],
+        list: [
+          { lead: "Age", text: "the unit is 10 years old or more. Check the serial number on the label if you are not sure." },
+          { lead: "Rusty or metallic hot water", text: "the tank lining or anode rod is gone and corrosion is now in your water." },
+          { lead: "Rumbling and popping", text: "hardened sediment on the tank floor, which drives heat straight into the steel." },
+          { lead: "Water at the base", text: "dampness, staining or corrosion on the shell means the tank itself is leaking. That is not repairable." },
+          { lead: "Hot water runs out early", text: "capacity you used to have is now taken up by sediment." },
+          { lead: "Rising energy bills", text: "an inefficient or scaled tank burns more fuel to deliver less hot water." },
+        ],
+      },
+      {
+        heading: "Consider Upgrading to a More Efficient Water Heater",
+        body: [
+          "If you are replacing anyway, it is the right moment to look at efficiency. A modern high-efficiency tank recovers faster and holds temperature better than a builder-grade unit from a decade ago.",
+          "Hybrid heat pump electric models cut water heating energy use dramatically and frequently qualify for utility rebates. Tankless gives you endless hot water and reclaims the floor space. We walk your gas line, venting and electrical panel first, then tell you which options your home can actually support and which one we would put in our own house.",
+        ],
+      },
+      {
+        heading: "How the Central Valley Climate Affects Water Heaters",
+        body: [
+          "Our water is hard, and hard water is what kills water heaters here early. Scale settles out inside the tank, insulates the heating surface and forces the unit to work harder every cycle.",
+          "That is why we set every install up for a long life: correct sizing, seismic strapping per California code, a fresh T&P valve, an expansion tank where the pressure calls for it, and a flushing schedule so the new unit does not repeat the last one's story.",
+        ],
+      },
+      {
+        heading: "Why Homeowners Choose Mainline Plumbing Inc.",
+        body: [
+          "We are family owned, local to Escalon, and licensed as a California C-36 plumbing contractor, Lic. #953726. Same-day service on most replacements, permits handled, old unit hauled away, and a clean work area when we leave.",
+          "We serve Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding Stanislaus and San Joaquin County communities. Call 209.838.1000 and we will get your hot water back on.",
+        ],
+      },
+    ],
     faqs: [
-      { q: "How fast can you replace my water heater?", a: "Most standard tank replacements are completed the same day you call." },
-      { q: "Is a permit required?", a: "Yes in our service area, and we pull it as part of the job." },
+      { q: "How fast can you replace my water heater?", a: "Most standard tank replacements are completed the same day you call, since we stock the common sizes." },
+      { q: "Is a permit required to replace a water heater?", a: "Yes in our service area, and we pull it as part of the job along with the inspection coordination." },
+      { q: "What size water heater do I need?", a: "Household size and fixture count drive it. A 40 gallon covers many smaller homes, 50 gallon is the most common, and larger families or multi-bath homes often need 75 gallon or tankless." },
+      { q: "What types of water heaters work best in our climate?", a: "Gas and electric tanks both perform well when they are flushed annually. Hybrid heat pump units are excellent in warm Valley garages, and tankless works well when the gas line and venting support it." },
+      { q: "How often should a water heater be serviced?", a: "Once a year. A flush, anode inspection and T&P test is what keeps a tank from failing years early in hard water." },
+      { q: "What should I do if my water heater is leaking?", a: "Shut off the cold water supply valve on top of the unit, turn off the gas or the breaker, then call 209.838.1000. If it is leaking from the tank body, replacement is the fix." },
+      { q: "Are there rebates for a high-efficiency water heater?", a: "Rebate programs for heat pump and high-efficiency models come and go. We will tell you what is currently available for the model you are considering and point you to the program." },
+      { q: "Do you haul away the old water heater?", a: "Yes, removal and disposal of the old unit is part of every installation." },
     ],
   },
   {
     slug: "water-heater-repair", hub: W, name: "Water Heater Repair",
-    desc: "Water heater repair for no hot water, pilot problems, leaks, noisy tanks and failed elements, with honest repair-or-replace advice.",
+    desc: "Water heater repair in Escalon, Modesto and the 209 & 350 for no hot water, pilot problems, leaks, noisy tanks and failed elements, with honest repair-or-replace advice.",
     intro:
       "No hot water isn't always a new water heater. We diagnose thermocouples, gas valves, heating elements, dip tubes and thermostats, and we tell you honestly when a repair is throwing money at a tank that's done.",
     bullets: ["No hot water and lukewarm water diagnosis", "Pilot light and thermocouple repair", "Heating element and thermostat replacement", "T&P valve, dip tube and anode service", "Straight repair-versus-replace guidance"],
+    sections: [
+      {
+        heading: "End the Cold Shower Surprises",
+        body: [
+          "A cold shower at 6 a.m. is how most people find out their water heater is in trouble. The good news is that a lot of what goes wrong is a component, not the whole unit, and components are a repair.",
+          "We diagnose first and quote flat rate before any work starts. If the repair makes sense, we do it, often the same day. If the tank itself is finished, we say so plainly rather than selling you a part that buys a month.",
+        ],
+      },
+      {
+        heading: "Signs Your Water Heater Needs Repair",
+        list: [
+          { lead: "No hot water at all", text: "usually a pilot, thermocouple, gas valve, failed element or tripped high-limit switch." },
+          { lead: "Lukewarm or short showers", text: "a bad lower element, a broken dip tube or heavy sediment stealing capacity." },
+          { lead: "Discolored or smelly water", text: "a spent anode rod or bacteria in the tank. Both are addressable." },
+          { lead: "Popping, rumbling or knocking", text: "sediment buildup being cooked against the tank floor." },
+          { lead: "Water around the unit", text: "could be a fitting, the T&P valve or the drain valve. It could also be the tank. We find out which." },
+          { lead: "Pilot will not stay lit", text: "typically the thermocouple or a dirty pilot assembly, both routine repairs." },
+        ],
+      },
+      {
+        heading: "Repair or Replace? Straight Answers",
+        body: [
+          "Under about eight years old with a component failure, repair is almost always the right call. Past ten to twelve years, or once the tank body itself is leaking, you are better off putting that money toward a new unit with a fresh warranty.",
+          "We give you both numbers and the reasoning behind them so the decision is yours, not ours. There is no upsell script here.",
+        ],
+      },
+      {
+        heading: "How to Get More Years Out of Your Water Heater",
+        list: [
+          { lead: "Flush it annually", text: "hard Valley water means sediment, and sediment is what shortens tank life." },
+          { lead: "Check the anode rod", text: "it is the sacrificial part protecting your tank lining. Replacing it is far cheaper than replacing a tank." },
+          { lead: "Test the T&P valve", text: "a stuck relief valve is a genuine safety issue." },
+          { lead: "Set 120 degrees", text: "hot enough for the house, easier on the tank, and safer for kids." },
+          { lead: "Keep the area clear", text: "combustion air and access matter, especially in a tight closet install." },
+        ],
+      },
+      {
+        heading: "No Job Is Too Large or Too Small",
+        body: [
+          "A single thermocouple in an Escalon rental, a 75 gallon unit in a Modesto multi-bath home, or a commercial tank in Turlock, we take the call either way. Family owned since 2010, CA C-36 Lic. #953726, and 37+ years of hands-on experience behind the diagnosis.",
+        ],
+      },
+    ],
     faqs: [
-      { q: "My pilot won't stay lit. What's wrong?", a: "Usually the thermocouple or a dirty pilot assembly, both common repairs." },
+      { q: "How quickly can I expect a repair?", a: "Most water heater repairs are handled the same day, and no hot water goes to the front of the schedule." },
+      { q: "My pilot won't stay lit. What's wrong?", a: "Usually the thermocouple or a dirty pilot assembly, both common and inexpensive repairs." },
+      { q: "What types of water heaters can you repair?", a: "Gas and electric tanks, hybrid heat pump models, and tankless units from the major manufacturers." },
       { q: "When is repair no longer worth it?", a: "Past ten to twelve years, or once the tank itself is leaking, replacement is the better spend." },
+      { q: "What should I do if my water heater is leaking right now?", a: "Close the cold inlet valve, shut off the gas or breaker, and call 209.838.1000. Do not wait on a leaking tank in a garage or closet." },
+      { q: "Can a noisy water heater be fixed?", a: "Often yes. If the rumbling is sediment caught early, a flush quiets it. If the sediment has hardened, we will tell you what you are really looking at." },
+      { q: "How can I maintain my water heater between visits?", a: "Flush it yearly, keep the temperature around 120 degrees, and watch the base for moisture. That is most of it." },
+      { q: "Do you repair commercial water heaters?", a: "Yes, we handle commercial tanks and light commercial systems throughout the 209 & 350." },
     ],
   },
   {
     slug: "tankless-water-heaters", hub: W, name: "Tankless Water Heaters",
-    desc: "Tankless water heater installation, conversion and repair. Endless hot water, higher efficiency, wall-mounted space savings.",
+    desc: "Tankless water heater installation, conversion and repair in Escalon, Modesto and the 209 & 350. Endless hot water, higher efficiency, wall-mounted space savings.",
     intro:
       "Tankless gives you endless hot water, up to about 30% better efficiency and your garage floor back. The catch is that it must be sized and gas-fed correctly, which is exactly where most bad installs go wrong.",
     bullets: ["Navien, Rinnai and Rheem installation", "Tank-to-tankless conversions", "Gas line upsizing and venting", "Descaling and annual maintenance", "20+ year expected service life"],
+    sections: [
+      {
+        heading: "Tankless Water Heater Installation, Done Right the First Time",
+        body: [
+          "Tankless is a genuinely better way to make hot water, and it is also the install that gets botched most often. Undersize the unit or starve it of gas and the homeowner ends up with cold sandwiches and a warranty argument.",
+          "We do the load math first: fixture count, simultaneous demand, incoming water temperature, gas capacity, venting path and electrical. Then we install it to manufacturer spec so the warranty holds and the unit performs the way the brochure promised.",
+        ],
+      },
+      {
+        heading: "Benefits of Going Tankless",
+        list: [
+          { lead: "Endless hot water", text: "the unit heats on demand, so back-to-back showers and a running dishwasher stop being a scheduling problem." },
+          { lead: "Better efficiency", text: "no standby losses from keeping 50 gallons hot around the clock, commonly around 30% less energy for water heating." },
+          { lead: "Space back", text: "a wall-mounted unit frees up the garage or closet footprint a tank was eating." },
+          { lead: "Longer service life", text: "20+ years is a realistic expectation with annual descaling, roughly double a typical tank." },
+          { lead: "No tank to fail", text: "no 50 gallon reservoir sitting in your garage waiting to split." },
+        ],
+      },
+      {
+        heading: "Gas Line, Venting & Electrical Requirements",
+        body: [
+          "A tankless unit fires far more BTU than the tank it replaces, so the existing half-inch gas line frequently will not carry it. We verify the meter and line capacity and upsize where the calculation requires it.",
+          "Venting is category-specific stainless or PVC depending on the model, and condensing units need a condensate path. There is also a dedicated electrical requirement even on gas models. We handle all three, pull the permit, and get it inspected.",
+        ],
+      },
+      {
+        heading: "How Our Hard Water Affects Tankless Sizing & Care",
+        body: [
+          "Incoming water temperature in the Valley drops in winter, which lowers the flow a unit can heat to your target temperature. Sizing off summer numbers is how homeowners end up disappointed in January, so we size for the cold months.",
+          "Hard water also means scale, and scale is the one thing tankless will not forgive. Annual descaling is required maintenance, not an upsell, and it is what keeps both the performance and the manufacturer warranty intact.",
+        ],
+      },
+      {
+        heading: "Tankless Water Heater Repair",
+        body: [
+          "Error codes, dropping temperatures, reduced flow, ignition faults and scale-related shutdowns are all repairable. We service the major brands, clean and descale the heat exchanger, replace flow sensors and igniters, and correct venting or gas problems left behind by a previous install.",
+        ],
+      },
+    ],
     faqs: [
-      { q: "Do I need a bigger gas line?", a: "Often yes. Tankless units demand far more BTU than a tank, and we verify capacity before quoting." },
-      { q: "Does tankless need maintenance?", a: "Yes, annual descaling matters in our hard water, and it keeps the warranty intact." },
+      { q: "How long does a tankless water heater last?", a: "With annual descaling, 20 years or more is a reasonable expectation, roughly double a standard tank." },
+      { q: "Do I need a bigger gas line?", a: "Often yes. Tankless demands far more BTU than a tank, and we verify meter and line capacity before quoting." },
+      { q: "Can a tankless unit run my whole house?", a: "Yes when it is sized for your simultaneous demand and winter inlet temperature. That sizing is the whole job." },
+      { q: "Do tankless water heaters require regular maintenance?", a: "Yes, annual descaling matters in our hard water, and it keeps the warranty intact." },
+      { q: "How much space does a tankless unit save?", a: "It mounts on the wall, so you get back the full floor footprint of the old tank, typically a two-by-two foot area or more." },
+      { q: "Is tankless worth the investment?", a: "For households that run out of hot water, want lower standby energy use, or need the space back, yes. For a small home with light demand, a high-efficiency tank can still be the smarter call, and we will say so." },
+      { q: "Do you pull permits for tankless installation?", a: "Yes. Gas, venting and electrical changes are permitted work, and we handle the permit and inspection." },
+      { q: "Why choose Mainline for tankless work in Modesto and Escalon?", a: "37+ years of hands-on experience, family owned since 2010, CA C-36 Lic. #953726, and water heaters are the single thing we do more than anything else." },
     ],
   },
   {
     slug: "water-heater-flushing", hub: W, name: "Water Heater Flushing",
-    desc: "Water heater flushing and sediment removal to extend tank life, restore capacity and cut energy costs in hard-water homes.",
+    desc: "Water heater flushing and sediment removal in Escalon, Modesto and the 209 & 350 to extend tank life, restore capacity and cut energy costs in hard-water homes.",
     intro:
       "Hard Valley water leaves sediment on the bottom of your tank. That sediment is what makes it rumble, run out of hot water early and fail years ahead of schedule. An annual flush is the cheapest water heater insurance there is.",
     bullets: ["Full tank drain and sediment flush", "Anode rod inspection", "T&P valve test", "Tankless descaling service", "Annual reminder so you don't have to track it"],
+    sections: [
+      {
+        heading: "Water Heater Flushing Service in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Hot water at the turn of a knob is easy to take for granted, and the tank making it is the appliance homeowners maintain least. Flushing is the one piece of maintenance that reliably adds years to a water heater in this part of the Valley.",
+          "Call 209.838.1000 and we will get a flush on the schedule, or fold it into a plumbing inspection while we are already at the house.",
+        ],
+      },
+      {
+        heading: "How Often Should You Flush Your Water Heater?",
+        body: [
+          "At least once a year for most homes here. If you are on particularly hard water or a well, every six to eight months keeps the tank in far better shape.",
+          "If it has been several years, it is still worth doing, but tell us. A tank with hardened sediment needs to be opened carefully, and we will let you know honestly what condition it is in when we get in there.",
+        ],
+      },
+      {
+        heading: "Why Flushing Matters",
+        body: [
+          "Your water heater is doing two jobs: heating water and storing it. Minerals in the cold supply settle to the bottom of the tank and build into a layer of sediment between the burner and the water it is supposed to heat.",
+          "From there it snowballs. The burner runs longer, the steel above it overheats, the usable capacity shrinks, and the water coming out of your tap picks up whatever is sitting in the bottom of that tank.",
+        ],
+      },
+      {
+        heading: "Four Things a Flush Gets You",
+        list: [
+          { lead: "More efficiency", text: "heat transfers into water instead of into a sediment blanket, so the unit uses less energy for the same hot shower." },
+          { lead: "Longer tank life", text: "sediment cooking against the steel is what causes the corrosion that eventually leaks. Removing it buys years." },
+          { lead: "A safer home", text: "a tank that never leaks is a garage that never floods and a floor that never rots." },
+          { lead: "Better water quality", text: "clearer, cleaner hot water with no sediment or odor riding along with it." },
+        ],
+      },
+      {
+        heading: "How a Professional Plumber Helps",
+        body: [
+          "Draining a tank sounds simple, and on an accessible unit it mostly is. In a closet, an attic or a tight garage corner it is a different story, and a wrong step can surge sediment through the house plumbing or crack a brittle drain valve on a ten-year-old tank.",
+          "While we are there we also inspect the anode rod, test the T&P valve, check the strapping and connections, and descale tankless units. You get the flush plus an honest read on how much life the unit has left. Family owned, CA C-36 Lic. #953726.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How often should I flush it?", a: "Once a year here. Twice if you're on well water or notice rumbling." },
       { q: "My tank is rumbling. Is a flush enough?", a: "Often yes if it's caught early. If the sediment has hardened, we'll tell you what you're actually looking at." },
+      { q: "Can I flush my own water heater?", a: "On an easily accessible tank, a careful homeowner can. In a closet or attic, or on an older tank with a brittle drain valve, it is worth having a plumber do it." },
+      { q: "Will flushing fix my discolored hot water?", a: "Frequently yes, especially when sediment is the source. If the anode rod is spent, that gets replaced too." },
+      { q: "Do tankless water heaters need flushing?", a: "They need descaling, which is the tankless equivalent, and in our hard water it is an annual job that protects the warranty." },
+      { q: "How long does a flush take?", a: "Most flushes are a straightforward same-visit service, and we combine it with the anode and T&P checks while the unit is open." },
+      { q: "Will a flush make my old water heater last?", a: "It helps, but it is not a reset. Past ten to twelve years, a flush keeps it running while you plan the replacement rather than reacting to a leak." },
+      { q: "Which cities do you flush water heaters in?", a: "Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding Stanislaus and San Joaquin County areas." },
     ],
   },
+
   {
     slug: "electric-water-heaters", hub: W, name: "Electric Water Heaters",
     desc: "Electric water heater installation and replacement, including hybrid heat pump models that cut water heating costs substantially.",

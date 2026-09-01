@@ -80,7 +80,39 @@ export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
         </div>
       </section>
 
-      {/* SUB-SERVICES */}
+      {/* LONG-FORM AUTHORITY CONTENT */}
+      {service.sections && service.sections.length > 0 && (
+        <section className="bg-secondary py-16 md:py-20">
+          <div className="container-x max-w-4xl">
+            <div className="space-y-12">
+              {service.sections.map((sec) => (
+                <article key={sec.heading}>
+                  <h2 className="text-2xl md:text-3xl font-bold text-navy">{sec.heading}</h2>
+                  <div className="mt-3 h-1 w-16 bg-brand-orange rounded-full" />
+                  {sec.body?.map((p) => (
+                    <p key={p} className="mt-4 text-muted-foreground leading-relaxed">{p}</p>
+                  ))}
+                  {sec.list && (
+                    <ul className="mt-5 space-y-3">
+                      {sec.list.map((item) => (
+                        <li key={item.text} className="flex gap-2 text-muted-foreground">
+                          <CheckCircle2 className="size-5 text-accent shrink-0 mt-0.5" />
+                          <span>
+                            {item.lead && <strong className="text-navy">{item.lead}: </strong>}
+                            {item.text}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+
       {kids.length > 0 && (
         <section className="bg-secondary py-16">
           <div className="container-x">
