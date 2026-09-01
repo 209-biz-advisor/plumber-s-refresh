@@ -7,8 +7,11 @@ import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { LICENSE_LABEL } from "@/lib/site";
 import { serviceCities } from "@/lib/service-cities";
 import { childrenOf, topLevel, type ServiceEntry } from "@/lib/services";
+import { Linkify } from "@/components/Linkify";
+import { createBudget } from "@/lib/interlink";
 
 export function ServicePageTemplate({ service }: { service: ServiceEntry }) {
+  const budget = createBudget(`/${service.hub}/${service.slug}/`);
   const hubPath = `/${service.hub}/`;
   const hubName = service.hub === "water-heaters" ? "Water Heaters" : "Plumbing Services";
   const kids = childrenOf(service.hub, service.slug);
