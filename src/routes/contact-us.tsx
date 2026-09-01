@@ -23,7 +23,6 @@ export const Route = createFileRoute("/contact-us")({
 });
 
 function ContactPage() {
-  const [sent, setSent] = useState(false);
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
