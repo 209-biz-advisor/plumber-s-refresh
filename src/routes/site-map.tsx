@@ -73,6 +73,7 @@ function SiteMapPage() {
               { href: "/reviews/", label: "Reviews" },
               { href: "/coupons/", label: "Coupons & Specials" },
               { href: "/privacy-policy/", label: "Privacy Policy" },
+              { href: "/cookie-policy/", label: "Cookie Policy" },
               { href: "/terms-and-conditions/", label: "Terms and Conditions" },
               { href: "/photo-gallery/", label: "Photo Gallery" },
               { href: "/photo-gallery/plumbing-work/", label: "Plumbing Work Gallery" },
