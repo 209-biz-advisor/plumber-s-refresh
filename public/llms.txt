@@ -95,6 +95,7 @@ Mainline competes on trust, tenure, and craftsmanship, not price. Miguel persona
 - [Contact](/contact-us/): Phone, address, hours, service area map, and online request form.
 - [Site Map](/site-map/): Complete HTML index of every page on the site.
 - [Privacy Policy](/privacy-policy/): Data collection, SMS opt-in policy, and California CCPA/CPRA rights.
+- [Cookie Policy](/cookie-policy/): Cookie categories, the consent banner and preference toggles, Global Privacy Control handling, and California opt-out of sale or sharing.
 - [Terms and Conditions](/terms-and-conditions/): Website use, service agreements, payment, SMS terms, and California governing law.
 
 ## Individual Service Pages
