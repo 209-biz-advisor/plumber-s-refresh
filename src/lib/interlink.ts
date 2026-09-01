@@ -151,3 +151,21 @@ export function linkifyParts(text: string, budget: LinkBudget): LinkPart[] {
   if (cursor < text.length) parts.push({ text: text.slice(cursor) });
   return parts;
 }
+
+/**
+ * Deterministic page plan.
+ *
+ * Link assignment must not depend on React render order: mutating a shared budget
+ * during render can produce a different result on the server than on the client and
+ * trip a hydration mismatch. Callers pass every body string in data order once, and
+ * render from the returned map.
+ */
+export function planLinks(currentPath: string, texts: (string | undefined)[]): Map<string, LinkPart[]> {
+  const budget = createBudget(currentPath);
+  const plan = new Map<string, LinkPart[]>();
+  for (const t of texts) {
+    if (!t || plan.has(t)) continue;
+    plan.set(t, linkifyParts(t, budget));
+  }
+  return plan;
+}

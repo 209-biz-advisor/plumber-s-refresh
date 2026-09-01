@@ -11,6 +11,7 @@ import {
 import appCss from "../styles.css?url";
 import { SITE_URL, OG_IMAGE } from "@/lib/site";
 import { GOOGLE_MAPS_URL, GOOGLE_RATING, GOOGLE_REVIEW_COUNT, SAME_AS } from "@/lib/reviews";
+import { KNOWS_ABOUT, serviceGeoCircle, similarToNodes } from "@/lib/entities";
 
 function NotFoundComponent() {
   return (
@@ -156,10 +157,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 },
               ],
               areaServed: [
+                serviceGeoCircle(),
                 "Escalon, CA", "Modesto, CA", "Manteca, CA", "Lathrop, CA", "Ripon, CA",
                 "Oakdale, CA", "Riverbank, CA", "Salida, CA", "Turlock, CA", "Ceres, CA",
                 "Hughson, CA", "Del Rio, CA", "Stockton, CA", "Stanislaus County, CA", "San Joaquin County, CA",
               ],
+              knowsAbout: KNOWS_ABOUT,
+              isSimilarTo: similarToNodes(),
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
                 name: "Plumbing Services",
