@@ -81,7 +81,16 @@ const PHRASES: { phrase: string; group: LinkGroup }[] = LINK_MAP.flatMap((group)
   group.phrases.map((phrase) => ({ phrase, group })),
 ).sort((a, b) => b.phrase.length - a.phrase.length);
 
-const MASTER = new RegExp(`\\b(${PHRASES.map((p) => escapeRegExp(p.phrase)).join("|")})\\b`, "gi");
+/** Phrases match with an optional plural suffix so "faucets" links like "faucet". */
+const MASTER = new RegExp(
+  `\\b(${PHRASES.map((p) => `${escapeRegExp(p.phrase)}(?:es|s)?`).join("|")})\\b`,
+  "gi",
+);
+
+/** Strip a plural suffix so a matched word maps back to its phrase group. */
+function singularize(s: string) {
+  return s.replace(/(?:es|s)$/i, "");
+}
 
 export type LinkPart = { text: string; href?: string };
 
@@ -118,7 +127,11 @@ export function linkifyParts(text: string, budget: LinkBudget): LinkPart[] {
     if (budget.total >= MAX_PER_PAGE || inParagraph >= MAX_PER_PARAGRAPH) break;
     const matched = m[0];
     const lower = matched.toLowerCase();
-    const found = PHRASES.find((p) => p.phrase.toLowerCase() === lower);
+    const base = singularize(lower);
+    const found = PHRASES.find((p) => {
+      const ph = p.phrase.toLowerCase();
+      return ph === lower || ph === base;
+    });
     if (!found) continue;
     const { group } = found;
     if (group.path === budget.currentPath) continue;
