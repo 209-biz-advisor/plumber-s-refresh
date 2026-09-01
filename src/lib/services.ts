@@ -445,9 +445,57 @@ export const services: ServiceEntry[] = [
     intro:
       "Shower work is valve work. We set pressure-balanced or thermostatic valves so the temperature holds when someone flushes, and we get the rough-in right before tile goes up.",
     bullets: ["New shower rough-in and valve setting", "Tub-to-shower conversions", "Pressure-balanced and thermostatic valves", "Rain heads, body sprays and hand showers", "Drain and pan connections"],
+    sections: [
+      {
+        heading: "Shower Installation in Escalon, Modesto & the 209 & 350",
+        body: [
+          "Shower projects are judged on tile and glass, but they succeed or fail on the valve and the drain. Set the rough-in wrong and you find out after the wall is closed, when the temperature swings every time someone flushes or water finds its way into the framing.",
+          "We handle the plumbing side of shower installations and replacements across Stanislaus and San Joaquin County: new rough-ins, valve replacement, tub-to-shower conversions, multi-head layouts and drain work, coordinated with your tile or surround installer so nobody is waiting on anybody.",
+        ],
+      },
+      {
+        heading: "Think These Through Before the Project Starts",
+        body: ["Decisions made before demolition are cheap. The same decisions made after tile is up are not."],
+        list: [
+          { lead: "Layout and drain location", text: "moving the drain means opening the floor, so decide the footprint first." },
+          { lead: "Valve type", text: "pressure-balanced holds temperature during a flush; thermostatic holds an exact setting and supports multiple heads." },
+          { lead: "Water volume", text: "rain heads and body sprays together can outrun a half-inch supply line. We size the supply to the fixtures you actually want." },
+          { lead: "Accessibility", text: "curbless entry, a bench, grab bar blocking and a hand shower are far easier to plan now than to retrofit later." },
+          { lead: "Waterproofing", text: "the pan, curb and wall assembly have to be right underneath the tile. This is where shortcut installs fail." },
+          { lead: "Water heater capacity", text: "a larger shower with more heads changes your hot water demand, and we will tell you if your heater can keep up." },
+        ],
+      },
+      {
+        heading: "Upgrading Showers in Older Valley Homes",
+        body: [
+          "Plenty of homes in Escalon, Modesto, Riverbank and Oakdale still have original single-handle or two-handle valves with no pressure balancing, galvanized supply lines, and a tub nobody has taken a bath in for a decade.",
+          "Those are the best candidates for real improvement. Replacing the valve stops the cold-water shock when a toilet flushes. Re-piping the branch in copper or PEX restores flow that scale took away years ago. And a tub-to-shower conversion gives back usable space in a small bathroom while making it safer to get in and out of.",
+        ],
+      },
+      {
+        heading: "Hard Water and Shower Longevity",
+        body: [
+          "Central Valley water leaves mineral behind, and showers are where you see it first: crusted heads, weak spray, cartridges that stiffen up. Choosing quality trim with serviceable cartridges means the fixture can be repaired in ten years instead of replaced.",
+          "We also recommend a hand shower or a head with cleanable nozzles, and where hardness is severe, a properly sized softener. It protects the shower valve, the water heater and every other fixture in the house at the same time.",
+        ],
+      },
+      {
+        heading: "What You Get From Mainline",
+        body: [
+          "A flat-rate quote before work starts, code-compliant valve and drain work, permits where the scope requires them, and a licensed C-36 contractor on the job, Lic. #953726. Family owned in Escalon since 2010, with Miguel's 37+ years in the trade behind the rough-in.",
+          "We serve Escalon, Modesto, Turlock, Riverbank, Oakdale, Ripon, Manteca, Lathrop, Salida and the surrounding communities. Call 209.838.1000 to talk through your shower project.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Why does my shower go cold when a toilet flushes?", a: "An old non-balanced valve. A pressure-balanced replacement solves it." },
       { q: "Can you convert my tub to a walk-in shower?", a: "Yes, we handle the plumbing side and coordinate with your tile or surround installer." },
+      { q: "How long does a shower installation take?", a: "A valve and trim replacement is often a single day. A full conversion or new rough-in runs longer because tile, waterproofing and inspection have to fit in the schedule." },
+      { q: "Can you build in accessibility features?", a: "Yes. Curbless entry, benches, hand showers and proper blocking for grab bars are all easiest to include while the wall is open." },
+      { q: "What types of showers do you install?", a: "Standard tub-shower combinations, walk-in and curbless showers, tiled custom enclosures, prefabricated units, and multi-head or rain head layouts." },
+      { q: "How do I choose the right shower for my bathroom?", a: "Start with the space and the drain, then the valve, then the fixtures. We walk the room with you and tell you what the existing supply lines and water heater can actually support." },
+      { q: "Can you work in an older home with dated plumbing?", a: "Yes, and it is a lot of what we do. Galvanized supply lines, odd rough-in heights and obsolete valve bodies are all normal for Valley homes of a certain age." },
+      { q: "Is a permit required for shower work?", a: "Trim and valve swaps usually are not. Moving drains, altering walls or a full conversion often are, and we pull the permit and handle the inspection when the scope calls for it." },
     ],
   },
   {
