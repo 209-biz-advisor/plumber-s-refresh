@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
 import {
   Phone, Wrench, Droplets, Flame, ShieldCheck, Clock, Star, ArrowRight,
-  CheckCircle2, MessageSquare, Mail, MapPin, DollarSign, Users, Award, BookOpen, Send,
+  CheckCircle2, MessageSquare, Mail, MapPin, DollarSign, Users, Award, BookOpen,
   BadgePercent, CalendarClock, AlertTriangle, ThumbsUp,
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { GHLQuoteForm } from "@/components/GHLQuoteForm";
+import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import heroCover from "@/assets/hero-cover.png";
 import miguelOwner from "@/assets/miguel-owner.png";
 import miguelWithLogo from "@/assets/miguel-with-logo.png.asset.json";
