@@ -1543,9 +1543,57 @@ export const services: ServiceEntry[] = [
     intro:
       "The line from the meter to your house is the one nobody sees until it fails. Low pressure, a soggy yard patch or a jumping meter usually points right at it.",
     bullets: ["Main water service replacement", "Underground leak repair", "Pressure regulator installation", "Meter-to-house line upsizing", "Yard restoration after the work"],
+    sections: [
+      {
+        heading: "Water Line Plumbing Across the 209 & 350",
+        body: [
+          "Everything in the house depends on one line: the run from the meter to the building. It is buried, it is out of sight, and it is the last thing anyone suspects when pressure drops or the bill climbs. Because it is underground, diagnosing it takes equipment and experience rather than guesswork.",
+          "We locate, repair, replace and upsize residential and commercial water service lines throughout Stanislaus and San Joaquin County. Miguel has 37+ years in the trade and has owned this company since 2010, and CA Lic. #953726 (C-36 Plumbing) covers every job we put in the ground.",
+        ],
+      },
+      {
+        heading: "Knowing When It's Time for Repair",
+        body: ["A failing service line gives warning signs before it fails outright. Catching it at the warning stage is the difference between a repair and an emergency excavation."],
+        list: [
+          { lead: "Water running with every fixture off", text: "listen at the meter; if it is moving, something between it and the house is leaking." },
+          { lead: "An unexplained jump in the water bill", text: "the most common first symptom of an underground leak." },
+          { lead: "Wet spots, soft ground or unusually green grass", text: "the line is losing water into the yard along its run." },
+          { lead: "A sudden drop in water pressure", text: "either a failing pressure regulator or a line that has corroded or been crushed." },
+          { lead: "Discolored or rusty water", text: "galvanized service lines shedding scale as they reach the end of their life." },
+          { lead: "Pavement or slab that has heaved or cracked", text: "water working under hardscape near the service run." },
+        ],
+      },
+      {
+        heading: "Repair or Full Replacement",
+        body: [
+          "A single clean break in an otherwise sound copper or PEX line is a repair, and we make it and restore the area. Old galvanized steel is a different conversation: once it is corroding at one point it is corroding along its length, and repairing it in pieces means paying for the same excavation repeatedly.",
+          "We also look at diameter. Homes that have added bathrooms, an irrigation system or a tankless water heater often outgrew the original service line, and upsizing solves pressure complaints that no fixture-level repair ever will.",
+        ],
+      },
+      {
+        heading: "Installation and Water Quality",
+        body: [
+          "New service lines go in with modern materials rated for the soil and pressure conditions here, with a properly sized pressure regulator, an accessible main shutoff, and correct depth and bedding so the line is not fighting rock or settlement for the next thirty years.",
+          "Line condition affects what comes out of your tap. A deteriorating galvanized service contributes rust, sediment and taste problems that filtration alone cannot fully solve. Replacing it is often the step that makes softening and filtration equipment finally perform the way it was supposed to.",
+        ],
+      },
+      {
+        heading: "Yard Restoration and What to Expect",
+        body: [
+          "We plan the route to minimize disruption, protect what we can, and backfill and restore the work area when the line is in and tested. You get a written scope before we start, and no surprises added mid-job.",
+          "If you suspect a water line problem right now, shut the main off, call 209.838.1000, and we will get someone out to confirm it before the loss gets larger.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Why is my water pressure low everywhere?", a: "Commonly a failing pressure regulator or an undersized, corroded service line. We test to confirm which." },
       { q: "How long is a main line replacement?", a: "Typically one day for a standard residential run." },
+      { q: "How do I know if my water line is leaking underground?", a: "Shut every fixture off and watch the meter. Movement means a leak. Add a rising bill, soft or unusually green ground along the run, or a pressure drop and it is almost certainly the service line." },
+      { q: "Should I repair or replace my main water line?", a: "One isolated break in sound copper or PEX is a repair. Corroded galvanized pipe, repeat failures, or a line too small for the house should be replaced once rather than patched repeatedly." },
+      { q: "Does a bad water line affect water quality?", a: "Yes. Aging galvanized service lines shed rust and scale, which shows up as discolored water, sediment in aerators and a metallic taste, and it shortens the life of filtration equipment." },
+      { q: "Will my yard be torn up?", a: "We plan the shortest practical route, keep the disruption contained, and backfill and restore the work area after the line is tested." },
+      { q: "Can you increase my water line size for better pressure?", a: "Yes. Upsizing the service is often the correct fix for homes that added bathrooms, irrigation or a tankless water heater after the original line was installed." },
+      { q: "Do you handle commercial water service lines?", a: "Yes, for commercial and multi-unit properties, including larger diameter services, regulators and shutoff placement." },
     ],
   },
   {
