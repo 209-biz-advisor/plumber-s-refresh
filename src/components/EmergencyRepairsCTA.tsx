@@ -18,7 +18,7 @@ export function EmergencyRepairsCTA({ city, className = "" }: Props) {
 
   return (
     <section className={`bg-brand-red text-white py-16 md:py-20 ${className}`}>
-      <div className="container-x grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-start">
+      <div className="container-x grid xl:grid-cols-[0.40fr_0.60fr] gap-10 xl:gap-8 items-start">
         <div>
           <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest bg-white/15 rounded-full px-4 py-2">
             <AlertTriangle className="size-4" /> Emergency Repairs

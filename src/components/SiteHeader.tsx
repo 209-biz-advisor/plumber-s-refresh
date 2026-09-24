@@ -42,26 +42,27 @@ export function SiteHeader() {
         <Link to="/" className="flex items-center gap-2 shrink-0">
           <img src={logo} alt="Mainline Plumbing Inc." className="h-[84px] w-auto" />
         </Link>
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-7">
+        <nav className="hidden xl:flex items-center gap-4 2xl:gap-6 min-w-0">
           {nav.map((n) => (
             <a
               key={n.href}
               href={n.href}
-              className="text-white/85 hover:text-accent text-sm font-semibold uppercase tracking-wider whitespace-nowrap"
+              className="text-white/85 hover:text-accent text-[13px] font-semibold uppercase tracking-wide whitespace-nowrap"
             >
               {n.label}
             </a>
           ))}
           <Link
             to="/contact-us/"
-            className="relative bg-brand-orange-deep text-white pl-5 pr-6 py-3 font-display uppercase tracking-widest text-xs whitespace-nowrap hover:bg-brand-orange/90 flex items-center gap-2"
+            className="relative bg-brand-orange-deep text-white pl-4 pr-5 py-3 font-display uppercase tracking-wider text-xs whitespace-nowrap hover:bg-brand-orange/90 flex items-center gap-2"
             style={{ clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%)" }}
           >
             Request an Appointment <ArrowRight className="size-3.5" />
           </Link>
         </nav>
         <button
-          className="lg:hidden text-white p-2"
+          className="xl:hidden text-white p-2"
+
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -69,7 +70,8 @@ export function SiteHeader() {
         </button>
       </div>
       {open && (
-        <div className="lg:hidden bg-navy-deep border-t border-white/10">
+        <div className="xl:hidden bg-navy-deep border-t border-white/10">
+
           <div className="container-x py-4 flex flex-col gap-3">
             {nav.map((n) => (
               <a

@@ -28,17 +28,17 @@ function ContactPage() {
       <SiteHeader />
 
       <section className="bg-navy-deep text-white py-16 md:py-20">
-        <div className="container-x grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
+        <div className="container-x grid xl:grid-cols-[minmax(0,1fr)_700px] gap-10 xl:gap-14 items-center">
           <div>
             <span className="eyebrow">Contact</span>
-            <h1 className="text-4xl md:text-6xl font-bold mt-2">Schedule Service Today</h1>
+            <h1 className="text-4xl md:text-5xl xl:text-[2.75rem] font-bold mt-2">Schedule Service Today</h1>
             <p className="mt-4 text-white/80 max-w-xl">Call us or send a message, we're ready to help with any plumbing need, big or small.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="tel:+12098381000" className="btn-primary"><Phone className="size-4" /> 209.838.1000</a>
               <a href="sms:2098381000" className="btn-outline">Text Us</a>
             </div>
           </div>
-          <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
+          <GHLQuoteForm className="w-full xl:ml-auto" />
         </div>
       </section>
 
