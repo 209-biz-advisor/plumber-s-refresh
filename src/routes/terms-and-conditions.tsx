@@ -9,7 +9,7 @@ const URL = `${SITE_URL}/terms-and-conditions/`;
 const DESC =
   "Terms and Conditions for Mainline Plumbing Inc. of Escalon, CA. Website use, service agreements, payment terms, SMS terms, liability, and California governing law.";
 
-const EFFECTIVE = "March 25, 2026";
+const EFFECTIVE = "September 24, 2026";
 
 type Section = { id: string; title: string; body: React.ReactNode };
 
@@ -33,10 +33,16 @@ const sections: Section[] = [
     id: "eligibility",
     title: "2. Eligibility",
     body: (
-      <p>
-        The Website is intended for individuals 13 years of age or older. If you are under the age
-        of 18, you must use this Website with the involvement of a parent or legal guardian.
-      </p>
+      <>
+        <p>
+          The Website is intended for individuals 13 years of age or older. If you are under the age
+          of 18, you must use this Website with the involvement of a parent or legal guardian.
+        </p>
+        <p>
+          Participation in the Mainline Plumbing SMS program is limited to individuals who are 18
+          years of age or older and are authorized to use the mobile number provided.
+        </p>
+      </>
     ),
   },
   {
@@ -94,25 +100,66 @@ const sections: Section[] = [
   },
   {
     id: "sms-terms",
-    title: "7. SMS and Communication Terms",
+    title: "7. SMS Messaging Terms and Conditions",
     body: (
       <>
-        <p>By providing your phone number, you consent to receive text messages (SMS/MMS) from Mainline Plumbing. These messages may include:</p>
+        <p>
+          <strong className="text-navy">Program name:</strong> Mainline Plumbing Customer Care SMS
+          Program.
+        </p>
+        <p>
+          By submitting a website form, requesting service, or otherwise providing your mobile
+          number and expressly opting in, you agree to receive conversational and service-related
+          text messages (SMS/MMS) from Mainline Plumbing Inc. at the number provided. Messages may
+          be sent using an automatic telephone dialing system or other automated technology.
+          Consent is not a condition of purchasing goods or services.
+        </p>
+        <p>Messages may include:</p>
         <ul>
           <li>Appointment confirmations</li>
+          <li>Appointment reminders</li>
           <li>Service updates</li>
           <li>Scheduling coordination</li>
-          <li>Follow-ups</li>
+          <li>Responses to customer questions</li>
+          <li>Post-service follow-ups and review requests</li>
         </ul>
         <p>
-          Message frequency varies. You may opt out at any time by replying <strong>STOP</strong>,
-          and request help by replying <strong>HELP</strong>. Message and data rates may apply
-          depending on your wireless carrier.
+          Message frequency varies based on your service request and interactions with us. Message
+          and data rates may apply. Carriers are not liable for delayed or undelivered messages.
+        </p>
+        <p>
+          You may opt out at any time by replying <strong>STOP</strong> to any message. After you
+          send STOP, you may receive one final confirmation message, and no further messages will
+          be sent unless you opt in again. For assistance, reply <strong>HELP</strong>, call{" "}
+          <a href="tel:+12098381000" className="text-brand-orange font-semibold hover:underline">
+            209.838.1000
+          </a>
+          , or email{" "}
+          <a href="mailto:Office@MainlinePlumber.com" className="text-brand-orange font-semibold hover:underline">
+            Office@MainlinePlumber.com
+          </a>
+          .
+        </p>
+        <p>
+          You must be at least 18 years old and authorized to use the mobile number you provide to
+          participate. Mobile carriers are not responsible for the content of our messages. Message
+          delivery is subject to effective transmission by your carrier and is not guaranteed.
+          Supported carriers and messaging availability may vary.
+        </p>
+        <p>
+          Your participation is also governed by our{" "}
+          <Link to="/privacy-policy/" className="text-brand-orange font-semibold hover:underline">
+            Privacy Policy
+          </Link>
+          .
         </p>
         <div className="mt-4 border-l-4 border-brand-orange bg-muted/60 p-4 rounded-r">
           <p className="text-navy">
-            Phone numbers and SMS opt-in data will not be shared, sold, or rented to third parties
-            for marketing purposes.
+            No mobile information will be shared with third parties or affiliates for marketing or
+            promotional purposes. Information sharing with subcontractors in support services,
+            such as customer service, is permitted. All other use-case categories exclude text
+            messaging originator opt-in data and consent; this information will not be shared with
+            any third parties.
           </p>
         </div>
       </>
@@ -234,7 +281,7 @@ export const Route = createFileRoute("/terms-and-conditions")({
               url: URL,
               name: "Terms and Conditions",
               description: DESC,
-              dateModified: "2026-03-25",
+              dateModified: "2026-09-24",
               isPartOf: { "@id": `${SITE_URL}/#website` },
               publisher: { "@id": `${SITE_URL}/#organization` },
             },
