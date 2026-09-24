@@ -117,13 +117,19 @@ function HomePage() {
       <section className="relative overflow-hidden">
         <img src={heroCover} alt="Mainline Plumbing Escalon CA" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/90 via-navy-deep/70 to-navy-deep/40" />
-        <div className="container-x relative py-20 md:py-28 text-white">
-          <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
+        <div className="relative mx-auto w-full max-w-[1440px] px-5 py-20 md:px-8 md:py-28 text-white">
+          <div className="grid xl:grid-cols-[minmax(0,1fr)_700px] gap-10 xl:gap-14 items-center">
+
+
+
+
           <div className="max-w-3xl">
             <span className="eyebrow">Escalon, CA · Family-Owned Since 2010</span>
-            <h1 className="text-4xl md:text-6xl font-bold mt-3 leading-[1.05]">
-              We Protect Plumbing <span className="text-accent">and Peace of Mind.</span>
+            <h1 className="text-4xl md:text-5xl xl:text-[2.75rem] font-bold mt-3 leading-[1.08]">
+              We Protect Plumbing
+              <span className="block text-accent">and Peace of Mind.</span>
             </h1>
+
             <p className="mt-5 font-display text-2xl md:text-3xl text-accent italic">
               "We Treat Your Family, Like Our Family."
             </p>
@@ -145,7 +151,7 @@ function HomePage() {
               <div className="flex items-center gap-2"><ShieldCheck className="size-4 text-accent" /> {LICENSE_SHORT}</div>
             </div>
           </div>
-          <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
+          <GHLQuoteForm className="w-full xl:ml-auto" />
           </div>
         </div>
       </section>

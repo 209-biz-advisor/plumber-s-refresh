@@ -35,10 +35,10 @@ function ServicesPage() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
       <section className="bg-navy-deep text-white py-16 md:py-20">
-        <div className="container-x grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
+        <div className="container-x grid xl:grid-cols-[minmax(0,1fr)_700px] gap-10 xl:gap-14 items-center">
           <div>
             <span className="eyebrow">Our Services</span>
-            <h1 className="text-4xl md:text-6xl font-bold mt-2">Complete Plumbing Solutions</h1>
+            <h1 className="text-4xl md:text-5xl xl:text-[2.75rem] font-bold mt-2">Complete Plumbing Solutions</h1>
             <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider border border-accent/60 rounded-md px-4 py-2">
               {LICENSE_LABEL}
             </p>
@@ -48,7 +48,7 @@ function ServicesPage() {
               <Link to="/areas-we-serve/" className="btn-outline">Areas We Serve</Link>
             </div>
           </div>
-          <GHLQuoteForm className="w-full max-w-md lg:ml-auto" />
+          <GHLQuoteForm className="w-full xl:ml-auto" />
         </div>
       </section>
 
