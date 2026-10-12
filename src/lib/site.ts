@@ -13,6 +13,12 @@ export function canonical(path: string): string {
 
 export const OG_IMAGE = `${SITE_URL}/og-cover.png`;
 
+/**
+ * Main horizontal logo, CDN-hosted so it also resolves as an absolute URL for
+ * machine-readable records (JSON-LD, llms.txt).
+ */
+export const LOGO_URL = `${SITE_URL}/__l5e/assets-v1/39b28cc1-2570-48ba-8b76-6d996c8966e9/logo-horizontal.png`;
+
 /** California contractor license (C-36 Plumbing classification). */
 export const LICENSE_NUMBER = "953726";
 export const LICENSE_LABEL = `CA Lic. #${LICENSE_NUMBER} (C-36 Plumbing)`;

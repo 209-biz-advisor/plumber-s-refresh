@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, ArrowRight } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/logo-horizontal.png";
+import logo from "@/assets/logo-horizontal.png.asset.json";
 import { LICENSE_LABEL } from "@/lib/site";
 
 const nav = [
@@ -40,7 +40,7 @@ export function SiteHeader() {
       </div>
       <div className="container-x flex items-center justify-between h-28 gap-4">
         <Link to="/" className="flex items-center gap-2 shrink-0">
-          <img src={logo} alt="Mainline Plumbing Inc." className="h-[84px] w-auto" />
+          <img src={logo.url} alt="Mainline Plumbing Inc." className="h-[84px] w-auto" />
         </Link>
         <nav className="hidden xl:flex items-center gap-4 2xl:gap-6 min-w-0">
           {nav.map((n) => (

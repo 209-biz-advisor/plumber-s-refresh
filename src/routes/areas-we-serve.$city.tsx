@@ -8,7 +8,7 @@ import { EmergencyRepairsCTA } from "@/components/EmergencyRepairsCTA";
 import { GHLQuoteForm } from "@/components/GHLQuoteForm";
 import { findCity, serviceCities } from "@/lib/service-cities";
 import serviceMap from "@/assets/mainline-service-map.png.asset.json";
-import { SITE_URL, OG_IMAGE, LICENSE_LABEL } from "@/lib/site";
+import { SITE_URL, OG_IMAGE, LICENSE_LABEL, LOGO_URL } from "@/lib/site";
 import { KNOWS_ABOUT, serviceGeoCircle, similarToNodes } from "@/lib/entities";
 
 export const Route = createFileRoute("/areas-we-serve/$city")({
@@ -56,7 +56,7 @@ export const Route = createFileRoute("/areas-we-serve/$city")({
                 name: `Mainline Plumbing Inc. of ${city.name}, CA`,
                 url,
                 telephone: "+1-209-838-1000",
-                image: "https://mainlineplumber.com/favicon.png",
+                image: LOGO_URL,
                 priceRange: "$$",
                 parentOrganization: { "@id": "https://mainlineplumber.com/#business" },
                 address: {

@@ -9,7 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
-import { SITE_URL, OG_IMAGE } from "@/lib/site";
+import { SITE_URL, OG_IMAGE, LOGO_URL } from "@/lib/site";
 import { GOOGLE_MAPS_URL, GOOGLE_RATING, GOOGLE_REVIEW_COUNT, SAME_AS } from "@/lib/reviews";
 import { KNOWS_ABOUT, serviceGeoCircle, similarToNodes } from "@/lib/entities";
 import { CookieConsent } from "@/components/CookieConsent";
@@ -109,8 +109,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               name: "Mainline Plumbing Inc.",
               url: "https://mainlineplumber.com",
               telephone: "+1-209-838-1000",
-              image: "https://mainlineplumber.com/favicon.png",
-              logo: "https://mainlineplumber.com/favicon.png",
+              image: LOGO_URL,
+              logo: LOGO_URL,
               priceRange: "$$",
               hasCredential: {
                 "@type": "EducationalOccupationalCredential",
