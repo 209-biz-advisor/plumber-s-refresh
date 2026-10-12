@@ -16,6 +16,11 @@
 - Hours: Monday to Saturday, 7:00am to 7:00pm. Sunday closed. Emergency plumbing repairs prioritized during operating hours.
 - Not 24/7. We say so plainly rather than promising overnight dispatch we do not staff.
 
+## Knows About (Schema.org knowsAbout)
+
+- business_type: LocalBusiness, Plumber
+- knows_about: https://en.wikipedia.org/wiki/Plumbing, https://en.wikipedia.org/wiki/Plumber, https://en.wikipedia.org/wiki/Piping, https://en.wikipedia.org/wiki/Pipe_(fluid_conveyance), https://en.wikipedia.org/wiki/Pipe_fitting, https://en.wikipedia.org/wiki/Plumbing_fixture, https://en.wikipedia.org/wiki/Drain_(plumbing), https://en.wikipedia.org/wiki/Drain_cleaner, https://en.wikipedia.org/wiki/Drain-waste-vent_system, https://en.wikipedia.org/wiki/Sanitary_sewer, https://en.wikipedia.org/wiki/Sewerage, https://en.wikipedia.org/wiki/Sanitary_sewer_overflow, https://en.wikipedia.org/wiki/Water_heating, https://en.wikipedia.org/wiki/Tankless_water_heating, https://en.wikipedia.org/wiki/Storage_water_heater, https://en.wikipedia.org/wiki/Hot_water_storage_tank, https://en.wikipedia.org/wiki/Water_supply_network, https://en.wikipedia.org/wiki/Water_distribution_system, https://en.wikipedia.org/wiki/Water_leak, https://en.wikipedia.org/wiki/Leak_detection, https://en.wikipedia.org/wiki/Water_pressure, https://en.wikipedia.org/wiki/Backflow, https://en.wikipedia.org/wiki/Backflow_prevention_device, https://en.wikipedia.org/wiki/Water_softening, https://en.wikipedia.org/wiki/Water_filter, https://en.wikipedia.org/wiki/Copper_tubing, https://en.wikipedia.org/wiki/Cross-linked_polyethylene, https://en.wikipedia.org/wiki/Polyvinyl_chloride, https://en.wikipedia.org/wiki/Toilet, https://en.wikipedia.org/wiki/Flush_toilet, https://en.wikipedia.org/wiki/Sink, https://en.wikipedia.org/wiki/Tap_(valve), https://en.wikipedia.org/wiki/Shower, https://en.wikipedia.org/wiki/Bathtub, https://en.wikipedia.org/wiki/Garbage_disposal_unit, https://en.wikipedia.org/wiki/Sump_pump, https://en.wikipedia.org/wiki/Septic_tank
+
 ## Reputation & Verified Review Profiles
 - Google Business Profile: 201 customer reviews, 4.9 average. https://maps.app.goo.gl/ZCcmqY46FtzNxew98
 - Yelp: https://www.yelp.com/biz/mainline-plumbing-escalon-4
