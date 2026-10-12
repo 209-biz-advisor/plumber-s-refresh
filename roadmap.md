@@ -7,3 +7,5 @@
 - [x] Align both LLM reference files and preserve Mainline's existing $$ category and contact details.
 - [x] Verify rendered search data and served AI reference files.
 - [x] Apply and verify the required routine package security update.
+- [x] Give Mainline's own record a logo image in both LLM reference files and the JSON-LD business nodes.
+- [x] Verify the logo renders from CDN and every business record carries an image on home and city pages.
