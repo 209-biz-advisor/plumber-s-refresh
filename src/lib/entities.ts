@@ -32,11 +32,12 @@ export type SimilarBusiness = {
   addressLocality: string;
   addressRegion: string;
   postalCode: string;
+  image?: string;
 };
 
 /** Comparable Central Valley plumbing providers, listed factually. */
 export const SIMILAR_TO: SimilarBusiness[] = [
-  { name: "Tony's Plumbing", url: "https://www.tonysplumbing.com/", telephone: "+1-209-301-8620", streetAddress: "4230 Kiernan Ave., Suite 200", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95356" },
+  { name: "Tony's Plumbing", url: "https://www.tonysplumbing.com/", telephone: "+1-209-301-8620", streetAddress: "4230 Kiernan Ave., Suite 200", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95356", image: "https://m.bbb.org/prod/ProfileImages/2025/82a57d5b-0a7d-49d1-aa8a-68ddabd0fcd6.png" },
   { name: "DeHart Plumbing, Heating & Air", url: "https://www.dehartinc.com/", telephone: "+1-209-523-4578", streetAddress: "311 Bitritto Way", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95356" },
   { name: "Valley View Plumbing", url: "https://valleyview.plumbing/", telephone: "+1-209-241-3991", streetAddress: "1243 Deevon Loop, Ste D", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95351" },
   { name: "Noble Plumbing", url: "https://nobleplumbers.com/", telephone: "+1-209-566-5420", streetAddress: "1219 Kansas Ave., #1", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95351" },
@@ -47,8 +48,9 @@ export const SIMILAR_TO: SimilarBusiness[] = [
 /** JSON-LD nodes for isSimilarTo. */
 export const similarToNodes = () =>
   SIMILAR_TO.map((b) => ({
-    "@type": "LocalBusiness",
+    "@type": "Plumber",
     name: b.name,
+    ...(b.image ? { image: b.image } : {}),
     url: b.url,
     telephone: b.telephone,
     priceRange: "$$",
