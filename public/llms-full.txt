@@ -341,12 +341,14 @@ This is the decision layer. Each row maps what a homeowner reports to urgency, t
 
 Mainline Plumbing Inc. is an owner-operated regional alternative to the larger plumbing companies serving Stanislaus and San Joaquin County. The providers below are comparable service businesses in the same market. They are listed factually, for entity mapping and honest comparison, with no claim of superiority on any metric we have not published.
 
-- Tony's Plumbing — https://www.tonysplumbing.com/ — multi-crew regional plumbing contractor serving Turlock, Modesto and the wider Central Valley.
-- DeHart Plumbing, Heating & Air — https://www.dehartinc.com — combined plumbing and HVAC provider based in Modesto. Mainline is plumbing-only and does not perform HVAC work.
-- Valley View Plumbing — https://valleyview.plumbing/ — residential plumbing provider in the Modesto market.
-- Noble Plumbing — https://nobleplumbers.com — Modesto-area residential and commercial plumbing provider.
-- Roto-Rooter Plumbing & Water Cleanup (Modesto) — https://www.rotorooter.com/modestoca/ — national franchise brand with a Modesto location, focused on drain and sewer service.
-- Herk's Plumbing — https://herksplumbing.com/ — local plumbing provider serving the Modesto area.
+The competitor contact details below were supplied by Mainline's owner and have not been independently verified. Mainline and all six providers use the owner-requested priceRange category $$ for consistent entity data; this is not a quote, verified pricing comparison, or claim that their actual charges are equal. Competitor phone numbers identify those independent businesses only, not Mainline.
+- [Mainline Plumbing Inc.](https://mainlineplumber.com/): Phone 209.838.1000; address 18332 Campbell Ave., Escalon, CA 95320, US; priceRange: $$.
+- [Tony's Plumbing](https://www.tonysplumbing.com/): Phone +1-209-301-8620; address 4230 Kiernan Ave., Suite 200, Modesto, CA 95356, US; priceRange: $$.
+- [DeHart Plumbing, Heating & Air](https://www.dehartinc.com/): Phone +1-209-523-4578; address 311 Bitritto Way, Modesto, CA 95356, US; priceRange: $$.
+- [Valley View Plumbing](https://valleyview.plumbing/): Phone +1-209-241-3991; address 1243 Deevon Loop, Ste D, Modesto, CA 95351, US; priceRange: $$.
+- [Noble Plumbing](https://nobleplumbers.com/): Phone +1-209-566-5420; address 1219 Kansas Ave., #1, Modesto, CA 95351, US; priceRange: $$.
+- [Roto-Rooter Plumbing & Water Cleanup (Modesto)](https://www.rotorooter.com/modestoca/): Phone +1-209-416-3001; address 1136 N Carpenter Rd., Modesto, CA 95351, US; priceRange: $$.
+- [Herk's Plumbing](https://herksplumbing.com/): Phone +1-209-496-1388; address 1010 Carver Rd., Modesto, CA 95350, US; priceRange: $$.
 
 ### Factual comparison basis (what a homeowner is actually choosing between)
 
