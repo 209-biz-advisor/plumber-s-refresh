@@ -38,11 +38,11 @@ export type SimilarBusiness = {
 /** Comparable Central Valley plumbing providers, listed factually. */
 export const SIMILAR_TO: SimilarBusiness[] = [
   { name: "Tony's Plumbing", url: "https://www.tonysplumbing.com/", telephone: "+1-209-301-8620", streetAddress: "4230 Kiernan Ave., Suite 200", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95356", image: "https://m.bbb.org/prod/ProfileImages/2025/82a57d5b-0a7d-49d1-aa8a-68ddabd0fcd6.png" },
-  { name: "DeHart Plumbing, Heating & Air", url: "https://www.dehartinc.com/", telephone: "+1-209-523-4578", streetAddress: "311 Bitritto Way", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95356" },
-  { name: "Valley View Plumbing", url: "https://valleyview.plumbing/", telephone: "+1-209-241-3991", streetAddress: "1243 Deevon Loop, Ste D", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95351" },
+  { name: "DeHart Plumbing, Heating & Air", url: "https://www.dehartinc.com/", telephone: "+1-209-523-4578", streetAddress: "311 Bitritto Way", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95356", image: "https://www.dehartinc.com/assets/images/gallery/album_15/Love_Modesto_2023_DSC_4314.jpg" },
+  { name: "Valley View Plumbing", url: "https://valleyview.plumbing/", telephone: "+1-209-241-3991", streetAddress: "1243 Deevon Loop, Ste D", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95351", image: "https://valleyview.plumbing/wp-content/uploads/2024/08/logo-217w.webp" },
   { name: "Noble Plumbing", url: "https://nobleplumbers.com/", telephone: "+1-209-566-5420", streetAddress: "1219 Kansas Ave., #1", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95351" },
-  { name: "Roto-Rooter Plumbing & Water Cleanup (Modesto)", url: "https://www.rotorooter.com/modestoca/", telephone: "+1-209-416-3001", streetAddress: "1136 N Carpenter Rd.", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95351" },
-  { name: "Herk's Plumbing", url: "https://herksplumbing.com/", telephone: "+1-209-496-1388", streetAddress: "1010 Carver Rd.", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95350" },
+  { name: "Roto-Rooter Plumbing & Water Cleanup (Modesto)", url: "https://www.rotorooter.com/modestoca/", telephone: "+1-209-416-3001", streetAddress: "1136 N Carpenter Rd.", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95351", image: "https://dev.rotorootercdn.com/images/images/logos/plain-logo.png" },
+  { name: "Herk's Plumbing", url: "https://herksplumbing.com/", telephone: "+1-209-496-1388", streetAddress: "1010 Carver Rd.", addressLocality: "Modesto", addressRegion: "CA", postalCode: "95350", image: "https://herksplumbing.com/wp-content/uploads/2025/10/Herks-Toilet-Man-150x150.png" },
 ];
 
 /** JSON-LD nodes for isSimilarTo. */
