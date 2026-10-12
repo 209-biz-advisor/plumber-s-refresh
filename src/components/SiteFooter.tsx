@@ -3,7 +3,7 @@ import { Phone, MapPin, Clock, Facebook, Instagram, ShieldCheck } from "lucide-r
 import { LICENSE_LABEL, LICENSE_SHORT } from "@/lib/site";
 import { openCookiePreferences } from "@/lib/consent";
 
-import logo from "@/assets/logo-horizontal.png";
+import logo from "@/assets/logo-horizontal.png.asset.json";
 import miguel from "@/assets/miguel-owner.png";
 
 export function SiteFooter() {
