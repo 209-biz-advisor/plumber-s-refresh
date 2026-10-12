@@ -9,86 +9,41 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as AboutRouteImport } from './routes/about'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as ContactUsRouteImport } from './routes/contact-us'
-import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
-import { Route as CouponsRouteImport } from './routes/coupons'
-import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as ReviewsRouteImport } from './routes/reviews'
-import { Route as ServicesRouteImport } from './routes/services'
-import { Route as SiteMapRouteImport } from './routes/site-map'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
-import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
-import { Route as AboutUsFaqRouteImport } from './routes/about-us.faq'
-import { Route as AreasWeServeIndexRouteImport } from './routes/areas-we-serve.index'
-import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$city'
-import { Route as AreasWeServeEscalonRouteImport } from './routes/areas-we-serve.escalon'
-import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as BlogSplatRouteImport } from './routes/blog.$'
-import { Route as NpsSurveyThankYouRouteImport } from './routes/nps-survey.thank-you'
-import { Route as PhotoGalleryIndexRouteImport } from './routes/photo-gallery.index'
-import { Route as PhotoGalleryCategoryRouteImport } from './routes/photo-gallery.$category'
-import { Route as PlumbingServicesIndexRouteImport } from './routes/plumbing-services.index'
-import { Route as PlumbingServicesSplatRouteImport } from './routes/plumbing-services.$'
-import { Route as TemplatesIndexRouteImport } from './routes/templates.index'
-import { Route as TemplatesSplatRouteImport } from './routes/templates.$'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SiteMapRouteImport } from './routes/site-map'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as CouponsRouteImport } from './routes/coupons'
+import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
+import { Route as ContactUsRouteImport } from './routes/contact-us'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as IndexRouteImport } from './routes/index'
 import { Route as WaterHeatersIndexRouteImport } from './routes/water-heaters.index'
+import { Route as TemplatesIndexRouteImport } from './routes/templates.index'
+import { Route as PlumbingServicesIndexRouteImport } from './routes/plumbing-services.index'
+import { Route as PhotoGalleryIndexRouteImport } from './routes/photo-gallery.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as AreasWeServeIndexRouteImport } from './routes/areas-we-serve.index'
+import { Route as AboutUsIndexRouteImport } from './routes/about-us.index'
 import { Route as WaterHeatersSplatRouteImport } from './routes/water-heaters.$'
+import { Route as TemplatesSplatRouteImport } from './routes/templates.$'
+import { Route as PlumbingServicesSplatRouteImport } from './routes/plumbing-services.$'
+import { Route as PhotoGalleryCategoryRouteImport } from './routes/photo-gallery.$category'
+import { Route as NpsSurveyThankYouRouteImport } from './routes/nps-survey.thank-you'
+import { Route as BlogSplatRouteImport } from './routes/blog.$'
+import { Route as AreasWeServeEscalonRouteImport } from './routes/areas-we-serve.escalon'
+import { Route as AreasWeServeCityRouteImport } from './routes/areas-we-serve.$city'
+import { Route as AboutUsFaqRouteImport } from './routes/about-us.faq'
 import { Route as AboutUsVideoCenterIndexRouteImport } from './routes/about-us.video-center.index'
 import { Route as AboutUsVideoCenterVideosIndexRouteImport } from './routes/about-us.video-center.videos.index'
 import { Route as AboutUsVideoCenterVideosAboutOurCompanyRouteImport } from './routes/about-us.video-center.videos.about-our-company'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactUsRoute = ContactUsRouteImport.update({
-  id: '/contact-us',
-  path: '/contact-us',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CookiePolicyRoute = CookiePolicyRouteImport.update({
-  id: '/cookie-policy',
-  path: '/cookie-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CouponsRoute = CouponsRouteImport.update({
-  id: '/coupons',
-  path: '/coupons',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
-  id: '/privacy-policy',
-  path: '/privacy-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ReviewsRoute = ReviewsRouteImport.update({
-  id: '/reviews',
-  path: '/reviews',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServicesRoute = ServicesRouteImport.update({
-  id: '/services',
-  path: '/services',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SiteMapRoute = SiteMapRouteImport.update({
-  id: '/site-map',
-  path: '/site-map',
+const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
+  id: '/terms-and-conditions',
+  path: '/terms-and-conditions',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -96,79 +51,54 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
-  id: '/terms-and-conditions',
-  path: '/terms-and-conditions',
+const SiteMapRoute = SiteMapRouteImport.update({
+  id: '/site-map',
+  path: '/site-map',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AboutUsIndexRoute = AboutUsIndexRouteImport.update({
-  id: '/about-us/',
-  path: '/about-us/',
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AboutUsFaqRoute = AboutUsFaqRouteImport.update({
-  id: '/about-us/faq',
-  path: '/about-us/faq',
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AreasWeServeIndexRoute = AreasWeServeIndexRouteImport.update({
-  id: '/areas-we-serve/',
-  path: '/areas-we-serve/',
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AreasWeServeCityRoute = AreasWeServeCityRouteImport.update({
-  id: '/areas-we-serve/$city',
-  path: '/areas-we-serve/$city',
+const CouponsRoute = CouponsRouteImport.update({
+  id: '/coupons',
+  path: '/coupons',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AreasWeServeEscalonRoute = AreasWeServeEscalonRouteImport.update({
-  id: '/areas-we-serve/escalon',
-  path: '/areas-we-serve/escalon',
+const CookiePolicyRoute = CookiePolicyRouteImport.update({
+  id: '/cookie-policy',
+  path: '/cookie-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
+const ContactUsRoute = ContactUsRouteImport.update({
+  id: '/contact-us',
+  path: '/contact-us',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogSplatRoute = BlogSplatRouteImport.update({
-  id: '/blog/$',
-  path: '/blog/$',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NpsSurveyThankYouRoute = NpsSurveyThankYouRouteImport.update({
-  id: '/nps-survey/thank-you',
-  path: '/nps-survey/thank-you',
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PhotoGalleryIndexRoute = PhotoGalleryIndexRouteImport.update({
-  id: '/photo-gallery/',
-  path: '/photo-gallery/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PhotoGalleryCategoryRoute = PhotoGalleryCategoryRouteImport.update({
-  id: '/photo-gallery/$category',
-  path: '/photo-gallery/$category',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumbingServicesIndexRoute = PlumbingServicesIndexRouteImport.update({
-  id: '/plumbing-services/',
-  path: '/plumbing-services/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PlumbingServicesSplatRoute = PlumbingServicesSplatRouteImport.update({
-  id: '/plumbing-services/$',
-  path: '/plumbing-services/$',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TemplatesIndexRoute = TemplatesIndexRouteImport.update({
-  id: '/templates/',
-  path: '/templates/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TemplatesSplatRoute = TemplatesSplatRouteImport.update({
-  id: '/templates/$',
-  path: '/templates/$',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WaterHeatersIndexRoute = WaterHeatersIndexRouteImport.update({
@@ -176,9 +106,79 @@ const WaterHeatersIndexRoute = WaterHeatersIndexRouteImport.update({
   path: '/water-heaters/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TemplatesIndexRoute = TemplatesIndexRouteImport.update({
+  id: '/templates/',
+  path: '/templates/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumbingServicesIndexRoute = PlumbingServicesIndexRouteImport.update({
+  id: '/plumbing-services/',
+  path: '/plumbing-services/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhotoGalleryIndexRoute = PhotoGalleryIndexRouteImport.update({
+  id: '/photo-gallery/',
+  path: '/photo-gallery/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AreasWeServeIndexRoute = AreasWeServeIndexRouteImport.update({
+  id: '/areas-we-serve/',
+  path: '/areas-we-serve/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsIndexRoute = AboutUsIndexRouteImport.update({
+  id: '/about-us/',
+  path: '/about-us/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WaterHeatersSplatRoute = WaterHeatersSplatRouteImport.update({
   id: '/water-heaters/$',
   path: '/water-heaters/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TemplatesSplatRoute = TemplatesSplatRouteImport.update({
+  id: '/templates/$',
+  path: '/templates/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlumbingServicesSplatRoute = PlumbingServicesSplatRouteImport.update({
+  id: '/plumbing-services/$',
+  path: '/plumbing-services/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhotoGalleryCategoryRoute = PhotoGalleryCategoryRouteImport.update({
+  id: '/photo-gallery/$category',
+  path: '/photo-gallery/$category',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NpsSurveyThankYouRoute = NpsSurveyThankYouRouteImport.update({
+  id: '/nps-survey/thank-you',
+  path: '/nps-survey/thank-you',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSplatRoute = BlogSplatRouteImport.update({
+  id: '/blog/$',
+  path: '/blog/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AreasWeServeEscalonRoute = AreasWeServeEscalonRouteImport.update({
+  id: '/areas-we-serve/escalon',
+  path: '/areas-we-serve/escalon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AreasWeServeCityRoute = AreasWeServeCityRouteImport.update({
+  id: '/areas-we-serve/$city',
+  path: '/areas-we-serve/$city',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsFaqRoute = AboutUsFaqRouteImport.update({
+  id: '/about-us/faq',
+  path: '/about-us/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutUsVideoCenterIndexRoute = AboutUsVideoCenterIndexRouteImport.update({
@@ -437,74 +437,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact-us': {
-      id: '/contact-us'
-      path: '/contact-us'
-      fullPath: '/contact-us'
-      preLoaderRoute: typeof ContactUsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/cookie-policy': {
-      id: '/cookie-policy'
-      path: '/cookie-policy'
-      fullPath: '/cookie-policy'
-      preLoaderRoute: typeof CookiePolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/coupons': {
-      id: '/coupons'
-      path: '/coupons'
-      fullPath: '/coupons'
-      preLoaderRoute: typeof CouponsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy-policy': {
-      id: '/privacy-policy'
-      path: '/privacy-policy'
-      fullPath: '/privacy-policy'
-      preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reviews': {
-      id: '/reviews'
-      path: '/reviews'
-      fullPath: '/reviews'
-      preLoaderRoute: typeof ReviewsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/services': {
-      id: '/services'
-      path: '/services'
-      fullPath: '/services'
-      preLoaderRoute: typeof ServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/site-map': {
-      id: '/site-map'
-      path: '/site-map'
-      fullPath: '/site-map'
-      preLoaderRoute: typeof SiteMapRouteImport
+    '/terms-and-conditions': {
+      id: '/terms-and-conditions'
+      path: '/terms-and-conditions'
+      fullPath: '/terms-and-conditions'
+      preLoaderRoute: typeof TermsAndConditionsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -514,109 +451,74 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/terms-and-conditions': {
-      id: '/terms-and-conditions'
-      path: '/terms-and-conditions'
-      fullPath: '/terms-and-conditions'
-      preLoaderRoute: typeof TermsAndConditionsRouteImport
+    '/site-map': {
+      id: '/site-map'
+      path: '/site-map'
+      fullPath: '/site-map'
+      preLoaderRoute: typeof SiteMapRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/about-us/': {
-      id: '/about-us/'
-      path: '/about-us'
-      fullPath: '/about-us/'
-      preLoaderRoute: typeof AboutUsIndexRouteImport
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/about-us/faq': {
-      id: '/about-us/faq'
-      path: '/about-us/faq'
-      fullPath: '/about-us/faq'
-      preLoaderRoute: typeof AboutUsFaqRouteImport
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/areas-we-serve/': {
-      id: '/areas-we-serve/'
-      path: '/areas-we-serve'
-      fullPath: '/areas-we-serve/'
-      preLoaderRoute: typeof AreasWeServeIndexRouteImport
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/areas-we-serve/$city': {
-      id: '/areas-we-serve/$city'
-      path: '/areas-we-serve/$city'
-      fullPath: '/areas-we-serve/$city'
-      preLoaderRoute: typeof AreasWeServeCityRouteImport
+    '/coupons': {
+      id: '/coupons'
+      path: '/coupons'
+      fullPath: '/coupons'
+      preLoaderRoute: typeof CouponsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/areas-we-serve/escalon': {
-      id: '/areas-we-serve/escalon'
-      path: '/areas-we-serve/escalon'
-      fullPath: '/areas-we-serve/escalon'
-      preLoaderRoute: typeof AreasWeServeEscalonRouteImport
+    '/cookie-policy': {
+      id: '/cookie-policy'
+      path: '/cookie-policy'
+      fullPath: '/cookie-policy'
+      preLoaderRoute: typeof CookiePolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/': {
-      id: '/blog/'
-      path: '/blog'
-      fullPath: '/blog/'
-      preLoaderRoute: typeof BlogIndexRouteImport
+    '/contact-us': {
+      id: '/contact-us'
+      path: '/contact-us'
+      fullPath: '/contact-us'
+      preLoaderRoute: typeof ContactUsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/$': {
-      id: '/blog/$'
-      path: '/blog/$'
-      fullPath: '/blog/$'
-      preLoaderRoute: typeof BlogSplatRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/nps-survey/thank-you': {
-      id: '/nps-survey/thank-you'
-      path: '/nps-survey/thank-you'
-      fullPath: '/nps-survey/thank-you'
-      preLoaderRoute: typeof NpsSurveyThankYouRouteImport
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/photo-gallery/': {
-      id: '/photo-gallery/'
-      path: '/photo-gallery'
-      fullPath: '/photo-gallery/'
-      preLoaderRoute: typeof PhotoGalleryIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/photo-gallery/$category': {
-      id: '/photo-gallery/$category'
-      path: '/photo-gallery/$category'
-      fullPath: '/photo-gallery/$category'
-      preLoaderRoute: typeof PhotoGalleryCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumbing-services/': {
-      id: '/plumbing-services/'
-      path: '/plumbing-services'
-      fullPath: '/plumbing-services/'
-      preLoaderRoute: typeof PlumbingServicesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/plumbing-services/$': {
-      id: '/plumbing-services/$'
-      path: '/plumbing-services/$'
-      fullPath: '/plumbing-services/$'
-      preLoaderRoute: typeof PlumbingServicesSplatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/templates/': {
-      id: '/templates/'
-      path: '/templates'
-      fullPath: '/templates/'
-      preLoaderRoute: typeof TemplatesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/templates/$': {
-      id: '/templates/$'
-      path: '/templates/$'
-      fullPath: '/templates/$'
-      preLoaderRoute: typeof TemplatesSplatRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/water-heaters/': {
@@ -626,11 +528,109 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WaterHeatersIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/templates/': {
+      id: '/templates/'
+      path: '/templates'
+      fullPath: '/templates/'
+      preLoaderRoute: typeof TemplatesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumbing-services/': {
+      id: '/plumbing-services/'
+      path: '/plumbing-services'
+      fullPath: '/plumbing-services/'
+      preLoaderRoute: typeof PlumbingServicesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/photo-gallery/': {
+      id: '/photo-gallery/'
+      path: '/photo-gallery'
+      fullPath: '/photo-gallery/'
+      preLoaderRoute: typeof PhotoGalleryIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/areas-we-serve/': {
+      id: '/areas-we-serve/'
+      path: '/areas-we-serve'
+      fullPath: '/areas-we-serve/'
+      preLoaderRoute: typeof AreasWeServeIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/': {
+      id: '/about-us/'
+      path: '/about-us'
+      fullPath: '/about-us/'
+      preLoaderRoute: typeof AboutUsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/water-heaters/$': {
       id: '/water-heaters/$'
       path: '/water-heaters/$'
       fullPath: '/water-heaters/$'
       preLoaderRoute: typeof WaterHeatersSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/templates/$': {
+      id: '/templates/$'
+      path: '/templates/$'
+      fullPath: '/templates/$'
+      preLoaderRoute: typeof TemplatesSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plumbing-services/$': {
+      id: '/plumbing-services/$'
+      path: '/plumbing-services/$'
+      fullPath: '/plumbing-services/$'
+      preLoaderRoute: typeof PlumbingServicesSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/photo-gallery/$category': {
+      id: '/photo-gallery/$category'
+      path: '/photo-gallery/$category'
+      fullPath: '/photo-gallery/$category'
+      preLoaderRoute: typeof PhotoGalleryCategoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nps-survey/thank-you': {
+      id: '/nps-survey/thank-you'
+      path: '/nps-survey/thank-you'
+      fullPath: '/nps-survey/thank-you'
+      preLoaderRoute: typeof NpsSurveyThankYouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$': {
+      id: '/blog/$'
+      path: '/blog/$'
+      fullPath: '/blog/$'
+      preLoaderRoute: typeof BlogSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/areas-we-serve/escalon': {
+      id: '/areas-we-serve/escalon'
+      path: '/areas-we-serve/escalon'
+      fullPath: '/areas-we-serve/escalon'
+      preLoaderRoute: typeof AreasWeServeEscalonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/areas-we-serve/$city': {
+      id: '/areas-we-serve/$city'
+      path: '/areas-we-serve/$city'
+      fullPath: '/areas-we-serve/$city'
+      preLoaderRoute: typeof AreasWeServeCityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us/faq': {
+      id: '/about-us/faq'
+      path: '/about-us/faq'
+      fullPath: '/about-us/faq'
+      preLoaderRoute: typeof AboutUsFaqRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about-us/video-center/': {
